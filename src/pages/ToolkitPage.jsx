@@ -1,170 +1,153 @@
+import { useState, useEffect } from 'react'
+import { useSearchParams, useLocation, Link } from 'react-router'
+import { Search, ChevronDown } from 'lucide-react'
 import toolsData from '../data/tools.json'
-import { useState } from 'react'
-import { Link } from 'react-router'
-import { Listbox, ListboxButton, ListboxOptions, ListboxOption } from '@headlessui/react'
-import { ChevronUpDownIcon, CheckIcon } from '@heroicons/react/20/solid'
-import { Gauge, Zap, Target, GraduationCap } from 'lucide-react'
+import ToolImage from '../components/ui/ToolImage'
 
 export default function Toolkit() {
+    const location = useLocation()
+    const [searchParams, setSearchParams] = useSearchParams()
+    const [searchQuery, setSearchQuery] = useState('')
     const [filters, setFilters] = useState({
-        ease: ['all'],
-        impact: ['all'],
-        type: ['all'],
-        maturity: ['all']
+        purpose: ['all']
     })
 
-    // Use validOptions from tools.json as the source of truth
-    const options = {
-        ease: ['all', ...toolsData.validOptions.ease],
-        impact: ['all', ...toolsData.validOptions.impact],
-        type: ['all', ...toolsData.validOptions.type],
-        maturity: ['all', ...toolsData.validOptions.maturity]
-    }
 
-    const filterLabels = {
-        all: 'All',
-        ease: 'Ease of Implementation',
-        impact: 'Level of Impact',
-        type: 'Type',
-        maturity: 'Maturity Level'
-    }
+    // Initialize search query and filters from URL params
+    useEffect(() => {
+        const purposeParam = searchParams.get('purpose')?.split(',') || ['all']
+        setFilters({ purpose: purposeParam })
+        setSearchQuery(searchParams.get('search') || '')
+    }, [searchParams])
+
+    const highlightText = (text, query) => {
+        if (!query) return text;
+        const parts = text.split(new RegExp(`(${query})`, 'gi'));
+        return parts.map((part, i) =>
+            part.toLowerCase() === query.toLowerCase() ?
+                <mark key={i} className="bg-yellow-200 px-1 py-0.5 rounded">{part}</mark> :
+                part
+        );
+    };
 
     const filteredTools = toolsData.tools.filter(tool => {
-        if (!filters.ease.includes('all') && !filters.ease.includes(tool.ease)) return false
-        if (!filters.impact.includes('all') && !filters.impact.includes(tool.impact)) return false
-        if (!filters.type.includes('all') && !filters.type.includes(tool.type)) return false
-        if (!filters.maturity.includes('all') && !filters.maturity.includes(tool.maturity)) return false
-        return true
-    })
-
-    const handleFilterChange = (filterType, values) => {
-        // If "all" is being added, make it the only selection
-        if (!filters[filterType].includes('all') && values.includes('all')) {
-            setFilters(prev => ({
-                ...prev,
-                [filterType]: ['all']
-            }))
-            return
+        // Apply purpose filter
+        if (!filters.purpose.includes('all')) {
+            if (!filters.purpose.includes(tool.purpose)) return false;
         }
 
-        // If a non-"all" option is being added and "all" is currently selected,
-        // remove "all" from the selection
-        if (filters[filterType].includes('all') && values.length > 1) {
-            values = values.filter(v => v !== 'all')
+        // Apply search filter
+        if (searchQuery) {
+            const searchLower = searchQuery.toLowerCase();
+            return (
+                tool.name.toLowerCase().includes(searchLower) ||
+                tool.summary.toLowerCase().includes(searchLower)
+            );
         }
 
-        // If no options are selected, default to "all"
-        if (values.length === 0) {
-            values = ['all']
-        }
+        return true;
+    });
 
-        setFilters(prev => ({
-            ...prev,
-            [filterType]: values
-        }))
-    }
+
+    const handleSearch = (e) => {
+        const query = e.target.value;
+        setSearchQuery(query);
+
+        // Update URL params
+        const newParams = new URLSearchParams(searchParams);
+        if (query) {
+            newParams.set('search', query);
+        } else {
+            newParams.delete('search');
+        }
+        setSearchParams(newParams);
+    };
+
+    const handlePurposeChange = (e) => {
+        const value = e.target.value;
+        const newFilters = { purpose: value === 'all' ? ['all'] : [value] };
+        setFilters(newFilters);
+
+        // Update URL params
+        const newParams = new URLSearchParams(searchParams);
+        if (value === 'all') {
+            newParams.delete('purpose');
+        } else {
+            newParams.set('purpose', value);
+        }
+        setSearchParams(newParams);
+    };
+
 
     return (
         <div>
-            <h2 className="text-2xl font-display font-bold mb-4">DSP Toolkit</h2>
-
-            {/* Filter Controls */}
-            <div className="mb-6 space-x-4 flex">
-                {Object.entries(options).map(([filterType, filterOptions]) => (
-                    <div key={filterType} className="w-72">
-                        <Listbox
-                            value={filters[filterType]}
-                            onChange={(values) => handleFilterChange(filterType, values)}
-                            multiple
-                        >
-                            <div className="relative">
-                                <ListboxButton className="relative w-full cursor-default rounded-lg bg-white py-2 pl-3 pr-10 text-left shadow-md focus:outline-none focus-visible:border-seafoam-500 focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75 focus-visible:ring-offset-2 focus-visible:ring-offset-seafoam-300 sm:text-sm">
-                                    <span className="block truncate">
-                                        {filterLabels[filterType]}: {
-                                            filters[filterType].length === 1 && filters[filterType][0] === 'all'
-                                                ? 'All'
-                                                : filters[filterType].map(f => filterLabels[f] || f).join(', ')
-                                        }
-                                    </span>
-                                    <span className="pointer-events-none absolute inset-y-0 right-0 flex items-center pr-2">
-                                        <ChevronUpDownIcon className="h-5 w-5 text-gray-400" aria-hidden="true" />
-                                    </span>
-                                </ListboxButton>
-                                <ListboxOptions className="absolute mt-1 max-h-60 w-full overflow-auto rounded-md bg-white py-1 text-base shadow-lg ring-1 ring-black ring-opacity-5 focus:outline-none sm:text-sm z-10">
-                                    {filterOptions.map((option) => (
-                                        <ListboxOption
-                                            key={option}
-                                            value={option}
-                                            className={({ active, selected }) =>
-                                                `relative cursor-default select-none py-2 pl-10 pr-4 ${active ? 'bg-seafoam-100 text-seafoam-900' : 'text-gray-900'
-                                                }`
-                                            }
-                                        >
-                                            {({ selected }) => (
-                                                <>
-                                                    <span className={`block truncate ${selected ? 'font-medium' : 'font-normal'}`}>
-                                                        {filterLabels[option] || option}
-                                                    </span>
-                                                    {selected ? (
-                                                        <span className="absolute inset-y-0 left-0 flex items-center pl-3 text-seafoam-600">
-                                                            <CheckIcon className="h-5 w-5" aria-hidden="true" />
-                                                        </span>
-                                                    ) : null}
-                                                </>
-                                            )}
-                                        </ListboxOption>
-                                    ))}
-                                </ListboxOptions>
-                            </div>
-                        </Listbox>
+            {/* Search Input and Purpose Filter */}
+            <div className="flex flex-col sm:flex-row gap-4 mb-6">
+                <div className="relative w-full">
+                    <div className="absolute inset-y-0 left-0 pl-3 flex items-center pointer-events-none">
+                        <Search className="h-5 w-5 text-gray-400" />
                     </div>
-                ))}
+                    <input
+                        type="text"
+                        value={searchQuery}
+                        onChange={handleSearch}
+                        placeholder="Search tools by name or description..."
+                        className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-seafoam-500 focus:border-seafoam-500"
+                    />
+                </div>
+                <div className="w-full sm:w-1/3 relative">
+                    <select
+                        value={filters.purpose[0]}
+                        onChange={handlePurposeChange}
+                        className="block w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-seafoam-500 focus:border-seafoam-500 appearance-none bg-white"
+                    >
+                        <option value="all">All Purposes</option>
+                        {toolsData.validOptions.purpose.filter(p => p !== 'TBD').map(purpose => (
+                            <option key={purpose} value={purpose}>
+                                {purpose}
+                            </option>
+                        ))}
+                        <option value="TBD">To Be Determined</option>
+                    </select>
+                    <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
+                        <ChevronDown className="h-5 w-5 text-gray-400" />
+                    </div>
+                </div>
             </div>
+
+
 
             {/* Tools Grid */}
             <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
                 {filteredTools.map(tool => (
                     <Link
                         key={tool.number}
-                        to={`/toolkit/${tool.number}`}
-                        className="block bg-white rounded-lg shadow p-6 transition-all duration-200 ease-in-out hover:shadow-lg hover:-translate-y-1 hover:bg-seafoam-50 h-full flex flex-col"
+                        to={`/tool/${tool.number}`}
+                        state={{ from: '/toolkit', search: location.search }}
+                        className="group relative overflow-hidden bg-gradient-to-br from-seafoam-50 to-white rounded-xl p-6 border border-seafoam-200 hover:border-seafoam-400 transition-all duration-200 flex flex-col h-full"
                     >
                         <div className="flex-1">
-                            <img
-                                src={tool.image}
+                            <ToolImage
+                                toolNumber={tool.number}
                                 alt={tool.name}
                                 className="w-full h-48 object-cover rounded-lg mb-4"
                             />
-                            <h3 className="text-xl font-display font-bold mb-3">{tool.name}</h3>
-                            <p className="text-gray-600">{tool.summary}</p>
+                            <h3 className="text-xl font-display font-bold mb-3">
+                                {highlightText(tool.name, searchQuery)}
+                            </h3>
+                            <p className="text-gray-600 mb-3">
+                                {highlightText(tool.summary, searchQuery)}
+                            </p>
+                            <div className="mt-auto">
+                                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-seafoam-100 text-seafoam-800">
+                                    {tool.purpose === 'TBD' ? 'To Be Determined' : tool.purpose}
+                                </span>
+                            </div>
                         </div>
 
-                        {/* Filterable Attributes */}
-                        <div className="grid grid-cols-2 gap-x-4 gap-y-2 text-sm mt-4">
-                            <div className="flex items-center">
-                                <Gauge className="w-4 h-4 text-seafoam-600 mr-1" />
-                                <span className="text-seafoam-600 font-medium">Ease:</span>
-                                <span className="ml-2 px-2 py-1 bg-seafoam-50 rounded">{tool.ease}</span>
-                            </div>
-                            <div className="flex items-center">
-                                <Zap className="w-4 h-4 text-seafoam-600 mr-1" />
-                                <span className="text-seafoam-600 font-medium">Impact:</span>
-                                <span className="ml-2 px-2 py-1 bg-seafoam-50 rounded">{tool.impact}</span>
-                            </div>
-                            <div className="flex items-center">
-                                <Target className="w-4 h-4 text-seafoam-600 mr-1" />
-                                <span className="text-seafoam-600 font-medium">Type:</span>
-                                <span className="ml-2 px-2 py-1 bg-seafoam-50 rounded">{tool.type}</span>
-                            </div>
-                            <div className="flex items-center">
-                                <GraduationCap className="w-4 h-4 text-seafoam-600 mr-1" />
-                                <span className="text-seafoam-600 font-medium">Maturity:</span>
-                                <span className="ml-2 px-2 py-1 bg-seafoam-50 rounded">{tool.maturity}</span>
-                            </div>
-                        </div>
                     </Link>
                 ))}
             </div>
         </div>
     )
-} 
+}

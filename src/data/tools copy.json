@@ -1,0 +1,466 @@
+{
+  "tools": [
+    {
+      "number": 1,
+      "name": "Fostering an Entrepreneurial Culture: Printable Designs and AI Prompts",
+      "summary": "Ready-to-print designs and AI-guided templates to create motivational materials that foster entrepreneurial culture in university spaces",
+      "description": "The tool provides ready-to-print designs and templates featuring motivational quotes, practical tips, and action-oriented phrases to enhance university spaces. It includes a collection of quotes and resources that you can use to create your own designs. Additionally, an AI guide (such as ChatGPT) is available to help you generate prompts for personalized content tailored to the university's specific needs. Blank templates are also included for adding your custom phrases, making it easy to inspire entrepreneurial thinking in libraries, cafeterias, or co-working areas",
+      "outcomes": "University walls, co-working areas, and libraries showcase inspirational posters and quotes, creating a more entrepreneurial environment. Increased student participation in entrepreneurship events and workshops, with feedback indicating they feel encouraged and inspired by the new environment. Universities generate phrases or tips tailored to their specific mission. Students engage in informal brainstorming sessions in common areas, and academics incorporate the tool into lectures or entrepreneurial projects",
+      "instructions": "1. Browse the pre-designed templates included in the PDF. Select the ones that resonate most with your university's mission and goals.\n2. Print the chosen templates and place them in strategic locations around campus (libraries, cafeterias, classrooms, etc.).\n3. Use the AI guide to generate personalized phrases, tips, or quotes that reflect your university's values. Follow the step-by-step instructions to write effective prompts.\n4. Fill in the blank templates with your AI-generated or self-created content. You are also free to make your own designs with another tool.\n5. Use the materials as conversation starters in workshops, events, or entrepreneurship programs, and place them around the campus",
+      "links": [
+        {
+          "title": "Main PDF",
+          "url": "assets/pdfs/tool_1.0.pdf"
+        },
+        {
+          "title": "Editable templates",
+          "url": "assets/pdfs/tool_1.1_editable_posters.pdf"
+        },
+        {
+          "title": "Ready to use posters",
+          "url": "assets/pdfs/tool_1.2_Ready_to_use_posters.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Canva or any design tool, a generative AI tool like ChatGPT. Staff with knowledge of the previous digital tools, Printer and paper"
+    },
+    {
+      "number": 2,
+      "name": "Entrepreneurial Dictionary",
+      "summary": "A simple and engaging dictionary that breaks down key entrepreneurial terms to make them more accessible and less intimidating",
+      "description": "The Entrepreneurial Dictionary is designed to help universities and individuals better understand entrepreneurial concepts in a simple, funny way. It breaks down key terms often misunderstood or intimidating, helping reduce fear and misconceptions around entrepreneurship. It is designed for students, faculty members or university staff curious about the entrepreneurial mindset. This tool offers clear definitions, examples, and real-world context to make entrepreneurial language accessible to everyone",
+      "outcomes": "Students and faculty will develop a deeper comprehension of key entrepreneurial terms. A standardized language that ensures clarity and alignment across departments and stakeholders. Students will feel more confident to participate in entrepreneurship-related activities and courses. The tool can be incorporated into entrepreneurship courses, mentorship programs, and innovation hubs to support structured learning. The users can independently explore and expand their entrepreneurial vocabulary",
+      "instructions": "1. Open the PDF and review the list of entrepreneurial terms and definitions.\n2. Select the terms that are most relevant to your university's goals and educational programs.\n3. Print or share the dictionary digitally with students, faculty, and staff.\n4. Use the terms in lectures, workshops, and group discussions to enhance entrepreneurial learning\n5. Incorporate the definitions into course materials, presentations, and assignments.\n6. Encourage students to refer to the dictionary when working on entrepreneurial projects.",
+      "links": [
+        {
+          "title": "Main PDF",
+          "url": "assets/pdfs/tool_2.0_entrepreneurial_dictionary.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "An electronic device with WI-FI to visualize the dictionary"
+    },
+    {
+      "number": 3,
+      "name": "Entrepreneurship Education KPI Tracking Tool",
+      "summary": "An Excel-based tool that helps universities evaluate and enhance their entrepreneurship education initiatives through relevant KPIs.",
+      "description": "Is an Excel file designed to help universities in evaluating and enhancing their entrepreneurship education initiatives. It offers a structured yet adaptable framework, enabling institutions to establish and monitor their progress through relevant KPIs. Universities can adapt the tool to their specific needs by selecting the most relevant KPIs, setting their own targets, and even adding new indicators if required.",
+      "outcomes": "Universities start using more established and complex KPIs on different aspects of the entrepreneurship education. A structured and data-driven approach to measuring entrepreneurship education performance. Improved accountability across departments with clear ownership of responsibilities. Strengthened decision-making through consistent and transparent reporting.",
+      "instructions": "1. Download the PDF to read the detailed instructions and the Excel File.\n2. Explore the Excel file.\n3. Set Up the Tool.\n4. Determine Relevant KPIs.\n5. Customize KPI Details.\n6. Monitor and Track Progress.",
+      "links": [
+        {
+          "title": "Instructions File",
+          "url": "assets/pdfs/tool_3.0_KPI_Dashboard_Instructions.pdf"
+        },
+        {
+          "title": "Excel Dashboard",
+          "url": "assets/pdfs/KPI - Dashboard.xlsm"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Excel with Macros activated"
+    },
+    {
+      "number": 4,
+      "name": "Incentives Decision Tree Tool",
+      "summary": "An interactive tool to help universities identify, optimize, and implement strategies to incentivize faculty/staff in fostering entrepreneurial activities.",
+      "description": "The tool is designed to support universities in identifying and implementing strategies to motivate faculty and staff to engage in entrepreneurial education. It presents an interactive pathway that helps institutions assess their current support landscape and guides them toward actionable incentive strategies. These may include financial incentives, professional development opportunities, public recognition, or other non-monetary rewards to encourage faculty participation in entrepreneurial initiatives.",
+      "outcomes": "Increased faculty engagement in entrepreneurship education through incentives that address their specific barriers. Enhanced resource utilization by identifying and implementing low-cost, effective strategies. Greater awareness among faculty about available entrepreneurship opportunities and support systems. Improved institutional culture that fosters entrepreneurship through recognition and reward systems.",
+      "instructions": "1. Open the mural link and explore the tool.\n2-Begin by answering the first question and navigate through the flow by selecting \"Yes\" or \"No\" to each question.\n3. If challenges exist, assess the primary barrier (e.g., funding, awareness, motivation, recognition) and use the guided questions to pinpoint specific areas of concern.\n4. Based on the identified challenges, review suggested solutions.\n5. Select and apply the most relevant solutions and monitor their impact on faculty engagement.\n6. If necessary, print the map to use it with your team.",
+      "links": [
+        {
+          "title": "Interactive Tool",
+          "url": "assets/pdfs/tool_4.0_Incentive_Decision_Tree_Tool.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Mural account. Stakeholders involvement"
+    },
+    {
+      "number": 5,
+      "name": "Entrepreneurial Resource Mapping Journey",
+      "summary": "An interactive Mural template that helps universities visually organize and optimize their entrepreneurial resources.",
+      "description": "The Entrepreneurial Resource Mapping Tool is an interactive Mural template designed to help universities visually organize and optimize their entrepreneurial resources. It provides a structured framework that guides faculty and staff through a step-by-step process to identify, categorize, and assess available resources, such as funding, facilities, and support programs. The tool allows universities to pinpoint gaps, clarify responsibilities, and develop action plans for better resource utilization.",
+      "outcomes": "Universities map their resources and know identify how to allocate them better",
+      "instructions": "1. Open the provided link to the Entrepreneurial Resource Mapping Tool.\n2. To start using the tool, click on the'Duplicate' option in the Mural interface. This allows you to create an editable version for your institution.\n3. The tool is divided into seven clear steps—each designed to guide you through different phases of resource mapping.\n4. Add ideas, categorize resources, and document insights using color-coded sticky notes provided in each step.\n5. Once completed, analyze the results and take necessary actions to optimize and improve your entrepreneurial resource strategy.",
+      "links": [
+        {
+          "title": "Interactive Tool",
+          "url": "assets/pdfs/tool_5.0_Discovery_Map.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Mural account"
+    },
+    {
+      "number": 6,
+      "name": "Entrepreneurial Competency Assessment Tool",
+      "summary": "A structured assessment tool based on the EntreComp Framework, designed to evaluate entrepreneurial competencies in academic recruitment and professional development",
+      "description": "The tool provides ready-to-use templates and case scenarios that simplify the evaluation of entrepreneurial skills relevant to academic contexts, ensuring a consistent and insightful assessment process. The tool is based on the EntreComp Framework (The European Entrepreneurship Competence Framework), where 12 core competencies were selected. For each of these competencies, the tool has an individual template designed to assess entrepreneurial proficiency through realistic scenarios tailored for academia. Additionally, the tool includes general case scenarios that assess multiple competencies simultaneously.",
+      "outcomes": "Universities can establish a standardized framework for evaluating entrepreneurial competencies in recruitment and staff development. Gain deeper insights into the entrepreneurial potential of faculty and staff, enabling better alignment with institutional goals. Improved selection and development of educators with entrepreneurial competencies. Faculty and staff become more aware of their entrepreneurial strengths and areas for development.",
+      "instructions": "1. Download the provided templates and review the competencies covered.\n2. Choose the templates that match the role or development goals you want to assess.\n3. Give the selected scenario to the candidate or staff member for response.\n4. Compare the response with the provided proficiency levels to determine their level.\n5. Provide feedback and suggest areas for improvement based on the assessment.\n6. Use the general case scenarios for a broader evaluation of multiple competencies.\n7. Apply the results to make informed recruitment decisions or create development plans.",
+      "links": [
+        {
+          "title": "Word Templates",
+          "url": "assets/pdfs/Role Playing Cases.docx"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Word, PDF Viewer"
+    },
+    {
+      "number": 7,
+      "name": "EntreComp Integration Canvas",
+      "summary": "A visualization tool that helps educators design courses integrating EntreComp competencies. It includes a structured Canvas and guiding cards with trigger questions to support course planning, ensuring entrepreneurial competencies are incorporated, assessed, and monitored throughout the course.",
+      "description": "The EntreComp Integration Canvas is a visualisation tool that provides a holistic overview of the components needed to create a course where entrepreneurial competencies are included. The Canvas includes a set of cards to guide educators on the filling out of the canvas by giving them trigger questions on each part of the canvas. By the end they will have all the necessary information an elements to implement and monitor a course.",
+      "outcomes": "Increased awareness and understanding of EntreComp competencies.Integration of EntreComp competencies into the courses of any field. Development of entrepreneurial competencies among the students. Assessment of the entrepreneurial competencies at the beginning and at the end of a course.",
+      "instructions": "1. Download the Canvas and print them if necessary.\n2. Download the Cards and print them if necessary.\n3. Use the Cards to fill out each part of the canvas. Try to collaborate with other colleagues to discuss the questions and information included on the cards\n4. Design the course according to the filled Canvas.",
+      "links": [
+        {
+          "title": "Cards 1",
+          "url": "assets/pdfs/tool_7.0_Course_Design-Card.pdf"
+        },
+        {
+          "title": "Cards 2",
+          "url": "assets/pdfs/tool_7.1_Course_Design_Card_2.pdf"
+        },
+        {
+          "title": "Canvas",
+          "url": "assets/pdfs/START DSP - Canvas.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Canvas and Cards (printed or not)"
+    },
+    {
+      "number": 8,
+      "name": "Guide to Digital Entrepreneurship Education: AI & VR Tools",
+      "summary": "A resource designed to help universities and educators integrate free, open-source AI and VR tools into entrepreneurship education.",
+      "description": "This guide is designed to help universities and educators integrate digital tools into entrepreneurship education, aligning with current trends and educational demands. Based on the EntreComp Framework, this resource recommends free, open-source AI and VR tools that can support different stages of the entrepreneurial journey that was adapted from the EntreComp Framework.",
+      "outcomes": "Students and educators integrate AI and VR tools into their entrepreneurship programs and start considering them for their entrepreneurial journey. Universities foster a more technology-driven entrepreneurial culture, preparing students for modern business challenges. Improved ability to identify market trends, develop innovative business ideas, and create digital prototypes for entrepreneurial ventures.",
+      "instructions": "1. Download or access the guide PDF to explore the AI and VR tools available.\n2. Identify the stage of the entrepreneurial journey that aligns with your educational goals.\n3. Choose the recommended tools listed under each stage that best fit your lesson or project needs.\n4. Follow the provided links to access each tool and explore its functionalities.\n5. Implement the tools in classroom activities, projects, or workshops to support student entrepreneurship.\n6. Monitor and evaluate progress to assess the impact of digital tools on entrepreneurial learning.\n7. Encourage students to experiment with different tools and adapt them to their specific needs.",
+      "links": [
+        {
+          "title": "Main PDF",
+          "url": "assets/pdfs/tool_8.0_Digital_Entrepreneurship_Education_Guide.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "An electronic device to see the guide, and the selected tool"
+    },
+    {
+      "number": 9,
+      "name": "Grant Application Guideline",
+      "summary": "A simple guideline to help universities and educators apply to different funding grants,",
+      "description": "The Grant Application Guideline is a resource designed to help universities, professors, and students in navigating the landscape of funding opportunities for entrepreneurship education. It includes an overview of EU and regional funding opportunities, eligibility criteria, detailed instructions for preparing competitive grant proposals, and practical tips for success.",
+      "outcomes": "Increased awareness and understanding of EU and regional funding opportunities for entrepreneurship and research.Development of competitive, high-quality grant proposals aligned with institutional goals.Enhanced ability to meet eligibility criteria and comply with EU funding guidelines.Improved access to financial resources that foster innovation, entrepreneurial initiatives, and academic development.",
+      "instructions": "1. Download the PDF , read the introduction and explore the different sections.\n2. Identify relevant funding programs from the provided resources and assess their objectives and eligibility criteria.\n3. Compare your projects scope, partnerships, and objectives with the criteria listed for each funding opportunity.\n4. Use the step-by-step guide to write a good proposal.\n5. Refer to the provided checklists for each step to ensure no details are missed during preparation.\n6. Use the tips section to refine your  applications.",
+      "links": [
+        {
+          "title": "Main PDF",
+          "url": "assets/pdfs/tool_9.0_Grant_Application_Guideline.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "PDF reader"
+    },
+    {
+      "number": 10,
+      "name": "Roadmap: Orientation Strategy Planning and Financing of Entrepreneurship Education",
+      "summary": "A university-wide assessment framework that helps institutions systematically identify and track financial investments in entrepreneurship education.",
+      "description": "The \"Roadmap: Orientation Strategy\" is a university-wide assessment framework designed to offer a helicopter view of financial commitments to entrepreneurship education. This tool collects essential data across faculties, innovation centres, and administrative units, providing a structured approach to:\n✔ Map financial contributions to entrepreneurship education.\n✔ Understand funding sources and allocation patterns across departments.\n✔ Identify gaps and inefficiencies in resource distribution.\n✔ Support data-driven decision-making for strategic financial planning.",
+      "outcomes": "Baseline financial overview — Universities gain a clear first insight into how much is being invested in entrepreneurship education. Better resource alignment — Identifies areas where funding is missing, duplicated, or under-utilised. Data-driven decision-making — Helps universities strategically allocate future investments based on real data. Improved accountability — Universities can demonstrate to leadership and stakeholders the financial value of entrepreneurship education.",
+      "instructions": "DISTRIBUTE THE SURVEY TO KEY FACULTIES/DEPARTMENTS\nShare the Google Form link with representatives from Business, Engineering, Social Sciences, Science, Finance, and Entrepreneurship Centres.\nEnsure each respondent provides qualitative insights into how funds are used, along with any available financial data.\nGATHER & CONSOLIDATE RESPONSES\nResponses from each faculty will be automatically collected via the Google Form.\nExport the data for further analysis or use built-in Google Forms reporting tools to review key trends.\nGENERATE INITIAL FINDINGS\nIdentify total investment levels, primary funding sources, and allocation patterns.\nHighlight areas where tracking is weakest, such as unknown budgets or uncoordinated spending.\nIDENTIFY STRATEGIC OPPORTUNITIES\nPinpoint underfunded areas (e.g., incubators, student startup support).Compare departmental investments against university-wide entrepreneurship education goals.\nREPORT & RECOMMEND ACTIONS\nPresent findings to university leadership to inform future resource allocation.\nDiscuss next steps, such as integrating financial tracking into university planning or refining data collection processes.",
+      "links": [
+        {
+          "title": "Google Forms",
+          "url": "https://docs.google.com/forms/d/e/1FAIpQLScKzzGUdKTF4tGBmbVsqK93csj1xdJTlCjLLxtHlR81VVAj6g/viewform"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "✔ Financial data on university budgets and entrepreneurship programmes\n✔ Input from faculty representatives, finance teams, and innovation leaders.\n✔ Staff familiar with budgeting and financial analysis to interpret results.\n✔ Access to the Google Form Survey"
+    },
+    {
+      "number": 11,
+      "name": "Development of an Entrepreneurial Culture",
+      "summary": "An online self-assessment tool designed to evaluate entrepreneurial mindset and competencies, focusing on emotional intelligence, social responsibility, and diversity and inclusion.",
+      "description": "The Entrepreneurial Competence Self-Assessment Tool is an online evaluation that provides users with a personalised report on their entrepreneurial capabilities. It assesses competencies through a series of structured questions and offers feedback on: Strengths and areas for development, Practical recommendations for skill-building, Guidance on how to enhance entrepreneurial potential\nBuilt using Brilliant Assessments, this tool allows individuals to evaluate their readiness for entrepreneurship and take steps to enhance their skills and knowledge.",
+      "outcomes": "Increased self-awareness — Users understand their entrepreneurial strengths and development areas. Better preparation for entrepreneurship — Individuals gain insights into the skills they need to develop. Stronger alignment with EntreComp framework — Users receive structured feedback to guide their growth. Actionable recommendations — Practical next steps for improving entrepreneurial readiness",
+      "instructions": "ACCESS THE ASSESSMENT\nShare the Brilliant Assessments link with individuals interested in evaluating their entrepreneurial skills.\nEncourage participants to answer honestly for the most accurate feedback.\nRECEIVE PERSONALISED RESULTS\nAfter completing the assessment, users receive a report outlining their competency levels in Ideas and Opportunities, Resources, and Into Action.\nThe report provides insights into strengths and areas for development.\nINTERPRET & TAKE ACTION\nReview personal scores to understand where improvement is needed.\nFollow the recommendations to strengthen entrepreneurial competencies.\nEngage with Start DSP learning resources for further skill development.",
+      "links": [
+        {
+          "title": "Brilliant Assessment",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=startDSP"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "✔ Access to Brilliant Assessments platform\n✔ Basic understanding of entrepreneurial competencies\n✔ Time for users to complete the self-assessment"
+    },
+    {
+      "number": 12,
+      "name": "Sensitisation for Entrepreneurship",
+      "summary": "A curated video toolkit designed to help individuals develop an entrepreneurial mindset beyond finance and business operations.",
+      "description": "The Entrepreneurial Mindset Video Toolkit is a curated playlist of educational videos designed to support universities, educators, and students in exploring the mindset required for entrepreneurship. The videos showcase:\n• The role of emotional intelligence and adaptability in business success.\n• How entrepreneurs integrate ethical and sustainable practices into their ventures.\n• The impact of diverse perspectives and inclusion in driving innovation.\n• Practical advice and real-world insights from experienced entrepreneurs and educators.",
+      "outcomes": "Greater awareness of essential entrepreneurial competencies beyond finance and operations. Stronger understanding of emotional intelligence, ethics, and diversity in business success. Enhanced engagement in entrepreneurship education through dynamic and relatable content. Better preparation for real-world entrepreneurship, ensuring a well-rounded entrepreneurial mindset.",
+      "instructions": "ACCESS THE PLAYLIST\nShare the YouTube playlist with students, educators, and early-stage entrepreneurs.\nEncourage users to engage with the content as part of structured learning or independent exploration.\nWATCH & REFLECT\nView selected videos covering entrepreneurial mindset, ethics, and diversity.\nReflect on key takeaways and their relevance to real-world entrepreneurship.\nINTEGRATE INTO LEARNING ACTIVITIES\nEducators can use the videos to facilitate discussions in courses or workshops.\nUniversities can integrate the content into entrepreneurship awareness programmes.\nAPPLY LEARNINGS\nEncourage users to apply insights to their entrepreneurial journey.\nLink videos to Start DSP learning resources for deeper exploration.",
+      "links": [
+        {
+          "title": "Playlist",
+          "url": "https://www.youtube.com/playlist?list=PLuGfWmFV-HaKJW1ShwspfNkXbcHicwB4A"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Access to the curated video playlist, Engagement from educators, students, and entrepreneurs to discuss and reflect on the content."
+    },
+    {
+      "number": 13,
+      "name": "SDG Framework in Sustainable Entrepreneurship",
+      "summary": "A structured framework designed to help universities integrate the United Nations Sustainable Development Goals (SDGs) into entrepreneurial education, research, and institutional strategies.",
+      "description": "A structured framework that assists academic institutions in embedding sustainability principles into entrepreneurial education, research, and operational strategies. The SDG Framework provides guidelines, best practices, and methodologies for implementing SDG-driven initiatives. Helps in curriculum development, faculty training, and research alignment with sustainability goals and encourages interdisciplinary collaboration and multi-stakeholder engagement in sustainable entrepreneurship.",
+      "outcomes": "Short-Term: Awareness and understanding of how SDGs integrate into academic entrepreneurship. Faculty and student engagement in sustainability-driven projects. Medium-Term: Development of SDG-aligned entrepreneurship programs. Increased institutional participation in SDG-driven research. Establishment of sustainability-focused incubators or innovation hubs. Long-Term: Higher global ranking in sustainability for institutions. Growth in impactful, sustainability-focused startups. Strengthened partnerships with government, businesses, and NGOs.",
+      "instructions": "1. Understand the SDG Framework: Review SDG goals and their relevance to entrepreneurship. Explore case studies of universities successfully implementing SDGs.\n2. Assess Institutional Readiness: Conduct a self-assessment of how well the institution currently integrates SDGs. Identify gaps in education, research, and practice.\n3. Develop an Implementation Plan: Align entrepreneurship curricula with SDGs. Design faculty training programs. Set up research initiatives focused on sustainability.\n4. Engage Stakeholders: Collaborate with students, businesses, NGOs, and government agencies. Establish advisory boards or working groups.\n5. Monitor and Measure Impact: Use SDG impact assessment tools. Publish progress reports and case studies. Continuously improve strategies based on feedback.",
+      "links": [
+        {
+          "title": "Tool",
+          "url": "assets/pdfs/tool_13.0_SDG_Framework.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Human Resources with knowledge in SDGs, sustainability and entrepreneurship. Financial Budget for training, curriculum redesign and digital tools. Funding for projects and implementation. Digital and Technical Resources as previously explained. Educational Materials such as Case Studies in SDG integration in entrepreneurship, guidelines for best practice and open access research."
+    },
+    {
+      "number": 14,
+      "name": "Stakeholders Radar AI",
+      "summary": "An AI-powered tool that helps universities and organizations identify, analyze, and engage key stakeholders in SDG-related projects.",
+      "description": "Stakeholders Radar/AI is an AI-powered tool that identifies key stakeholders within HEIs and broader communities. It provides data-driven insights into their interests, influence, and engagement potential, helping universities align their sustainability strategies with relevant partners.",
+      "outcomes": "Improved Stakeholder Engagement: Universities will have a clear understanding of key stakeholders in SDG-related initiatives. Enhanced Decision-Making: AI-generated insights will support better sustainability strategies. Increased Collaboration: Institutions can foster partnerships with industry, policymakers, and communities.",
+      "instructions": "1. Access the Tool: Log into the AI-based platform using university credentials.\n2. Input Data: Provide information on stakeholders, including faculty, students, industry partners, and government entities.\n3. Run AI Analysis: The system will map out stakeholders based on influence, interest, and potential collaboration opportunities.\n4. Review Insights: Users can visualize stakeholder networks, engagement metrics, and strategic alignment with SDGs.\n5. Develop Strategies: Use AI-generated recommendations to improve collaboration, policies, and sustainability initiatives.\n6. Monitor & Evaluate: Continuously assess engagement and adjust strategies as needed.",
+      "links": [
+        {
+          "title": "Tool 1",
+          "url": "https://insight7.io/"
+        },
+        {
+          "title": "Tool 2",
+          "url": "https://www.taskade.com/generate/project-management/project-stakeholder-analysis"
+        },
+        {
+          "title": "Tool 3",
+          "url": "https://www.sap.com/products/technology-platform/cloud-analytics.html"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "AI and data analytics software. Institutional support and governance framework. Training for faculty, students, and administrators. Data integration and ethical AI compliance."
+    },
+    {
+      "number": 15,
+      "name": "Digital Knowledge-Sharing Platform",
+      "summary": "An online platform designed to facilitate knowledge exchange, networking, and mentorship among students, faculty, and entrepreneurs.",
+      "description": "A digital platform (online forum, discussion board, or collaborative workspace) where entrepreneurs can share insights, challenges, case studies, and best practices. It promotes engagement, mentorship, and learning from real-world experiences.",
+      "outcomes": "Increased peer-to-peer learning and collaboration. Better knowledge transfer of success and failure stories. Stronger entrepreneurial mindset among students and faculty. Higher participation in startup incubators and innovation challenges. Improved networking and mentorship connections.",
+      "instructions": "1. Sign Up: Create an account on the platform.\n2. Join Relevant Topics: Browse categories such as startup funding, product development, failure stories, etc.\n3. Engage with the Community: Ask questions, share experiences, provide feedback.\n4. Connect with Mentors: Reach out to experienced entrepreneurs for guidance.\n5. Attend Virtual Events: Participate in webinars, discussion panels, and live Q&A sessions.\n6. Contribute & Learn: Post success stories, lessons learned, and industry insights.",
+      "links": [
+        {
+          "title": "Instructions",
+          "url": "assets/pdfs/tool_15_digital_knowledge_sharing_platforms.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Technical Infrastructure: A hosting platform (self-hosted or SaaS-based).\nModerators: To ensure productive discussions and filter spam.\nContent Strategy: Guidelines, discussion topics, engagement plans.\nMarketing & Promotion: To onboard users and sustain activity."
+    },
+    {
+      "number": 16,
+      "name": "Role Navigator for Non-Business Academics in Entrepreneurship Education",
+      "summary": "An assessment tool designed to help non-business academics discover their potential roles in entrepreneurship education.",
+      "description": "The Role Navigator is an assessment tool designed to explore the strengths, teaching styles, and interests of non-business academics in relation to entrepreneurship education. It identifies opportunities for engagement, such as mentoring, facilitating workshops, or contributing to curriculum innovation. Participants receive a personalized feedback report outlining actionable steps and tailored resources to align their expertise with entrepreneurship education initiatives.",
+      "outcomes": "Increased awareness among non-business academics about their potential contributions to entrepreneurship education. Broader involvement of diverse disciplines in entrepreneurship initiatives. Enhanced interdisciplinary collaboration within universities. Development of innovative and inclusive approaches to entrepreneurship education.",
+      "instructions": "1. Share the assessment link with non-business academics through internal communications, training sessions, or professional development programs.\n2. Participants complete the assessment by answering questions related to their familiarity, interest, and perceived barriers to entrepreneurship education formats.\n3. Personalized feedback reports are automatically generated, providing tailored insights and actionable recommendations.\n4. Educators review their feedback and identify next steps, such as exploring specific formats, attending workshops, or collaborating with colleagues.\n5. Optional: Organize workshops or networking sessions to connect academics with entrepreneurship education resources and opportunities.",
+      "links": [
+        {
+          "title": "Assessment",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Entrepreneurship%20Educator%20Roles"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Internet Connection / PDF Reader / 10-15 Minutes time"
+    },
+    {
+      "number": 17,
+      "name": "Teaching Innovation Assessment: Entrepreneurship Education Formats",
+      "summary": "An assessment tool designed to help educators evaluate their familiarity, interest, and readiness to implement diverse entrepreneurship education formats.",
+      "description": "The tool guides educators through an assessment that evaluates their current awareness, interest, and potential challenges in implementing entrepreneurship education formats such as experiential learning, problem-based learning, and simulation-based learning. Participants receive a personalized feedback report with tailored insights and practical suggestions to enhance their teaching practices and foster entrepreneurial skills in their students.",
+      "outcomes": "Increased educator awareness of diverse entrepreneurship education formats. Enhanced adoption of innovative teaching methods aligned with entrepreneurship education. Improved student engagement and skill development in entrepreneurial thinking. Expanded interdisciplinary collaboration among educators.",
+      "instructions": "1. Share the assessment link with educators through internal communications, training sessions, or professional development programs.\n2. Educators complete the assessment by answering questions related to their familiarity, interest, and perceived barriers to entrepreneurship education formats.\n3. Personalized feedback reports are automatically generated, providing tailored insights and actionable recommendations.\n4. Educators review their feedback and identify next steps, such as exploring specific formats, attending workshops, or collaborating with colleagues.\n5. Optional: Host follow-up sessions to discuss results, share best practices, and support educators in implementing the suggested formats.",
+      "links": [
+        {
+          "title": "Assessment",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Teaching%20Innovation%20Assessment"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Internet Connection / PDF Reader / 10-15 Minutes time"
+    },
+    {
+      "number": 18,
+      "name": "Sustainable Business Model Canvas",
+      "summary": "A structured framework designed to help educators integrate sustainability into business model innovation. Based on the Business Model Canvas, it expands to include environmental and social responsibility, guiding students in developing sustainable business strategies through interactive workshops and practical exercises.",
+      "description": "The Sustainable Business Model Canvas (SBMC) Guideline is designed to support educators and trainers in integrating sustainability-driven business modeling into their courses, workshops, and training programs.It builds upon the Business Model Canvas by Osterwalder & Pigneur, expanding it to include sustainability aspects such as stakeholder impact, environmental responsibility, and long-term value creation. The guideline provides a structured methodology, facilitation strategies, and key questions to help educators guide students in systematically developing sustainable business models.Educators can use this guideline to facilitate interactive workshops, classroom discussions, and business modeling exercises, helping students and entrepreneurs understand how sustainability principles can be embedded into business strategy from the outset.",
+      "outcomes": "Educators integrate sustainability-driven business modeling into their teaching. Students gain hands-on experience in developing sustainable business models. Entrepreneurship education aligns with real-world sustainability challenges. Workshops and courses become more interactive and practice-oriented. Universities and incubators foster sustainability-minded entrepreneurs.",
+      "instructions": "1. Introduce students to the Sustainable Business Model Canvas (SBMC) — Provide an overview of business model innovation with sustainability at its core.\n2. Facilitate business model development — Guide students in mapping out their business models using the SBMC framework, incorporating sustainability-specific questions.\n3. Encourage critical thinking — Use discussion prompts to explore how businesses can balance profitability with environmental and social impact.\n4. Promote iteration and refinement — Have students refine their business models through peer feedback and facilitator insights.\n5. Use the tool in structured workshops or classroom settings — The guideline can support both independent student work and interactive group sessions.\n6. Link to further resources — Provide case studies and additional analytical tools to deepen students' understanding of sustainable business practices.",
+      "links": [
+        {
+          "title": "Link to the Sustainable Business Model Canvas Printable Template",
+          "url": "assets/pdfs/tool_18.0_business_canvas.pdf"
+        },
+        {
+          "title": "Facilitator Instructions",
+          "url": "assets/pdfs/tool_18.1_facilitator_instructions.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Sustainable Business Model Canvas template (printable or digital).\nFacilitation guide with sustainability-focused discussion prompts and exercises.\nPost-its, pens, and whiteboards (for in-person workshops).\nDigital collaboration tools (optional) for hybrid/remote learning. Access to case studies on sustainable business models."
+    },
+    {
+      "number": 19,
+      "name": "Financial Projections Template",
+      "summary": "A Microsoft Excel workbook designed to help entrepreneurs and students generate financial projections for decision-making. It enables users to estimate operating profit, develop income statements, balance sheets, and cash flow forecasts to assess the financial viability of a venture.",
+      "description": "This Microsoft Excel Workbook is designed to provide those starting a business or already running a business with information that will allow them to make a \"go /no-go\" decision. It will help a potential entrepreneur project operating profit, develop a projected income statement, balance sheet and cash flow forecast.",
+      "outcomes": "Make correct estimates of a venture's future financial performance, Make investment decisions in a venture, Perform financial analysis of a venture",
+      "links": [
+        {
+          "title": "Financial Projections",
+          "url": "https://www.score.org/resource/template/financial-projections-template"
+        },
+        {
+          "title": "Recommendations for using the tool",
+          "url": "assets/pdfs/tool_19.1_recommendations.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Excel sheet and inicial finance information"
+    },
+    {
+      "number": 20,
+      "name": "Loan Calculator",
+      "summary": "A financial calculator designed to help students and entrepreneurs analyze the total cost, interest, and repayment terms of different loan types. It enables users to compare financing options, assess financial implications, and make informed decisions before acquiring a loan",
+      "description": "It is a financial calculator capable of calculating the total cost of a loan, the terms and other important considerations before making the decision to acquire it. Different scenarios on calculations and financial amounts can be found in the tool:\n- Amortized Loan: Paying Back a Fixed Amount Periodically\n- Deferred Payment Loan: Paying Back a Lump Sum Due at Maturity\n- Bond: Paying Back a Predetermined Amount Due at Loan Maturity",
+      "outcomes": "Adequate financial calculations for loans, Analysis for entrepreneur's decision making, Comparison of best sources of financing",
+      "instructions": "1. Enter the amount of money the bank will lend you.\n2. Enter the interest rate and other fees charged by the bank.\n3. Analyze the figure obtained and decide whether or not to purchase the loan based on the other financial projections.",
+      "links": [
+        {
+          "title": "Calculator",
+          "url": "https://www.calculator.net/loan-calculator.html"
+        },
+        {
+          "title": "Recommendations for using the tool",
+          "url": "assets/pdfs/tool_20.1_calculator_recommendations.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Financial data of the business project"
+    },
+    {
+      "number": 21,
+      "name": "Startup Expenses",
+      "summary": "A financial planning tool designed to help entrepreneurs estimate and manage startup costs effectively. It guides users in assessing initial expenses, contingency reserves, and working capital to ensure financial stability and improve decision-making when launching a business.",
+      "description": "Rigorous approach and planning in the follow elements:\nExpenses: The estimation of expenses begins with meticulous consideration of the costs essential to launching the business. What will it cost to get the business up and running?\nContingencies: It is important to add a reserve for contingencies. The narrative should explain how the amount allocated to this reserve was determined.\nWorking Capital: Maintaining a cash cushion to meet expenses while the business starts and grows is a crucial step in ensuring financial stability.\nCollateral: If this plan will be used to support a bank loan request, consider additional elements.",
+      "outcomes": "Better initial financial projections for entrepreneurs betting on a start-up. More financial literacy for students",
+      "instructions": "1. Enter your sources of capital\n2. Enter your initial expenses\n3. Verify that all information is reliable and complete\n4. Analyze the initial status of your start up",
+      "links": [
+        {
+          "title": "Simulator",
+          "url": "assets/pdfs/Start-Up-Expenses-Simulator.xlsx"
+        },
+        {
+          "title": "Recommendations for using the tool",
+          "url": "https://aceeu.sharepoint.com/:p:/r/sites/Start-DSP/_layouts/15/Doc.aspx?sourcedoc=%7BA3D695FB-0A0E-48B0-8287-65A7EF3173EC%7D&file=Startup%20expenses.pptx&action=edit&mobileredirect=true"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "List of expenses and bills"
+    },
+    {
+      "number": 22,
+      "name": "AI-Powered Digital Entrepreneurship Simulator Guide",
+      "summary": "A tool for entrepreneurial education in the Start DSP project?",
+      "description": "An AI-driven simulator guide allowing users to create virtual business models, test sustainability and profitability, and receive AI-generated insights.",
+      "outcomes": "Increased entrepreneurial mindset, ability to test and refine business ideas, and greater digital competency.",
+      "instructions": "1. Log in to the AI simulator.\n2. Create or select a business model.\n3. Run simulations and receive AI feedback.",
+      "links": [
+        {
+          "title": "Instructions",
+          "url": "assets/pdfs/tool_22_AI-Powered-Digital-Entrepreneurship-Guide-for-Teachers.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Dgital entrepreneurship datasets, case study repository"
+    },
+    {
+      "number": 23,
+      "name": "Digital Learning Journey for International Entrepreneurs",
+      "summary": "A tool for entrepreneurial education in the Start DSP project?",
+      "description": "An interactive platform guiding users through legal, financial, and operational aspects of starting a business.",
+      "outcomes": "Improved international business skills, reduced barriers for international entrepreneurs",
+      "instructions": "1. Select your country of interest.\n2. Follow the step-by-step guide for entrepreneurship.\n3. Engage with mentors and AI-based assistance.",
+      "links": [
+        {
+          "title": "Instructions",
+          "url": "assets/pdfs/tool_23_digital_learning_journey.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Multilingual digital platform, legal/business knowledge base."
+    },
+    {
+      "number": 24,
+      "name": "Green Business Model Decision Tree",
+      "summary": "A tool for entrepreneurial education in the Start DSP project?",
+      "description": "A step-by-step digital decision tree providing personalized recommendations based on business parameters.",
+      "outcomes": "Clear guidance on sustainable entrepreneurship, enhanced entrepreneurial decision-making",
+      "instructions": "1. Input business model parameters.\n2. Follow step-by-step guidance.\n3. Receive AI-driven recommendations.",
+      "links": [
+        {
+          "title": "Instructions",
+          "url": "assets/pdfs/tool_24_Green-Business-Model-Decision-Tree-AI-and-GreenComp.pdf"
+        }
+      ],
+      "benefits": "TBD",
+      "purpose": "TBD",
+      "prerequisiteTools": "Interactive software, sustainability research database, AI-based recommendations"
+    }
+  ],
+  "validOptions": {
+    "purpose": [
+      "TBD",
+      "Entrepreneurship Education Planning & Financing",
+      "Fostering an Entrepreneurial Mindset & Culture",
+      "Entrepreneurial Awareness & Sensitization",
+      "Sustainable & Impact-Driven Entrepreneurship",
+      "Staff & Faculty Motivation, Incentives & Recognition",
+      "Continuous Innovation in Entrepreneurship Education"
+    ]
+  }
+}
