@@ -24,7 +24,7 @@ This is a React application for the Start DSP Toolbox - a digital entrepreneursh
 **Main Application Flow**:
 - `App.jsx` - Main app component with routing setup
 - Navigation components in `src/components/navigation/`
-- Page components in `src/pages/` (AboutPage, ProjectPage, ToolkitPage, ToolDetailPage)
+- Page components in `src/pages/` (AboutPage, ProjectPage, ToolboxPage, ToolDetailPage)
 
 **Data Management**:
 - Tool data stored in `src/data/tools.json` - contains comprehensive information about each educational tool including metadata, resources, and PDF links
@@ -71,7 +71,7 @@ The project uses Tailwind CSS v4 with custom design tokens defined in `src/index
 
 ## Key Application Features
 
-**Search & Filter System** (`ToolkitPage.jsx`):
+**Search & Filter System** (`ToolboxPage.jsx`):
 - Real-time text search with result highlighting
 - Purpose-based dropdown filtering (6 categories)
 - URL state persistence for search/filter parameters
@@ -83,6 +83,6 @@ The project uses Tailwind CSS v4 with custom design tokens defined in `src/index
 - Graceful error handling
 
 **Navigation Architecture**:
-- Main routes: `/` (About), `/project`, `/toolkit`, `/tool/:number`
+- Main routes: `/` (About), `/project`, `/toolbox`, `/tool/:number`
 - State-aware navigation (back button remembers search context)
 - Responsive mobile menu with hamburger toggle

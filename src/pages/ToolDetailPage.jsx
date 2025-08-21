@@ -13,11 +13,11 @@ export default function ToolDetail() {
   }
 
   const handleBack = () => {
-    // If we came from the toolkit page, go back to it with the same search params
-    if (location.state?.from === "/toolkit") {
-      navigate("/toolkit" + location.state.search);
+    // If we came from the toolbox page, go back to it with the same search params
+    if (location.state?.from === "/toolbox") {
+      navigate("/toolbox" + location.state.search);
     } else {
-      // Fallback to browser back if we didn't come from toolkit
+      // Fallback to browser back if we didn't come from toolbox
       navigate(-1);
     }
   };
@@ -232,27 +232,30 @@ export default function ToolDetail() {
                   />
                 </svg>
                 <span className="text-sm text-gray-500">
-                  Responsible Partner: <span className="font-medium text-gray-700">{tool.partner}</span>
+                  Responsible Partner:{" "}
+                  <span className="font-medium text-gray-700">
+                    {tool.partner}
+                  </span>
                 </span>
               </div>
               {(() => {
                 const logoMap = {
-                  'ACEEU': 'aceeu.jpg',
-                  'EUEI': 'euei.jpg', 
-                  'TVW': 'tvw.png',
-                  'MMS': 'mms.jpg',
-                  'UNEAT': 'uneat.png',
-                  'MC': 'mc.png'
+                  ACEEU: "aceeu.jpg",
+                  EUEI: "euei.jpg",
+                  TVW: "tvw.png",
+                  MMS: "mms.jpg",
+                  UNEAT: "uneat.png",
+                  MC: "mc.png",
                 };
                 const logoFile = logoMap[tool.partner];
-                
+
                 return logoFile ? (
-                  <img 
+                  <img
                     src={`/${logoFile}`}
                     alt={`${tool.partner} logo`}
                     className="w-10 h-10 object-contain"
                     onError={(e) => {
-                      e.target.style.display = 'none';
+                      e.target.style.display = "none";
                     }}
                   />
                 ) : null;

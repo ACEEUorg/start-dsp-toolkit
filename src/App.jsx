@@ -4,7 +4,7 @@ import Footer from "./components/Footer";
 import PilotWarningBanner from "./components/ui/PilotWarningBanner";
 import AboutPage from "./pages/AboutPage";
 import ProjectPage from "./pages/ProjectPage";
-import ToolkitPage from "./pages/ToolkitPage";
+import ToolboxPage from "./pages/ToolboxPage";
 import ToolDetailPage from "./pages/ToolDetailPage";
 
 export default function App() {
@@ -18,7 +18,7 @@ export default function App() {
           </h1>
         </div>
       </header>
-      
+
       {/* Pilot Warning Banner - shown on all pages */}
       <div className="mx-auto max-w-7xl px-4 pt-4 pb-0 sm:px-6 lg:px-8">
         <PilotWarningBanner />
@@ -29,7 +29,7 @@ export default function App() {
           <Routes>
             <Route path="/" element={<AboutPage />} />
             <Route path="/project" element={<ProjectPage />} />
-            <Route path="/toolkit" element={<ToolkitPage />} />
+            <Route path="/toolbox" element={<ToolboxPage />} />
             <Route path="/tool/:number" element={<ToolDetailPage />} />
           </Routes>
         </div>

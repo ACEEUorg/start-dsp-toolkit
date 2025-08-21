@@ -14,7 +14,7 @@ export default function Project() {
             Entrepreneurial Toolbox
           </h3>
           <p className="text-gray-600 mb-4">
-            Creating a comprehensive toolkit to enhance the quality and
+            Creating a comprehensive toolbox to enhance the quality and
             effectiveness of entrepreneurship education at European Higher
             Education Institutions.
           </p>
