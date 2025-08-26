@@ -14,7 +14,7 @@ export default function PilotWarningBanner() {
           <span className="font-medium">Pilot Version:</span> This is a pilot
           version of the toolbox. Please do not share as the URL is subject to
           change. To learn when the official toolbox is released, please follow
-          Start DSP on LinkedIn:{" "}
+          Start-DSP on LinkedIn:{" "}
           <a
             href="https://www.linkedin.com/company/start-dsp/"
             target="_blank"

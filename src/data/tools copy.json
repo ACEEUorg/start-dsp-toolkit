@@ -132,7 +132,7 @@
         },
         {
           "title": "Canvas",
-          "url": "assets/pdfs/START DSP - Canvas.pdf"
+          "url": "assets/pdfs/Start-DSP - Canvas.pdf"
         }
       ],
       "benefits": "TBD",
@@ -196,7 +196,7 @@
       "summary": "An online self-assessment tool designed to evaluate entrepreneurial mindset and competencies, focusing on emotional intelligence, social responsibility, and diversity and inclusion.",
       "description": "The Entrepreneurial Competence Self-Assessment Tool is an online evaluation that provides users with a personalised report on their entrepreneurial capabilities. It assesses competencies through a series of structured questions and offers feedback on: Strengths and areas for development, Practical recommendations for skill-building, Guidance on how to enhance entrepreneurial potential\nBuilt using Brilliant Assessments, this tool allows individuals to evaluate their readiness for entrepreneurship and take steps to enhance their skills and knowledge.",
       "outcomes": "Increased self-awareness — Users understand their entrepreneurial strengths and development areas. Better preparation for entrepreneurship — Individuals gain insights into the skills they need to develop. Stronger alignment with EntreComp framework — Users receive structured feedback to guide their growth. Actionable recommendations — Practical next steps for improving entrepreneurial readiness",
-      "instructions": "ACCESS THE ASSESSMENT\nShare the Brilliant Assessments link with individuals interested in evaluating their entrepreneurial skills.\nEncourage participants to answer honestly for the most accurate feedback.\nRECEIVE PERSONALISED RESULTS\nAfter completing the assessment, users receive a report outlining their competency levels in Ideas and Opportunities, Resources, and Into Action.\nThe report provides insights into strengths and areas for development.\nINTERPRET & TAKE ACTION\nReview personal scores to understand where improvement is needed.\nFollow the recommendations to strengthen entrepreneurial competencies.\nEngage with Start DSP learning resources for further skill development.",
+      "instructions": "ACCESS THE ASSESSMENT\nShare the Brilliant Assessments link with individuals interested in evaluating their entrepreneurial skills.\nEncourage participants to answer honestly for the most accurate feedback.\nRECEIVE PERSONALISED RESULTS\nAfter completing the assessment, users receive a report outlining their competency levels in Ideas and Opportunities, Resources, and Into Action.\nThe report provides insights into strengths and areas for development.\nINTERPRET & TAKE ACTION\nReview personal scores to understand where improvement is needed.\nFollow the recommendations to strengthen entrepreneurial competencies.\nEngage with Start-DSP learning resources for further skill development.",
       "links": [
         {
           "title": "Brilliant Assessment",
@@ -213,7 +213,7 @@
       "summary": "A curated video toolbox designed to help individuals develop an entrepreneurial mindset beyond finance and business operations.",
       "description": "The Entrepreneurial Mindset Video Toolbox is a curated playlist of educational videos designed to support universities, educators, and students in exploring the mindset required for entrepreneurship. The videos showcase:\n• The role of emotional intelligence and adaptability in business success.\n• How entrepreneurs integrate ethical and sustainable practices into their ventures.\n• The impact of diverse perspectives and inclusion in driving innovation.\n• Practical advice and real-world insights from experienced entrepreneurs and educators.",
       "outcomes": "Greater awareness of essential entrepreneurial competencies beyond finance and operations. Stronger understanding of emotional intelligence, ethics, and diversity in business success. Enhanced engagement in entrepreneurship education through dynamic and relatable content. Better preparation for real-world entrepreneurship, ensuring a well-rounded entrepreneurial mindset.",
-      "instructions": "ACCESS THE PLAYLIST\nShare the YouTube playlist with students, educators, and early-stage entrepreneurs.\nEncourage users to engage with the content as part of structured learning or independent exploration.\nWATCH & REFLECT\nView selected videos covering entrepreneurial mindset, ethics, and diversity.\nReflect on key takeaways and their relevance to real-world entrepreneurship.\nINTEGRATE INTO LEARNING ACTIVITIES\nEducators can use the videos to facilitate discussions in courses or workshops.\nUniversities can integrate the content into entrepreneurship awareness programmes.\nAPPLY LEARNINGS\nEncourage users to apply insights to their entrepreneurial journey.\nLink videos to Start DSP learning resources for deeper exploration.",
+      "instructions": "ACCESS THE PLAYLIST\nShare the YouTube playlist with students, educators, and early-stage entrepreneurs.\nEncourage users to engage with the content as part of structured learning or independent exploration.\nWATCH & REFLECT\nView selected videos covering entrepreneurial mindset, ethics, and diversity.\nReflect on key takeaways and their relevance to real-world entrepreneurship.\nINTEGRATE INTO LEARNING ACTIVITIES\nEducators can use the videos to facilitate discussions in courses or workshops.\nUniversities can integrate the content into entrepreneurship awareness programmes.\nAPPLY LEARNINGS\nEncourage users to apply insights to their entrepreneurial journey.\nLink videos to Start-DSP learning resources for deeper exploration.",
       "links": [
         {
           "title": "Playlist",
@@ -403,7 +403,7 @@
     {
       "number": 22,
       "name": "AI-Powered Digital Entrepreneurship Simulator Guide",
-      "summary": "A tool for entrepreneurial education in the Start DSP project?",
+      "summary": "A tool for entrepreneurial education in the Start-DSP project?",
       "description": "An AI-driven simulator guide allowing users to create virtual business models, test sustainability and profitability, and receive AI-generated insights.",
       "outcomes": "Increased entrepreneurial mindset, ability to test and refine business ideas, and greater digital competency.",
       "instructions": "1. Log in to the AI simulator.\n2. Create or select a business model.\n3. Run simulations and receive AI feedback.",
@@ -420,7 +420,7 @@
     {
       "number": 23,
       "name": "Digital Learning Journey for International Entrepreneurs",
-      "summary": "A tool for entrepreneurial education in the Start DSP project?",
+      "summary": "A tool for entrepreneurial education in the Start-DSP project?",
       "description": "An interactive platform guiding users through legal, financial, and operational aspects of starting a business.",
       "outcomes": "Improved international business skills, reduced barriers for international entrepreneurs",
       "instructions": "1. Select your country of interest.\n2. Follow the step-by-step guide for entrepreneurship.\n3. Engage with mentors and AI-based assistance.",
@@ -437,7 +437,7 @@
     {
       "number": 24,
       "name": "Green Business Model Decision Tree",
-      "summary": "A tool for entrepreneurial education in the Start DSP project?",
+      "summary": "A tool for entrepreneurial education in the Start-DSP project?",
       "description": "A step-by-step digital decision tree providing personalized recommendations based on business parameters.",
       "outcomes": "Clear guidance on sustainable entrepreneurship, enhanced entrepreneurial decision-making",
       "instructions": "1. Input business model parameters.\n2. Follow step-by-step guidance.\n3. Receive AI-driven recommendations.",

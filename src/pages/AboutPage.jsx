@@ -2,10 +2,10 @@ export default function About() {
   return (
     <div className="max-w-7xl mx-auto px-4 py-8">
       <h2 className="text-2xl font-display font-bold mb-4">
-        About the Start DSP Toolbox
+        About the Start-DSP Entrepreneurial University Toolbox
       </h2>
       <p className="text-gray-600 mb-6">
-        The Start DSP Entrepreneurial University Educators Package and Toolbox
+        The Start-DSP Entrepreneurial University Educators Package and Toolbox
         is designed to enhance the quality and impact of entrepreneurship
         education in European Higher Education Institutions through
         practice-oriented resources and guidelines.

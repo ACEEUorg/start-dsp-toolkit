@@ -1,6 +1,6 @@
 ## Project Overview
 
-This is a React application for the Start DSP Toolbox - a digital entrepreneurship resource platform that provides educational tools for universities and educators. The application serves as a web interface for browsing and accessing various entrepreneurship education resources.
+This is a React application for the Start-DSP Entrepreneurial University Toolbox - a digital entrepreneurship resource platform that provides educational tools for universities and educators. The application serves as a web interface for browsing and accessing various entrepreneurship education resources.
 
 ## Development Commands
 

@@ -1,4 +1,4 @@
-tool_1.1_TheEntrepeneurialWallPack.pdf
+tool_1.1_TheEntrepreneurialWallPack.pdf
 tool_2.1_EntrepreneurialDictionary.pdf
 tool_3.1_KPIDashboardInstructions.pdf
 tool_3.2_KPIDashboard.xlsm
