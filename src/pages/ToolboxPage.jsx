@@ -110,7 +110,6 @@ export default function Toolbox() {
                   {purpose}
                 </option>
               ))}
-            <option value="TBD">To Be Determined</option>
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
             <ChevronDown className="h-5 w-5 text-gray-400" />
