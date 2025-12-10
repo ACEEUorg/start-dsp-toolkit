@@ -7,10 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router";
 import MobileMenu from "./MobileMenu";
 
-const navigation = [
-  { name: "About", to: "/", current: true },
-  { name: "Toolbox", to: "/toolbox", current: false },
-];
+const navigation = [{ name: "Toolbox", to: "/", current: true }];
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

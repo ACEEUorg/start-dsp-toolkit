@@ -18,15 +18,10 @@ export default function App() {
         </div>
       </header>
 
-      {/* Pilot Warning Banner - shown on all pages */}
-      <div className="mx-auto max-w-7xl px-4 pt-4 pb-0 sm:px-6 lg:px-8">
-        <PilotWarningBanner />
-      </div>
-
       <main className="flex-grow">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <Routes>
-            <Route path="/" element={<AboutPage />} />
+            <Route path="/" element={<ToolboxPage />} />
             <Route path="/toolbox" element={<ToolboxPage />} />
             <Route path="/tool/:number" element={<ToolDetailPage />} />
           </Routes>
