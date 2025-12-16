@@ -6,21 +6,24 @@ import {
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router";
 import MobileMenu from "./MobileMenu";
-
-const navigation = [
-  { name: "Toolbox", to: "/", current: true },
-  {
-    name: "Start-DSP Project Website",
-    to: "https://start-dsp.eu",
-    current: false,
-  },
-];
+import LanguageSelector from "../LanguageSelector";
+import { useTranslation } from "../../i18n/hooks";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");
 }
 
 export default function MainNav() {
+  const { t } = useTranslation();
+
+  const navigation = [
+    { name: t("nav.toolbox"), to: "/", current: true },
+    {
+      name: t("nav.projectWebsite"),
+      to: "https://start-dsp.eu",
+      current: false,
+    },
+  ];
   return (
     <Disclosure as="nav" className="bg-seafoam-800">
       {({ open }) => (
@@ -31,7 +34,7 @@ export default function MainNav() {
                 <div className="shrink-0">
                   <img
                     alt="Your Company"
-                    src="/logo-color.png"
+                    src="/assets/logos/logo-color.png"
                     className="size-8"
                   />
                 </div>
@@ -55,6 +58,10 @@ export default function MainNav() {
                     ))}
                   </div>
                 </div>
+              </div>
+
+              <div className="hidden md:flex items-center">
+                <LanguageSelector />
               </div>
 
               <div className="-mr-2 flex md:hidden">

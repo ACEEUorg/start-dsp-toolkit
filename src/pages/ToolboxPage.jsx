@@ -1,7 +1,8 @@
 import { useState, useEffect } from "react";
 import { useSearchParams, useLocation, Link } from "react-router";
 import { Search, ChevronDown } from "lucide-react";
-import toolsData from "../data/tools.json";
+import { loadTools } from "../data/tools";
+import { useLanguage, useTranslation } from "../i18n/hooks";
 import ToolImage from "../components/ui/ToolImage";
 
 export default function Toolbox() {
@@ -11,11 +12,24 @@ export default function Toolbox() {
   const [filters, setFilters] = useState({
     purpose: ["all"],
   });
+  const { language } = useLanguage();
+  const { t } = useTranslation();
+  const [toolsData, setToolsData] = useState(null);
+
+  // Load tools data when language changes
+  useEffect(() => {
+    loadTools(language).then(setToolsData);
+
+    // Clear filters when language changes to avoid mismatched purpose values
+    setSearchParams({});
+    setFilters({ purpose: ["all"] });
+    setSearchQuery("");
+  }, [language]);
 
   // Initialize search query and filters from URL params
   useEffect(() => {
-    const purposeParam = searchParams.get("purpose")?.split(",") || ["all"];
-    setFilters({ purpose: purposeParam });
+    const purposeParam = searchParams.get("purpose");
+    setFilters({ purpose: purposeParam ? [purposeParam] : ["all"] });
     setSearchQuery(searchParams.get("search") || "");
   }, [searchParams]);
 
@@ -33,23 +47,24 @@ export default function Toolbox() {
     );
   };
 
-  const filteredTools = toolsData.tools.filter((tool) => {
-    // Apply purpose filter
-    if (!filters.purpose.includes("all")) {
-      if (!filters.purpose.includes(tool.purpose)) return false;
-    }
+  const filteredTools =
+    toolsData?.tools.filter((tool) => {
+      // Apply purpose filter
+      if (!filters.purpose.includes("all")) {
+        if (!filters.purpose.includes(tool.purpose)) return false;
+      }
 
-    // Apply search filter
-    if (searchQuery) {
-      const searchLower = searchQuery.toLowerCase();
-      return (
-        tool.name.toLowerCase().includes(searchLower) ||
-        tool.summary.toLowerCase().includes(searchLower)
-      );
-    }
+      // Apply search filter
+      if (searchQuery) {
+        const searchLower = searchQuery.toLowerCase();
+        return (
+          tool.name.toLowerCase().includes(searchLower) ||
+          tool.summary.toLowerCase().includes(searchLower)
+        );
+      }
 
-    return true;
-  });
+      return true;
+    }) || [];
 
   const handleSearch = (e) => {
     const query = e.target.value;
@@ -92,7 +107,7 @@ export default function Toolbox() {
             type="text"
             value={searchQuery}
             onChange={handleSearch}
-            placeholder="Search tools by name or description..."
+            placeholder={t("search.placeholder")}
             className="block w-full pl-10 pr-3 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-seafoam-500 focus:border-seafoam-500"
           />
         </div>
@@ -102,14 +117,14 @@ export default function Toolbox() {
             onChange={handlePurposeChange}
             className="block w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-seafoam-500 focus:border-seafoam-500 appearance-none bg-white"
           >
-            <option value="all">All Purposes</option>
-            {toolsData.validOptions.purpose
+            <option value="all">{t("filter.allPurposes")}</option>
+            {toolsData?.validOptions.purpose
               .filter((p) => p !== "TBD")
               .map((purpose) => (
                 <option key={purpose} value={purpose}>
                   {purpose}
                 </option>
-              ))}
+              )) || []}
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
             <ChevronDown className="h-5 w-5 text-gray-400" />
@@ -139,7 +154,7 @@ export default function Toolbox() {
                 {highlightText(tool.summary, searchQuery)}
               </p>
               <div className="mt-auto">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-seafoam-100 text-seafoam-800">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs text-center font-medium bg-seafoam-100 text-seafoam-800">
                   {tool.purpose === "TBD" ? "To Be Determined" : tool.purpose}
                 </span>
               </div>

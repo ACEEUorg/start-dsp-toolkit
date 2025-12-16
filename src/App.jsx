@@ -3,12 +3,16 @@ import { useEffect } from "react";
 import MainNav from "./components/navigation/MainNav";
 import Footer from "./components/Footer";
 import CookieConsent from "./components/CookieConsent";
+import TranslationDisclaimer from "./components/TranslationDisclaimer";
 import ToolboxPage from "./pages/ToolboxPage";
 import ToolDetailPage from "./pages/ToolDetailPage";
 import { initializeAnalytics, trackPageView } from "./utils/analytics";
+import { useTranslation, useLanguage } from "./i18n/hooks";
 
 export default function App() {
   const location = useLocation();
+  const { t } = useTranslation();
+  const { language } = useLanguage();
 
   // Initialize analytics on mount
   useEffect(() => {
@@ -28,16 +32,17 @@ export default function App() {
       title = `Tool ${toolNumber} - Start-DSP Toolbox`;
     }
 
-    trackPageView(path, title);
-  }, [location]);
+    trackPageView(path, title, language);
+  }, [location, language]);
 
   return (
     <div className="min-h-screen flex flex-col">
+      <TranslationDisclaimer />
       <MainNav />
       <header className="bg-white shadow-sm">
         <div className="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
           <h1 className="text-3xl font-display font-bold tracking-tight text-seafoam-900">
-            Start-DSP Entrepreneurial University Toolbox
+            {t("header.title")}
           </h1>
         </div>
       </header>

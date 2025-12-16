@@ -1,0 +1,523 @@
+{
+  "tools": [
+    {
+      "number": 1,
+      "name": "El Pack de Muro Emprendedor",
+      "summary": "El Pack de Muro Emprendedor ofrece citas y plantillas listas para imprimir y una guía de IA para crear contenido a medida. Ideal para que facultades y universidades despierten el pensamiento emprendedor en cafeterías, espacios de co-working y otras áreas del campus.",
+      "description": "El Pack de Muro Emprendedor está diseñado para el profesorado y el personal universitario que aspira a fomentar una cultura de emprendimiento a través de visuales inspiradores en el campus. Incluye diseños listos para imprimir con citas motivadoras, consejos prácticos y mensajes orientados a la acción.\nEl pack también ofrece una Biblioteca de Inspiración con frases seleccionadas, plantillas editables para contenido personalizado y una guía de IA (utilizando herramientas como ChatGPT) para ayudar a generar mensajes personalizados adaptados a su institución. Perfecto para transformar bibliotecas, cafeterías o espacios de co-working en entornos emprendedores.",
+      "outcomes": "Las paredes de la universidad, bibliotecas y áreas de co-working se transforman con pósters y citas inspiradoras, promoviendo visiblemente una cultura emprendedora.\nAumento de la participación estudiantil en eventos y talleres de emprendimiento, con comentarios positivos que destacan una sensación de motivación e inspiración del entorno.\nLas universidades generan mensajes y consejos a medida que reflejan su misión y valores únicos.\nLos estudiantes participan en el intercambio informal de ideas y lluvia de ideas en espacios comunes, fomentando la creatividad impulsada por pares.\nEl profesorado integra la herramienta en conferencias, discusiones en el aula o proyectos de emprendimiento, extendiendo su impacto a los entornos académicos.",
+      "instructions": "1. Explore las Plantillas\nNavegue por las plantillas prediseñadas en el PDF. Elija aquellas que mejor se alineen con la misión y los objetivos emprendedores de su universidad.\n2. Imprimir y Exhibir\nImprima sus plantillas seleccionadas y colóquelas en áreas de alta visibilidad como bibliotecas, cafeterías, espacios de co-working o aulas.\n3. Genere Contenido Personalizado con IA\nUtilice la guía de IA incluida para crear citas, consejos o mensajes personalizados. Siga los sencillos pasos para elaborar prompts efectivos utilizando herramientas como ChatGPT.\n4. Personalice con Plantillas Editables\nAgregue su contenido generado por IA u original a las plantillas en blanco proporcionadas. También puede diseñar nuevos materiales utilizando sus herramientas preferidas.\n5. Activar y Comprometer\nUtilice los visuales como iniciadores de conversación durante talleres, eventos o programas de emprendimiento. Colóquelos estratégicamente alrededor del campus para inspirar la interacción diaria.",
+      "links": [
+        {
+          "title": "El Pack de Muro Emprendedor: Plantillas, Citas y Guía de IA",
+          "url": "assets/pdfs/en/tool_1.1_TheEntrepreneurialWallPack.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta empodera al profesorado y al personal universitario para fomentar una cultura emprendedora enriqueciendo los espacios del campus, como cafés y áreas de co-working, con contenido motivador y a medida que despierta la creatividad, el compromiso y el pensamiento emprendedor.",
+      "purpose": "Conciencia & Sensibilización Emprendedora",
+      "prerequisiteTools": "1. Canva o cualquier herramienta de diseño\n2. Una herramienta de IA generativa como ChatGPT\n3. Impresora y papel",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 2,
+      "name": "Diccionario Emprendedor",
+      "summary": "Un diccionario emprendedor divertido y accesible para estudiantes, personal e investigadores para entender términos clave de emprendimiento sin miedo ni confusión.",
+      "description": "El Diccionario Emprendedor está diseñado para ayudar a universidades e individuos a comprender mejor los conceptos emprendedores de una manera simple y divertida. Desglosa términos clave a menudo malinterpretados o intimidantes, ayudando a reducir el miedo y los conceptos erróneos en torno al emprendimiento. Está diseñado para estudiantes, miembros de la facultad o personal universitario curiosos sobre la mentalidad emprendedora. Esta herramienta ofrece definiciones claras, ejemplos y contexto del mundo real para hacer que el lenguaje emprendedor sea accesible para todos.",
+      "outcomes": "Estudiantes y profesores desarrollarán confianza y claridad en torno a términos emprendedores clave. Un lenguaje compartido fomenta una mejor colaboración entre departamentos. La herramienta apoya el aprendizaje en cursos, mentorías y centros de innovación, al tiempo que invita a la exploración autodidacta.",
+      "instructions": "1. Abra el PDF y revise la lista de términos y definiciones emprendedoras.\n2. Seleccione los términos que sean más relevantes para los objetivos y programas educativos de su universidad.\n3. Imprima o comparta el diccionario digitalmente con estudiantes, profesores y personal.\n4. Utilice los términos en conferencias, talleres y discusiones grupales para mejorar el aprendizaje emprendedor.\n5. Incorpore las definiciones en materiales del curso, presentaciones y tareas.\n6. Anime a los estudiantes a consultar el diccionario cuando trabajen en proyectos emprendedores.",
+      "links": [
+        {
+          "title": "Diccionario Emprendedor",
+          "url": "assets/pdfs/en/tool_2.1_EntrepreneurialDictionary.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta hace que el emprendimiento sea accesible y atractivo para audiencias académicas simplificando conceptos clave con claridad y humor. Ayuda al profesorado y al personal a conectar con el pensamiento emprendedor de una manera que se siente relevante, accesible e incluso divertida.",
+      "purpose": "Visión Emprendedora & Compromiso Institucional",
+      "prerequisiteTools": "1. Un dispositivo electrónico con WI-FI para visualizar el diccionario",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 3,
+      "name": "Panel de Control de KPI Emprendedores",
+      "summary": "Un panel de control de KPI en Excel diseñado para ayudar al personal universitario a evaluar, monitorear y rastrear eficientemente el desempeño de la educación emprendedora utilizando Indicadores Clave de Desempeño (KPIs) relevantes.",
+      "description": "El Panel de Control de KPI Emprendedores es una herramienta de Excel diseñada para ayudar a las universidades a evaluar y mejorar sus iniciativas de educación emprendedora. Proporciona un marco estructurado pero flexible que permite a las instituciones seleccionar KPIs relevantes, establecer objetivos personalizados y monitorear el progreso de manera efectiva. La herramienta se puede adaptar a las necesidades institucionales específicas agregando nuevos indicadores, asegurando un enfoque integral y adaptativo para el seguimiento del desempeño.",
+      "outcomes": "Las universidades comienzan a utilizar KPIs más establecidos y complejos en diferentes aspectos de la educación emprendedora. Un enfoque estructurado y basado en datos para medir el desempeño de la educación emprendedora. Mejora de la rendición de cuentas entre departamentos con una clara propiedad de las responsabilidades. Fortalecimiento de la toma de decisiones a través de informes consistentes y transparentes.",
+      "instructions": "1. Descargue el PDF para leer las instrucciones detalladas y el archivo de Excel.\n2. Explore el archivo de Excel.\n3. Configure la herramienta.\n4. Determine los KPIs relevantes.\n5. Personalice los detalles de los KPI.\n6. Monitoree y rastree el progreso.",
+      "links": [
+        {
+          "title": "Panel de Control de KPI Emprendedores",
+          "url": "assets/pdfs/en/tool_3.1_KPIDashboardInstructions.pdf"
+        },
+        {
+          "title": "Instrucciones del Panel",
+          "url": "assets/pdfs/en/tool_3.2_KPIDashboard.xlsm"
+        }
+      ],
+      "benefits": "Esta herramienta permite a las universidades definir y monitorear de manera efectiva un conjunto integral de indicadores clave de desempeño (KPIs) para la educación emprendedora, apoyando conocimientos basados en datos y la mejora continua de su Educación Emprendedora.",
+      "purpose": "Visión Emprendedora & Compromiso Institucional",
+      "prerequisiteTools": "1. Excel con Macros activadas",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 4,
+      "name": "EngageTree: Desbloquea el Emprendimiento en la Facultad",
+      "summary": "El EngageTree es un diagrama de toma de decisiones que ayuda a los líderes universitarios a identificar rápidamente las barreras para el compromiso del profesorado en el emprendimiento y encontrar incentivos efectivos y listos para implementar para impulsar la participación.",
+      "description": "La herramienta está diseñada para apoyar a las universidades en la identificación e implementación de estrategias para motivar al profesorado y al personal a participar en la educación emprendedora. Presenta un camino interactivo que ayuda a las instituciones a evaluar su panorama de apoyo actual y las guía hacia estrategias de incentivos accionables. Estas pueden incluir incentivos financieros, oportunidades de desarrollo profesional, reconocimiento público u otras recompensas no monetarias para fomentar la participación del profesorado en iniciativas emprendedoras.",
+      "outcomes": "Aumento del compromiso del profesorado en la educación emprendedora a través de incentivos específicos y orientados a las barreras. Uso más efectivo de los recursos existentes mediante la aplicación de estrategias de bajo costo y alto impacto. Mayor conciencia del profesorado sobre las oportunidades y el apoyo emprendedor. Fortalecimiento de la cultura institucional que valora y recompensa la actividad emprendedora.",
+      "instructions": "Instrucciones\n1. Abra el enlace de mural y explore la herramienta.\n2. Comience respondiendo la primera pregunta y navegue a través del flujo seleccionando \"Sí\" o \"No\" a cada pregunta.\n3. Si existen desafíos, evalúe la barrera principal (por ejemplo, financiación, conciencia, motivación, reconocimiento) y utilice las preguntas guiadas para identificar áreas específicas de preocupación.\n4. Basado en los desafíos identificados, revise las soluciones sugeridas.\n5. Seleccione y aplique las soluciones más relevantes y monitoree su impacto en el compromiso del profesorado.\n6. Si es necesario, imprima el mapa para usarlo con su equipo.",
+      "links": [
+        {
+          "title": "EngageTree: Desbloquea el Emprendimiento en la Facultad",
+          "url": "assets/pdfs/en/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta ayuda a los líderes universitarios a identificar barreras clave para el compromiso del profesorado en el emprendimiento y descubrir estrategias de incentivos a medida y de bajo costo, impulsando la motivación, la conciencia y la participación a través de un formato de árbol de decisiones fácil de usar.",
+      "purpose": "Motivación, Incentivos & Reconocimiento para Personal & Profesores",
+      "prerequisiteTools": "1. Cuenta de Mural para copiar la plantilla\n2. Alternativamente, una impresora y papel para imprimir el gráfico",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 5,
+      "name": "Viaje de Mapeo de Recursos Emprendedores",
+      "summary": "El Viaje de Mapeo de Recursos Emprendedores es un lienzo de 7 pasos con preguntas guiadas, diseñado para ayudar a los líderes universitarios a visualizar, evaluar y fortalecer el apoyo institucional para el emprendimiento de una manera clara y accionable.",
+      "description": "La Herramienta de Mapeo de Recursos Emprendedores es una plantilla interactiva de Mural diseñada para ayudar a las universidades a organizar visualmente y optimizar sus recursos emprendedores. Proporciona un marco estructurado que guía al profesorado y al personal a través de un proceso paso a paso para identificar, categorizar y evaluar los recursos disponibles, como financiación, instalaciones y programas de apoyo. La herramienta permite a las universidades detectar brechas, aclarar responsabilidades y desarrollar planes de acción para una mejor utilización de los recursos.",
+      "outcomes": "Las universidades obtienen una visión clara de sus recursos emprendedores y toman decisiones más informadas y estratégicas sobre cómo asignarlos y mejorarlos.",
+      "instructions": "1. Abra el enlace proporcionado a la Herramienta de Mapeo de Recursos Emprendedores.\n2. Para comenzar a usar la herramienta, haga clic en la opción 'Duplicar' en la interfaz de Mural. Esto le permite crear una versión editable para su institución.\n3. La herramienta está dividida en siete pasos claros, cada uno diseñado para guiarlo a través de diferentes fases del mapeo de recursos.\n4. Agregue ideas, categorice recursos y documente conocimientos utilizando las notas adhesivas codificadas por colores proporcionadas en cada paso.\n5. Una vez completado, analice los resultados y tome las medidas necesarias para optimizar y mejorar su estrategia de recursos emprendedores.",
+      "links": [
+        {
+          "title": "Viaje de Mapeo de Recursos Emprendedores",
+          "url": "assets/pdfs/en/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta permite a los líderes universitarios mapear, evaluar y optimizar el apoyo a las actividades emprendedoras identificando recursos, abordando brechas, aclarando responsabilidades y creando planes accionables para el uso adecuado y la maximización del impacto de los recursos.",
+      "purpose": "Motivación, Incentivos & Reconocimiento para Personal & Profesores",
+      "prerequisiteTools": "1. Idealmente, acceso a una plataforma de colaboración digital como Mural o Miro para uso interactivo.\n2. Alternativamente, una impresora y papel para imprimir el lienzo para completarlo manualmente.",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 6,
+      "name": "Herramienta de Evaluación de Competencias Emprendedoras",
+      "summary": "La Herramienta de Evaluación de Competencias Emprendedoras equipa a los líderes universitarios y tomadores de decisiones con un recurso práctico, basado en EntreComp, para identificar, evaluar y desarrollar competencias emprendedoras en procesos de reclutamiento y desarrollo profesional.",
+      "description": "La herramienta proporciona plantillas y escenarios de casos listos para usar que simplifican la evaluación de habilidades emprendedoras relevantes para contextos académicos, asegurando un proceso de evaluación consistente y perspicaz. La herramienta se basa en el Marco EntreComp, donde se seleccionaron 12 competencias básicas. Para cada una de estas competencias, la herramienta tiene una plantilla individual diseñada para evaluar la competencia emprendedora a través de escenarios realistas adaptados a la academia. Además, la herramienta incluye escenarios de casos generales que evalúan múltiples competencias simultáneamente.",
+      "outcomes": "Las universidades pueden establecer un marco estandarizado para evaluar competencias emprendedoras en el reclutamiento y desarrollo del personal. Obtener conocimientos más profundos sobre el potencial emprendedor del profesorado y el personal, permitiendo una mejor alineación con los objetivos institucionales. Mejor selección y desarrollo de educadores con competencias emprendedoras. El profesorado y el personal se vuelven más conscientes de sus fortalezas emprendedoras y áreas de desarrollo.",
+      "instructions": "Instrucciones\n1. Descargue las plantillas proporcionadas y revise las competencias cubiertas.\n2. Elija las plantillas que coincidan con el rol o los objetivos de desarrollo que desea evaluar.\n3. Entregue el escenario seleccionado al candidato o miembro del personal para su respuesta.\n4. Compare la respuesta con los niveles de competencia proporcionados para determinar su nivel.\n5. Proporcione retroalimentación y sugiera áreas de mejora basadas en la evaluación.\n6. Utilice los escenarios de casos generales para una evaluación más amplia de múltiples competencias.\n7. Aplique los resultados para tomar decisiones de reclutamiento informadas o crear planes de desarrollo.",
+      "links": [
+        {
+          "title": "Herramienta de Evaluación de Competencias Emprendedoras",
+          "url": "assets/pdfs/en/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta apoya a los líderes universitarios en la integración del emprendimiento en las trayectorias profesionales académicas al proporcionar un método estructurado y estandarizado para evaluar competencias emprendedoras. Ayuda a las instituciones a tomar decisiones informadas de contratación y desarrollo profesional, asegurando que las competencias emprendedoras sean valoradas y cultivadas en los entornos académicos.",
+      "purpose": "Innovación Continua en la Educación Emprendedora",
+      "prerequisiteTools": "1. Acceso a Microsoft Word\n2. Alternativamente, una impresora y papel para imprimir los escenarios",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 7,
+      "name": "Lienzo de Integración EntreComp",
+      "summary": "Una herramienta visual que ayuda a los educadores a diseñar cursos con EntreComp, utilizando un lienzo estructurado y tarjetas guía para planificar, evaluar y monitorear competencias emprendedoras.",
+      "description": "El Lienzo de Integración EntreComp es una herramienta de visualización que proporciona una visión holística de los componentes necesarios para crear un curso donde se incluyan competencias emprendedoras. El Lienzo incluye un conjunto de tarjetas para guiar a los educadores en el llenado del lienzo dándoles preguntas detonantes sobre cada parte del mismo. Al final, tendrán toda la información y elementos necesarios para implementar y monitorear un curso.",
+      "outcomes": "Mayor conciencia y comprensión de las competencias EntreComp. Integración de las competencias EntreComp en los cursos de cualquier campo. Desarrollo de competencias emprendedoras entre los estudiantes. Evaluación de las competencias emprendedoras al inicio y al final de un curso.",
+      "instructions": "1. Descargue el Lienzo e imprímalo si es necesario.\n2. Descargue las Tarjetas e imprímalas si es necesario.\n3. Utilice las Tarjetas para completar cada parte del lienzo. Trate de colaborar con otros colegas para discutir las preguntas e información incluida en las tarjetas.\n4. Diseñe el curso de acuerdo con el Lienzo completado.",
+      "links": [
+        {
+          "title": "Lienzo de Diseño de Curso",
+          "url": "assets/pdfs/en/tool_7.1_CourseDesign_canvas.pdf"
+        },
+        {
+          "title": "Tarjetas de Diseño de Curso 1",
+          "url": "assets/pdfs/en/tool_7.2_Course_designcards_1.pdf"
+        },
+        {
+          "title": "Tarjetas de Diseño de Curso 2",
+          "url": "assets/pdfs/en/tool_7.3_Course_design_cards_2.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta ayuda a los educadores a identificar y evaluar las fortalezas, debilidades, tipos y conjuntos de habilidades emprendedoras individuales de los estudiantes.",
+      "purpose": "Innovación Continua en la Educación Emprendedora",
+      "prerequisiteTools": "1. Cuenta de Mural para copiar el lienzo.\n2. Alternativamente, una impresora y papel para imprimir el lienzo y las tarjetas",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 8,
+      "name": "Guía de Recursos de IA y RV EntreComp",
+      "summary": "La Guía de Recursos de IA y RV EntreComp equipa a universidades y educadores con recomendaciones prácticas de herramientas digitales de IA y RV gratuitas y de código abierto alineadas con el Marco EntreComp para modernizar la educación emprendedora.",
+      "description": "Esta guía está diseñada para ayudar a universidades y educadores a integrar herramientas digitales en la educación emprendedora, alineándose con las tendencias actuales y las demandas educativas. Basado en el Marco EntreComp, este recurso recomienda herramientas gratuitas y de código abierto de IA y RV que pueden apoyar diferentes etapas del viaje emprendedor.",
+      "outcomes": "Estudiantes y educadores comienzan a integrar herramientas de IA y RV en la educación emprendedora, explorando su potencial en proyectos emprendedores reales. Las universidades cultivan una cultura emprendedora más impulsada por la tecnología, equipando a los estudiantes para satisfacer las demandas del mundo empresarial actual. Como resultado, los alumnos mejoran su capacidad para detectar tendencias de mercado, generar ideas de negocio innovadoras y desarrollar prototipos digitales para emprendimientos.",
+      "instructions": "1. Identifique en qué etapa del viaje emprendedor se encuentran sus estudiantes. 2. Explore las herramientas sugeridas para cada etapa. 3. Utilice las herramientas en lecciones, proyectos y actividades. 4. Revise qué tan bien funcionan las herramientas y ajústelas según sea necesario.",
+      "links": [
+        {
+          "title": "Guía de Recursos de IA y RV EntreComp",
+          "url": "assets/pdfs/en/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta apoya a las instituciones en la integración perfecta de tecnologías digitales innovadoras en sus programas de emprendimiento, asegurando que la educación se mantenga actualizada con las tendencias tecnológicas y satisfaga las demandas educativas en evolución.",
+      "purpose": "Innovación Continua en la Educación Emprendedora",
+      "prerequisiteTools": "Conexión a Internet y acceso a las herramientas de IA deseadas",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 9,
+      "name": "Hoja de Ruta para Solicitud de Subvenciones",
+      "summary": "La Hoja de Ruta para Solicitud de Subvenciones guía a investigadores o personal para navegar por oportunidades de financiación de la UE y regionales, detallando criterios de elegibilidad, proporcionando instrucciones paso a paso para la solicitud y compartiendo consejos prácticos para ayudar a elaborar propuestas de subvención competitivas.",
+      "description": "Esta Guía de Solicitud de Subvenciones tiene como objetivo ayudar a los solicitantes de oportunidades de financiación proporcionando una hoja de ruta para identificar, solicitar y asegurar con éxito financiación para iniciativas de emprendimiento. Su propósito es equipar a universidades y académicos con conocimientos prácticos y estrategias para acceder eficazmente a recursos financieros.",
+      "outcomes": "Mejora de la conciencia y comprensión de las oportunidades de financiación de la UE y regionales para el emprendimiento y la investigación. Capacidad fortalecida para desarrollar propuestas de subvención competitivas y de alta calidad alineadas con las prioridades institucionales. Mayor capacidad para cumplir con los requisitos de elegibilidad y cumplir con las regulaciones de financiación de la UE. Mayor acceso a recursos financieros que apoyan la innovación, las iniciativas emprendedoras y el avance académico.",
+      "instructions": "1. Descargue el PDF, lea la introducción y explore las diferentes secciones.\n2. Identifique programas de financiación relevantes de los recursos proporcionados y evalúe sus objetivos y criterios de elegibilidad.\n3. Compare el alcance, las asociaciones y los objetivos de sus proyectos con los criterios enumerados para cada oportunidad de financiación.\n4. Utilice la guía paso a paso para escribir una buena propuesta.\n5. Consulte las listas de verificación proporcionadas para cada paso para asegurarse de que no se pierdan detalles durante la preparación.\n6. Utilice la sección de consejos para refinar sus solicitudes.",
+      "links": [
+        {
+          "title": "Hoja de Ruta para Solicitud de Subvenciones",
+          "url": "assets/pdfs/en/tool_9.1_Grant_application_guideline.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta empodera a los solicitantes para identificar y asegurar con confianza financiación para programas de emprendimiento, abordando brechas de recursos y permitiendo el crecimiento sostenible de las iniciativas de educación emprendedora.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Conexión a Internet",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 10,
+      "name": "Planificación y Financiación de la Educación Emprendedora",
+      "summary": "Diseñada para profesores, personal financiero y equipos de innovación, esta herramienta ayuda a las universidades a identificar, rastrear y planificar inversiones financieras en educación emprendedora para apoyar decisiones estratégicas informadas por datos.",
+      "description": "Planificación y Financiación de la Educación Emprendedora es una plantilla lista para usar para profesores, equipos financieros y personal de innovación. Ofrece una forma estructurada de recopilar y analizar datos sobre inversiones financieras en educación emprendedora en facultades y departamentos. La herramienta apoya una mejor planificación, destaca brechas o ineficiencias y ayuda a alinear los recursos con los objetivos estratégicos de emprendimiento de la universidad.",
+      "outcomes": "Usando esta plantilla, las universidades pueden desarrollar una visión general clara e informada por datos de cuánto se está invirtiendo actualmente en educación emprendedora. Ayuda a identificar dónde faltan recursos, dónde se duplican o se subutilizan, permitiendo una alineación más efectiva con los objetivos estratégicos. El proceso apoya una planificación y priorización más sólidas al proporcionar conocimientos financieros confiables. También mejora la transparencia y la rendición de cuentas, permitiendo a las instituciones demostrar el valor de sus esfuerzos de emprendimiento al liderazgo y a las partes interesadas. Con el tiempo, esta herramienta puede servir como base para un seguimiento más consistente y decisiones de financiación mejor informadas.",
+      "instructions": "Esta es una plantilla que las universidades u organizaciones pueden adaptar y rehacer para adaptarse a su propio contexto. Los pasos a continuación guían a los usuarios a través de la recopilación y el uso de datos financieros para informar la planificación estratégica.\n1. Distribuya la Encuesta\nComparta el enlace de la encuesta de Google Forms con representantes clave de facultades como Negocios, Ingeniería, Ciencias Sociales, Ciencias y departamentos que incluyen Finanzas y Centros de Emprendimiento.\n2. Solicite Aportes Cualitativos y Cuantitativos\nPida a cada encuestado que proporcione tanto datos financieros (por ejemplo, presupuestos, cifras de gastos) como conocimientos cualitativos sobre cómo se utilizan los fondos relacionados con el emprendimiento.\n3. Reúna y Consolide las Respuestas\nUtilice Google Forms para recopilar automáticamente los aportes. Exporte las respuestas para un análisis posterior o revise las tendencias clave utilizando las funciones de informes integradas.\n4. Genere Hallazgos Iniciales\nIdentifique los niveles generales de inversión, las principales fuentes de financiación y cómo se asignan los fondos entre los departamentos. Anote cualquier dato faltante o gasto poco claro.\n5. Identifique Oportunidades Estratégicas\nDetecte áreas con financiación insuficiente (por ejemplo, incubadoras o apoyo a startups de estudiantes) y compare los niveles de inversión departamentales con los objetivos generales de educación emprendedora.\n6. Informe y Recomiende Acciones\nPresente sus hallazgos al liderazgo. Utilice los conocimientos para sugerir mejoras en la distribución de recursos o para integrar el seguimiento financiero regular en los procesos de planificación universitaria.",
+      "links": [
+        {
+          "title": "Plantilla de Formulario de Google para Planificación Financiera",
+          "url": "assets/pdfs/en/tool_10.1_PlanningandFinancingEntrepreneurshipEducationDataCollectionTemplate.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta ayuda a las universidades a obtener una visión clara de las inversiones financieras en educación emprendedora. Apoya una mejor planificación, asignación de recursos y alineación con los objetivos institucionales al recopilar aportes de todos los departamentos y permitir decisiones basadas en datos.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Acceso a Internet",
+      "partner": "EUEI"
+    },
+    {
+      "number": 11,
+      "name": "Autoevaluación de Mentalidad y Competencia Emprendedora",
+      "summary": "La Autoevaluación de Mentalidad y Competencia Emprendedora está diseñada para estudiantes, educadores y emprendedores en etapa inicial. Ayuda a los usuarios a comprender sus fortalezas emprendedoras y áreas de desarrollo en mentalidad, inteligencia emocional y responsabilidad social.",
+      "description": "La Autoevaluación de Mentalidad y Competencia Emprendedora está diseñada para estudiantes, educadores y aspirantes a emprendedores. Ayuda a los usuarios a evaluar su mentalidad emprendedora y competencias básicas, incluyendo inteligencia emocional, responsabilidad social e inclusión. A través de un cuestionario en línea estructurado, las personas reciben comentarios personalizados y recomendaciones prácticas para guiar su desarrollo y prepararse mejor para los desafíos emprendedores.",
+      "outcomes": "Al utilizar esta herramienta, las personas obtienen una comprensión más profunda de su mentalidad emprendedora y competencias básicas. Los comentarios personalizados les ayudan a identificar tanto fortalezas como áreas de desarrollo en dominios clave como inteligencia emocional, creatividad y responsabilidad social. Esta mayor autoconciencia permite un aprendizaje y desarrollo de habilidades más enfocados. Los usuarios están mejor preparados para tomar medidas emprendedoras, trabajar eficazmente en equipos diversos y alinear su desarrollo con el marco EntreComp. La herramienta también proporciona un punto de partida para el apoyo guiado de educadores o mentores.",
+      "instructions": "1. Acceda a la Evaluación\nComparta el enlace de Brilliant Assessments con estudiantes, educadores o aspirantes a emprendedores interesados en evaluar su mentalidad y habilidades emprendedoras.\n2. Complete el Cuestionario\nPida a los participantes que respondan honesta y reflexivamente para garantizar comentarios precisos y significativos.\n3. Reciba Resultados Personalizados\nAl finalizar, los usuarios reciben un informe detallado que describe sus fortalezas y áreas de desarrollo en tres áreas principales:\n- Ideas y Oportunidades\n- Recursos\n- En Acción\n4. Revise y Reflexione\nAnime a los usuarios a revisar sus resultados cuidadosamente para comprender dónde se sienten seguros y dónde pueden necesitar un mayor desarrollo.\n5. Tome Acción\nGuíe a los usuarios para que sigan las recomendaciones personalizadas proporcionadas en el informe. Estas pueden incluir sugerencias de actividades de aprendizaje específicas o comportamientos en los que enfocarse.\n6. Explore Más Recursos\nRecomiende interactuar con Start-DSP u otras herramientas de aprendizaje para aprovechar los conocimientos de la evaluación y apoyar el desarrollo continuo.",
+      "links": [
+        {
+          "title": "Autoevaluación de Mentalidad y Competencia Emprendedora",
+          "url": "https://thevisionworks.brilliantassessments.com/Home/Index/?responseCode=xHdoS1gx68ycu25ZdTEcnkvwmKxlTZwi71RrAoSD7temxn5ZWucFMntqn4YMTzAIYUhymTpL0uSLZIYtKl4wrDslAshrbQ9PBjExNzE2OTceQu0aLs"
+        }
+      ],
+      "benefits": "Muchas personas carecen de competencias emprendedoras clave necesarias en el mundo actual. Esta herramienta ayuda a los usuarios a evaluar su mentalidad, inteligencia emocional, responsabilidad social y conciencia de inclusión. Apoya el crecimiento personal ofreciendo conocimientos y pasos prácticos para el desarrollo.",
+      "purpose": "Fomento de una Mentalidad & Cultura Emprendedora",
+      "prerequisiteTools": "Acceso a Internet",
+      "partner": "EUEI"
+    },
+    {
+      "number": 12,
+      "name": "Caja de Herramientas de Video sobre Mentalidad Emprendedora",
+      "summary": "La Caja de Herramientas de Video sobre Mentalidad Emprendedora apoya a estudiantes, educadores y emprendedores en etapa inicial en la exploración de habilidades humanas clave como inteligencia emocional, ética e inclusión —más allá de los conceptos básicos de negocios— para construir una mentalidad emprendedora más responsable y resiliente.",
+      "description": "La Caja de Herramientas de Video sobre Mentalidad Emprendedora está dirigida a estudiantes, educadores y emprendedores en etapa inicial. Ofrece una selección curada de videos que exploran la mentalidad necesaria para el emprendimiento moderno. La caja de herramientas destaca la inteligencia emocional, el liderazgo ético, la adaptabilidad y la inclusión: habilidades a menudo pasadas por alto en la educación empresarial tradicional. Fomenta la reflexión, la discusión y la integración tanto en la enseñanza como en el aprendizaje independiente.",
+      "outcomes": "Los usuarios desarrollan una comprensión más amplia del emprendimiento que va más allá de las finanzas y la planificación empresarial. La caja de herramientas crea conciencia sobre competencias clave centradas en el ser humano, como la inteligencia emocional, la ética, la adaptabilidad y la inclusión. Los estudiantes se vuelven más reflexivos y están mejor preparados para navegar los desafíos del mundo real con una mentalidad responsable y resiliente. Los videos también apoyan una educación emprendedora más atractiva y relacionable, ayudando a los educadores a introducir temas complejos a través de contenido accesible.",
+      "instructions": "Esta caja de herramientas puede ser utilizada directamente o adaptada por universidades, educadores y formadores para apoyar el desarrollo de la mentalidad en la educación emprendedora.\n1. Acceda a la Caja de Herramientas de Video\nComparta la lista de reproducción de YouTube con estudiantes, educadores o emprendedores en etapa inicial como parte de un curso, taller o actividad de aprendizaje independiente.\n2. Seleccione Videos Relevantes\nElija videos que coincidan con sus objetivos de aprendizaje, como inteligencia emocional, ética, sostenibilidad o innovación inclusiva.\n3. Ver y Reflexionar\nAnime a los usuarios a ver los videos y reflexionar sobre los mensajes clave. Utilice preguntas guiadas o indicaciones de reflexión cuando sea apropiado.\n4. Facilite Discusiones Grupales\nUtilice los videos como base para la discusión en el aula o taller. Anime a los participantes a compartir perspectivas y relacionar los conocimientos con su propio viaje emprendedor.\n5. Enlace a Aprendizaje Adicional\nConecte el contenido con Start-DSP u otros recursos de aprendizaje para profundizar la comprensión y apoyar el desarrollo de habilidades.",
+      "links": [
+        {
+          "title": "Caja de Herramientas de Video sobre Mentalidad Emprendedora – Enlace a Playlist",
+          "url": "https://www.youtube.com/playlist?list=PLuGfWmFV-HaKJW1ShwspfNkXbcHicwB4A"
+        }
+      ],
+      "benefits": "La educación emprendedora tradicional a menudo pasa por alto la mentalidad, la ética y la inclusión. Esta caja de herramientas ayuda a los usuarios a explorar estas áreas esenciales a través de contenido de video curado. Construye conciencia sobre inteligencia emocional, liderazgo ético y diversidad en la práctica emprendedora moderna.",
+      "purpose": "Fomento de una Mentalidad & Cultura Emprendedora",
+      "prerequisiteTools": "Acceso a Internet",
+      "partner": "EUEI"
+    },
+    {
+      "number": 13,
+      "name": "Navegador de Roles en Educación Emprendedora",
+      "summary": "El Navegador de Roles ayuda a los académicos no empresariales a identificar sus contribuciones potenciales a la educación emprendedora. Aumenta la conciencia institucional y apoya la participación inclusiva en todas las disciplinas a través de sugerencias de roles adaptadas y retroalimentación personalizada.",
+      "description": "El Navegador de Roles está diseñado para académicos no empresariales que buscan comprender su papel en la educación emprendedora. A través de una breve evaluación, los participantes reciben comentarios personalizados que destacan cómo su estilo de enseñanza, intereses y fortalezas disciplinarias pueden contribuir al aprendizaje emprendedor. La herramienta fomenta una participación académica más amplia más allá de las facultades de negocios tradicionales.",
+      "outcomes": "Mayor compromiso de académicos no empresariales en la educación emprendedora\nAumento de la colaboración interdisciplinaria dentro de las universidades\nMejora de la claridad de roles y motivación entre el personal académico\nIdentificación de profesores con alto potencial para iniciativas emprendedoras\nInclusión de diversas perspectivas en la enseñanza y el apoyo al emprendimiento",
+      "instructions": "Comparta el enlace de evaluación con el profesorado a través de boletines, sesiones de capacitación o materiales de incorporación.\nInvite a los académicos no empresariales a completar la breve autoevaluación (aprox. 10–15 minutos).\nLos participantes reflexionan sobre su disciplina, intereses y métodos de enseñanza actuales.\nAl enviar, cada participante recibe un informe de retroalimentación en PDF personalizado.\nAnime a los participantes a revisar los roles sugeridos y considerar los siguientes pasos concretos (por ejemplo, mentoría, co-enseñanza).\nOpcionalmente, organice sesiones de seguimiento para conectar a académicos y discutir oportunidades de colaboración.",
+      "links": [
+        {
+          "title": "Acceso a la Evaluación",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Entrepreneurship%20Educator%20Roles"
+        }
+      ],
+      "benefits": "Esta herramienta ayuda al profesorado no empresarial a explorar cómo su experiencia disciplinaria, enfoque de enseñanza e intereses se alinean con la educación emprendedora. Aclara roles como la mentoría o la co-enseñanza y fomenta una participación interdisciplinaria más amplia en iniciativas emprendedoras.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Conexión a Internet\nAcceso a la evaluación en línea\nLector de PDF para el informe de retroalimentación\n10–15 minutos de tiempo del participante\nOpcional: taller interno o sesión de mentoría",
+      "partner": "TVW"
+    },
+    {
+      "number": 14,
+      "name": "Evaluación de Innovación en la Enseñanza del Emprendimiento",
+      "summary": "La Evaluación de Innovación Docente apoya a los educadores universitarios en la exploración y aplicación de formatos de educación emprendedora. Proporciona comentarios personalizados para mejorar las prácticas docentes y fomentar el compromiso de los estudiantes con métodos innovadores y del mundo real.",
+      "description": "La Evaluación de Innovación Docente está diseñada para educadores universitarios de todas las disciplinas. Evalúa la conciencia, el interés y la preparación para utilizar formatos de educación emprendedora, como el aprendizaje experiencial y basado en simulación. Los participantes reciben comentarios adaptados y sugerencias prácticas para mejorar su enseñanza. La herramienta ayuda a las universidades a fomentar una cultura docente más innovadora y emprendedora.",
+      "outcomes": "Mayor conciencia de los educadores sobre diversos formatos de emprendimiento\nMayor adopción de métodos de enseñanza innovadores y centrados en el estudiante\nMejor compromiso estudiantil en el aprendizaje emprendedor\nIdentificación y reducción de barreras de implementación\nDiálogo interdisciplinario en torno a la innovación docente\nConocimientos institucionales para la planificación del desarrollo profesional",
+      "instructions": "Acceda a la evaluación a través del enlace proporcionado (basado en navegador, no requiere instalación).\nComplete el cuestionario, que toma aproximadamente 10–15 minutos.\nReflexione honestamente sobre su familiaridad actual, intereses y desafíos relacionados con los formatos de educación emprendedora.\nEnvíe sus respuestas para generar un informe de retroalimentación en PDF personalizado.\nDescargue el informe.\nRevise los comentarios, incluidos los conocimientos sección por sección y los siguientes pasos sugeridos.\nUtilice los resultados para identificar áreas de crecimiento, discutir con colegas o informar los esfuerzos de capacitación institucional.",
+      "links": [
+        {
+          "title": "Acceso a la Evaluación",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Teaching%20Innovation%20Assessment"
+        }
+      ],
+      "benefits": "Esta herramienta ayuda a los educadores a evaluar su familiaridad y apertura a los formatos de educación emprendedora. Identifica barreras, ofrece orientación práctica y fomenta la adopción de métodos como el aprendizaje experiencial y basado en problemas para apoyar el pensamiento emprendedor.",
+      "purpose": "Conciencia & Sensibilización Emprendedora",
+      "prerequisiteTools": "Conexión a Internet\nAcceso al enlace de evaluación en línea\nLector de PDF para el informe de retroalimentación\n10–15 minutos de tiempo ininterrumpido\nOpcional: seguimiento institucional o facilitación de talleres",
+      "partner": "TVW"
+    },
+    {
+      "number": 15,
+      "name": "Lienzo de Modelo de Negocio Sostenible",
+      "summary": "El Lienzo de Modelo de Negocio Sostenible ayuda a los educadores universitarios a integrar la sostenibilidad en la enseñanza de modelos de negocio. Permite a los estudiantes diseñar modelos de negocio que combinen valor económico, social y ambiental.",
+      "description": "La Guía del Lienzo de Modelo de Negocio Sostenible está diseñada para educadores en emprendimiento, negocios y sostenibilidad. Apoya la integración de principios de sostenibilidad en la enseñanza proporcionando un método estructurado para analizar y desarrollar modelos de negocio que generen valor económico, ambiental y social. La herramienta ayuda a los estudiantes a comprender el impacto más amplio de las decisiones empresariales y los equipa con habilidades prácticas para diseñar emprendimientos responsables y orientados al futuro.",
+      "outcomes": "Los estudiantes diseñan modelos de negocio que integran dimensiones ambientales y sociales.\nLos alumnos desarrollan un enfoque de pensamiento sistémico para el emprendimiento.\nMayor conciencia de las compensaciones de sostenibilidad en la planificación empresarial.\nMejora de la capacidad para evaluar críticamente el impacto empresarial a largo plazo.\nMejora de las habilidades de trabajo en equipo y comunicación a través del modelado colaborativo.\nLos educadores obtienen un método estructurado para enseñar emprendimiento sostenible.\nLas universidades fomentan una cultura de innovación responsable.",
+      "instructions": "Paso 1: Preparación\n•\tIntroduzca el Business Model Canvas como marco base.\n•\tPresente el SBMC y explique su propósito extendido.\n•\tDiscuta las dimensiones de sostenibilidad y la relevancia para la estrategia empresarial.\n•\tDistribuya plantillas de SBMC en blanco (físicas o digitales).\nPaso 2: Desarrollo del Modelo de Negocio\n•\tPida a los estudiantes que desarrollen o refinen una idea de negocio utilizando el SBMC.\n•\tUtilice preguntas guía para cada bloque de construcción.\n•\tTrabajen en equipos para completar el lienzo de manera colaborativa.\nPaso 3: Presentación y Retroalimentación\n•\tCada equipo presenta su SBMC a sus compañeros o mentores.\n•\tFomente la reflexión sobre la viabilidad y el impacto del modelo de negocio.\n•\tProporcione retroalimentación estructurada utilizando criterios de sostenibilidad y viabilidad.",
+      "links": [
+        {
+          "title": "Plantilla de Lienzo",
+          "url": "https://start-green.net/documents/8790/SBC_EN.pdf"
+        },
+        {
+          "title": "Instrucciones para Facilitadores",
+          "url": "https://start-green.net/documents/8789/Tiemann-Fichter-Workshopkonzept-EN-RZ2_2018.pdf"
+        },
+        {
+          "title": "Descripción General de la Herramienta",
+          "url": "assets/pdfs/en/tool_15.1_SustainableBusinessModelCanvas.pdf"
+        }
+      ],
+      "benefits": "El Lienzo de Modelo de Negocio Sostenible apoya a los educadores en la enseñanza del emprendimiento sostenible. Ayuda a los estudiantes a entender cómo integrar aspectos sociales y ambientales en la planificación empresarial, fomentando la innovación responsable y la creación de valor a largo plazo a través del aprendizaje estructurado y basado en la práctica.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Plantilla del Lienzo de Modelo de Negocio Sostenible (impreso o digital)\nGuía de facilitación con preguntas e instrucciones clave\nCasos de estudio sobre prácticas empresariales sostenibles\nMarcadores, post-its, pizarra blanca (para talleres presenciales)\nHerramientas de colaboración digital (por ejemplo, Miro, MURAL) – opcional",
+      "partner": "TVW"
+    },
+    {
+      "number": 16,
+      "name": "Marco de ODS para el Emprendimiento",
+      "summary": "La Herramienta del Marco de ODS ayuda a las universidades a alinear los objetivos de emprendimiento y sostenibilidad, ofreciendo una estructura clara para integrar objetivos vinculados a los ODS en la educación, investigación, operaciones y asociaciones.",
+      "description": "La Herramienta del Marco de ODS está diseñada para que las universidades integren los Objetivos de Desarrollo Sostenible de la ONU en la enseñanza, la investigación, las operaciones y la divulgación. Proporciona orientación práctica, métricas y recursos para evaluar el impacto, priorizar acciones e impulsar el emprendimiento sostenible. Herramientas como la Evaluación de Impacto de los ODS y la Brújula de los ODS apoyan la implementación, con casos de estudio del mundo real que muestran una integración exitosa.",
+      "outcomes": "Estrategia y objetivos claros alineados con los ODS.\nInnovación sostenible en planes de estudio e investigación.\nColaboración mejorada entre universidad, industria y comunidad.\nMejora de la capacidad para medir y comunicar el impacto.",
+      "instructions": "Revise la guía \"Comenzando con los ODS en Universidades\" para estrategias fundamentales.\nMapee las actividades institucionales con los ODS relevantes utilizando la Brújula de los ODS.\nUtilice la Herramienta de Evaluación de Impacto de los ODS para evaluar el impacto actual.\nAlinee los planes de estudio, la investigación y las asociaciones con los objetivos identificados.\nAplique los hallazgos para desarrollar acciones, políticas e innovaciones específicas.",
+      "links": [
+        {
+          "title": "PASO 1 - Marco de ODS (Introducción)",
+          "url": "assets/pdfs/en/tool_16.1_SDGFramework(Introduction).pdf"
+        },
+        {
+          "title": "PASO 2 - Marco de ODS (Ejemplos de Aplicación)",
+          "url": "assets/pdfs/en/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
+        },
+        {
+          "title": "PASO 3- Marco de ODS (Recursos y Apoyos)",
+          "url": "assets/pdfs/en/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
+        }
+      ],
+      "benefits": "La herramienta apoya a las instituciones de tercer nivel en el mapeo de estrategias hacia los ODS, diseñando programas impulsados por la sostenibilidad y midiendo el impacto. Fortalece la colaboración entre la academia, la industria y las comunidades, promoviendo soluciones innovadoras a los desafíos de sostenibilidad del mundo real.",
+      "purpose": "Emprendimiento Sostenible & Orientado al Impacto",
+      "prerequisiteTools": "1. Un dispositivo electrónico con WI-FI para descarga de App y capacidad de usuario",
+      "partner": "MMS"
+    },
+    {
+      "number": 17,
+      "name": "Radar de Partes Interesadas con IA",
+      "summary": "El Radar de Partes Interesadas con IA utiliza análisis en tiempo real para ayudar a las universidades a identificar, comprender y comprometer a las partes interesadas clave, mejorando la colaboración, la toma de decisiones y la gestión de riesgos.",
+      "description": "Stakeholders Radar AI es una plataforma avanzada que mapea, analiza y rastrea la influencia de las partes interesadas dentro de un ecosistema universitario. Al aprovechar tecnologías de IA como el procesamiento de lenguaje natural, la detección de sentimientos y el análisis predictivo, proporciona información en tiempo real sobre las necesidades y dinámicas de las partes interesadas. Las universidades pueden usarlo para mejorar las asociaciones, la comunicación y la planificación en redes académicas, de investigación y comunitarias.",
+      "outcomes": "Mayor compromiso con estudiantes, personal, exalumnos y socios.\nDecisiones informadas por datos sobre colaboraciones y financiación.\nAlerta temprana de riesgos reputacionales u operativos.\nGestión de partes interesadas y asignación de recursos más eficientes.",
+      "instructions": "Ingrese datos de partes interesadas de correos electrónicos, redes sociales, encuestas y bases de datos internas.\nUtilice la IA integrada para analizar el sentimiento, rastrear el compromiso e identificar a los influencers clave.\nVisualice tendencias y patrones a través de paneles en tiempo real.\nAjuste las estrategias de comunicación o compromiso basadas en conocimientos predictivos.",
+      "links": [
+        {
+          "title": "PASO 1 Herramienta Radar de Partes Interesadas con IA (Introducción)",
+          "url": "assets/pdfs/en/tool_17.1_StakeholdersRadarAITool(Introduction).pdf"
+        },
+        {
+          "title": "PASO 2 Herramienta Radar de Partes Interesadas con IA (Nuestras 3 Mejores Herramientas)",
+          "url": "assets/pdfs/en/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf"
+        },
+        {
+          "title": "PASO 3 Herramienta Radar de Partes Interesadas con IA (Cómo Usar)",
+          "url": "assets/pdfs/en/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf"
+        },
+        {
+          "title": "PASO 4 Herramienta Radar de Partes Interesadas con IA (Recursos y Apoyos)",
+          "url": "assets/pdfs/en/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf"
+        }
+      ],
+      "benefits": "La herramienta mejora la visibilidad y el compromiso de las partes interesadas a través del análisis de sentimientos impulsado por IA, el mapeo y los conocimientos predictivos. Ayuda a las universidades a fomentar la confianza, asignar recursos de manera efectiva y anticipar riesgos u oportunidades en asociaciones y estrategia institucional.",
+      "purpose": "Motivación, Incentivos & Reconocimiento para Personal & Profesores",
+      "prerequisiteTools": "1. Un dispositivo electrónico con WI-FI para descarga de App y capacidad de usuario",
+      "partner": "MMS"
+    },
+    {
+      "number": 18,
+      "name": "Plataformas de Intercambio de Conocimiento",
+      "summary": "Las plataformas digitales de intercambio de conocimiento conectan a educadores, investigadores y personal en todas las universidades, permitiendo una colaboración fluida, intercambio de recursos y aprendizaje profesional en tiempo real o de forma asíncrona.",
+      "description": "Las plataformas digitales de intercambio de conocimiento, como Moodle, Teams, Slack y LinkedIn, permiten a las universidades centralizar la comunicación, compartir recursos y coordinar actividades de aprendizaje, enseñanza o investigación. Ya sea organizando discusiones, almacenando materiales o colaborando en proyectos, estas herramientas rompen silos y mejoran la eficiencia, la accesibilidad y la continuidad del conocimiento entre el personal, los departamentos y las asociaciones globales.",
+      "outcomes": "Mejora de la colaboración entre el profesorado y la administración.\nCiclos de retroalimentación más rápidos y toma de decisiones compartida.\nMejor acceso al conocimiento institucional y activos digitales.\nMayor compromiso en proyectos interdisciplinarios o Erasmus+.",
+      "instructions": "Configure cuentas para el personal y defina espacios de equipo (por ejemplo, por facultad, tema o proyecto).\nCargue recursos compartidos (documentos, plantillas, guías).\nUtilice hilos de discusión o canales de chat para la colaboración basada en temas.\nPrograme sesiones de intercambio de conocimiento o actualizaciones periódicas.",
+      "links": [
+        {
+          "title": "PASO 1 - Introducción a la Plataforma de Intercambio de Conocimiento",
+          "url": "assets/pdfs/en/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+        },
+        {
+          "title": "PASO 2 - Comparar Plataformas de Intercambio de Conocimiento",
+          "url": "assets/pdfs/en/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+        }
+      ],
+      "benefits": "Estas plataformas permiten la colaboración entre departamentos, apoyan la co-creación de materiales didácticos, permiten la retroalimentación entre pares y mejoran el acceso a la experiencia compartida. Son vitales para mejorar la innovación, la alineación y la memoria institucional en iniciativas interuniversitarias.",
+      "purpose": "Fomento de una Mentalidad & Cultura Emprendedora",
+      "prerequisiteTools": "1. Un dispositivo electrónico con WI-FI para descarga de App y capacidad de usuario",
+      "partner": "MMS"
+    },
+    {
+      "number": 19,
+      "name": "Gastos de Startup",
+      "summary": "La herramienta de Gastos de Startup ayuda a estudiantes no empresariales y profesores universitarios a obtener una visión general de conceptos como la inversión inicial y las fuentes de financiación para ideas de inicio.",
+      "description": "La Herramienta Excel de Gastos de Startup está diseñada para emprendedores y propietarios de pequeñas empresas para planificar y gestionar eficazmente sus necesidades financieras iniciales. Proporciona una plantilla estructurada para rastrear fuentes de capital (inversiones, préstamos), categorizar costos de inicio (bienes raíces, equipos, inventario) y calcular totales automáticamente. Al ofrecer una visión clara de la financiación y los gastos, ayuda a los usuarios a tomar decisiones informadas, asegurar financiación y garantizar la preparación financiera para un lanzamiento empresarial exitoso.",
+      "outcomes": "Mejora de la Alfabetización Financiera – Los usuarios obtienen una comprensión más clara de los costos de inicio, ayudándoles a gestionar presupuestos de manera efectiva incluso sin educación empresarial previa.\nHabilidades Prácticas de Planificación Empresarial – Estudiantes y profesores aprenden a delinear y categorizar gastos, haciendo que las ideas emprendedoras sean más factibles y estructuradas.\nConfianza en el Lanzamiento de Emprendimientos – Al estimar sistemáticamente los costos, los usuarios reducen la incertidumbre financiera y se sienten más preparados para iniciar proyectos paralelos o pequeñas empresas.\nAplicación Interdisciplinaria – Usuarios no empresariales (por ejemplo, ingenieros, artistas, científicos) pueden aplicar la herramienta para evaluar costos para proyectos de investigación, emprendimientos creativos o prototipos tecnológicos.\nMejora de Propuestas de Subvención/Financiación – Profesores y estudiantes pueden usar la plantilla para justificar gastos al buscar subvenciones universitarias, patrocinios o crowdfunding para iniciativas innovadoras.",
+      "links": [
+        {
+          "title": "Simulador de Gastos de Startup",
+          "url": "https://www.score.org/resource/template/startup-expenses"
+        },
+        {
+          "title": "Recomendaciones para usar la herramienta",
+          "url": "assets/pdfs/en/tool_19.1_Startupexpenses.pdf"
+        }
+      ],
+      "benefits": "El principal beneficio de esta herramienta es proporcionar una idea general a estudiantes no empresariales y profesores universitarios sobre los gastos iniciales necesarios para llevar a cabo una idea de negocio.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Excel con Macros activadas",
+      "partner": "UNEAT",
+      "instructions": "1.\tAbra el documento y analice los conceptos y secciones, ¿le resultan familiares algunos o la mayoría de ellos?\n2.\tIngrese sus fuentes de capital lo más cerca posible de la realidad. No debe exagerar ni minimizar nada.\n3.\tIngrese sus gastos iniciales y considere todos los aspectos incluidos en su idea de negocio, no minimice ninguno de ellos.\n4.\tVerifique que toda la información sea confiable y completa y que no haya cometido un error con cantidades o conceptos.\n5.\tAnalice el estado inicial de su startup, ¿le gustaría hacer la inversión, imaginaba algo diferente?\n6.\tDecida y discuta con sus compañeros de clase y su maestro si la idea es factible o no."
+    },
+    {
+      "number": 20,
+      "name": "Calculadora de Préstamos",
+      "summary": "La Calculadora de Préstamos ayuda a estudiantes no empresariales y profesores universitarios a tener una idea general de lo que implica solicitar un préstamo con intereses para ideas de emprendimiento.",
+      "description": "La Calculadora de Préstamos ayuda a emprendedores y propietarios de pequeñas empresas a planificar la financiación estimando pagos mensuales, costos de intereses y plazos de pago para préstamos comerciales. Permite una mejor gestión del flujo de caja, comparación de préstamos y elaboración de presupuestos, asegurando decisiones informadas al asegurar capital para crecimiento, equipos o costos de inicio.",
+      "outcomes": "Decisiones de Préstamo Informadas – Los usuarios pueden comparar opciones de préstamo (préstamos estudiantiles, financiación de investigación, financiación de equipos) para entender los términos de pago, tasas de interés y costos totales antes de comprometerse.\nPresupuesto para Proyectos Académicos – Ayuda a profesores y estudiantes a estimar la viabilidad de préstamos para iniciativas de investigación, viajes a conferencias o equipos de laboratorio proyectando pagos mensuales dentro de subvenciones o presupuestos personales.\nConciencia de Gestión de Deuda – Los estudiantes aprenden a evaluar los impactos a largo plazo de los préstamos (por ejemplo, para matrícula o costos de inicio), fomentando hábitos financieros responsables temprano en sus carreras.\nPlanificación Financiera Simplificada – Usuarios no empresariales obtienen claridad sobre calendarios de amortización y efectos de intereses sin necesitar conocimientos financieros avanzados, haciendo que los préstamos sean menos intimidantes.\nOptimización de Recursos – Investigadores y creativos pueden evaluar si el arrendamiento/préstamo de herramientas (por ejemplo, dispositivos de laboratorio, suministros de arte) es rentable en comparación con compras iniciales.",
+      "instructions": "1.\tAbra la herramienta y analice los conceptos y secciones, ¿le resultan familiares algunos o la mayoría de ellos? ¿Conocía las tasas de interés?\n2.\tIngrese la cantidad de dinero que, hipotéticamente, necesitaría para su idea de negocio. Siempre es recomendable poner una cantidad ligeramente mayor a la calculada en caso de que haya sobrecostos, pero no más del 5 o 10%.\n3.\tIngrese la tasa de interés y otras tarifas cobradas por el banco. Puede hacer una simulación e ir a la página de intereses de un banco que conozca, en la sección de negocios, ¿qué tasas ofrecen para empresas? Si no encuentra la información, puede preguntar a una IA cuál es la tasa de interés que los bancos suelen dar en la región donde vive.\n4.\tCon su maestro y colegas, analice la cifra obtenida y decida si adquirir o no el préstamo en función de las otras proyecciones financieras. Si después de unos años el dinero es demasiado alto o cree que no podrá cubrir las cuotas con ventas, puede que no sea la mejor idea para usted.",
+      "links": [
+        {
+          "title": "Calculadora de Préstamos",
+          "url": "https://www.calculator.net/loan-calculator.html"
+        },
+        {
+          "title": "Recomendaciones para usar la herramienta",
+          "url": "assets/pdfs/en/tool_20.1_Loancalculator.pdf"
+        }
+      ],
+      "benefits": "El principal beneficio de esta herramienta es proporcionar una idea general a estudiantes no empresariales y profesores universitarios sobre los préstamos con intereses para ideas de emprendimiento.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Datos financieros del proyecto empresarial",
+      "partner": "UNEAT"
+    },
+    {
+      "number": 21,
+      "name": "Plantilla de Proyecciones Financieras",
+      "summary": "La Plantilla de Proyecciones Financieras ayuda a estudiantes no empresariales y profesores universitarios a aprender conceptos financieros básicos para el desarrollo de una idea de emprendimiento.",
+      "description": "La Plantilla de Proyecciones Financieras está diseñada para proporcionar a aquellos que inician un negocio o ya dirigen uno con información que les permitirá tomar una decisión de \"ir / no ir\". Ayudará a un emprendedor potencial a proyectar ganancias operativas, desarrollar un estado de resultados proyectado, balance general y pronóstico de flujo de caja.",
+      "outcomes": "Habilidades Básicas de Pronóstico Financiero – Los usuarios aprenden a proyectar ingresos, gastos y flujo de caja, incluso sin experiencia financiera, ayudándoles a planificar proyectos de investigación, startups o emprendimientos creativos de manera más efectiva.\nPlanificación Presupuestaria Realista – Estudiantes y profesores pueden evitar trampas financieras anticipando costos e ingresos, asegurando que sus proyectos académicos o de pasión sigan siendo sostenibles.\nSolicitudes de Subvención y Financiación más Fuertes – Al presentar proyecciones financieras bien estructuradas, los usuarios mejoran sus posibilidades de asegurar subvenciones universitarias, patrocinios o respaldo de inversores para ideas innovadoras.\nConciencia Empresarial Interdisciplinaria – Usuarios de STEM, artes y humanidades obtienen conocimientos prácticos sobre planificación financiera, cerrando la brecha entre su experiencia y la viabilidad del proyecto en el mundo real.\nConfianza en Emprendimientos – La plantilla desmitifica la planificación financiera, empoderando a usuarios no empresariales para explorar con confianza trabajos secundarios, empresas sociales o comercialización de trabajo académico.",
+      "instructions": "1.\tAbra el documento y analice los conceptos y secciones, ¿le resultan familiares algunos o la mayoría de ellos? No se abrume si parece demasiado complicado al principio, es normal no conocer algunos conceptos.\n2.\tLea las instrucciones del documento y ponga solo la información que cree que conoce y está seguro, no es necesario completar todas las secciones. Ingrese la cantidad de dinero que, hipotéticamente, el banco le prestará.\n3.\tHaga ajustes a las predicciones y complete hoja por hoja hasta obtener la información necesaria.\n4.\tEs recomendable revisar los siguientes videos de Youtube para una mejor comprensión de la herramienta:\nA) How to analyze an income statement - Walmart example (case study) (all videos)\nB) financial statements: all the basics in 8 MINS!",
+      "links": [
+        {
+          "title": "Proyecciones Financieras",
+          "url": "https://www.score.org/resource/template/financial-projections-template"
+        },
+        {
+          "title": "Recomendaciones para usar la herramienta",
+          "url": "assets/pdfs/en/tool_21.1_FinancialProjectionsTemplate.pdf"
+        }
+      ],
+      "benefits": "El principal beneficio de esta herramienta es proporcionar una idea general a estudiantes no empresariales y profesores universitarios sobre conceptos financieros para el desarrollo de una idea de emprendimiento.",
+      "purpose": "Planificación & Financiación de la Educación Emprendedora",
+      "prerequisiteTools": "Excel con Macros activadas",
+      "partner": "UNEAT"
+    },
+    {
+      "number": 22,
+      "name": "Juego de Mesa de Rol \"Mission Possible\" para el Pensamiento Emprendedor e Impacto",
+      "summary": "Mission Possible es un juego de mesa de simulación de rol interactivo donde los estudiantes asumen roles de inicio y navegan dilemas de sostenibilidad, digitales y éticos del mundo real. Alineado con EntreComp, GreenComp y DigiComp, convierte las aulas en laboratorios de aventuras emprendedoras.",
+      "description": "Mission Possible es un recurso estilo juego de mesa imprimible o digital para clases de emprendimiento de nivel universitario. Los estudiantes se dividen en pequeños equipos de inicio y se les asigna una misión ficticia (por ejemplo, lanzar una aplicación verde, resolver un problema de desperdicio de alimentos). A medida que avanzan, encuentran tarjetas que presentan desafíos de la vida real como:\nElegir entre ganancias y ética,\nLidiar con conflictos de equipo,\nDecidir si usar herramientas de IA generativa, etc.",
+      "outcomes": "Mejora de la capacidad para manejar la incertidumbre emprendedora\nMayor comprensión de cómo la ética, la sostenibilidad y la digitalización interactúan en el emprendimiento\nAprendizaje colaborativo y reflexivo fortalecido",
+      "instructions": "1.\tForme equipos de inicio (3–5 estudiantes)\n2.\tAsigne a cada grupo una Tarjeta de Misión (por ejemplo, “Estás construyendo una aplicación de reciclaje basada en IA para usuarios de la Generación Z.”)\n3.\tDistribuya tarjetas de rol al azar a cada miembro del equipo.\n4.\tEn cada ronda, los equipos tiran los dados y mueven su ficha hacia adelante en el tablero de Mission Possible. Si caen en un espacio marcado con un ícono temático, deben robar una Tarjeta de Desafío del mazo correspondiente.\n5.\tLos equipos roban Tarjetas de Desafío de 3 mazos temáticos:\no\tDilemas digitales (DigiComp)\no\tCuestiones de impacto verde y social (GreenComp)\no\tDecisiones de estrategia empresarial (EntreComp)\n6.\tLos equipos leen la tarjeta en voz alta y discuten durante 10 minutos qué decisión tomar — considerando sus roles y misión.\n7.\tUna vez que el equipo llega al FINAL, presentan cómo navegaron su viaje\n8.\tEl educador dirige una reflexión guiada utilizando la Hoja de Reflexión del Equipo\nNota: Encuentre instrucciones extensas en la Guía de Facilitación",
+      "links": [
+        {
+          "title": "Guía de Facilitación",
+          "url": "assets/pdfs/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
+        },
+        {
+          "title": "Tablero",
+          "url": "assets/pdfs/en/tool_22.2_TOOLMC1_board.pdf"
+        },
+        {
+          "title": "Tarjetas",
+          "url": "assets/pdfs/en/tool_22.3_TOOLMC1_cards.pdf"
+        },
+        {
+          "title": "Hoja de Reflexión",
+          "url": "assets/pdfs/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+        }
+      ],
+      "benefits": "La mayoría de la enseñanza del emprendimiento es pesada en teoría y carece de compromiso emocional. Mission Map introduce el aprendizaje gamificado para simular incertidumbres del mundo real, permitiendo a los alumnos practicar la colaboración, el pensamiento crítico y la resiliencia en entornos de inicio complejos.",
+      "purpose": "Fomento de una Mentalidad & Cultura Emprendedora",
+      "prerequisiteTools": "Impresora y tijeras o una herramienta de pizarra digital (Miro/Mural/Canva)\nFichas\nTemporizador\nProyector (opcional para mostrar preguntas)",
+      "partner": "MC"
+    },
+    {
+      "number": 23,
+      "name": "Emprender Éticamente",
+      "summary": "Emprender Éticamente es una caja de herramientas basada en proyectos para educadores y centros de innovación estudiantil para involucrar a los alumnos en la adaptación de ideas de negocios éticas e inclusivas a las necesidades comunitarias del mundo real a través de pensamiento de diseño estructurado y reflexión entre pares.",
+      "description": "Emprender Éticamente (Venture Ethically) es una caja de herramientas flexible basada en proyectos que permite a los estudiantes adaptar ideas de negocios amigables para los jóvenes a desafíos comunitarios específicos utilizando un proceso de innovación ética estructurado. Los participantes eligen emprendimientos de una lista seleccionada, aplican restricciones locales, definen su estrategia de retribución y completan hojas de trabajo y actividades de lienzo. Luego presentan su idea adaptada y reciben retroalimentación de compañeros y educadores.",
+      "outcomes": "Comprensión del emprendimiento ético y la innovación inclusiva\nAplicación práctica de principios de impacto social\nEvaluación entre pares y aprendizaje reflexivo\nFortalecimiento de las dimensiones EntreComp y GreenComp\nConciencia del compromiso comunitario y estrategias de retribución",
+      "instructions": "1. A los estudiantes se les asigna una start-up y un perfil comunitario.\n2. Usando el libro de trabajo y el lienzo, adaptan el emprendimiento de manera ética e inclusiva.\n3. Preparan y entregan un pitch.\n4. Se recopila retroalimentación de pares y maestros utilizando las hojas de evaluación.\n5. Los educadores apoyan el proceso a través de la Guía de Proyecto Digital.",
+      "links": [
+        {
+          "title": "Emprender Éticamente - Guía de Proyecto Digital para Maestros",
+          "url": "assets/pdfs/en/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+        },
+        {
+          "title": "Emprender Éticamente - Material de Proyecto Digital",
+          "url": "assets/pdfs/en/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta aborda el desafío de enseñar ética empresarial en acción haciendo que los estudiantes localicen y adapten emprendimientos liderados por jóvenes con planes claros de retribución. Promueve la empatía emprendedora, la responsabilidad social y la sostenibilidad desde la idea hasta el pitch.",
+      "purpose": "Emprendimiento Sostenible & Orientado al Impacto",
+      "prerequisiteTools": "Impresora y tijeras o una herramienta de pizarra digital (Miro/Mural/Canva)\nFichas\nTemporizador\nProyector (opcional para mostrar preguntas)",
+      "partner": "MC"
+    },
+    {
+      "number": 24,
+      "name": "CSI: División de Startups Fallidas",
+      "summary": "CSI: División de Startups Fallidas es una herramienta de investigación gamificada para educadores de emprendimiento y centros de innovación universitaria. Los participantes actúan como analistas forenses, resolviendo fracasos de startups del mundo real utilizando investigación, razonamiento e informes de casos colaborativos.",
+      "description": "CSI: División de Startups Fallidas es una actividad interactiva basada en escenarios donde los participantes se convierten en detectives de startups. Utilizando casos de fracaso reales, los alumnos analizan factores de causa de muerte como desajuste en el mercado, mala gestión financiera o fallos éticos. La caja de herramientas construye pensamiento estratégico, curiosidad y resiliencia a través de un proceso inmersivo dirigido por la investigación guiado por plantillas de investigación y rúbricas de puntuación.",
+      "outcomes": "Mejora del pensamiento crítico y análisis de fallos\nReflexión emprendedora sobre desafíos del mundo real\nExposición a la toma de decisiones ética y estratégica\nFortalecimiento de las dimensiones EntreComp, GreenComp y DigiComp\nInvestigación e informes comprometidos y dirigidos por estudiantes",
+      "instructions": "Cada equipo recibe un \"Caso Frío\" de startup.\nUsando la Plantilla de Agente, investigan el caso en línea.\nCompletan un informe que describe la causa del fracaso, las señales de alerta y posibles estrategias alternativas.\nLos casos se presentan en clase con retroalimentación de pares o maestros utilizando la rúbrica de puntuación.",
+      "links": [
+        {
+          "title": "CSI División de Startups Fallidas - Guía Digital para Facilitadores",
+          "url": "assets/pdfs/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+        },
+        {
+          "title": "CSI: División de Startups Fallidas – Materiales del Proyecto",
+          "url": "assets/pdfs/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+        }
+      ],
+      "benefits": "Esta herramienta transforma el análisis del fracaso de startups en una experiencia estilo Cluedo. Los participantes aprenden a investigar emprendimientos fallidos reales, identificar señales de alerta y comprender desgloses éticos y estratégicos en el emprendimiento. Involucra a los alumnos a través de la narración y el juego de roles.",
+      "purpose": "Conciencia & Sensibilización Emprendedora",
+      "prerequisiteTools": "Impresora o una herramienta de pizarra digital\nProyector (opcional para mostrar preguntas)",
+      "partner": "MC"
+    }
+  ],
+  "validOptions": {
+    "purpose": [
+      "Planificación & Financiación de la Educación Emprendedora",
+      "Visión Emprendedora & Compromiso Institucional",
+      "Fomento de una Mentalidad & Cultura Emprendedora",
+      "Conciencia & Sensibilización Emprendedora",
+      "Emprendimiento Sostenible & Orientado al Impacto",
+      "Motivación, Incentivos & Reconocimiento para Personal & Profesores",
+      "Innovación Continua en la Educación Emprendedora"
+    ]
+  }
+}
