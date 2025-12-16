@@ -90,8 +90,9 @@ export const hasConsentDecision = () => {
  * Call this on route changes in the SPA
  * @param {string} path - The page path (e.g., '/tool/1')
  * @param {string} title - The page title
+ * @param {string} language - The current language code (en, es, de, el)
  */
-export const trackPageView = (path, title) => {
+export const trackPageView = (path, title, language = "en") => {
   if (!isAnalyticsEnabled()) {
     return;
   }
@@ -105,6 +106,7 @@ export const trackPageView = (path, title) => {
       event: "page_view",
       page_path: path,
       page_title: title,
+      language: language,
     });
     return;
   }
@@ -112,9 +114,10 @@ export const trackPageView = (path, title) => {
   window.gtag("event", "page_view", {
     page_path: path,
     page_title: title,
+    language: language,
   });
 
-  console.log("Page view tracked:", path);
+  console.log("Page view tracked:", path, "Language:", language);
 };
 
 /**

@@ -6,11 +6,12 @@ import CookieConsent from "./components/CookieConsent";
 import ToolboxPage from "./pages/ToolboxPage";
 import ToolDetailPage from "./pages/ToolDetailPage";
 import { initializeAnalytics, trackPageView } from "./utils/analytics";
-import { useTranslation } from "./i18n/I18nContext";
+import { useTranslation, useLanguage } from "./i18n/I18nContext";
 
 export default function App() {
   const location = useLocation();
   const { t } = useTranslation();
+  const { language } = useLanguage();
 
   // Initialize analytics on mount
   useEffect(() => {
@@ -30,8 +31,8 @@ export default function App() {
       title = `Tool ${toolNumber} - Start-DSP Toolbox`;
     }
 
-    trackPageView(path, title);
-  }, [location]);
+    trackPageView(path, title, language);
+  }, [location, language]);
 
   return (
     <div className="min-h-screen flex flex-col">
