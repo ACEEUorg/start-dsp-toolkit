@@ -1,6 +1,6 @@
 import { Menu, MenuButton, MenuItem, MenuItems } from "@headlessui/react";
 import { ChevronDown } from "lucide-react";
-import { useLanguage } from "../i18n/I18nContext";
+import { useLanguage } from "../i18n/hooks";
 
 const languages = [
   { code: "en", name: "English", flagCode: "gb" },

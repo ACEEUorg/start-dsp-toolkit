@@ -4,7 +4,7 @@ import {
   grantConsent,
   denyConsent,
 } from "../utils/analytics";
-import { useTranslation } from "../i18n/I18nContext";
+import { useTranslation } from "../i18n/hooks";
 
 export default function CookieConsent() {
   const [showBanner, setShowBanner] = useState(false);

@@ -1,4 +1,4 @@
-import { useTranslation, useLanguage } from "../i18n/I18nContext";
+import { useTranslation, useLanguage } from "../i18n/hooks";
 
 export default function Footer() {
   const { t } = useTranslation();

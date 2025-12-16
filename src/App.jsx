@@ -7,7 +7,7 @@ import TranslationDisclaimer from "./components/TranslationDisclaimer";
 import ToolboxPage from "./pages/ToolboxPage";
 import ToolDetailPage from "./pages/ToolDetailPage";
 import { initializeAnalytics, trackPageView } from "./utils/analytics";
-import { useTranslation, useLanguage } from "./i18n/I18nContext";
+import { useTranslation, useLanguage } from "./i18n/hooks";
 
 export default function App() {
   const location = useLocation();

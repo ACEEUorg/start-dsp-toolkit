@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { useParams, useNavigate, useLocation } from "react-router";
 import { loadTools } from "../data/tools";
-import { useLanguage, useTranslation } from "../i18n/I18nContext";
+import { useLanguage, useTranslation } from "../i18n/hooks";
 import ToolImage from "../components/ui/ToolImage";
 import ExternalLinkBadge from "../components/ui/ExternalLinkBadge";
 import LanguageFallbackBadge from "../components/ui/LanguageFallbackBadge";

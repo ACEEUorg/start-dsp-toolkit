@@ -1,4 +1,4 @@
-import { useLanguage, useTranslation } from "../../i18n/I18nContext";
+import { useLanguage, useTranslation } from "../../i18n/hooks";
 
 /**
  * LanguageFallbackBadge Component

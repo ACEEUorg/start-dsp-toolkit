@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { useSearchParams, useLocation, Link } from "react-router";
 import { Search, ChevronDown } from "lucide-react";
 import { loadTools } from "../data/tools";
-import { useLanguage, useTranslation } from "../i18n/I18nContext";
+import { useLanguage, useTranslation } from "../i18n/hooks";
 import ToolImage from "../components/ui/ToolImage";
 
 export default function Toolbox() {

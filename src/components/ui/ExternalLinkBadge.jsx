@@ -1,4 +1,4 @@
-import { useLanguage, useTranslation } from '../../i18n/I18nContext';
+import { useLanguage, useTranslation } from "../../i18n/hooks";
 
 /**
  * ExternalLinkBadge Component
@@ -13,8 +13,9 @@ export default function ExternalLinkBadge({ url }) {
   const { t } = useTranslation();
 
   // Only show for external links when language is not English
-  const isExternal = url && (url.startsWith('http://') || url.startsWith('https://'));
-  const shouldShow = isExternal && language !== 'en';
+  const isExternal =
+    url && (url.startsWith("http://") || url.startsWith("https://"));
+  const shouldShow = isExternal && language !== "en";
 
   if (!shouldShow) {
     return null;
@@ -35,7 +36,7 @@ export default function ExternalLinkBadge({ url }) {
           d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
         />
       </svg>
-      {t('badge.externalLink')}
+      {t("badge.externalLink")}
     </span>
   );
 }

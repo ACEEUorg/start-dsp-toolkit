@@ -7,7 +7,7 @@ import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/outline";
 import { NavLink } from "react-router";
 import MobileMenu from "./MobileMenu";
 import LanguageSelector from "../LanguageSelector";
-import { useTranslation } from "../../i18n/I18nContext";
+import { useTranslation } from "../../i18n/hooks";
 
 function classNames(...classes) {
   return classes.filter(Boolean).join(" ");

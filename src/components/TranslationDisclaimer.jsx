@@ -1,5 +1,5 @@
 import { useState, useEffect } from "react";
-import { useLanguage, useTranslation } from "../i18n/I18nContext";
+import { useLanguage, useTranslation } from "../i18n/hooks";
 
 /**
  * TranslationDisclaimer Component
