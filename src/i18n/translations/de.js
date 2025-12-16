@@ -39,7 +39,7 @@ export default {
   "cookie.decline": "Decline",
 
   // Footer
-  "footer.euDisclaimer": "This project has been funded with support from the European Commission. The author is solely responsible for this publication (communication) and the Commission accepts no responsibility for any use may be made of the information contained therein. In compliance of the new GDPR framework, please note that the Partnership will only process your personal data in the sole interest and purpose of the project and without any prejudice to your rights.",
+  "footer.euDisclaimer": "Dieses Projekt wurde mit Unterstützung der Europäischen Kommission finanziert. Der Autor ist allein verantwortlich für diese Veröffentlichung (Mitteilung), und die Kommission übernimmt keine Verantwortung für die Verwendung der darin enthaltenen Informationen. In Übereinstimmung mit dem neuen DSGVO-Rahmenwerk weisen wir darauf hin, dass die Partnerschaft Ihre personenbezogenen Daten ausschließlich im Interesse und zum Zweck des Projekts und ohne Beeinträchtigung Ihrer Rechte verarbeitet.",
   "footer.euLogoAlt": "Kofinanziert durch die Europäische Union",
 
   // Language Selector
