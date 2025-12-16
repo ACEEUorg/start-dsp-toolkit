@@ -15,11 +15,11 @@ export default {
   "nav.projectWebsite": "Start-DSP Projekt Website",
 
   // Search and Filters
-  "search.placeholder": "Search tools by name or description...",
-  "filter.allPurposes": "All Purposes",
+  "search.placeholder": "Suche nach Tools anhand von Namen oder Beschreibung...",
+  "filter.allPurposes": "Alle Zwecke",
 
   // Tool Detail Page
-  "toolDetail.backToToolbox": "Back to Toolbox",
+  "toolDetail.backToToolbox": "Zur to Toolbox",
   "toolDetail.purpose": "Purpose",
   "toolDetail.benefits": "Benefits",
   "toolDetail.prerequisiteTools": "Prerequisite Tools",
