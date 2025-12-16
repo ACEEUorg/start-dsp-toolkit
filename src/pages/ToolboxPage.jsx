@@ -19,6 +19,11 @@ export default function Toolbox() {
   // Load tools data when language changes
   useEffect(() => {
     loadTools(language).then(setToolsData);
+
+    // Clear filters when language changes to avoid mismatched purpose values
+    setSearchParams({});
+    setFilters({ purpose: ["all"] });
+    setSearchQuery("");
   }, [language]);
 
   // Initialize search query and filters from URL params
@@ -149,7 +154,7 @@ export default function Toolbox() {
                 {highlightText(tool.summary, searchQuery)}
               </p>
               <div className="mt-auto">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-seafoam-100 text-seafoam-800">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs text-center font-medium bg-seafoam-100 text-seafoam-800">
                   {tool.purpose === "TBD" ? "To Be Determined" : tool.purpose}
                 </span>
               </div>
