@@ -17,7 +17,7 @@ export default function LanguageFallbackBadge() {
   }
 
   return (
-    <span className="inline-flex items-center gap-1.5 px-2 py-1 text-xs font-medium bg-seafoam-50 text-seafoam-700 rounded border border-seafoam-200">
+    <span className="inline-flex items-center gap-1.5 px-2 py-1 text-xs font-medium text-seafoam-700">
       <span
         className="fi fi-gb rounded-sm"
         style={{ width: "16px", height: "12px" }}

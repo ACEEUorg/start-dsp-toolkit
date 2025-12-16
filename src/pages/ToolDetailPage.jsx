@@ -120,7 +120,7 @@ export default function ToolDetail() {
                     </div>
                   </div>
                   <div className="text-seafoam-900 text-base">
-                    {tool.purpose === "TBD" ? "To Be Determined" : tool.purpose}
+                    {tool.purpose}
                   </div>
                 </div>
               </div>
@@ -203,11 +203,29 @@ export default function ToolDetail() {
                     onClick={() => handleDownloadClick(link)}
                   >
                     <div className="absolute top-0 right-0 w-24 h-24 bg-seafoam-100 rounded-bl-full transform translate-x-12 -translate-y-12 group-hover:bg-seafoam-200 transition-colors duration-200"></div>
-                    <div className="relative">
-                      <div className="flex flex-col gap-2">
-                        <div className="flex items-center">
+                    <div className="relative w-full h-full flex flex-col justify-between">
+                      <span className="text-lg font-medium text-seafoam-800 group-hover:text-seafoam-900">
+                        {link.title}
+                      </span>
+                      <div className="flex items-center gap-2 mt-4">
+                        {link.url.startsWith("http://") ||
+                        link.url.startsWith("https://") ? (
                           <svg
-                            className="w-6 h-6 text-seafoam-600 mr-2"
+                            className="w-6 h-6 text-seafoam-600"
+                            fill="none"
+                            stroke="currentColor"
+                            viewBox="0 0 24 24"
+                          >
+                            <path
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth={2}
+                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                            />
+                          </svg>
+                        ) : (
+                          <svg
+                            className="w-6 h-6 text-seafoam-600"
                             fill="none"
                             stroke="currentColor"
                             viewBox="0 0 24 24"
@@ -219,13 +237,14 @@ export default function ToolDetail() {
                               d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
                             />
                           </svg>
-                          <span className="text-lg font-medium text-seafoam-800 group-hover:text-seafoam-900">
-                            {link.title}
-                          </span>
-                        </div>
-                        <div className="flex gap-2">
-                          <ExternalLinkBadge url={link.url} />
-                          {pdfInfo.isFallback && <LanguageFallbackBadge />}
+                        )}
+                        <div className="flex flex-wrap gap-2">
+                          {((link.url.startsWith("http://") ||
+                            link.url.startsWith("https://")) &&
+                            language !== "en") ||
+                          pdfInfo.isFallback ? (
+                            <LanguageFallbackBadge />
+                          ) : null}
                         </div>
                       </div>
                     </div>

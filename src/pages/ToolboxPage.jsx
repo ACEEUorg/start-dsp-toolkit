@@ -118,13 +118,11 @@ export default function Toolbox() {
             className="block w-full pl-3 pr-10 py-3 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring-2 focus:ring-seafoam-500 focus:border-seafoam-500 appearance-none bg-white"
           >
             <option value="all">{t("filter.allPurposes")}</option>
-            {toolsData?.validOptions.purpose
-              .filter((p) => p !== "TBD")
-              .map((purpose) => (
-                <option key={purpose} value={purpose}>
-                  {purpose}
-                </option>
-              )) || []}
+            {toolsData?.validOptions.purpose.map((purpose) => (
+              <option key={purpose} value={purpose}>
+                {purpose}
+              </option>
+            )) || []}
           </select>
           <div className="absolute inset-y-0 right-0 flex items-center pr-3 pointer-events-none">
             <ChevronDown className="h-5 w-5 text-gray-400" />
@@ -154,8 +152,8 @@ export default function Toolbox() {
                 {highlightText(tool.summary, searchQuery)}
               </p>
               <div className="mt-auto">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs text-center font-medium bg-seafoam-100 text-seafoam-800">
-                  {tool.purpose === "TBD" ? "To Be Determined" : tool.purpose}
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-seafoam-100 text-seafoam-800">
+                  {tool.purpose}
                 </span>
               </div>
             </div>
