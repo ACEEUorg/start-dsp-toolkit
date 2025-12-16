@@ -4,7 +4,7 @@ export default {
 
   // Navigation
   "nav.toolbox": "Εργαλειοθήκη",
-  "nav.projectWebsite": "Ιστοσελίδα Έργου Start-DSP",
+  "nav.projectWebsite": "Επιστροφή στην ιστοσελίδα του έργου Start-DSP",
 
   // Search and Filters
   "search.placeholder": "Αναζήτηση εργαλείων με όνομα ή περιγραφή...",

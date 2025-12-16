@@ -15,7 +15,7 @@ export default {
 
   // Navigation
   "nav.toolbox": "Toolbox",
-  "nav.projectWebsite": "Start-DSP Project Website",
+  "nav.projectWebsite": "Back to Start-DSP Project Website",
 
   // Search and Filters
   "search.placeholder": "Search tools by name or description...",

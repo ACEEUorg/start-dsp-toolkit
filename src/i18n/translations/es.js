@@ -5,7 +5,7 @@ export default {
 
   // Navigation
   "nav.toolbox": "Caja de herramientas",
-  "nav.projectWebsite": "Sitio web del proyecto Start-DSP",
+  "nav.projectWebsite": "Volver al sitio web del proyecto Start-DSP",
 
   // Search and Filters
   "search.placeholder": "Buscar herramientas por nombre o descripción...",

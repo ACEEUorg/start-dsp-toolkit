@@ -12,7 +12,7 @@ export default {
 
   // Navigation
   "nav.toolbox": "Toolbox",
-  "nav.projectWebsite": "Start-DSP Projekt Website",
+  "nav.projectWebsite": "Zurück zur Start-DSP Projekt Website",
 
   // Search and Filters
   "search.placeholder":
