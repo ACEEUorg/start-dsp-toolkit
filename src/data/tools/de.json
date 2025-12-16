@@ -1,8 +1,522 @@
 {
-  "_comment": "TODO: USER MUST PROVIDE GERMAN TRANSLATIONS",
-  "_instructions": "Copy the structure from en.json and translate all text fields. Keep 'number' and 'partner' unchanged. Update PDF URLs to use /de/ subdirectory.",
-  "tools": [],
+  "tools": [
+    {
+      "number": 1,
+      "name": "Das Entrepreneurial Wall Pack",
+      "summary": "Das Entrepreneurial Wall Pack bietet druckfertige Zitate und Vorlagen sowie einen KI-Leitfaden zur Erstellung maßgeschneiderter Inhalte. Ideal für Fakultäten und Universitäten, um unternehmerisches Denken in Cafés, Co-Working-Spaces und anderen Campusbereichen anzuregen.",
+      "description": "Das Entrepreneurial Wall Pack wurde für Fakultäten und Universitätsmitarbeiter entwickelt, die durch inspirierende visuelle Elemente auf dem Campus eine Kultur des Unternehmertums fördern möchten. Es enthält druckfertige Designs mit motivierenden Zitaten, praktischen Tipps und handlungsorientierten Botschaften.\nDas Paket bietet außerdem eine Inspirationsbibliothek mit kuratierten Phrasen, bearbeitbaren Vorlagen für eigene Inhalte und einen KI-Leitfaden (unter Verwendung von Tools wie ChatGPT), der dabei hilft, personalisierte Botschaften zu generieren, die auf Ihre Institution zugeschnitten sind. Perfekt, um Bibliotheken, Cafeterien oder Co-Working-Spaces in unternehmerische Umgebungen zu verwandeln.",
+      "outcomes": "Universitätswände, Bibliotheken und Co-Working-Bereiche werden mit inspirierenden Postern und Zitaten umgestaltet und fördern sichtbar eine unternehmerische Kultur.\nErhöhte studentische Teilnahme an Entrepreneurship-Veranstaltungen und Workshops, mit positivem Feedback, das ein Gefühl der Motivation und Inspiration durch das Umfeld hervorhebt.\nUniversitäten generieren maßgeschneiderte Botschaften und Tipps, die ihre einzigartige Mission und Werte widerspiegeln.\nStudierende engagieren sich in informellem Ideenaustausch und Brainstorming in Gemeinschaftsräumen, was die Kreativität unter Gleichgesinnten fördert.\nDozierende integrieren das Tool in Vorlesungen, Klassenzimmerdiskussionen oder Entrepreneurship-Projekte und weiten dessen Wirkung auf das akademische Umfeld aus.",
+      "instructions": "1. Erkunden Sie die Vorlagen\nDurchsuchen Sie die vorgefertigten Vorlagen im PDF. Wählen Sie diejenigen aus, die am besten zur Mission und den unternehmerischen Zielen Ihrer Universität passen.\n2. Drucken & Ausstellen\nDrucken Sie Ihre ausgewählten Vorlagen aus und platzieren Sie sie in gut sichtbaren Bereichen wie Bibliotheken, Cafeterien, Co-Working-Spaces oder Klassenzimmern.\n3. Generieren Sie eigene Inhalte mit KI\nVerwenden Sie den beigefügten KI-Leitfaden, um personalisierte Zitate, Tipps oder Botschaften zu erstellen. Folgen Sie den einfachen Schritten, um effektive Prompts mit Tools wie ChatGPT zu erstellen.\n4. Anpassen mit bearbeitbaren Vorlagen\nFügen Sie Ihre KI-generierten oder originalen Inhalte in die bereitgestellten leeren Vorlagen ein. Sie können auch neue Materialien mit Ihren bevorzugten Tools entwerfen.\n5. Aktivieren & Einbinden\nVerwenden Sie die visuellen Elemente als Gesprächseinstieg bei Workshops, Veranstaltungen oder Entrepreneurship-Programmen. Platzieren Sie sie strategisch auf dem Campus, um tägliche Interaktion zu inspirieren.",
+      "links": [
+        {
+          "title": "Das Entrepreneurial Wall Pack: Vorlagen, Zitate & KI-Leitfaden",
+          "url": "assets/tools/de/tool_1.1_TheEntrepreneurialWallPack.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool befähigt Fakultäten und Universitätsmitarbeiter, eine unternehmerische Kultur zu fördern, indem Campusbereiche wie Cafés und Co-Working-Zonen mit motivierenden, maßgeschneiderten Inhalten bereichert werden, die Kreativität, Engagement und unternehmerisches Denken anregen.",
+      "purpose": "Unternehmerisches Bewusstsein & Sensibilisierung",
+      "prerequisiteTools": "1. Canva oder ein beliebiges Design-Tool\n2. Generative KI-Tools wie ChatGPT\n3. Drucker und Papier",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 2,
+      "name": "Unternehmerisches Wörterbuch",
+      "summary": "Ein unterhaltsames, zugängliches unternehmerisches Wörterbuch für Studierende, Mitarbeiter & Forscher, um wichtige Begriffe des Unternehmertums ohne Angst oder Verwirrung zu verstehen.",
+      "description": "Das Unternehmerische Wörterbuch wurde entwickelt, um Universitäten und Einzelpersonen dabei zu helfen, unternehmerische Konzepte auf einfache, lustige Weise besser zu verstehen. Es schlüsselt Schlüsselbegriffe auf, die oft missverstanden werden oder einschüchternd wirken, und hilft so, Ängste und Missverständnisse rund um das Thema Unternehmertum abzubauen. Es richtet sich an Studierende, Fakultätsmitglieder oder Universitätsmitarbeiter, die neugierig auf die unternehmerische Denkweise sind. Dieses Tool bietet klare Definitionen, Beispiele und realen Kontext, um die unternehmerische Sprache für jeden zugänglich zu machen.",
+      "outcomes": "Studierende und Lehrkräfte gewinnen Sicherheit und Klarheit im Umgang mit wichtigen unternehmerischen Begriffen. Eine gemeinsame Sprache fördert eine bessere Zusammenarbeit über Fachbereiche hinweg. Das Tool unterstützt das Lernen in Kursen, Mentoring und Innovationszentren und lädt gleichzeitig zur Erkundung im eigenen Tempo ein.",
+      "instructions": "1. Öffnen Sie das PDF und gehen Sie die Liste der unternehmerischen Begriffe und Definitionen durch.\n2. Wählen Sie die Begriffe aus, die für die Ziele und Bildungsprogramme Ihrer Universität am relevantesten sind.\n3. Drucken Sie das Wörterbuch aus oder teilen Sie es digital mit Studierenden, Lehrkräften und Mitarbeitern.\n4. Verwenden Sie die Begriffe in Vorlesungen, Workshops und Gruppendiskussionen, um das unternehmerische Lernen zu verbessern.\n5. Integrieren Sie die Definitionen in Kursmaterialien, Präsentationen und Aufgaben.\n6. Ermutigen Sie Studierende, das Wörterbuch zu konsultieren, wenn sie an unternehmerischen Projekten arbeiten.",
+      "links": [
+        {
+          "title": "Unternehmerisches Wörterbuch",
+          "url": "assets/tools/de/tool_2.1_EntrepreneurialDictionary.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool macht Unternehmertum für akademische Zielgruppen nahbar und ansprechend, indem es Schlüsselkonzepte mit Klarheit und Humor vereinfacht. Es hilft Fakultäten und Mitarbeitern, sich mit unternehmerischem Denken auf eine Weise zu verbinden, die sich relevant, zugänglich – und sogar unterhaltsam anfühlt.",
+      "purpose": "Unternehmerische Vision und institutionelles Engagement",
+      "prerequisiteTools": "1. Ein elektronisches Gerät mit WLAN, um das Wörterbuch anzuzeigen",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 3,
+      "name": "Entrepreneurial KPI Dashboard",
+      "summary": "Ein Excel-Dashboard für unternehmerische KPIs, das Universitätsmitarbeitern hilft, die Leistung der Gründungsausbildung effizient zu bewerten, zu überwachen und zu verfolgen, unter Verwendung relevanter Leistungskennzahlen (KPIs).",
+      "description": "Das Entrepreneurial KPI Dashboard ist ein Excel-Tool, das Universitäten bei der Bewertung und Verbesserung ihrer Initiativen zur Gründungsausbildung unterstützen soll. Es bietet einen strukturierten und dennoch flexiblen Rahmen, der es Institutionen ermöglicht, relevante KPIs auszuwählen, individuelle Ziele festzulegen und den Fortschritt effektiv zu überwachen. Das Tool kann an spezifische institutionelle Bedürfnisse angepasst werden, indem neue Indikatoren hinzugefügt werden, was einen umfassenden und anpassungsfähigen Ansatz zur Leistungsverfolgung gewährleistet.",
+      "outcomes": "Universitäten beginnen, etabliertere und komplexere KPIs zu verschiedenen Aspekten der Gründungsausbildung zu verwenden. Ein strukturierter und datengesteuerter Ansatz zur Messung der Leistung in der Gründungsausbildung. Verbesserte Verantwortlichkeit über Abteilungen hinweg mit klarer Zuweisung von Zuständigkeiten. Gestärkte Entscheidungsfindung durch konsistente und transparente Berichterstattung.",
+      "instructions": "1. Laden Sie das PDF herunter, um die detaillierten Anweisungen und die Excel-Datei zu lesen.\n2. Erkunden Sie die Excel-Datei.\n3. Richten Sie das Tool ein.\n4. Bestimmen Sie relevante KPIs.\n5. Passen Sie die KPI-Details an.\n6. Überwachen und verfolgen Sie den Fortschritt.",
+      "links": [
+        {
+          "title": "Entrepreneurial KPI Dashboard",
+          "url": "assets/tools/de/tool_3.1_KPIDashboardInstructions.pdf"
+        },
+        {
+          "title": "Dashboard-Anleitung",
+          "url": "assets/tools/de/tool_3.2_KPIDashboard.xlsm"
+        }
+      ],
+      "benefits": "Dieses Tool ermöglicht es Universitäten, einen umfassenden Satz von Leistungskennzahlen (KPIs) für die Gründungsausbildung effektiv zu definieren und zu überwachen, was datengestützte Erkenntnisse und eine kontinuierliche Verbesserung ihrer Gründungsausbildung unterstützt.",
+      "purpose": "Unternehmerische Vision und institutionelles Engagement",
+      "prerequisiteTools": "1. Excel mit aktivierten Makros",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 4,
+      "name": "EngageTree: Unternehmertum an der Fakultät freisetzen",
+      "summary": "Der EngageTree ist ein Entscheidungsdiagramm, das Universitätsleitungen hilft, Hindernisse für das Engagement von Fakultätsmitgliedern im Unternehmertum schnell zu identifizieren und effektive, sofort umsetzbare Anreize zu finden, um die Teilnahme zu steigern.",
+      "description": "Das Tool wurde entwickelt, um Universitäten bei der Identifizierung und Umsetzung von Strategien zu unterstützen, die Fakultätsmitglieder und Mitarbeiter motivieren, sich in der Gründungsausbildung zu engagieren. Es präsentiert einen interaktiven Pfad, der Institutionen hilft, ihre aktuelle Unterstützungslandschaft zu bewerten, und sie zu umsetzbaren Anreizstrategien führt. Diese können finanzielle Anreize, Möglichkeiten zur beruflichen Weiterentwicklung, öffentliche Anerkennung oder andere nicht-monetäre Belohnungen umfassen, um die Teilnahme der Fakultät an unternehmerischen Initiativen zu fördern.",
+      "outcomes": "Erhöhtes Engagement der Fakultät in der Gründungsausbildung durch gezielte, barrierefreie Anreize. Effektivere Nutzung vorhandener Ressourcen durch Anwendung kostengünstiger Strategien mit hoher Wirkung. Größeres Bewusstsein der Fakultät für unternehmerische Möglichkeiten und Unterstützung. Gestärkte institutionelle Kultur, die unternehmerische Aktivitäten wertschätzt und belohnt.",
+      "instructions": "Anleitung\n1. Öffnen Sie den Mural-Link und erkunden Sie das Tool.\n2. Beginnen Sie mit der Beantwortung der ersten Frage und navigieren Sie durch den Ablauf, indem Sie bei jeder Frage \"Ja\" oder \"Nein\" wählen.\n3. Wenn Herausforderungen bestehen, bewerten Sie das primäre Hindernis (z. B. Finanzierung, Bewusstsein, Motivation, Anerkennung) und verwenden Sie die Leitfragen, um spezifische Problembereiche zu lokalisieren.\n4. Überprüfen Sie basierend auf den identifizierten Herausforderungen die vorgeschlagenen Lösungen.\n5. Wählen Sie die relevantesten Lösungen aus, wenden Sie sie an und überwachen Sie deren Auswirkung auf das Engagement der Fakultät.\n6. Falls erforderlich, drucken Sie die Karte aus, um sie mit Ihrem Team zu verwenden.",
+      "links": [
+        {
+          "title": "EngageTree: Unternehmertum an der Fakultät freisetzen",
+          "url": "assets/tools/de/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool hilft Universitätsleitungen, wichtige Hindernisse für das Engagement der Fakultät im Unternehmertum zu identifizieren und maßgeschneiderte, kostengünstige Anreizstrategien zu entdecken, die Motivation, Bewusstsein und Teilnahme durch ein einfach zu bedienendes Entscheidungsbaumformat steigern.",
+      "purpose": "Motivation, Anreize & Anerkennung für Personal & Lehrkräfte",
+      "prerequisiteTools": "1. Mural-Konto zum Kopieren der Vorlage\n2. Alternativ Drucker und Papier zum Ausdrucken des Diagramms",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 5,
+      "name": "Entrepreneurial Resource Mapping Journey",
+      "summary": "Die Entrepreneurial Resource Mapping Journey ist ein 7-Schritte-Canvas mit Leitfragen, der Universitätsleitungen hilft, die institutionelle Unterstützung für Unternehmertum auf klare und umsetzbare Weise zu visualisieren, zu bewerten und zu stärken.",
+      "description": "Das Entrepreneurial Resource Mapping Tool ist eine interaktive Mural-Vorlage, die Universitäten dabei unterstützt, ihre unternehmerischen Ressourcen visuell zu organisieren und zu optimieren. Es bietet einen strukturierten Rahmen, der Fakultätsmitglieder und Mitarbeiter durch einen schrittweisen Prozess führt, um verfügbare Ressourcen wie Finanzierung, Einrichtungen und Unterstützungsprogramme zu identifizieren, zu kategorisieren und zu bewerten. Das Tool ermöglicht es Universitäten, Lücken aufzuzeigen, Verantwortlichkeiten zu klären und Aktionspläne für eine bessere Ressourcennutzung zu entwickeln.",
+      "outcomes": "Universitäten erhalten einen klaren Überblick über ihre unternehmerischen Ressourcen und treffen fundiertere, strategische Entscheidungen darüber, wie diese zugewiesen und verbessert werden können.",
+      "instructions": "1. Öffnen Sie den bereitgestellten Link zum Entrepreneurial Resource Mapping Tool.\n2. Um das Tool zu verwenden, klicken Sie in der Mural-Oberfläche auf die Option 'Duplizieren'. Dies ermöglicht es Ihnen, eine bearbeitbare Version für Ihre Institution zu erstellen.\n3. Das Tool ist in sieben klare Schritte unterteilt – jeder ist darauf ausgelegt, Sie durch verschiedene Phasen der Ressourcenkartierung zu führen.\n4. Fügen Sie Ideen hinzu, kategorisieren Sie Ressourcen und dokumentieren Sie Erkenntnisse mit den farbcodierten Haftnotizen, die in jedem Schritt bereitgestellt werden.\n5. Sobald dies abgeschlossen ist, analysieren Sie die Ergebnisse und ergreifen Sie die notwendigen Maßnahmen, um Ihre Strategie für unternehmerische Ressourcen zu optimieren und zu verbessern.",
+      "links": [
+        {
+          "title": "Entrepreneurial Resource Mapping Journey",
+          "url": "assets/tools/de/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool ermöglicht es Universitätsleitungen, die Unterstützung für unternehmerische Aktivitäten zu kartieren, zu bewerten und zu optimieren, indem Ressourcen identifiziert, Lücken behoben, Verantwortlichkeiten geklärt und umsetzbare Pläne für eine ordnungsgemäße Nutzung und Maximierung der Ressourcenwirkung erstellt werden.",
+      "purpose": "Motivation, Anreize & Anerkennung für Personal & Lehrkräfte",
+      "prerequisiteTools": "1. Idealerweise Zugang zu einer digitalen Kollaborationsplattform wie Mural oder Miro für die interaktive Nutzung.\n2. Alternativ Drucker und Papier zum Ausdrucken des Canvas für das manuelle Ausfüllen.",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 6,
+      "name": "Bewertungstool für unternehmerische Kompetenzen",
+      "summary": "Das Bewertungstool für unternehmerische Kompetenzen stattet Universitätsleitungen und Entscheidungsträger mit einer praktischen, auf EntreComp basierenden Ressource aus, um unternehmerische Kompetenzen in Rekrutierungs- und Personalentwicklungsprozessen zu identifizieren, zu bewerten und zu entwickeln.",
+      "description": "Das Tool bietet gebrauchsfertige Vorlagen und Fallszenarien, die die Bewertung von unternehmerischen Fähigkeiten, die für akademische Kontexte relevant sind, vereinfachen und einen konsistenten und aufschlussreichen Bewertungsprozess gewährleisten. Das Tool basiert auf dem EntreComp-Rahmenwerk, aus dem 12 Kernkompetenzen ausgewählt wurden. Für jede dieser Kompetenzen verfügt das Tool über eine individuelle Vorlage, die darauf ausgelegt ist, unternehmerische Fähigkeiten anhand realistischer, auf die akademische Welt zugeschnittener Szenarien zu bewerten. Darüber hinaus enthält das Tool allgemeine Fallszenarien, die mehrere Kompetenzen gleichzeitig bewerten.",
+      "outcomes": "Universitäten können einen standardisierten Rahmen für die Bewertung unternehmerischer Kompetenzen bei der Rekrutierung und Personalentwicklung etablieren. Gewinnen Sie tiefere Einblicke in das unternehmerische Potenzial von Fakultätsmitgliedern und Mitarbeitern, was eine bessere Ausrichtung auf institutionelle Ziele ermöglicht. Verbesserte Auswahl und Entwicklung von Pädagogen mit unternehmerischen Kompetenzen. Fakultätsmitglieder und Mitarbeiter werden sich ihrer unternehmerischen Stärken und Entwicklungsbereiche bewusster.",
+      "instructions": "Anleitung\n1. Laden Sie die bereitgestellten Vorlagen herunter und überprüfen Sie die abgedeckten Kompetenzen.\n2. Wählen Sie die Vorlagen aus, die zu der Rolle oder den Entwicklungszielen passen, die Sie bewerten möchten.\n3. Geben Sie das ausgewählte Szenario dem Kandidaten oder Mitarbeiter zur Beantwortung.\n4. Vergleichen Sie die Antwort mit den bereitgestellten Kompetenzniveaus, um deren Level zu bestimmen.\n5. Geben Sie Feedback und schlagen Sie basierend auf der Bewertung Verbesserungsbereiche vor.\n6. Verwenden Sie die allgemeinen Fallszenarien für eine breitere Bewertung mehrerer Kompetenzen.\n7. Wenden Sie die Ergebnisse an, um fundierte Rekrutierungsentscheidungen zu treffen oder Entwicklungspläne zu erstellen.",
+      "links": [
+        {
+          "title": "Bewertungstool für unternehmerische Kompetenzen",
+          "url": "assets/tools/de/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool unterstützt Universitätsleitungen bei der Integration von Unternehmertum in akademische Karrierewege, indem es eine strukturierte und standardisierte Methode zur Bewertung unternehmerischer Kompetenzen bietet. Es hilft Institutionen, fundierte Einstellungs- und Personalentwicklungsentscheidungen zu treffen und sicherzustellen, dass unternehmerische Kompetenzen in akademischen Umgebungen geschätzt und gepflegt werden.",
+      "purpose": "Kontinuierliche Innovation in der Gründungsausbildung",
+      "prerequisiteTools": "1. Zugang zu Microsoft Word\n2. Alternativ Drucker und Papier zum Ausdrucken der Szenarien",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 7,
+      "name": "EntreComp-Integrations-Canvas",
+      "summary": "Ein visuelles Tool, das Pädagogen bei der Gestaltung von Kursen mit EntreComp unterstützt, indem es einen strukturierten Canvas und Leitkarten zur Planung, Bewertung und Überwachung unternehmerischer Kompetenzen verwendet.",
+      "description": "Der EntreComp-Integrations-Canvas ist ein Visualisierungstool, das einen ganzheitlichen Überblick über die Komponenten bietet, die erforderlich sind, um einen Kurs zu erstellen, in dem unternehmerische Kompetenzen enthalten sind. Der Canvas enthält einen Satz Karten, um Pädagogen beim Ausfüllen des Canvas anzuleiten, indem ihnen Triggerfragen zu jedem Teil des Canvas gestellt werden. Am Ende verfügen sie über alle notwendigen Informationen und Elemente, um einen Kurs zu implementieren und zu überwachen.",
+      "outcomes": "Erhöhtes Bewusstsein und Verständnis für EntreComp-Kompetenzen. Integration von EntreComp-Kompetenzen in Kurse aller Fachrichtungen. Entwicklung unternehmerischer Kompetenzen bei den Studierenden. Bewertung der unternehmerischen Kompetenzen zu Beginn und am Ende eines Kurses.",
+      "instructions": "1. Laden Sie den Canvas herunter und drucken Sie ihn bei Bedarf aus.\n2. Laden Sie die Karten herunter und drucken Sie sie bei Bedarf aus.\n3. Verwenden Sie die Karten, um jeden Teil des Canvas auszufüllen. Versuchen Sie, mit anderen Kollegen zusammenzuarbeiten, um die Fragen und Informationen auf den Karten zu besprechen.\n4. Gestalten Sie den Kurs entsprechend dem ausgefüllten Canvas.",
+      "links": [
+        {
+          "title": "Kursdesign-Canvas",
+          "url": "assets/tools/de/tool_7.1_CourseDesign_canvas.pdf"
+        },
+        {
+          "title": "Kursdesign-Karten 1",
+          "url": "assets/tools/de/tool_7.2_Course_designcards_1.pdf"
+        },
+        {
+          "title": "Kursdesign-Karten 2",
+          "url": "assets/tools/de/tool_7.3_Course_design_cards_2.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool hilft Pädagogen, die individuellen unternehmerischen Stärken, Schwächen, Typen und Fähigkeiten von Studierenden zu identifizieren und zu bewerten.",
+      "purpose": "Kontinuierliche Innovation in der Gründungsausbildung",
+      "prerequisiteTools": "1. Mural-Konto zum Kopieren des Canvas.\n2. Alternativ Drucker und Papier zum Ausdrucken des Canvas und der Karten",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 8,
+      "name": "EntreComp KI & VR Ressourcen-Guide",
+      "summary": "Der EntreComp KI & VR Ressourcen-Guide stattet Universitäten und Pädagogen mit praktischen Empfehlungen für kostenlose, Open-Source-KI- und VR-Tools aus, die am EntreComp-Rahmenwerk ausgerichtet sind, um die Gründungsausbildung zu modernisieren.",
+      "description": "Dieser Leitfaden soll Universitäten und Pädagogen dabei helfen, digitale Tools in die Gründungsausbildung zu integrieren und sich dabei an aktuellen Trends und Bildungsanforderungen zu orientieren. Basierend auf dem EntreComp-Rahmenwerk empfiehlt diese Ressource kostenlose, Open-Source-KI- und VR-Tools, die verschiedene Phasen der unternehmerischen Reise unterstützen können.",
+      "outcomes": "Studierende und Pädagogen beginnen, KI- und VR-Tools in die Gründungsausbildung zu integrieren und deren Potenzial in echten unternehmerischen Projekten zu erkunden. Universitäten kultivieren eine technologiegetriebenere unternehmerische Kultur und rüsten Studierende aus, um den Anforderungen der heutigen Geschäftswelt gerecht zu werden. Infolgedessen verbessern Lernende ihre Fähigkeit, Markttrends zu erkennen, innovative Geschäftsideen zu generieren und digitale Prototypen für unternehmerische Vorhaben zu entwickeln.",
+      "instructions": "1. Identifizieren Sie, in welcher Phase der unternehmerischen Reise sich Ihre Studierenden befinden. 2. Erkunden Sie die vorgeschlagenen Tools für jede Phase. 3. Verwenden Sie die Tools in Unterrichtsstunden, Projekten und Aktivitäten. 4. Überprüfen Sie, wie gut die Tools funktionieren, und passen Sie sie bei Bedarf an.",
+      "links": [
+        {
+          "title": "EntreComp KI & VR Ressourcen-Guide",
+          "url": "assets/tools/de/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool unterstützt Institutionen bei der nahtlosen Integration innovativer digitaler Technologien in ihre Entrepreneurship-Programme und stellt sicher, dass die Ausbildung mit technologischen Trends Schritt hält und den sich entwickelnden Bildungsanforderungen gerecht wird.",
+      "purpose": "Kontinuierliche Innovation in der Gründungsausbildung",
+      "prerequisiteTools": "Internetverbindung und Zugang zu den gewünschten KI-Tools",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 9,
+      "name": "Fahrplan für Förderanträge",
+      "summary": "Der Fahrplan für Förderanträge leitet Forscher oder Mitarbeiter an, EU- und regionale Fördermöglichkeiten zu navigieren, detailliert Zulassungskriterien, bietet Schritt-für-Schritt-Anleitungen zur Antragstellung und teilt praktische Tipps zur Erstellung wettbewerbsfähiger Förderanträge.",
+      "description": "Dieser Leitfaden zur Antragstellung soll Antragstellern für Fördermöglichkeiten helfen, indem er einen Fahrplan für die Identifizierung, Beantragung und erfolgreiche Sicherung von Finanzmitteln für Entrepreneurship-Initiativen bietet. Sein Zweck ist es, Universitäten und Akademiker mit praktischem Wissen und Strategien auszustatten, um effektiv auf finanzielle Ressourcen zuzugreifen.",
+      "outcomes": "Verbessertes Bewusstsein und Verständnis für EU- und regionale Fördermöglichkeiten für Unternehmertum und Forschung. Gestärkte Kapazität zur Entwicklung wettbewerbsfähiger, qualitativ hochwertiger Förderanträge, die auf institutionelle Prioritäten abgestimmt sind. Verbesserte Fähigkeit, Zulassungskriterien zu erfüllen und EU-Fördervorschriften einzuhalten. Erhöhter Zugang zu finanziellen Ressourcen, die Innovation, unternehmerische Initiativen und akademischen Fortschritt unterstützen.",
+      "instructions": "1. Laden Sie das PDF herunter, lesen Sie die Einführung und erkunden Sie die verschiedenen Abschnitte.\n2. Identifizieren Sie relevante Förderprogramme aus den bereitgestellten Ressourcen und bewerten Sie deren Ziele und Zulassungskriterien.\n3. Vergleichen Sie den Umfang, die Partnerschaften und die Ziele Ihres Projekts mit den Kriterien, die für jede Fördermöglichkeit aufgeführt sind.\n4. Verwenden Sie die Schritt-für-Schritt-Anleitung, um einen guten Antrag zu schreiben.\n5. Beziehen Sie sich auf die bereitgestellten Checklisten für jeden Schritt, um sicherzustellen, dass während der Vorbereitung keine Details übersehen werden.\n6. Verwenden Sie den Abschnitt mit Tipps, um Ihre Anträge zu verfeinern.",
+      "links": [
+        {
+          "title": "Fahrplan für Förderanträge",
+          "url": "assets/tools/de/tool_9.1_Grant_application_guideline.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool befähigt Antragsteller, Fördermittel für Entrepreneurship-Programme selbstbewusst zu identifizieren und zu sichern, Ressourcenlücken zu schließen und ein nachhaltiges Wachstum von Initiativen zur Gründungsausbildung zu ermöglichen.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Internetverbindung",
+      "partner": "ACEEU"
+    },
+    {
+      "number": 10,
+      "name": "Planung und Finanzierung der Gründungsausbildung",
+      "summary": "Dieses Tool wurde für Fakultäten, Finanzmitarbeiter und Innovationsteams entwickelt und hilft Universitäten, finanzielle Investitionen in die Gründungsausbildung zu identifizieren, zu verfolgen und zu planen, um datengestützte strategische Entscheidungen zu unterstützen.",
+      "description": "Planung und Finanzierung der Gründungsausbildung ist eine gebrauchsfertige Vorlage für Fakultäten, Finanzteams und Innovationsmitarbeiter. Sie bietet eine strukturierte Möglichkeit, Daten zu finanziellen Investitionen in die Gründungsausbildung über Fakultäten und Abteilungen hinweg zu sammeln und zu analysieren. Das Tool unterstützt eine verbesserte Planung, hebt Lücken oder Ineffizienzen hervor und hilft, Ressourcen mit den strategischen Zielen der Universität für das Unternehmertum in Einklang zu bringen.",
+      "outcomes": "Mit dieser Vorlage können Universitäten einen klaren, datengestützten Überblick darüber entwickeln, wie viel derzeit in die Gründungsausbildung investiert wird. Sie hilft dabei zu identifizieren, wo Ressourcen fehlen, doppelt vorhanden sind oder nicht ausreichend genutzt werden, was eine effektivere Ausrichtung auf strategische Ziele ermöglicht. Der Prozess unterstützt eine stärkere Planung und Priorisierung durch zuverlässige finanzielle Einblicke. Er verbessert auch die Transparenz und Rechenschaftspflicht, sodass Institutionen den Wert ihrer Bemühungen im Bereich Unternehmertum gegenüber der Führung und den Interessengruppen demonstrieren können. Im Laufe der Zeit kann dieses Tool als Grundlage für eine konsistentere Nachverfolgung und fundiertere Finanzierungsentscheidungen dienen.",
+      "instructions": "Dies ist eine Vorlage, die Universitäten oder Organisationen anpassen und neu gestalten können, um sie an ihren eigenen Kontext anzupassen. Die folgenden Schritte leiten die Benutzer durch das Sammeln und Verwenden von Finanzdaten zur Information der strategischen Planung.\n1. Verteilen Sie die Umfrage\nTeilen Sie den Link zur Google-Formular-Umfrage mit wichtigen Vertretern von Fakultäten wie Wirtschaft, Ingenieurwesen, Sozialwissenschaften, Naturwissenschaften und Abteilungen wie Finanzen und Entrepreneurship-Zentren.\n2. Fordern Sie qualitativen und quantitativen Input an\nBitten Sie jeden Befragten, sowohl Finanzdaten (z. B. Budgets, Ausgabenzahlen) als auch qualitative Einblicke darüber bereitzustellen, wie Mittel im Zusammenhang mit Unternehmertum verwendet werden.\n3. Sammeln und konsolidieren Sie Antworten\nVerwenden Sie Google Formulare, um Eingaben automatisch zu sammeln. Exportieren Sie die Antworten zur weiteren Analyse oder überprüfen Sie wichtige Trends mithilfe der integrierten Berichtsfunktionen.\n4. Generieren Sie erste Ergebnisse\nIdentifizieren Sie das Gesamtinvestitionsniveau, die primären Finanzierungsquellen und wie die Mittel auf die Abteilungen verteilt sind. Notieren Sie fehlende Daten oder unklare Ausgaben.\n5. Identifizieren Sie strategische Chancen\nErkennen Sie unterfinanzierte Bereiche (z. B. Inkubatoren oder Unterstützung für studentische Startups) und vergleichen Sie das Investitionsniveau der Abteilungen mit den allgemeinen Zielen der Gründungsausbildung.\n6. Berichten Sie und empfehlen Sie Maßnahmen\nPräsentieren Sie Ihre Ergebnisse der Führungsebene. Nutzen Sie die Erkenntnisse, um Verbesserungen bei der Ressourcenverteilung vorzuschlagen oder eine regelmäßige finanzielle Nachverfolgung in die Planungsprozesse der Universität einzubetten.",
+      "links": [
+        {
+          "title": "Google Formular Vorlage für Finanzplanung",
+          "url": "assets/tools/de/tool_10.1_PlanningandFinancingEntrepreneurshipEducationDataCollectionTemplate.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool hilft Universitäten, einen klaren Überblick über finanzielle Investitionen in die Gründungsausbildung zu gewinnen. Es unterstützt eine bessere Planung, Ressourcenzuweisung und Ausrichtung auf institutionelle Ziele, indem es Input über Abteilungen hinweg sammelt und datengesteuerte Entscheidungen ermöglicht.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Internetzugang",
+      "partner": "EUEI"
+    },
+    {
+      "number": 11,
+      "name": "Selbstbewertung zu unternehmerischer Denkweise und Kompetenz",
+      "summary": "Die Selbstbewertung zu unternehmerischer Denkweise und Kompetenz richtet sich an Studierende, Pädagogen und junge Unternehmer. Sie hilft Nutzern, ihre unternehmerischen Stärken und Entwicklungsbereiche in Bezug auf Denkweise, emotionale Intelligenz und soziale Verantwortung zu verstehen.",
+      "description": "Die Selbstbewertung zu unternehmerischer Denkweise und Kompetenz wurde für Studierende, Pädagogen und angehende Unternehmer entwickelt. Sie hilft Nutzern, ihre unternehmerische Denkweise und Kernkompetenzen, einschließlich emotionaler Intelligenz, sozialer Verantwortung und Inklusion, zu bewerten. Durch einen strukturierten Online-Fragebogen erhalten Einzelpersonen personalisiertes Feedback und praktische Empfehlungen, um ihre Entwicklung zu steuern und sich besser auf unternehmerische Herausforderungen vorzubereiten.",
+      "outcomes": "Durch die Nutzung dieses Tools gewinnen Einzelpersonen ein tieferes Verständnis ihrer unternehmerischen Denkweise und Kernkompetenzen. Das personalisierte Feedback hilft ihnen, sowohl Stärken als auch Entwicklungsbereiche in Schlüsselbereichen wie emotionaler Intelligenz, Kreativität und sozialer Verantwortung zu identifizieren. Dieses gesteigerte Selbstbewusstsein ermöglicht gezielteres Lernen und Kompetenzaufbau. Nutzer sind besser darauf vorbereitet, unternehmerisch zu handeln, effektiv in diversen Teams zu arbeiten und ihre Entwicklung am EntreComp-Rahmenwerk auszurichten. Das Tool bietet auch einen Ausgangspunkt für geführte Unterstützung durch Pädagogen oder Mentoren.",
+      "instructions": "1. Zugriff auf die Bewertung\nTeilen Sie den Link zu Brilliant Assessments mit Studierenden, Pädagogen oder angehenden Unternehmern, die daran interessiert sind, ihre unternehmerische Denkweise und Fähigkeiten zu bewerten.\n2. Füllen Sie den Fragebogen aus\nBitten Sie die Teilnehmer, ehrlich und nachdenklich zu antworten, um ein genaues und aussagekräftiges Feedback zu gewährleisten.\n3. Erhalten Sie personalisierte Ergebnisse\nNach Abschluss erhalten die Nutzer einen detaillierten Bericht, der ihre Stärken und Entwicklungsbereiche in drei Kernbereichen aufzeigt:\n- Ideen und Chancen\n- Ressourcen\n- In die Tat umsetzen\n4. Überprüfen und Reflektieren\nErmutigen Sie die Nutzer, ihre Ergebnisse sorgfältig zu prüfen, um zu verstehen, wo sie sicher sind und wo sie weitere Entwicklung benötigen könnten.\n5. Handeln Sie\nLeiten Sie die Nutzer an, den im Bericht enthaltenen maßgeschneiderten Empfehlungen zu folgen. Diese können Vorschläge für spezifische Lernaktivitäten oder Verhaltensweisen enthalten, auf die man sich konzentrieren sollte.\n6. Erkunden Sie weitere Ressourcen\nEmpfehlen Sie die Nutzung von Start-DSP oder anderen Lerntools, um auf den Erkenntnissen aus der Bewertung aufzubauen und die laufende Entwicklung zu unterstützen.",
+      "links": [
+        {
+          "title": "Selbstbewertung zu unternehmerischer Denkweise und Kompetenz",
+          "url": "https://thevisionworks.brilliantassessments.com/Home/Index/?responseCode=xHdoS1gx68ycu25ZdTEcnkvwmKxlTZwi71RrAoSD7temxn5ZWucFMntqn4YMTzAIYUhymTpL0uSLZIYtKl4wrDslAshrbQ9PBjExNzE2OTceQu0aLs"
+        }
+      ],
+      "benefits": "Vielen Menschen fehlen wichtige unternehmerische Kompetenzen, die in der heutigen Welt benötigt werden. Dieses Tool hilft Nutzern, ihre Denkweise, emotionale Intelligenz, soziale Verantwortung und ihr Bewusstsein für Inklusion zu bewerten. Es unterstützt das persönliche Wachstum durch Einblicke und praktische Schritte zur Entwicklung.",
+      "purpose": "Förderung einer unternehmerischen Denkweise & Kultur",
+      "prerequisiteTools": "Internetzugang",
+      "partner": "EUEI"
+    },
+    {
+      "number": 12,
+      "name": "Video-Toolbox für unternehmerische Denkweise",
+      "summary": "Die Video-Toolbox für unternehmerische Denkweise unterstützt Studierende, Pädagogen und junge Unternehmer bei der Erkundung wichtiger menschlicher Fähigkeiten wie emotionaler Intelligenz, Ethik und Inklusion – jenseits der betriebswirtschaftlichen Grundlagen –, um eine verantwortungsvollere und resilientere unternehmerische Denkweise aufzubauen.",
+      "description": "Die Video-Toolbox für unternehmerische Denkweise richtet sich an Studierende, Pädagogen und junge Unternehmer. Sie bietet eine kuratierte Auswahl an Videos, die die für modernes Unternehmertum erforderliche Denkweise erforschen. Die Toolbox beleuchtet emotionale Intelligenz, ethische Führung, Anpassungsfähigkeit und Inklusion – Fähigkeiten, die in der traditionellen Wirtschaftsausbildung oft übersehen werden. Sie regt zur Reflexion, Diskussion und Integration sowohl in den Unterricht als auch in das unabhängige Lernen an.",
+      "outcomes": "Nutzer entwickeln ein breiteres Verständnis von Unternehmertum, das über Finanzen und Businessplanung hinausgeht. Die Toolbox schärft das Bewusstsein für wichtige menschenzentrierte Kompetenzen wie emotionale Intelligenz, Ethik, Anpassungsfähigkeit und Inklusion. Lernende werden reflektierter und besser darauf vorbereitet, reale Herausforderungen mit einer verantwortungsvollen und resilienten Denkweise zu meistern. Die Videos unterstützen auch eine ansprechendere und nachvollziehbare Gründungsausbildung und helfen Pädagogen, komplexe Themen durch zugängliche Inhalte einzuführen.",
+      "instructions": "Diese Toolbox kann direkt verwendet oder von Universitäten, Pädagogen und Trainern angepasst werden, um die Entwicklung der Denkweise in der Gründungsausbildung zu unterstützen.\n1. Zugriff auf die Video-Toolbox\nTeilen Sie die YouTube-Playlist mit Studierenden, Pädagogen oder jungen Unternehmern als Teil eines Kurses, Workshops oder einer unabhängigen Lernaktivität.\n2. Wählen Sie relevante Videos aus\nWählen Sie Videos aus, die Ihren Lernzielen entsprechen, wie z. B. emotionale Intelligenz, Ethik, Nachhaltigkeit oder inklusive Innovation.\n3. Ansehen und Reflektieren\nErmutigen Sie die Nutzer, sich die Videos anzusehen und über die Kernaussagen nachzudenken. Verwenden Sie gegebenenfalls Leitfragen oder Reflexionsanregungen.\n4. Gruppendiskussionen moderieren\nVerwenden Sie die Videos als Grundlage für Diskussionen im Klassenzimmer oder Workshop. Ermutigen Sie die Teilnehmer, Perspektiven zu teilen und Erkenntnisse auf ihre eigene unternehmerische Reise zu beziehen.\n5. Verlinkung zu weiterem Lernen\nVerbinden Sie die Inhalte mit Start-DSP oder anderen Lernressourcen, um das Verständnis zu vertiefen und den Kompetenzaufbau zu unterstützen.",
+      "links": [
+        {
+          "title": "Video-Toolbox für unternehmerische Denkweise – Playlist-Link",
+          "url": "https://www.youtube.com/playlist?list=PLuGfWmFV-HaKJW1ShwspfNkXbcHicwB4A"
+        }
+      ],
+      "benefits": "Traditionelle Gründungsausbildung übersieht oft Denkweise, Ethik und Inklusion. Diese Toolbox hilft Nutzern, diese wesentlichen Bereiche durch kuratierte Videoinhalte zu erkunden. Sie schafft Bewusstsein für emotionale Intelligenz, ethische Führung und Vielfalt in der modernen unternehmerischen Praxis.",
+      "purpose": "Förderung einer unternehmerischen Denkweise & Kultur",
+      "prerequisiteTools": "Internetzugang",
+      "partner": "EUEI"
+    },
+    {
+      "number": 13,
+      "name": "Rollennavigator für die Gründungsausbildung",
+      "summary": "Der Rollennavigator hilft Akademikern außerhalb der Wirtschaftswissenschaften, ihre potenziellen Beiträge zur Gründungsausbildung zu identifizieren. Er steigert das institutionelle Bewusstsein und unterstützt die inklusive Teilnahme über Fachdisziplinen hinweg durch maßgeschneiderte Rollenvorschläge und personalisiertes Feedback.",
+      "description": "Der Rollennavigator wurde für Akademiker außerhalb der Wirtschaftswissenschaften entwickelt, die ihre Rolle in der Gründungsausbildung verstehen möchten. Durch eine kurze Bewertung erhalten die Teilnehmer personalisiertes Feedback, das hervorhebt, wie ihr Lehrstil, ihre Interessen und ihre fachlichen Stärken zum unternehmerischen Lernen beitragen können. Das Tool fördert eine breitere akademische Beteiligung über traditionelle Wirtschaftsfakultäten hinaus.",
+      "outcomes": "Breiteres Engagement von nicht-wirtschaftswissenschaftlichen Akademikern in der Gründungsausbildung\nErhöhte interdisziplinäre Zusammenarbeit innerhalb der Universitäten\nVerbesserte Rollenklarheit und Motivation beim akademischen Personal\nIdentifizierung von Fakultätsmitgliedern mit hohem Potenzial für unternehmerische Initiativen\nEinbeziehung diverser Perspektiven in Lehre und Unterstützung des Unternehmertums",
+      "instructions": "Teilen Sie den Bewertungslink mit der Fakultät über Newsletter, Schulungssitzungen oder Onboarding-Materialien.\nLaden Sie Akademiker außerhalb der Wirtschaftswissenschaften ein, die kurze Selbstbewertung (ca. 10–15 Minuten) auszufüllen.\nDie Teilnehmer reflektieren über ihre Disziplin, Interessen und aktuellen Lehrmethoden.\nNach dem Absenden erhält jeder Teilnehmer einen personalisierten PDF-Feedbackbericht.\nErmutigen Sie die Teilnehmer, vorgeschlagene Rollen zu überprüfen und konkrete nächste Schritte (z. B. Mentoring, Co-Teaching) in Betracht zu ziehen.\nVeranstalten Sie optional Folgesitzungen, um Akademiker zu vernetzen und Möglichkeiten der Zusammenarbeit zu besprechen.",
+      "links": [
+        {
+          "title": "Zugang zur Bewertung",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Entrepreneurship%20Educator%20Roles"
+        }
+      ],
+      "benefits": "Dieses Tool hilft Fakultätsmitgliedern außerhalb der Wirtschaftswissenschaften zu erkunden, wie ihre fachliche Expertise, ihr Lehransatz und ihre Interessen mit der Gründungsausbildung übereinstimmen. Es klärt Rollen wie Mentoring oder Co-Teaching und fördert eine breitere interdisziplinäre Einbindung in unternehmerische Initiativen.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Internetverbindung\nZugang zur Online-Bewertung\nPDF-Reader für den Feedbackbericht\n10–15 Minuten Zeit des Teilnehmers\nOptional: interner Workshop oder Mentoringsitzung",
+      "partner": "TVW"
+    },
+    {
+      "number": 14,
+      "name": "Bewertung der Lehrinnovation im Unternehmertum",
+      "summary": "Die Bewertung der Lehrinnovation unterstützt Hochschulpädagogen bei der Erkundung und Anwendung von Formaten der Gründungsausbildung. Sie bietet personalisiertes Feedback, um die Lehrpraxis zu verbessern und das studentische Engagement mit innovativen, praxisnahen Methoden zu fördern.",
+      "description": "Die Bewertung der Lehrinnovation ist für Hochschulpädagogen aller Disziplinen konzipiert. Sie bewertet das Bewusstsein, das Interesse und die Bereitschaft zur Nutzung von Formaten der Gründungsausbildung, wie z. B. erfahrungsbasiertes und simulationsbasiertes Lernen. Die Teilnehmer erhalten maßgeschneidertes Feedback und umsetzbare Vorschläge zur Verbesserung ihres Unterrichts. Das Tool hilft Universitäten, eine innovativere und unternehmerischere Lehrkultur zu fördern.",
+      "outcomes": "Erhöhtes Bewusstsein der Pädagogen für diverse Entrepreneurship-Formate\nGrößere Akzeptanz innovativer, schülerzentrierter Lehrmethoden\nVerbessertes studentisches Engagement im unternehmerischen Lernen\nIdentifizierung und Abbau von Implementierungsbarrieren\nInterdisziplinärer Dialog über Lehrinnovation\nInstitutionelle Erkenntnisse für die Planung der beruflichen Weiterentwicklung",
+      "instructions": "Greifen Sie über den bereitgestellten Link auf die Bewertung zu (browserbasiert, keine Installation erforderlich).\nFüllen Sie den Fragebogen aus, was etwa 10–15 Minuten dauert.\nReflektieren Sie ehrlich über Ihre aktuelle Vertrautheit, Interessen und Herausforderungen in Bezug auf Formate der Gründungsausbildung.\nSenden Sie Ihre Antworten ab, um einen personalisierten PDF-Feedbackbericht zu generieren.\nLaden Sie den Bericht herunter.\nÜberprüfen Sie das Feedback, einschließlich abschnittsweiser Erkenntnisse und vorgeschlagener nächster Schritte.\nNutzen Sie die Ergebnisse, um Wachstumsbereiche zu identifizieren, mit Kollegen zu diskutieren oder institutionelle Schulungsmaßnahmen zu informieren.",
+      "links": [
+        {
+          "title": "Zugang zur Bewertung",
+          "url": "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Teaching%20Innovation%20Assessment"
+        }
+      ],
+      "benefits": "Dieses Tool hilft Pädagogen, ihre Vertrautheit mit und Offenheit für Formate der Gründungsausbildung zu bewerten. Es identifiziert Barrieren, bietet umsetzbare Anleitungen und fördert die Einführung von Methoden wie erfahrungsbasiertem und problembasiertem Lernen, um unternehmerisches Denken zu unterstützen.",
+      "purpose": "Unternehmerisches Bewusstsein & Sensibilisierung",
+      "prerequisiteTools": "Internetverbindung\nZugang zum Online-Bewertungslink\nPDF-Reader für den Feedbackbericht\n10–15 Minuten ungestörte Zeit\nOptional: institutionelle Nachverfolgung oder Workshop-Moderation",
+      "partner": "TVW"
+    },
+    {
+      "number": 15,
+      "name": "Sustainable Business Model Canvas",
+      "summary": "Der Sustainable Business Model Canvas hilft Hochschulpädagogen, Nachhaltigkeit in die Lehre von Geschäftsmodellen zu integrieren. Er ermöglicht Studierenden, Geschäftsmodelle zu entwerfen, die ökonomischen, sozialen und ökologischen Wert verbinden.",
+      "description": "Der Leitfaden zum Sustainable Business Model Canvas richtet sich an Pädagogen in den Bereichen Unternehmertum, Wirtschaft und Nachhaltigkeit. Er unterstützt die Integration von Nachhaltigkeitsprinzipien in die Lehre, indem er eine strukturierte Methode zur Analyse und Entwicklung von Geschäftsmodellen bietet, die wirtschaftlichen, ökologischen und sozialen Mehrwert schaffen. Das Tool hilft Studierenden, die breiteren Auswirkungen unternehmerischer Entscheidungen zu verstehen, und stattet sie mit praktischen Fähigkeiten aus, um verantwortungsvolle, zukunftsorientierte Unternehmungen zu entwerfen.",
+      "outcomes": "Studierende entwerfen Geschäftsmodelle, die ökologische und soziale Dimensionen integrieren.\nLernende entwickeln einen systemorientierten Ansatz für das Unternehmertum.\nErhöhtes Bewusstsein für Zielkonflikte bei Nachhaltigkeit in der Geschäftsplanung.\nVerbesserte Fähigkeit, langfristige geschäftliche Auswirkungen kritisch zu bewerten.\nVerbesserte Teamarbeit und Kommunikationsfähigkeiten durch kollaborative Modellierung.\nPädagogen erhalten eine strukturierte Methode zur Lehre von nachhaltigem Unternehmertum.\nUniversitäten fördern eine Kultur verantwortungsvoller Innovation.",
+      "instructions": "Schritt 1: Vorbereitung\n•\tStellen Sie den Business Model Canvas als Basisrahmen vor.\n•\tPräsentieren Sie den SBMC und erklären Sie seinen erweiterten Zweck.\n•\tDiskutieren Sie Nachhaltigkeitsdimensionen und die Relevanz für die Geschäftsstrategie.\n•\tVerteilen Sie leere SBMC-Vorlagen (physisch oder digital).\nSchritt 2: Geschäftsmodellentwicklung\n•\tBitten Sie die Studierenden, eine Geschäftsidee unter Verwendung des SBMC zu entwickeln oder zu verfeinern.\n•\tVerwenden Sie Leitfragen für jeden Baustein.\n•\tArbeiten Sie in Teams, um den Canvas gemeinsam auszufüllen.\nSchritt 3: Präsentation & Feedback\n•\tJedes Team präsentiert seinen SBMC vor Kollegen oder Mentoren.\n•\tRegen Sie zur Reflexion über die Machbarkeit und Wirkung des Geschäftsmodells an.\n•\tGeben Sie strukturiertes Feedback anhand von Nachhaltigkeits- und Rentabilitätskriterien.",
+      "links": [
+        {
+          "title": "Canvas-Vorlage",
+          "url": "https://start-green.net/documents/8790/SBC_EN.pdf"
+        },
+        {
+          "title": "Anweisungen für Moderatoren",
+          "url": "https://start-green.net/documents/8789/Tiemann-Fichter-Workshopkonzept-EN-RZ2_2018.pdf"
+        },
+        {
+          "title": "Tool-Übersicht",
+          "url": "assets/tools/de/tool_15.1_SustainableBusinessModelCanvas.pdf"
+        }
+      ],
+      "benefits": "Der Sustainable Business Model Canvas unterstützt Pädagogen bei der Lehre von nachhaltigem Unternehmertum. Er hilft Studierenden zu verstehen, wie soziale und ökologische Aspekte in die Geschäftsplanung integriert werden können, und fördert verantwortungsvolle Innovation und langfristige Wertschöpfung durch strukturiertes, praxisorientiertes Lernen.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Sustainable Business Model Canvas Vorlage (gedruckt oder digital)\nModerationsleitfaden mit Schlüsselfragen und Anweisungen\nFallstudien zu nachhaltigen Geschäftspraktiken\nMarker, Post-its, Whiteboard (für Präsenz-Workshops)\nDigitale Kollaborationstools (z. B. Miro, MURAL) – optional",
+      "partner": "TVW"
+    },
+    {
+      "number": 16,
+      "name": "SDG-Rahmenwerk für Unternehmertum",
+      "summary": "Das SDG-Rahmenwerk-Tool hilft Universitäten, Unternehmertums- und Nachhaltigkeitsziele in Einklang zu bringen, und bietet eine klare Struktur, um SDG-verknüpfte Ziele in Bildung, Forschung, Betrieb und Partnerschaften zu integrieren.",
+      "description": "Das SDG-Rahmenwerk-Tool wurde für Universitäten entwickelt, um die UN-Ziele für nachhaltige Entwicklung (SDGs) in Lehre, Forschung, Betrieb und Öffentlichkeitsarbeit zu integrieren. Es bietet praktische Anleitungen, Metriken und Ressourcen, um die Wirkung zu bewerten, Maßnahmen zu priorisieren und nachhaltiges Unternehmertum voranzutreiben. Tools wie das SDG Impact Assessment und der SDG Compass unterstützen die Umsetzung, wobei Fallstudien aus der Praxis eine erfolgreiche Integration zeigen.",
+      "outcomes": "Klare, auf die SDGs ausgerichtete Strategie und Ziele.\nNachhaltige Innovation in Lehrplänen und Forschung.\nVerbesserte Zusammenarbeit zwischen Universität, Industrie und Gemeinschaft.\nVerbesserte Fähigkeit, Wirkung zu messen und zu kommunizieren.",
+      "instructions": "Lesen Sie den Leitfaden \"Erste Schritte mit SDGs an Universitäten\" für grundlegende Strategien.\nOrdnen Sie institutionelle Aktivitäten relevanten SDGs mithilfe des SDG Compass zu.\nVerwenden Sie das SDG Impact Assessment Tool, um die aktuelle Wirkung zu bewerten.\nRichten Sie Lehrpläne, Forschung und Partnerschaften an den identifizierten Zielen aus.\nWenden Sie Erkenntnisse an, um gezielte Maßnahmen, Richtlinien und Innovationen zu entwickeln.",
+      "links": [
+        {
+          "title": "SCHRITT 1 - SDG-Rahmenwerk (Einführung)",
+          "url": "assets/tools/de/tool_16.1_SDGFramework(Introduction).pdf"
+        },
+        {
+          "title": "SCHRITT 2 - SDG-Rahmenwerk (Anwendungsbeispiele)",
+          "url": "assets/tools/de/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
+        },
+        {
+          "title": "SCHRITT 3 - SDG-Rahmenwerk (Ressourcen und Unterstützung)",
+          "url": "assets/tools/de/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
+        }
+      ],
+      "benefits": "Das Tool unterstützt Hochschuleinrichtungen dabei, Strategien auf die SDGs abzubilden, nachhaltigkeitsorientierte Programme zu entwerfen und die Wirkung zu messen. Es stärkt die Zusammenarbeit zwischen Wissenschaft, Industrie und Gemeinschaften und fördert innovative Lösungen für reale Nachhaltigkeitsherausforderungen.",
+      "purpose": "Nachhaltiges & wirkungsorientiertes Unternehmertum",
+      "prerequisiteTools": "1. Ein elektronisches Gerät mit WLAN für App-Download und Benutzerfähigkeit",
+      "partner": "MMS"
+    },
+    {
+      "number": 17,
+      "name": "Stakeholder-Radar KI",
+      "summary": "Stakeholder-Radar KI nutzt Echtzeitanalysen, um Universitäten dabei zu helfen, wichtige Stakeholder zu identifizieren, zu verstehen und einzubinden, wodurch Zusammenarbeit, Entscheidungsfindung und Risikomanagement verbessert werden.",
+      "description": "Stakeholder-Radar KI ist eine fortschrittliche Plattform, die den Einfluss von Stakeholdern innerhalb eines Universitäts-Ökosystems kartiert, analysiert und verfolgt. Durch den Einsatz von KI-Technologien wie natürlicher Sprachverarbeitung, Sentiment-Erkennung und prädiktiver Analyse bietet sie Echtzeiteinblicke in die Bedürfnisse und Dynamiken von Stakeholdern. Universitäten können sie nutzen, um Partnerschaften, Kommunikation und Planung über akademische, Forschungs- und Community-Netzwerke hinweg zu verbessern.",
+      "outcomes": "Stärkeres Engagement mit Studierenden, Mitarbeitern, Alumni und Partnern.\nDatengestützte Entscheidungen über Kooperationen und Finanzierung.\nFrühwarnung vor Reputations- oder Betriebsrisiken.\nEffizienteres Stakeholder-Management und Ressourcenallokation.",
+      "instructions": "Geben Sie Stakeholder-Daten aus E-Mails, sozialen Medien, Umfragen und internen Datenbanken ein.\nVerwenden Sie die integrierte KI, um die Stimmung zu analysieren, das Engagement zu verfolgen und wichtige Einflussnehmer zu identifizieren.\nVisualisieren Sie Trends und Muster durch Echtzeit-Dashboards.\nPassen Sie Kommunikations- oder Engagement-Strategien basierend auf prädiktiven Erkenntnissen an.",
+      "links": [
+        {
+          "title": "SCHRITT 1 Stakeholder-Radar KI-Tool (Einführung)",
+          "url": "assets/tools/de/tool_17.1_StakeholdersRadarAITool(Introduction).pdf"
+        },
+        {
+          "title": "SCHRITT 2 Stakeholder-Radar KI-Tool (Unsere Top 3 Tools)",
+          "url": "assets/tools/de/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf"
+        },
+        {
+          "title": "SCHRITT 3 Stakeholder-Radar KI-Tool (Anwendung)",
+          "url": "assets/tools/de/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf"
+        },
+        {
+          "title": "SCHRITT 4 Stakeholder-Radar KI-Tool (Ressourcen und Unterstützung)",
+          "url": "assets/tools/de/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf"
+        }
+      ],
+      "benefits": "Das Tool verbessert die Sichtbarkeit und das Engagement von Stakeholdern durch KI-gesteuerte Sentiment-Analyse, Kartierung und prädiktive Erkenntnisse. Es hilft Universitäten, Vertrauen zu fördern, Ressourcen effektiv zuzuweisen und Risiken oder Chancen in Partnerschaften und institutioneller Strategie zu antizipieren.",
+      "purpose": "Motivation, Anreize & Anerkennung für Personal & Lehrkräfte",
+      "prerequisiteTools": "1. Ein elektronisches Gerät mit WLAN für App-Download und Benutzerfähigkeit",
+      "partner": "MMS"
+    },
+    {
+      "number": 18,
+      "name": "Wissensaustausch-Plattformen",
+      "summary": "Digitale Wissensaustausch-Plattformen verbinden Pädagogen, Forscher und Mitarbeiter über Universitäten hinweg und ermöglichen eine nahtlose Zusammenarbeit, Ressourcenaustausch und professionelles Lernen in Echtzeit oder asynchron.",
+      "description": "Digitale Wissensaustausch-Plattformen – wie Moodle, Teams, Slack und LinkedIn – ermöglichen es Universitäten, die Kommunikation zu zentralisieren, Ressourcen zu teilen und Lern-, Lehr- oder Forschungsaktivitäten zu koordinieren. Ob Hosting von Diskussionen, Speichern von Materialien oder Zusammenarbeit an Projekten, diese Tools brechen Silos auf und verbessern Effizienz, Zugänglichkeit und Wissenskontinuität über Mitarbeiter, Abteilungen und globale Partnerschaften hinweg.",
+      "outcomes": "Verbesserte Zusammenarbeit zwischen Fakultät und Verwaltung.\nSchnellere Feedbackschleifen und gemeinsame Entscheidungsfindung.\nBesserer Zugang zu institutionellem Wissen und digitalen Assets.\nErhöhtes Engagement in interdisziplinären oder Erasmus+-Projekten.",
+      "instructions": "Richten Sie Konten für Mitarbeiter ein und definieren Sie Team-Bereiche (z. B. nach Fakultät, Thema oder Projekt).\nLaden Sie geteilte Ressourcen hoch (Dokumente, Vorlagen, Leitfäden).\nVerwenden Sie Diskussions-Threads oder Chat-Kanäle für themenbezogene Zusammenarbeit.\nPlanen Sie Wissensaustausch-Sitzungen oder regelmäßige Updates.",
+      "links": [
+        {
+          "title": "SCHRITT 1 - Einführung Wissensaustausch-Plattform",
+          "url": "assets/tools/de/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+        },
+        {
+          "title": "SCHRITT 2 - Vergleich von Wissensaustausch-Plattformen",
+          "url": "assets/tools/de/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+        }
+      ],
+      "benefits": "Diese Plattformen ermöglichen die Zusammenarbeit über Abteilungen hinweg, unterstützen die gemeinsame Erstellung von Lehrmaterialien, ermöglichen Peer-Feedback und verbessern den Zugang zu geteiltem Fachwissen. Sie sind entscheidend für die Verbesserung von Innovation, Abstimmung und institutionellem Gedächtnis in universitätsübergreifenden Initiativen.",
+      "purpose": "Förderung einer unternehmerischen Denkweise & Kultur",
+      "prerequisiteTools": "1. Ein elektronisches Gerät mit WLAN für App-Download und Benutzerfähigkeit",
+      "partner": "MMS"
+    },
+    {
+      "number": 19,
+      "name": "Startup-Ausgaben",
+      "summary": "Das Tool für Startup-Ausgaben hilft nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren, einen Überblick über Konzepte wie Anfangsinvestitionen und Finanzierungsquellen für Startup-Ideen zu erhalten.",
+      "description": "Das Excel-Tool für Startup-Ausgaben wurde für Unternehmer und Kleinunternehmer entwickelt, um ihren anfänglichen Finanzbedarf effektiv zu planen und zu verwalten. Es bietet eine strukturierte Vorlage, um Kapitalquellen (Investitionen, Kredite) zu verfolgen, Startup-Kosten (Immobilien, Ausrüstung, Inventar) zu kategorisieren und Summen automatisch zu berechnen. Durch das Angebot eines klaren Überblicks über Finanzierung und Ausgaben hilft es Nutzern, fundierte Entscheidungen zu treffen, Finanzierungen zu sichern und finanzielle Vorbereitung für einen erfolgreichen Geschäftsstart zu gewährleisten.",
+      "outcomes": "Verbesserte Finanzkompetenz – Nutzer gewinnen ein klareres Verständnis von Startup-Kosten, was ihnen hilft, Budgets auch ohne vorherige Wirtschaftsausbildung effektiv zu verwalten.\nPraktische Geschäftsplanungsfähigkeiten – Studierende und Professoren lernen, Ausgaben zu skizzieren und zu kategorisieren, was unternehmerische Ideen machbarer und strukturierter macht.\nVertrauen beim Start von Unternehmungen – Durch die systematische Schätzung von Kosten reduzieren Nutzer finanzielle Unsicherheit und fühlen sich besser vorbereitet, Nebenprojekte oder kleine Unternehmen zu starten.\nInterdisziplinäre Anwendung – Nicht-wirtschaftswissenschaftliche Nutzer (z. B. Ingenieure, Künstler, Wissenschaftler) können das Tool anwenden, um Kosten für Forschungsprojekte, kreative Unternehmungen oder Tech-Prototypen zu bewerten.\nVerbesserte Förder-/Finanzierungsanträge – Professoren und Studierende können die Vorlage nutzen, um Ausgaben zu rechtfertigen, wenn sie Universitätszuschüsse, Sponsoring oder Crowdfunding für innovative Initiativen suchen.",
+      "links": [
+        {
+          "title": "Simulator für Startup-Ausgaben",
+          "url": "https://www.score.org/resource/template/startup-expenses"
+        },
+        {
+          "title": "Empfehlungen zur Nutzung des Tools",
+          "url": "assets/tools/de/tool_19.1_Startupexpenses.pdf"
+        }
+      ],
+      "benefits": "Der Hauptvorteil dieses Tools besteht darin, nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren eine allgemeine Vorstellung von den notwendigen Anfangsausgaben zur Umsetzung einer Geschäftsidee zu vermitteln.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Excel mit aktivierten Makros",
+      "partner": "UNEAT",
+      "instructions": "1.\tÖffnen Sie das Dokument und analysieren Sie die Konzepte und Abschnitte, kommen Ihnen einige oder die meisten davon bekannt vor?\n2.\tGeben Sie Ihre Kapitalquellen so realitätsnah wie möglich ein. Sie sollten nichts übertreiben oder minimieren.\n3.\tGeben Sie Ihre Anfangsausgaben ein und berücksichtigen Sie alle Aspekte, die in Ihrer Geschäftsidee enthalten sind; minimieren Sie keinen davon.\n4.\tÜberprüfen Sie, ob alle Informationen zuverlässig und vollständig sind und dass Sie keinen Fehler bei Mengen oder Konzepten gemacht haben.\n5.\tAnalysieren Sie den Anfangsstatus Ihres Startups. Würden Sie die Investition tätigen wollen, hatten Sie sich etwas anderes vorgestellt?\n6.\tEntscheiden Sie und diskutieren Sie mit Ihren Kommilitonen und Ihrem Lehrer, ob die Idee machbar ist oder nicht."
+    },
+    {
+      "number": 20,
+      "name": "Kreditrechner",
+      "summary": "Der Kreditrechner hilft nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren, eine allgemeine Vorstellung davon zu bekommen, was es bedeutet, einen verzinslichen Kredit für unternehmerische Ideen zu beantragen.",
+      "description": "Der Kreditrechner hilft Unternehmern und Kleinunternehmern bei der Planung der Finanzierung, indem er monatliche Zahlungen, Zinskosten und Rückzahlungszeiträume für Geschäftskredite schätzt. Er ermöglicht ein besseres Cashflow-Management, Kreditvergleiche und Budgetierung und sorgt so für fundierte Entscheidungen bei der Kapitalbeschaffung für Wachstum, Ausrüstung oder Startup-Kosten.",
+      "outcomes": "Informierte Kreditentscheidungen – Nutzer können Kreditoptionen (Studienkredite, Forschungsförderung, Ausrüstungsfinanzierung) vergleichen, um Rückzahlungsbedingungen, Zinssätze und Gesamtkosten zu verstehen, bevor sie sich verpflichten.\nBudgetierung für akademische Projekte – Hilft Professoren und Studierenden, die Machbarkeit von Krediten für Forschungsinitiativen, Konferenzreisen oder Laborausrüstung abzuschätzen, indem monatliche Zahlungen innerhalb von Zuschuss- oder persönlichen Budgets prognostiziert werden.\nBewusstsein für Schuldenmanagement – Studierende lernen, langfristige Auswirkungen von Krediten (z. B. für Studiengebühren oder Startup-Kosten) zu bewerten, was verantwortungsvolle finanzielle Gewohnheiten früh in ihrer Karriere fördert.\nVereinfachte Finanzplanung – Nicht-wirtschaftswissenschaftliche Nutzer erhalten Klarheit über Tilgungspläne und Zinseffekte, ohne fortgeschrittene Finanzkenntnisse zu benötigen, was Kredite weniger einschüchternd macht.\nRessourcenoptimierung – Forscher und Kreative können bewerten, ob Leasing/Ausleihen von Werkzeugen (z. B. Laborgeräte, Kunstbedarf) im Vergleich zu Vorabkäufen kostengünstig ist.",
+      "instructions": "1.\tÖffnen Sie das Tool und analysieren Sie die Konzepte und Abschnitte, kommen Ihnen einige oder die meisten davon bekannt vor? Kannten Sie die Zinssätze?\n2.\tGeben Sie den Geldbetrag ein, den Sie hypothetisch für Ihre Geschäftsidee benötigen würden. Es ist immer ratsam, einen etwas höheren Betrag als berechnet anzugeben, falls Kostenüberschreitungen auftreten, aber nicht mehr als 5 oder 10%.\n3.\tGeben Sie den Zinssatz und andere Gebühren ein, die von der Bank erhoben werden. Sie können eine Simulation durchführen und auf die Zinsseite einer Ihnen bekannten Bank gehen, in den Geschäftsbereich, welche Sätze bieten sie für Unternehmen an? Wenn Sie die Informationen nicht finden, können Sie eine KI fragen, wie hoch der Zinssatz ist, den Banken in der Region, in der Sie leben, normalerweise gewähren.\n4.\tAnalysieren Sie mit Ihrem Lehrer und Kollegen die erhaltene Zahl und entscheiden Sie anhand der anderen Finanzprognosen, ob Sie den Kredit aufnehmen möchten oder nicht. Wenn das Geld nach ein paar Jahren zu viel ist oder Sie denken, dass Sie die Raten nicht durch Verkäufe decken können, ist es möglicherweise nicht die beste Idee für Sie.",
+      "links": [
+        {
+          "title": "Kreditrechner",
+          "url": "https://www.calculator.net/loan-calculator.html"
+        },
+        {
+          "title": "Empfehlungen zur Nutzung des Tools",
+          "url": "assets/tools/de/tool_20.1_Loancalculator.pdf"
+        }
+      ],
+      "benefits": "Der Hauptvorteil dieses Tools besteht darin, nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren eine allgemeine Vorstellung von verzinslichen Krediten für unternehmerische Ideen zu vermitteln.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Finanzdaten des Geschäftsprojekts",
+      "partner": "UNEAT"
+    },
+    {
+      "number": 21,
+      "name": "Vorlage für Finanzprognosen",
+      "summary": "Die Vorlage für Finanzprognosen hilft nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren, grundlegende Finanzkonzepte für die Entwicklung einer Venture-Idee zu erlernen.",
+      "description": "Die Vorlage für Finanzprognosen wurde entwickelt, um denjenigen, die ein Unternehmen gründen oder bereits führen, Informationen bereitzustellen, die es ihnen ermöglichen, eine \"Go/No-Go-Entscheidung\" zu treffen. Sie hilft einem potenziellen Unternehmer, den Betriebsgewinn zu prognostizieren und eine prognostizierte Gewinn- und Verlustrechnung, Bilanz und Cashflow-Prognose zu entwickeln.",
+      "outcomes": "Grundlegende Fähigkeiten zur Finanzprognose – Nutzer lernen, Einnahmen, Ausgaben und Cashflow zu prognostizieren, auch ohne Finanzhintergrund, was ihnen hilft, Forschungsprojekte, Startups oder kreative Unternehmungen effektiver zu planen.\nRealistische Budgetplanung – Studierende und Professoren können finanzielle Fallstricke vermeiden, indem sie Kosten und Einnahmen antizipieren und sicherstellen, dass ihre akademischen oder Leidenschaftsprojekte nachhaltig bleiben.\nStärkere Förder- & Finanzierungsanträge – Durch die Präsentation gut strukturierter Finanzprognosen verbessern Nutzer ihre Chancen auf Universitätszuschüsse, Sponsoring oder Investorenunterstützung für innovative Ideen.\nInterdisziplinäres Geschäftsbewusstsein – MINT-, Kunst- und Geisteswissenschaftler erhalten praktische Einblicke in die Finanzplanung und überbrücken die Lücke zwischen ihrer Expertise und der Machbarkeit von Projekten in der realen Welt.\nVertrauen in unternehmerische Bestrebungen – Die Vorlage entmystifiziert die Finanzplanung und befähigt nicht-wirtschaftswissenschaftliche Nutzer, selbstbewusst Nebenverdienste, Sozialunternehmen oder die Kommerzialisierung akademischer Arbeit zu erkunden.",
+      "instructions": "1.\tÖffnen Sie das Dokument und analysieren Sie die Konzepte und Abschnitte, kommen Ihnen einige oder die meisten davon bekannt vor? Seien Sie nicht überwältigt, wenn es zunächst zu kompliziert erscheint; es ist normal, einige Konzepte nicht zu kennen.\n2.\tLesen Sie die Anweisungen des Dokuments und tragen Sie nur die Informationen ein, von denen Sie glauben, dass Sie sie kennen und sicher sind; es ist nicht notwendig, alle Abschnitte auszufüllen. Geben Sie den Geldbetrag ein, den Ihnen die Bank hypothetisch leihen wird.\n3.\tNehmen Sie Anpassungen an den Vorhersagen vor und füllen Sie Blatt für Blatt aus, bis Sie die erforderlichen Informationen erhalten.\n4.\tEs ist ratsam, die folgenden Youtube-Videos für ein besseres Verständnis des Tools anzusehen:\nA) How to analyze an income statement - Walmart example (case study) (all videos)\nB) financial statements: all the basics in 8 MINS!",
+      "links": [
+        {
+          "title": "Finanzprognosen",
+          "url": "https://www.score.org/resource/template/financial-projections-template"
+        },
+        {
+          "title": "Empfehlungen zur Nutzung des Tools",
+          "url": "assets/tools/de/tool_21.1_FinancialProjectionsTemplate.pdf"
+        }
+      ],
+      "benefits": "Der Hauptvorteil dieses Tools besteht darin, nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren eine allgemeine Vorstellung von Finanzkonzepten für die Entwicklung einer Venture-Idee zu vermitteln.",
+      "purpose": "Planung & Finanzierung der Gründungsausbildung",
+      "prerequisiteTools": "Excel mit aktivierten Makros",
+      "partner": "UNEAT"
+    },
+    {
+      "number": 22,
+      "name": "\"Mission Possible\" Rollenspiel-Brettspiel für unternehmerisches Denken & Wirkung",
+      "summary": "Mission Possible ist ein interaktives Rollenspiel-Simulationsbrettspiel, bei dem Studierende Startup-Rollen übernehmen und reale Dilemmata in den Bereichen Nachhaltigkeit, Digitalisierung und Ethik navigieren. Ausgerichtet an EntreComp, GreenComp und DigiComp verwandelt es Klassenzimmer in unternehmerische Abenteuerlabore.",
+      "description": "Mission Possible ist eine druckbare oder digitale Ressource im Brettspielstil für Entrepreneurship-Klassen auf Universitätsniveau. Studierende werden in kleine Startup-Teams aufgeteilt und erhalten eine fiktive Mission (z. B. eine grüne App starten, ein Lebensmittelverschwendungsproblem lösen). Während sie vorankommen, stoßen sie auf Karten, die reale Herausforderungen darstellen, wie:\nWahl zwischen Profit und Ethik,\nUmgang mit Teamkonflikten,\nEntscheidung, ob generative KI-Tools verwendet werden sollen, etc.",
+      "outcomes": "Verbesserte Fähigkeit, mit unternehmerischer Unsicherheit umzugehen\nGrößeres Verständnis dafür, wie Ethik, Nachhaltigkeit und Digitalisierung im Unternehmertum interagieren\nGestärktes kollaboratives und reflektierendes Lernen",
+      "instructions": "1.\tBilden Sie Startup-Teams (3–5 Studierende)\n2.\tWeisen Sie jeder Gruppe eine Missionskarte zu (z. B. „Sie bauen eine KI-basierte Recycling-App für Gen-Z-Nutzer.“)\n3.\tVerteilen Sie Rollenkarten zufällig an jedes Mitglied des Teams.\n4.\tIn jeder Runde würfeln die Teams und bewegen ihren Spielstein auf dem Mission Possible-Brett vorwärts. Wenn sie auf einem Feld landen, das mit einem thematischen Symbol markiert ist, müssen sie eine Herausforderungskarte vom entsprechenden Stapel ziehen.\n5.\tTeams ziehen Herausforderungskarten von 3 thematischen Stapeln:\no\tDigitale Dilemmata (DigiComp)\no\tGrüne & soziale Auswirkungsfragen (GreenComp)\no\tGeschäftsstrategie-Entscheidungen (EntreComp)\n6.\tTeams lesen die Karte laut vor und diskutieren 10 Minuten lang, welche Entscheidung sie treffen sollen — unter Berücksichtigung ihrer Rollen und Mission.\n7.\tSobald das Team das ENDE erreicht, pitchen sie, wie sie ihre Reise gemeistert haben\n8.\tDer Pädagoge leitet eine geführte Reflexion unter Verwendung des Team-Reflexionsbogens\nHinweis: Ausführliche Anweisungen finden Sie im Moderationsleitfaden",
+      "links": [
+        {
+          "title": "Moderationsleitfaden",
+          "url": "assets/tools/de/tool_22.1_TOOLMC1_facilitationguide.pdf"
+        },
+        {
+          "title": "Spielbrett",
+          "url": "assets/tools/de/tool_22.2_TOOLMC1_board.pdf"
+        },
+        {
+          "title": "Karten",
+          "url": "assets/tools/de/tool_22.3_TOOLMC1_cards.pdf"
+        },
+        {
+          "title": "Reflexionsbogen",
+          "url": "assets/tools/de/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+        }
+      ],
+      "benefits": "Der meiste Entrepreneurship-Unterricht ist theorielastig und es fehlt an emotionaler Bindung. Mission Map führt spielerisches Lernen ein, um reale Unsicherheiten zu simulieren, und ermöglicht es Lernenden, Zusammenarbeit, kritisches Denken und Resilienz in komplexen Startup-Umgebungen zu üben.",
+      "purpose": "Förderung einer unternehmerischen Denkweise & Kultur",
+      "prerequisiteTools": "Drucker & Schere oder ein digitales Whiteboard-Tool (Miro/Mural/Canva)\nSpielsteine\nTimer\nProjektor (optional zum Anzeigen von Fragen)",
+      "partner": "MC"
+    },
+    {
+      "number": 23,
+      "name": "Ethisch Gründen",
+      "summary": "Ethisch Gründen ist eine projektbasierte Toolbox für Pädagogen und studentische Innovationszentren, um Lernende in die Anpassung ethischer, inklusiver Geschäftsideen an reale Gemeinschaftsbedürfnisse durch strukturiertes Design Thinking und Peer-Reflexion einzubinden.",
+      "description": "Ethisch Gründen ist eine flexible projektbasierte Toolbox, die es Studierenden ermöglicht, jugendfreundliche Geschäftsideen mithilfe eines strukturierten ethischen Innovationsprozesses an spezifische Gemeinschaftsherausforderungen anzupassen. Die Teilnehmer wählen Unternehmungen aus einer kuratierten Liste aus, wenden lokale Einschränkungen an, definieren ihre Rückgabestrategie und füllen Arbeitsblätter und Canvas-Aktivitäten aus. Anschließend pitchen sie ihre angepasste Idee und erhalten Feedback von Kollegen und Pädagogen.",
+      "outcomes": "Verständnis von ethischem Unternehmertum und inklusiver Innovation\nPraktische Anwendung von Social-Impact-Prinzipien\nPeer-to-Peer-Bewertung und reflektierendes Lernen\nStärkung von EntreComp- und GreenComp-Dimensionen\nBewusstsein für gesellschaftliches Engagement und Rückgabestrategien",
+      "instructions": "1. Den Studierenden werden ein Start-up und ein Community-Profil zugewiesen.\n2. Unter Verwendung des Arbeitsbuchs und des Canvas passen sie das Unternehmen ethisch und inklusiv an.\n3. Sie bereiten einen Pitch vor und halten ihn.\n4. Peer- und Lehrer-Feedback wird mithilfe der Bewertungsbögen gesammelt.\n5. Pädagogen unterstützen den Prozess über den Digitalen Projektleitfaden.",
+      "links": [
+        {
+          "title": "Ethisch Gründen - Digitaler Projektleitfaden für Lehrer",
+          "url": "assets/tools/de/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+        },
+        {
+          "title": "Ethisch Gründen - Digitales Projektmaterial",
+          "url": "assets/tools/de/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool adressiert die Herausforderung, Wirtschaftsethik in Aktion zu lehren, indem Studierende jugendgeführte Unternehmungen mit klaren Rückgabeplänen lokalisieren und anpassen. Es fördert unternehmerische Empathie, soziale Verantwortung und Nachhaltigkeit von der Idee bis zum Pitch.",
+      "purpose": "Nachhaltiges & wirkungsorientiertes Unternehmertum",
+      "prerequisiteTools": "Drucker & Schere oder ein digitales Whiteboard-Tool (Miro/Mural/Canva)\nSpielsteine\nTimer\nProjektor (optional zum Anzeigen von Fragen)",
+      "partner": "MC"
+    },
+    {
+      "number": 24,
+      "name": "CSI: Abteilung für gescheiterte Startups",
+      "summary": "CSI: Abteilung für gescheiterte Startups ist ein spielerisches Untersuchungstool für Entrepreneurship-Pädagogen und universitäre Innovationszentren. Teilnehmer agieren als forensische Analysten und lösen reale Startup-Fehlschläge durch Recherche, logisches Denken und kollaborative Fallberichterstattung.",
+      "description": "CSI: Abteilung für gescheiterte Startups ist eine interaktive, szenariobasierte Aktivität, bei der Teilnehmer zu Startup-Detektiven werden. Anhand realer Fehlerfälle analysieren Lernende Todesursachenfaktoren wie Marktfehlanpassung, finanzielles Missmanagement oder ethische Verfehlungen. Die Toolbox baut strategisches Denken, Neugier und Resilienz durch einen immersiven, forschungsgeleiteten Prozess auf, der von Untersuchungsvorlagen und Bewertungsrubriken geleitet wird.",
+      "outcomes": "Verbessertes kritisches Denken und Fehleranalyse\nUnternehmerische Reflexion über reale Herausforderungen\nExposition gegenüber ethischer und strategischer Entscheidungsfindung\nStärkung von EntreComp-, GreenComp- und DigiComp-Dimensionen\nEngagierte, von Studierenden geleitete Forschung und Berichterstattung",
+      "instructions": "Jedes Team erhält einen Startup-„Cold Case“.\nUnter Verwendung der Agentenvorlage untersuchen sie den Fall online.\nSie füllen einen Bericht aus, in dem die Ursache des Scheiterns, Warnsignale und mögliche alternative Strategien dargelegt werden.\nDie Fälle werden in der Klasse mit Peer- oder Lehrer-Feedback unter Verwendung der Bewertungsrubrik präsentiert.",
+      "links": [
+        {
+          "title": "CSI Abteilung für gescheiterte Startups - Digitaler Leitfaden für Moderatoren",
+          "url": "assets/tools/de/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+        },
+        {
+          "title": "CSI: Abteilung für gescheiterte Startups – Projektmaterialien",
+          "url": "assets/tools/de/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+        }
+      ],
+      "benefits": "Dieses Tool verwandelt die Analyse von Startup-Fehlschlägen in ein Cluedo-artiges Erlebnis. Teilnehmer lernen, echte gescheiterte Unternehmungen zu untersuchen, Warnsignale zu identifizieren und ethische und strategische Zusammenbrüche im Unternehmertum zu verstehen. Bindet Lernende durch Storytelling und Rollenspiel ein.",
+      "purpose": "Unternehmerisches Bewusstsein & Sensibilisierung",
+      "prerequisiteTools": "Drucker oder ein digitales Whiteboard-Tool\nProjektor (optional zum Anzeigen von Fragen)",
+      "partner": "MC"
+    }
+  ],
   "validOptions": {
-    "purpose": []
+    "purpose": [
+      "Planung & Finanzierung der Gründungsausbildung",
+      "Förderung einer unternehmerischen Denkweise & Kultur",
+      "Unternehmerisches Bewusstsein & Sensibilisierung",
+      "Nachhaltiges & wirkungsorientiertes Unternehmertum",
+      "Motivation, Anreize & Anerkennung für Personal & Lehrkräfte",
+      "Kontinuierliche Innovation in der Gründungsausbildung"
+    ]
   }
 }

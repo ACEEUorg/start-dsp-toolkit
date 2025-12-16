@@ -10,7 +10,7 @@
       "links": [
         {
           "title": "The Entrepreneurial Wall Pack: Templates, Quotes & AI Guide",
-          "url": "assets/pdfs/en/tool_1.1_TheEntrepreneurialWallPack.pdf"
+          "url": "assets/tools/en/tool_1.1_TheEntrepreneurialWallPack.pdf"
         }
       ],
       "benefits": "This tool empowers faculty and university staff to foster an entrepreneurial culture by enriching campus spaces, like cafés and co-working areas, with motivational, tailored content that sparks creativity, engagement, and entrepreneurial thinking.",
@@ -28,7 +28,7 @@
       "links": [
         {
           "title": "Entrepreneurial Dictionary",
-          "url": "assets/pdfs/en/tool_2.1_EntrepreneurialDictionary.pdf"
+          "url": "assets/tools/en/tool_2.1_EntrepreneurialDictionary.pdf"
         }
       ],
       "benefits": "This tool makes entrepreneurship approachable and engaging for academic audiences by simplifying key concepts with clarity and humor. It helps faculty and staff connect with entrepreneurial thinking in a way that feels relevant, accessible—and even fun",
@@ -46,11 +46,11 @@
       "links": [
         {
           "title": "Entrepreneurial KPI Dashboard",
-          "url": "assets/pdfs/en/tool_3.1_KPIDashboardInstructions.pdf"
+          "url": "assets/tools/en/tool_3.1_KPIDashboardInstructions.pdf"
         },
         {
           "title": "Dashboard Instructions",
-          "url": "assets/pdfs/en/tool_3.2_KPIDashboard.xlsm"
+          "url": "assets/tools/en/tool_3.2_KPIDashboard.xlsm"
         }
       ],
       "benefits": "This tool enables universities to effectively define and monitor a comprehensive set of key performance indicators (KPIs) for entrepreneurship education, supporting data-driven insights and continuous enhancement of their Entrepreneurial Education.",
@@ -68,7 +68,7 @@
       "links": [
         {
           "title": "EngageTree: Unlock Faculty Entrepreneurship",
-          "url": "assets/pdfs/en/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
+          "url": "assets/tools/en/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
         }
       ],
       "benefits": "This tool helps university leaders identify key barriers to faculty engagement in entrepreneurship and discover tailored, low-cost incentive strategies, boosting motivation, awareness, and participation through an easy-to-use decision tree format",
@@ -86,7 +86,7 @@
       "links": [
         {
           "title": "Entrepreneurial Resource Mapping Journey",
-          "url": "assets/pdfs/en/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
+          "url": "assets/tools/en/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
         }
       ],
       "benefits": "This tool enables university leaders to map, assess, and optimize support for entrepreneurial activities by identifying resources, addressing gaps, clarifying responsibilities, and creating actionable plans to proper proper use and maximize the impact of resources.",
@@ -104,7 +104,7 @@
       "links": [
         {
           "title": "Entrepreneurial Competency Assessment Tool",
-          "url": "assets/pdfs/en/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
+          "url": "assets/tools/en/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
         }
       ],
       "benefits": "This tool supports university leaders in integrating entrepreneurship into academic career paths by providing a structured and standardized method to assess entrepreneurial competencies. It helps institutions make informed hiring and professional development decisions, ensuring entrepreneurial competencies are valued and cultivated across academic environments.",
@@ -122,15 +122,15 @@
       "links": [
         {
           "title": "Course Design Canvas",
-          "url": "assets/pdfs/en/tool_7.1_CourseDesign_canvas.pdf"
+          "url": "assets/tools/en/tool_7.1_CourseDesign_canvas.pdf"
         },
         {
           "title": "Course Design Cards 1",
-          "url": "assets/pdfs/en/tool_7.2_Course_designcards_1.pdf"
+          "url": "assets/tools/en/tool_7.2_Course_designcards_1.pdf"
         },
         {
           "title": "Course Design Cards 2",
-          "url": "assets/pdfs/en/tool_7.3_Course_design_cards_2.pdf"
+          "url": "assets/tools/en/tool_7.3_Course_design_cards_2.pdf"
         }
       ],
       "benefits": "This tool helps educators to indentify and assess students' individual entrepreneurial strenghts, weaknesses, types and skill sets.",
@@ -148,7 +148,7 @@
       "links": [
         {
           "title": "EntreComp AI & VR Resource Guide",
-          "url": "assets/pdfs/en/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
+          "url": "assets/tools/en/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
         }
       ],
       "benefits": "This tool supports institutions in seamlessly integrating innovative digital technologies into their entrepreneurship programs, ensuring education stays current with technological trends and meets evolving educational demands.",
@@ -166,7 +166,7 @@
       "links": [
         {
           "title": "Grant Application Roadmap",
-          "url": "assets/pdfs/en/tool_9.1_Grant_application_guideline.pdf"
+          "url": "assets/tools/en/tool_9.1_Grant_application_guideline.pdf"
         }
       ],
       "benefits": "This tool empowers applicants to confidently identify and secure funding for entrepreneurship programs, addressing resource gaps and enabling sustainable growth of entrepreneurship education initiatives.",
@@ -184,7 +184,7 @@
       "links": [
         {
           "title": "Financial Planning Google Form Template",
-          "url": "assets/pdfs/en/tool_10.1_PlanningandFinancingEntrepreneurshipEducationDataCollectionTemplate.pdf"
+          "url": "assets/tools/en/tool_10.1_PlanningandFinancingEntrepreneurshipEducationDataCollectionTemplate.pdf"
         }
       ],
       "benefits": "This tool helps universities gain a clear overview of financial investments in entrepreneurship education. It supports better planning, resource allocation, and alignment with institutional goals by collecting input across departments and enabling data-driven decisions.",
@@ -282,7 +282,7 @@
         },
         {
           "title": "Tool Overview",
-          "url": "assets/pdfs/en/tool_15.1_SustainableBusinessModelCanvas.pdf"
+          "url": "assets/tools/en/tool_15.1_SustainableBusinessModelCanvas.pdf"
         }
       ],
       "benefits": "The Sustainable Business Model Canvas supports educators in teaching sustainable entrepreneurship. It helps students understand how to integrate social and environmental aspects into business planning, fostering responsible innovation and long-term value creation through structured, practice-based learning.",
@@ -300,15 +300,15 @@
       "links": [
         {
           "title": "STEP 1 - SDG Framework (Introduction)",
-          "url": "assets/pdfs/en/tool_16.1_SDGFramework(Introduction).pdf"
+          "url": "assets/tools/en/tool_16.1_SDGFramework(Introduction).pdf"
         },
         {
           "title": "STEP 2 - SDG Framework (Examples of Application)",
-          "url": "assets/pdfs/en/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
+          "url": "assets/tools/en/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
         },
         {
           "title": "STEP 3- SDG Framework (Resources and Supports)",
-          "url": "assets/pdfs/en/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
+          "url": "assets/tools/en/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
         }
       ],
       "benefits": "The tool supports third-level institutions in mapping strategies to the SDGs, designing sustainability-driven programs, and measuring impact. It strengthens collaboration between academia, industry, and communities, promoting innovative solutions to real-world sustainability challenges.",
@@ -326,19 +326,19 @@
       "links": [
         {
           "title": "STEP 1 Stakeholders Radar AI Tool (Introduction)",
-          "url": "assets/pdfs/en/tool_17.1_StakeholdersRadarAITool(Introduction).pdf"
+          "url": "assets/tools/en/tool_17.1_StakeholdersRadarAITool(Introduction).pdf"
         },
         {
           "title": "STEP 2 Stakeholders Radar AI Tool (Our Top 3 Tools)",
-          "url": "assets/pdfs/en/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf"
+          "url": "assets/tools/en/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf"
         },
         {
           "title": "STEP 3 Stakeholders Radar AI Tool (How to Use)",
-          "url": "assets/pdfs/en/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf"
+          "url": "assets/tools/en/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf"
         },
         {
           "title": "STEP 4 Stakeholders Radar AI Tool (Resources and Supports)",
-          "url": "assets/pdfs/en/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf"
+          "url": "assets/tools/en/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf"
         }
       ],
       "benefits": "The tool enhances stakeholder visibility and engagement through AI-driven sentiment analysis, mapping, and predictive insights. It helps universities foster trust, allocate resources effectively, and anticipate risks or opportunities in partnerships and institutional strategy.",
@@ -356,11 +356,11 @@
       "links": [
         {
           "title": "STEP 1 - Introduction Knowledge Sharing Platform",
-          "url": "assets/pdfs/en/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+          "url": "assets/tools/en/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
         },
         {
           "title": "STEP 2 - Compare Knowledge Sharing Platforms",
-          "url": "assets/pdfs/en/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+          "url": "assets/tools/en/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
         }
       ],
       "benefits": "These platforms enable collaboration across departments, support co-creation of teaching materials, enable peer feedback, and improve access to shared expertise. They are vital for enhancing innovation, alignment, and institutional memory in cross-university initiatives.",
@@ -381,7 +381,7 @@
         },
         {
           "title": "Recommendations for using the tool",
-          "url": "assets/pdfs/en/tool_19.1_Startupexpenses.pdf"
+          "url": "assets/tools/en/tool_19.1_Startupexpenses.pdf"
         }
       ],
       "benefits": "The main benefit of this tool is to provide a general idea to non-business students and university professors about the initial expenses necessary to carry out a business idea.",
@@ -404,7 +404,7 @@
         },
         {
           "title": "Recommendations for using the tool",
-          "url": "assets/pdfs/en/tool_20.1_Loancalculator.pdf"
+          "url": "assets/tools/en/tool_20.1_Loancalculator.pdf"
         }
       ],
       "benefits": "The main benefit of this tool is to provide a general idea to non-business students and university professors about the interest-bearing loans for entrepreneurship ideas",
@@ -426,7 +426,7 @@
         },
         {
           "title": "Recommendations for using the tool",
-          "url": "assets/pdfs/en/tool_21.1_FinancialProjectionsTemplate.pdf"
+          "url": "assets/tools/en/tool_21.1_FinancialProjectionsTemplate.pdf"
         }
       ],
       "benefits": "The main benefit of this tool is to provide a general idea to non-business students and university professors about financial concepts for the development of a venture idea.",
@@ -444,19 +444,19 @@
       "links": [
         {
           "title": "Facilitation Guide",
-          "url": "assets/pdfs/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
+          "url": "assets/tools/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
         },
         {
           "title": "Board",
-          "url": "assets/pdfs/en/tool_22.2_TOOLMC1_board.pdf"
+          "url": "assets/tools/en/tool_22.2_TOOLMC1_board.pdf"
         },
         {
           "title": "Cards",
-          "url": "assets/pdfs/en/tool_22.3_TOOLMC1_cards.pdf"
+          "url": "assets/tools/en/tool_22.3_TOOLMC1_cards.pdf"
         },
         {
           "title": "Reflection Sheet",
-          "url": "assets/pdfs/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+          "url": "assets/tools/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
         }
       ],
       "benefits": "Most entrepreneurship teaching is theory-heavy and lacks emotional engagement. Mission Map introduces gamified learning to simulate real-world uncertainties, enabling learners to practice collaboration, critical thinking, and resilience in complex startup environments.",
@@ -474,11 +474,11 @@
       "links": [
         {
           "title": "Venture Ethically - Digital Project Guide for Teachers",
-          "url": "assets/pdfs/en/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+          "url": "assets/tools/en/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
         },
         {
           "title": "Venture Ethically - Digital Project Material",
-          "url": "assets/pdfs/en/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+          "url": "assets/tools/en/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
         }
       ],
       "benefits": "This tool addresses the challenge of teaching business ethics in action by having students localize and adapt youth-led ventures with clear give-back plans. It promotes entrepreneurial empathy, social responsibility, and sustainability from idea to pitch.",
@@ -496,11 +496,11 @@
       "links": [
         {
           "title": "CSI Failed Startups Division - Digital Guide for Facilitators",
-          "url": "assets/pdfs/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+          "url": "assets/tools/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
         },
         {
           "title": "CSI:Failed Startups Division – Project Materials",
-          "url": "assets/pdfs/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+          "url": "assets/tools/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
         }
       ],
       "benefits": "This tool transforms the analysis of startup failure into a Cluedo-style experience. Participants learn to investigate real failed ventures, identify red flags, and understand ethical and strategic breakdowns in entrepreneurship. Engages learners through storytelling and roleplay.",
