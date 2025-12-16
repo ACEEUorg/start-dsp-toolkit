@@ -149,7 +149,7 @@ export default function Toolbox() {
                 {highlightText(tool.summary, searchQuery)}
               </p>
               <div className="mt-auto">
-                <span className="inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium bg-seafoam-100 text-seafoam-800">
+                <span className="inline-flex items-center px-2.5 py-0.5 rounded-md text-xs font-medium bg-seafoam-100 text-seafoam-800">
                   {tool.purpose === "TBD" ? "To Be Determined" : tool.purpose}
                 </span>
               </div>
