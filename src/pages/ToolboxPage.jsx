@@ -23,8 +23,8 @@ export default function Toolbox() {
 
   // Initialize search query and filters from URL params
   useEffect(() => {
-    const purposeParam = searchParams.get("purpose")?.split(",") || ["all"];
-    setFilters({ purpose: purposeParam });
+    const purposeParam = searchParams.get("purpose");
+    setFilters({ purpose: purposeParam ? [purposeParam] : ["all"] });
     setSearchQuery(searchParams.get("search") || "");
   }, [searchParams]);
 
