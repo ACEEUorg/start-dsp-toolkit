@@ -24,7 +24,7 @@ export default function Toolbox() {
     setSearchParams({});
     setFilters({ purpose: ["all"] });
     setSearchQuery("");
-  }, [language, setSearchParams]);
+  }, [language]);
 
   // Initialize search query and filters from URL params
   useEffect(() => {
