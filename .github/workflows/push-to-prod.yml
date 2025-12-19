@@ -25,4 +25,7 @@ jobs:
           git config --global user.name "CI Bot"
 
       - name: Push to prod
-        run: git push git@github.com:ACEEUorg/start-dsp-toolkit.git main:main
+        run: |
+          git remote add prod git@github.com:ACEEUorg/start-dsp-toolkit.git || true
+          git fetch prod main
+          git push prod main:main
