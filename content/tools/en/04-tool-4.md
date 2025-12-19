@@ -15,7 +15,7 @@ instructions: |
   6. If necessary, print the map to use it with your team.
 links:
   - title: "EngageTree: Unlock Faculty Entrepreneurship"
-    url: "assets/tools/en/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
+    url: "/assets/tools/en/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
 benefits: This tool helps university leaders identify key barriers to faculty engagement in entrepreneurship and discover tailored, low-cost incentive strategies, boosting motivation, awareness, and participation through an easy-to-use decision tree format
 purpose: Staff & Faculty Motivation, Incentives & Recognition
 prerequisiteTools: |

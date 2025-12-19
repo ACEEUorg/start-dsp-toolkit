@@ -13,7 +13,7 @@ instructions: |
   5. Sobald dies abgeschlossen ist, analysieren Sie die Ergebnisse und ergreifen Sie die notwendigen Maßnahmen, um Ihre Strategie für unternehmerische Ressourcen zu optimieren und zu verbessern.
 links:
   - title: "Entrepreneurial Resource Mapping Journey"
-    url: "assets/tools/de/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
+    url: "/assets/tools/de/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
 benefits: Dieses Tool ermöglicht es Universitätsleitungen, die Unterstützung für unternehmerische Aktivitäten zu kartieren, zu bewerten und zu optimieren, indem Ressourcen identifiziert, Lücken behoben, Verantwortlichkeiten geklärt und umsetzbare Pläne für eine ordnungsgemäße Nutzung und Maximierung der Ressourcenwirkung erstellt werden.
 purpose: Motivation, Anreize & Anerkennung für Personal & Lehrkräfte
 prerequisiteTools: |

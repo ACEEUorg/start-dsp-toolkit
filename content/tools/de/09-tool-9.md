@@ -14,7 +14,7 @@ instructions: |
   6. Verwenden Sie den Abschnitt mit Tipps, um Ihre Anträge zu verfeinern.
 links:
   - title: "Fahrplan für Förderanträge"
-    url: "assets/tools/de/tool_9.1_Grant_application_guideline.pdf"
+    url: "/assets/tools/de/tool_9.1_Grant_application_guideline.pdf"
 benefits: Dieses Tool befähigt Antragsteller, Fördermittel für Entrepreneurship-Programme selbstbewusst zu identifizieren und zu sichern, Ressourcenlücken zu schließen und ein nachhaltiges Wachstum von Initiativen zur Gründungsausbildung zu ermöglichen.
 purpose: Planung & Finanzierung der Gründungsausbildung
 prerequisiteTools: Internetverbindung

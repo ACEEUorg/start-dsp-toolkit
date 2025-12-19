@@ -4,8 +4,8 @@ backend:
 
 local_backend: true
 
-media_folder: "public/assets/images"
-public_folder: "/assets/images"
+media_folder: "public/assets"
+public_folder: "/assets"
 
 collections:
   - name: "tools_english"
@@ -27,6 +27,8 @@ collections:
           name: "image",
           widget: "image",
           required: true,
+          media_folder: "/public/assets/images",
+          public_folder: "/assets/images",
           hint: "Upload or select an image for this tool.",
         }
       - { label: "Summary", name: "summary", widget: "text", required: true }
@@ -56,12 +58,20 @@ collections:
           widget: "select",
           options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
         }
-      - label: "Links"
+      - label: "Downloads"
         name: "links"
         widget: "list"
+        required: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - {
+              label: "File",
+              name: "url",
+              widget: "file",
+              required: true,
+              media_folder: "/public/assets/tools/en",
+              public_folder: "/assets/tools/en",
+            }
 
   - name: "tools_spanish"
     label: "Tools (Spanish)"
@@ -82,6 +92,8 @@ collections:
           name: "image",
           widget: "image",
           required: true,
+          media_folder: "/public/assets/images",
+          public_folder: "/assets/images",
           hint: "Upload or select an image for this tool.",
         }
       - { label: "Summary", name: "summary", widget: "text", required: true }
@@ -111,12 +123,20 @@ collections:
           widget: "select",
           options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
         }
-      - label: "Links"
+      - label: "Downloads"
         name: "links"
         widget: "list"
+        required: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - {
+              label: "File",
+              name: "url",
+              widget: "file",
+              required: true,
+              media_folder: "/public/assets/tools/es",
+              public_folder: "/assets/tools/es",
+            }
 
   - name: "tools_german"
     label: "Tools (German)"
@@ -137,6 +157,8 @@ collections:
           name: "image",
           widget: "image",
           required: true,
+          media_folder: "/public/assets/images",
+          public_folder: "/assets/images",
           hint: "Upload or select an image for this tool.",
         }
       - { label: "Summary", name: "summary", widget: "text", required: true }
@@ -166,12 +188,20 @@ collections:
           widget: "select",
           options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
         }
-      - label: "Links"
+      - label: "Downloads"
         name: "links"
         widget: "list"
+        required: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - {
+              label: "File",
+              name: "url",
+              widget: "file",
+              required: true,
+              media_folder: "/public/assets/tools/de",
+              public_folder: "/assets/tools/de",
+            }
 
   - name: "tools_greek"
     label: "Tools (Greek)"
@@ -192,6 +222,8 @@ collections:
           name: "image",
           widget: "image",
           required: true,
+          media_folder: "/public/assets/images",
+          public_folder: "/assets/images",
           hint: "Upload or select an image for this tool.",
         }
       - { label: "Summary", name: "summary", widget: "text", required: true }
@@ -221,9 +253,17 @@ collections:
           widget: "select",
           options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
         }
-      - label: "Links"
+      - label: "Downloads"
         name: "links"
         widget: "list"
+        required: true
         fields:
-          - { label: "Title", name: "title", widget: "string" }
-          - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string", required: true }
+          - {
+              label: "File",
+              name: "url",
+              widget: "file",
+              required: true,
+              media_folder: "/public/assets/tools/el",
+              public_folder: "/assets/tools/el",
+            }

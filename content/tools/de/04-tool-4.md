@@ -15,7 +15,7 @@ instructions: |
   6. Falls erforderlich, drucken Sie die Karte aus, um sie mit Ihrem Team zu verwenden.
 links:
   - title: "EngageTree: Unternehmertum an der Fakultät freisetzen"
-    url: "assets/tools/de/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
+    url: "/assets/tools/de/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
 benefits: Dieses Tool hilft Universitätsleitungen, wichtige Hindernisse für das Engagement der Fakultät im Unternehmertum zu identifizieren und maßgeschneiderte, kostengünstige Anreizstrategien zu entdecken, die Motivation, Bewusstsein und Teilnahme durch ein einfach zu bedienendes Entscheidungsbaumformat steigern.
 purpose: Motivation, Anreize & Anerkennung für Personal & Lehrkräfte
 prerequisiteTools: |

@@ -16,7 +16,7 @@ instructions: |
   7. Apply the results to make informed recruitment decisions or create development plans.
 links:
   - title: "Entrepreneurial Competency Assessment Tool"
-    url: "assets/tools/en/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
+    url: "/assets/tools/en/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
 benefits: This tool supports university leaders in integrating entrepreneurship into academic career paths by providing a structured and standardized method to assess entrepreneurial competencies. It helps institutions make informed hiring and professional development decisions, ensuring entrepreneurial competencies are valued and cultivated across academic environments.
 purpose: Continuous Innovation in Entrepreneurship Education
 prerequisiteTools: |

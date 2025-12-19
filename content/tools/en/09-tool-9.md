@@ -14,7 +14,7 @@ instructions: |
   6. Use the tips section to refine your applications.
 links:
   - title: "Grant Application Roadmap"
-    url: "assets/tools/en/tool_9.1_Grant_application_guideline.pdf"
+    url: "/assets/tools/en/tool_9.1_Grant_application_guideline.pdf"
 benefits: This tool empowers applicants to confidently identify and secure funding for entrepreneurship programs, addressing resource gaps and enabling sustainable growth of entrepreneurship education initiatives.
 purpose: Entrepreneurship Education Planning & Financing
 prerequisiteTools: Internet connection

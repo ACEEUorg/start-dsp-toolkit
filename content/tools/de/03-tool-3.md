@@ -14,9 +14,9 @@ instructions: |
   6. Überwachen und verfolgen Sie den Fortschritt.
 links:
   - title: "Entrepreneurial KPI Dashboard"
-    url: "assets/tools/de/tool_3.1_KPIDashboardInstructions.pdf"
+    url: "/assets/tools/de/tool_3.1_KPIDashboardInstructions.pdf"
   - title: "Dashboard-Anleitung"
-    url: "assets/tools/de/tool_3.2_KPIDashboard.xlsm"
+    url: "/assets/tools/de/tool_3.2_KPIDashboard.xlsm"
 benefits: Dieses Tool ermöglicht es Universitäten, einen umfassenden Satz von Leistungskennzahlen (KPIs) für die Gründungsausbildung effektiv zu definieren und zu überwachen, was datengestützte Erkenntnisse und eine kontinuierliche Verbesserung ihrer Gründungsausbildung unterstützt.
 purpose: Unternehmerische Vision & institutionelles Engagement
 prerequisiteTools: 1. Excel mit aktivierten Makros

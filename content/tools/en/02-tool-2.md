@@ -14,7 +14,7 @@ instructions: |
   6. Encourage students to refer to the dictionary when working on entrepreneurial projects.
 links:
   - title: "Entrepreneurial Dictionary"
-    url: "assets/tools/en/tool_2.1_EntrepreneurialDictionary.pdf"
+    url: "/assets/tools/en/tool_2.1_EntrepreneurialDictionary.pdf"
 benefits: This tool makes entrepreneurship approachable and engaging for academic audiences by simplifying key concepts with clarity and humor. It helps faculty and staff connect with entrepreneurial thinking in a way that feels relevant, accessible—and even fun
 purpose: Entrepreneurial Vision & Institutional Commitment
 prerequisiteTools: 1. An electronic device with WI-FI to visualize the dictionary

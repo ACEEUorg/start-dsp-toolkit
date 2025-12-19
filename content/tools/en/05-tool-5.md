@@ -13,7 +13,7 @@ instructions: |
   5. Once completed, analyze the results and take necessary actions to optimize and improve your entrepreneurial resource strategy.
 links:
   - title: "Entrepreneurial Resource Mapping Journey"
-    url: "assets/tools/en/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
+    url: "/assets/tools/en/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
 benefits: This tool enables university leaders to map, assess, and optimize support for entrepreneurial activities by identifying resources, addressing gaps, clarifying responsibilities, and creating actionable plans to proper proper use and maximize the impact of resources.
 purpose: Staff & Faculty Motivation, Incentives & Recognition
 prerequisiteTools: |

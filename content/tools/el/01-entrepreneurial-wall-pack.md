@@ -32,5 +32,5 @@ prerequisiteTools: |
 partner: ACEEU
 links:
   - title: "Το Πακέτο Entrepreneurial Wall: Πρότυπα, Αποφθέγματα & Οδηγός AI"
-    url: assets/tools/el/tool_1.1_TheEntrepreneurialWallPack.pdf
+    url: /assets/tools/el/tool_1.1_TheEntrepreneurialWallPack.pdf
 ---

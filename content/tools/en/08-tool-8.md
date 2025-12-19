@@ -8,7 +8,7 @@ outcomes: Students and educators begin to integrate AI and VR tools into entrepr
 instructions: 1. Identify which stage of the entrepreneurial journey your students are in. 2. Explore the suggested tools for each stage. 3.  Use the tools in lessons, projects, and activities. 4. Review how well the tools work and adjust as needed.
 links:
   - title: "EntreComp AI & VR Resource Guide"
-    url: "assets/tools/en/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
+    url: "/assets/tools/en/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
 benefits: This tool supports institutions in seamlessly integrating innovative digital technologies into their entrepreneurship programs, ensuring education stays current with technological trends and meets evolving educational demands.
 purpose: Continuous Innovation in Entrepreneurship Education
 prerequisiteTools: Internet connection and access to the desired AI tools

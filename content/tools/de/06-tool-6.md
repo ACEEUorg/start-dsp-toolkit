@@ -16,7 +16,7 @@ instructions: |
   7. Wenden Sie die Ergebnisse an, um fundierte Rekrutierungsentscheidungen zu treffen oder Entwicklungspläne zu erstellen.
 links:
   - title: "Bewertungstool für unternehmerische Kompetenzen"
-    url: "assets/tools/de/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
+    url: "/assets/tools/de/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
 benefits: Dieses Tool unterstützt Universitätsleitungen bei der Integration von Unternehmertum in akademische Karrierewege, indem es eine strukturierte und standardisierte Methode zur Bewertung unternehmerischer Kompetenzen bietet. Es hilft Institutionen, fundierte Einstellungs- und Personalentwicklungsentscheidungen zu treffen und sicherzustellen, dass unternehmerische Kompetenzen in akademischen Umgebungen geschätzt und gepflegt werden.
 purpose: Kontinuierliche Innovation in der Gründungsausbildung
 prerequisiteTools: |
