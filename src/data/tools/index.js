@@ -166,8 +166,8 @@ function parseFrontmatter(content) {
  */
 export const loadTools = async (language = "en") => {
   try {
-    // Import all markdown files for the specified language
-    const toolFiles = import.meta.glob("/content/tools/**/*.md", {
+    // Import all markdown files for the specified language folder
+    const toolFiles = import.meta.glob("/content/tools/*/*.md", {
       query: "?raw",
       import: "default",
     });
@@ -175,8 +175,8 @@ export const loadTools = async (language = "en") => {
     const tools = [];
     const purposes = new Set();
 
-    // Filter for files matching the current language
-    const languagePattern = new RegExp(`/${language}\\.md$`);
+    // Filter for files in the language folder
+    const languagePattern = new RegExp(`/content/tools/${language}/`);
 
     for (const [path, importFn] of Object.entries(toolFiles)) {
       if (languagePattern.test(path)) {

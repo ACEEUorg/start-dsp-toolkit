@@ -10,280 +10,192 @@ public_folder: "/assets/tools"
 collections:
   - name: "tools_english"
     label: "Tools (English)"
-    files:
-      - label: "Tool #1 - Entrepreneurial Wall Pack"
-        name: "tool_01_en"
-        file: "content/tools/01-entrepreneurial-wall-pack/en.md"
-        format: "frontmatter"
+    folder: "content/tools/en"
+    create: true
+    format: "frontmatter"
+    slug: "{{number}}-{{slug}}"
+    fields:
+      - {
+          label: "Tool Number",
+          name: "number",
+          widget: "number",
+          value_type: "int",
+        }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Summary", name: "summary", widget: "text", required: true }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Outcomes", name: "outcomes", widget: "text", required: true }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Benefits", name: "benefits", widget: "text", required: true }
+      - { label: "Purpose", name: "purpose", widget: "string", required: true }
+      - {
+          label: "Prerequisite Tools",
+          name: "prerequisiteTools",
+          widget: "text",
+        }
+      - {
+          label: "Partner",
+          name: "partner",
+          widget: "select",
+          options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
+        }
+      - label: "Links"
+        name: "links"
+        widget: "list"
         fields:
-          - {
-              label: "Tool Number",
-              name: "number",
-              widget: "number",
-              value_type: "int",
-              default: 1,
-            }
-          - { label: "Name", name: "name", widget: "string", required: true }
-          - {
-              label: "Summary",
-              name: "summary",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Outcomes",
-              name: "outcomes",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Instructions",
-              name: "instructions",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Benefits",
-              name: "benefits",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Purpose",
-              name: "purpose",
-              widget: "string",
-              required: true,
-            }
-          - {
-              label: "Prerequisite Tools",
-              name: "prerequisiteTools",
-              widget: "text",
-            }
-          - {
-              label: "Partner",
-              name: "partner",
-              widget: "select",
-              options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
-            }
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
 
   - name: "tools_spanish"
     label: "Tools (Spanish)"
-    files:
-      - label: "Tool #1 - Entrepreneurial Wall Pack"
-        name: "tool_01_es"
-        file: "content/tools/01-entrepreneurial-wall-pack/es.md"
-        format: "frontmatter"
+    folder: "content/tools/es"
+    create: true
+    format: "frontmatter"
+    slug: "{{number}}-{{slug}}"
+    fields:
+      - {
+          label: "Tool Number",
+          name: "number",
+          widget: "number",
+          value_type: "int",
+        }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Summary", name: "summary", widget: "text", required: true }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Outcomes", name: "outcomes", widget: "text", required: true }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Benefits", name: "benefits", widget: "text", required: true }
+      - { label: "Purpose", name: "purpose", widget: "string", required: true }
+      - {
+          label: "Prerequisite Tools",
+          name: "prerequisiteTools",
+          widget: "text",
+        }
+      - {
+          label: "Partner",
+          name: "partner",
+          widget: "select",
+          options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
+        }
+      - label: "Links"
+        name: "links"
+        widget: "list"
         fields:
-          - {
-              label: "Tool Number",
-              name: "number",
-              widget: "number",
-              value_type: "int",
-              default: 1,
-            }
-          - { label: "Name", name: "name", widget: "string", required: true }
-          - {
-              label: "Summary",
-              name: "summary",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Outcomes",
-              name: "outcomes",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Instructions",
-              name: "instructions",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Benefits",
-              name: "benefits",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Purpose",
-              name: "purpose",
-              widget: "string",
-              required: true,
-            }
-          - {
-              label: "Prerequisite Tools",
-              name: "prerequisiteTools",
-              widget: "text",
-            }
-          - {
-              label: "Partner",
-              name: "partner",
-              widget: "select",
-              options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
-            }
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
 
   - name: "tools_german"
     label: "Tools (German)"
-    files:
-      - label: "Tool #1 - Entrepreneurial Wall Pack"
-        name: "tool_01_de"
-        file: "content/tools/01-entrepreneurial-wall-pack/de.md"
-        format: "frontmatter"
+    folder: "content/tools/de"
+    create: true
+    format: "frontmatter"
+    slug: "{{number}}-{{slug}}"
+    fields:
+      - {
+          label: "Tool Number",
+          name: "number",
+          widget: "number",
+          value_type: "int",
+        }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Summary", name: "summary", widget: "text", required: true }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Outcomes", name: "outcomes", widget: "text", required: true }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Benefits", name: "benefits", widget: "text", required: true }
+      - { label: "Purpose", name: "purpose", widget: "string", required: true }
+      - {
+          label: "Prerequisite Tools",
+          name: "prerequisiteTools",
+          widget: "text",
+        }
+      - {
+          label: "Partner",
+          name: "partner",
+          widget: "select",
+          options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
+        }
+      - label: "Links"
+        name: "links"
+        widget: "list"
         fields:
-          - {
-              label: "Tool Number",
-              name: "number",
-              widget: "number",
-              value_type: "int",
-              default: 1,
-            }
-          - { label: "Name", name: "name", widget: "string", required: true }
-          - {
-              label: "Summary",
-              name: "summary",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Outcomes",
-              name: "outcomes",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Instructions",
-              name: "instructions",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Benefits",
-              name: "benefits",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Purpose",
-              name: "purpose",
-              widget: "string",
-              required: true,
-            }
-          - {
-              label: "Prerequisite Tools",
-              name: "prerequisiteTools",
-              widget: "text",
-            }
-          - {
-              label: "Partner",
-              name: "partner",
-              widget: "select",
-              options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
-            }
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
 
   - name: "tools_greek"
     label: "Tools (Greek)"
-    files:
-      - label: "Tool #1 - Entrepreneurial Wall Pack"
-        name: "tool_01_el"
-        file: "content/tools/01-entrepreneurial-wall-pack/el.md"
-        format: "frontmatter"
+    folder: "content/tools/el"
+    create: true
+    format: "frontmatter"
+    slug: "{{number}}-{{slug}}"
+    fields:
+      - {
+          label: "Tool Number",
+          name: "number",
+          widget: "number",
+          value_type: "int",
+        }
+      - { label: "Name", name: "name", widget: "string", required: true }
+      - { label: "Summary", name: "summary", widget: "text", required: true }
+      - {
+          label: "Description",
+          name: "description",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Outcomes", name: "outcomes", widget: "text", required: true }
+      - {
+          label: "Instructions",
+          name: "instructions",
+          widget: "text",
+          required: true,
+        }
+      - { label: "Benefits", name: "benefits", widget: "text", required: true }
+      - { label: "Purpose", name: "purpose", widget: "string", required: true }
+      - {
+          label: "Prerequisite Tools",
+          name: "prerequisiteTools",
+          widget: "text",
+        }
+      - {
+          label: "Partner",
+          name: "partner",
+          widget: "select",
+          options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
+        }
+      - label: "Links"
+        name: "links"
+        widget: "list"
         fields:
-          - {
-              label: "Tool Number",
-              name: "number",
-              widget: "number",
-              value_type: "int",
-              default: 1,
-            }
-          - { label: "Name", name: "name", widget: "string", required: true }
-          - {
-              label: "Summary",
-              name: "summary",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Description",
-              name: "description",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Outcomes",
-              name: "outcomes",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Instructions",
-              name: "instructions",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Benefits",
-              name: "benefits",
-              widget: "text",
-              required: true,
-            }
-          - {
-              label: "Purpose",
-              name: "purpose",
-              widget: "string",
-              required: true,
-            }
-          - {
-              label: "Prerequisite Tools",
-              name: "prerequisiteTools",
-              widget: "text",
-            }
-          - {
-              label: "Partner",
-              name: "partner",
-              widget: "select",
-              options: ["ACEEU", "EUEI", "TVW", "MMS", "UNEAT", "MC"],
-            }
-          - label: "Links"
-            name: "links"
-            widget: "list"
-            fields:
-              - { label: "Title", name: "title", widget: "string" }
-              - { label: "URL", name: "url", widget: "string" }
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "URL", name: "url", widget: "string" }
