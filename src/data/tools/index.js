@@ -13,7 +13,9 @@
  */
 export const loadTools = async (language = "en") => {
   try {
-    const response = await fetch(`/data/tools-${language}.json`);
+    const response = await fetch(
+      `${import.meta.env.BASE_URL}data/tools-${language}.json`,
+    );
 
     if (!response.ok) {
       throw new Error(`Failed to fetch tools for language: ${language}`);
