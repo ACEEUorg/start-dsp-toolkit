@@ -62,34 +62,27 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Send email notification
-        uses: dawidd6/action-send-mail@v3
+        uses: corysimmons/resend-email-action@v1
         with:
-          server_address: smtp.resend.com
-          server_port: 587
-          username: resend
-          password: ${{ secrets.RESEND_API_KEY }}
-          subject: "📝 CMS Update: ${{ needs.detect-cms-change.outputs.tool-name }} (${{ needs.detect-cms-change.outputs.language }})"
+          api-key: ${{ secrets.RESEND_API_KEY }}
+          from: Resend GitHub Action <notifications@resend.dev>
           to: meppen@aceeu.org
-          from: notifications@resend.dev
-          body: |
-            🎯 **Decap CMS Content Update Detected**
+          subject: "📝 CMS Update: ${{ needs.detect-cms-change.outputs.tool-name }} (${{ needs.detect-cms-change.outputs.language }})"
+          text: |
+            🎯 Decap CMS Content Update Detected
             
-            **Tool:** ${{ needs.detect-cms-change.outputs.tool-name }}
-            **Language:** ${{ needs.detect-cms-change.outputs.language }}
-            **Commit:** ${{ github.sha }}
-            **Author:** ${{ github.event.head_commit.author.name }}
+            Tool: ${{ needs.detect-cms-change.outputs.tool-name }}
+            Language: ${{ needs.detect-cms-change.outputs.language }}
+            Commit: ${{ github.sha }}
+            Author: ${{ github.event.head_commit.author.name }}
             
-            **Commit Message:**
-            ```
+            Commit Message:
             ${{ needs.detect-cms-change.outputs.commit-message }}
-            ```
             
-            **Changed Files:**
-            ```
+            Changed Files:
             ${{ needs.detect-cms-change.outputs.changed-files }}
-            ```
             
-            **View Changes:** https://github.com/${{ github.repository }}/commit/${{ github.sha }}
+            View Changes: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
             
             ---
-            *This notification was sent automatically because a Decap CMS content update was detected.*
+            This notification was sent automatically because a Decap CMS content update was detected.
