@@ -54,7 +54,7 @@ function parseFrontmatter(content) {
       const valueStart = keyMatch[2].trim();
 
       // Check if it's a multiline string
-      if (valueStart === "|") {
+      if (valueStart === "|" || valueStart === ">") {
         inMultiline = true;
         inList = false;
         currentValue = [];
