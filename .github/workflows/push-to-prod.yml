@@ -7,10 +7,10 @@ jobs:
   push-to-prod:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout staging branch
+      - name: Checkout main branch
         uses: actions/checkout@v4
         with:
-          ref: staging
+          ref: main
 
       - name: Set up SSH
         run: |
@@ -25,4 +25,4 @@ jobs:
           git config --global user.name "CI Bot"
 
       - name: Push to prod
-        run: git push git@github.com:ACEEUorg/start-dsp-toolkit.git staging:main
+        run: git push git@github.com:ACEEUorg/start-dsp-toolkit.git main:main
