@@ -65,7 +65,7 @@ jobs:
         uses: corysimmons/resend-email-action@v1
         with:
           api-key: ${{ secrets.RESEND_API_KEY }}
-          from: Resend GitHub Action <notifications@resend.dev>
+          from: DSP Toolkit <hi@jel.do>
           to: meppen@aceeu.org
           subject: "📝 CMS Update: ${{ needs.detect-cms-change.outputs.tool-name }} (${{ needs.detect-cms-change.outputs.language }})"
           text: |
