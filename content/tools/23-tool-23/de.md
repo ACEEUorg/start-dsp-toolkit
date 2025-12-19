@@ -1,0 +1,31 @@
+---
+number: 23
+name: Ethisch Gründen
+summary: Ethisch Gründen ist eine projektbasierte Toolbox für Pädagogen und studentische Innovationszentren, um Lernende in die Anpassung ethischer, inklusiver Geschäftsideen an reale Gemeinschaftsbedürfnisse durch strukturiertes Design Thinking und Peer-Reflexion einzubinden.
+description: Ethisch Gründen ist eine flexible projektbasierte Toolbox, die es Studierenden ermöglicht, jugendfreundliche Geschäftsideen mithilfe eines strukturierten ethischen Innovationsprozesses an spezifische Gemeinschaftsherausforderungen anzupassen. Die Teilnehmer wählen Unternehmungen aus einer kuratierten Liste aus, wenden lokale Einschränkungen an, definieren ihre Rückgabestrategie und füllen Arbeitsblätter und Canvas-Aktivitäten aus. Anschließend pitchen sie ihre angepasste Idee und erhalten Feedback von Kollegen und Pädagogen.
+outcomes: |
+  Verständnis von ethischem Unternehmertum und inklusiver Innovation
+  Praktische Anwendung von Social-Impact-Prinzipien
+  Peer-to-Peer-Bewertung und reflektierendes Lernen
+  Stärkung von EntreComp- und GreenComp-Dimensionen
+  Bewusstsein für gesellschaftliches Engagement und Rückgabestrategien
+instructions: |
+  1. Den Studierenden werden ein Start-up und ein Community-Profil zugewiesen.
+  2. Unter Verwendung des Arbeitsbuchs und des Canvas passen sie das Unternehmen ethisch und inklusiv an.
+  3. Sie bereiten einen Pitch vor und halten ihn.
+  4. Peer- und Lehrer-Feedback wird mithilfe der Bewertungsbögen gesammelt.
+  5. Pädagogen unterstützen den Prozess über den Digitalen Projektleitfaden.
+links:
+  - title: "Ethisch Gründen - Digitaler Projektleitfaden für Lehrer"
+    url: "assets/tools/de/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+  - title: "Ethisch Gründen - Digitales Projektmaterial"
+    url: "assets/tools/de/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+benefits: Dieses Tool adressiert die Herausforderung, Wirtschaftsethik in Aktion zu lehren, indem Studierende jugendgeführte Unternehmungen mit klaren Rückgabeplänen lokalisieren und anpassen. Es fördert unternehmerische Empathie, soziale Verantwortung und Nachhaltigkeit von der Idee bis zum Pitch.
+purpose: Nachhaltiges & wirkungsorientiertes Unternehmertum
+prerequisiteTools: |
+  Drucker & Schere oder ein digitales Whiteboard-Tool (Miro/Mural/Canva)
+  Spielsteine
+  Timer
+  Projektor (optional zum Anzeigen von Fragen)
+partner: MC
+---

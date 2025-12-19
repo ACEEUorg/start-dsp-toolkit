@@ -1,0 +1,25 @@
+---
+number: 18
+name: Wissensaustausch-Plattformen
+summary: Digitale Wissensaustausch-Plattformen verbinden Pädagogen, Forscher und Mitarbeiter über Universitäten hinweg und ermöglichen eine nahtlose Zusammenarbeit, Ressourcenaustausch und professionelles Lernen in Echtzeit oder asynchron.
+description: Digitale Wissensaustausch-Plattformen – wie Moodle, Teams, Slack und LinkedIn – ermöglichen es Universitäten, die Kommunikation zu zentralisieren, Ressourcen zu teilen und Lern-, Lehr- oder Forschungsaktivitäten zu koordinieren. Ob Hosting von Diskussionen, Speichern von Materialien oder Zusammenarbeit an Projekten, diese Tools brechen Silos auf und verbessern Effizienz, Zugänglichkeit und Wissenskontinuität über Mitarbeiter, Abteilungen und globale Partnerschaften hinweg.
+outcomes: |
+  Verbesserte Zusammenarbeit zwischen Fakultät und Verwaltung.
+  Schnellere Feedbackschleifen und gemeinsame Entscheidungsfindung.
+  Besserer Zugang zu institutionellem Wissen und digitalen Assets.
+  Erhöhtes Engagement in interdisziplinären oder Erasmus+-Projekten.
+instructions: |
+  Richten Sie Konten für Mitarbeiter ein und definieren Sie Team-Bereiche (z. B. nach Fakultät, Thema oder Projekt).
+  Laden Sie geteilte Ressourcen hoch (Dokumente, Vorlagen, Leitfäden).
+  Verwenden Sie Diskussions-Threads oder Chat-Kanäle für themenbezogene Zusammenarbeit.
+  Planen Sie Wissensaustausch-Sitzungen oder regelmäßige Updates.
+links:
+  - title: "SCHRITT 1 - Einführung Wissensaustausch-Plattform"
+    url: "assets/tools/de/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+  - title: "SCHRITT 2 - Vergleich von Wissensaustausch-Plattformen"
+    url: "assets/tools/de/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+benefits: Diese Plattformen ermöglichen die Zusammenarbeit über Abteilungen hinweg, unterstützen die gemeinsame Erstellung von Lehrmaterialien, ermöglichen Peer-Feedback und verbessern den Zugang zu geteiltem Fachwissen. Sie sind entscheidend für die Verbesserung von Innovation, Abstimmung und institutionellem Gedächtnis in universitätsübergreifenden Initiativen.
+purpose: Förderung einer unternehmerischen Denkweise & Kultur
+prerequisiteTools: 1. Ein elektronisches Gerät mit WLAN für App-Download und Benutzerfähigkeit
+partner: MMS
+---

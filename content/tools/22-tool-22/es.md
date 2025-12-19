@@ -1,0 +1,44 @@
+---
+number: 22
+name: "Juego de Mesa de Rol \"Mission Possible\" para el Pensamiento Emprendedor e Impacto"
+summary: Mission Possible es un juego de mesa de simulación de rol interactivo donde los estudiantes asumen roles de inicio y navegan dilemas de sostenibilidad, digitales y éticos del mundo real. Alineado con EntreComp, GreenComp y DigiComp, convierte las aulas en laboratorios de aventuras emprendedoras.
+description: |
+  Mission Possible es un recurso estilo juego de mesa imprimible o digital para clases de emprendimiento de nivel universitario. Los estudiantes se dividen en pequeños equipos de inicio y se les asigna una misión ficticia (por ejemplo, lanzar una aplicación verde, resolver un problema de desperdicio de alimentos). A medida que avanzan, encuentran tarjetas que presentan desafíos de la vida real como:
+  Elegir entre ganancias y ética,
+  Lidiar con conflictos de equipo,
+  Decidir si usar herramientas de IA generativa, etc.
+outcomes: |
+  Mejora de la capacidad para manejar la incertidumbre emprendedora
+  Mayor comprensión de cómo la ética, la sostenibilidad y la digitalización interactúan en el emprendimiento
+  Aprendizaje colaborativo y reflexivo fortalecido
+instructions: |
+  1.	Forme equipos de inicio (3–5 estudiantes)
+  2.	Asigne a cada grupo una Tarjeta de Misión (por ejemplo, “Estás construyendo una aplicación de reciclaje basada en IA para usuarios de la Generación Z.”)
+  3.	Distribuya tarjetas de rol al azar a cada miembro del equipo.
+  4.	En cada ronda, los equipos tiran los dados y mueven su ficha hacia adelante en el tablero de Mission Possible. Si caen en un espacio marcado con un ícono temático, deben robar una Tarjeta de Desafío del mazo correspondiente.
+  5.	Los equipos roban Tarjetas de Desafío de 3 mazos temáticos:
+  o	Dilemas digitales (DigiComp)
+  o	Cuestiones de impacto verde y social (GreenComp)
+  o	Decisiones de estrategia empresarial (EntreComp)
+  6.	Los equipos leen la tarjeta en voz alta y discuten durante 10 minutos qué decisión tomar — considerando sus roles y misión.
+  7.	Una vez que el equipo llega al FINAL, presentan cómo navegaron su viaje
+  8.	El educador dirige una reflexión guiada utilizando la Hoja de Reflexión del Equipo
+  Nota: Encuentre instrucciones extensas en la Guía de Facilitación
+links:
+  - title: "Guía de Facilitación"
+    url: "assets/pdfs/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
+  - title: "Tablero"
+    url: "assets/pdfs/en/tool_22.2_TOOLMC1_board.pdf"
+  - title: "Tarjetas"
+    url: "assets/pdfs/en/tool_22.3_TOOLMC1_cards.pdf"
+  - title: "Hoja de Reflexión"
+    url: "assets/pdfs/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+benefits: La mayoría de la enseñanza del emprendimiento es pesada en teoría y carece de compromiso emocional. Mission Map introduce el aprendizaje gamificado para simular incertidumbres del mundo real, permitiendo a los alumnos practicar la colaboración, el pensamiento crítico y la resiliencia en entornos de inicio complejos.
+purpose: Fomento de una Mentalidad & Cultura Emprendedora
+prerequisiteTools: |
+  Impresora y tijeras o una herramienta de pizarra digital (Miro/Mural/Canva)
+  Fichas
+  Temporizador
+  Proyector (opcional para mostrar preguntas)
+partner: MC
+---
