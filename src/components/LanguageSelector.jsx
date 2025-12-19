@@ -26,7 +26,7 @@ export default function LanguageSelector() {
         <span
           className={`fi fi-${current.flagCode} rounded-sm outline-1 outline-seafoam-600`}
         ></span>
-        <span className="hidden sm:inline">{current.name}</span>
+        <span>{current.name}</span>
         <ChevronDown className="h-4 w-4" />
       </MenuButton>
 
