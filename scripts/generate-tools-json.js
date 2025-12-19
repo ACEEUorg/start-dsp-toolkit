@@ -5,7 +5,13 @@
  */
 
 import { load } from "js-yaml";
-import { readFileSync, writeFileSync, readdirSync, mkdirSync, existsSync } from "fs";
+import {
+  readFileSync,
+  writeFileSync,
+  readdirSync,
+  mkdirSync,
+  existsSync,
+} from "fs";
 import { join, dirname } from "path";
 import { fileURLToPath } from "url";
 
@@ -38,6 +44,17 @@ function parseFrontmatter(content) {
     }
   }
 
+  // Ensure description ends with punctuation
+  if (data.description && typeof data.description === "string") {
+    const trimmed = data.description.trim();
+    const lastChar = trimmed.slice(-1);
+    if (![".", "!", "?"].includes(lastChar)) {
+      data.description = trimmed + ".";
+    } else {
+      data.description = trimmed;
+    }
+  }
+
   return data;
 }
 
@@ -52,7 +69,7 @@ function loadToolsForLanguage(language) {
     return { tools: [], validOptions: { purpose: [] } };
   }
 
-  const files = readdirSync(langDir).filter(f => f.endsWith(".md"));
+  const files = readdirSync(langDir).filter((f) => f.endsWith(".md"));
   const tools = [];
   const purposes = new Set();
 
