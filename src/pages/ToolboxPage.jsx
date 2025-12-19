@@ -142,6 +142,7 @@ export default function Toolbox() {
             <div className="flex-1">
               <ToolImage
                 toolNumber={tool.number}
+                customImage={tool.image}
                 alt={tool.name}
                 className="w-full h-48 object-cover rounded-lg mb-4"
               />

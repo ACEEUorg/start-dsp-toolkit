@@ -6,6 +6,7 @@ import CookieConsent from "./components/CookieConsent";
 import TranslationDisclaimer from "./components/TranslationDisclaimer";
 import ToolboxPage from "./pages/ToolboxPage";
 import ToolDetailPage from "./pages/ToolDetailPage";
+import NotFoundPage from "./pages/NotFoundPage";
 import { initializeAnalytics, trackPageView } from "./utils/analytics";
 import { useTranslation, useLanguage } from "./i18n/hooks";
 
@@ -53,6 +54,7 @@ export default function App() {
             <Route path="/" element={<ToolboxPage />} />
             <Route path="/toolbox" element={<ToolboxPage />} />
             <Route path="/tool/:number" element={<ToolDetailPage />} />
+            <Route path="*" element={<NotFoundPage />} />
           </Routes>
         </div>
       </main>

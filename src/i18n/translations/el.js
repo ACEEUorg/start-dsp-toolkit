@@ -46,4 +46,9 @@ export default {
   "language.es": "Español",
   "language.de": "Deutsch",
   "language.el": "Ελληνικά",
+
+  // 404 Page
+  "notFound.message": "Η σελίδα δεν βρέθηκε",
+  "notFound.description": "Η σελίδα που αναζητάτε δεν υπάρχει.",
+  "notFound.backToHome": "Επιστροφή στην Εργαλειοθήκη",
 };
