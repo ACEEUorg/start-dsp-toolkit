@@ -27,4 +27,6 @@ jobs:
       - name: Push to prod
         run: |
           git remote add prod git@github.com:ACEEUorg/start-dsp-toolkit.git || true
-          git push -f prod main:main
+          git remote -v
+          git log -1 --oneline
+          GIT_TRACE=1 git push -f prod main:main
