@@ -10,6 +10,7 @@ public_folder: "/assets"
 collections:
   - name: "tools_english"
     label: "Tools (English)"
+    label_singular: "Tool (English)"
     folder: "content/tools/en"
     create: true
     format: "frontmatter"
@@ -75,6 +76,7 @@ collections:
 
   - name: "tools_spanish"
     label: "Tools (Spanish)"
+    label_singular: "Tool (Spanish)"
     folder: "content/tools/es"
     create: true
     format: "frontmatter"
@@ -140,6 +142,7 @@ collections:
 
   - name: "tools_german"
     label: "Tools (German)"
+    label_singular: "Tool (German)"
     folder: "content/tools/de"
     create: true
     format: "frontmatter"
@@ -205,6 +208,7 @@ collections:
 
   - name: "tools_greek"
     label: "Tools (Greek)"
+    label_singular: "Tool (Greek)"
     folder: "content/tools/el"
     create: true
     format: "frontmatter"
