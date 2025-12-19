@@ -34,14 +34,13 @@ jobs:
           TOOL_NAME=""
           LANGUAGE=""
           
-          # Pattern 1: Commit message matches CMS pattern
-          if [[ "$MESSAGE" =~ ^(Create|Update)\ Tool\ \(([^)]+)\)\ .+ ]]; then
+          # Pattern 1: Commit message matches CMS pattern (simplified)
+          if [[ "$MESSAGE" =~ ^(Create|Update)\ Tool\ \( ]]; then
             IS_CMS="true"
-            LANGUAGE="${BASH_REMATCH[2]}"
+            # Extract language from parentheses
+            LANGUAGE=$(echo "$MESSAGE" | sed -n 's/.*Tool (\([^)]*\)).*/\1/p')
             # Extract tool name from quotes
-            if [[ "$MESSAGE" =~ .+"([^"]+)".* ]]; then
-              TOOL_NAME="${BASH_REMATCH[1]}"
-            fi
+            TOOL_NAME=$(echo "$MESSAGE" | sed -n 's/.*"\([^"]*\)".*/\1/p')
           fi
           
           # Pattern 2: Files changed are in content/tools directories
