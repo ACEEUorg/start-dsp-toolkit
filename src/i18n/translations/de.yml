@@ -1,30 +1,42 @@
-header.title: "Start-DSP Toolbox für unternehmerische Hochschulen"
-nav.toolbox: "Toolbox"
-nav.projectWebsite: "Zurück zur Start-DSP Projekt Website"
-search.placeholder: "Suche nach Tools anhand von Namen oder Beschreibung..."
-filter.allPurposes: "Alle Zwecke"
-toolDetail.backToToolbox: "Zurück zur Toolbox"
-toolDetail.purpose: "Zweck"
-toolDetail.benefits: "Vorteile"
-toolDetail.prerequisiteTools: "Vorausgesetzte Tools"
-toolDetail.description: "Beschreibung"
-toolDetail.instructions: "Anweisungen"
-toolDetail.outcomes: "Ergebnisse"
+header.title: Start-DSP Toolbox für unternehmerische Hochschulen
+nav.toolbox: Toolbox
+nav.projectWebsite: Zurück zur Start-DSP Projekt Website
+search.placeholder: Suche nach Tools anhand von Namen oder Beschreibung...
+filter.allPurposes: Alle Zwecke
+toolDetail.backToToolbox: Zurück zur Toolbox
+toolDetail.purpose: Zweck
+toolDetail.benefits: Vorteil
+toolDetail.prerequisiteTools: Vorausgesetzte Tools
+toolDetail.description: Beschreibung
+toolDetail.instructions: Anweisungen
+toolDetail.outcomes: Ergebnisse
 toolDetail.responsiblePartner: "Verantwortlicher Partner:"
-badge.fallbackLanguage: "Verfügbar auf Englisch"
-badge.externalLink: "Extern - nur auf Englisch"
-disclaimer.translationTitle: "Übersetzungen in Bearbeitung"
-disclaimer.translationMessage: "Wir übersetzen derzeit den Toolbox-Inhalt. Einige Tools und Materialien sind möglicherweise noch nur auf Englisch verfügbar."
-cookie.title: "Cookie-Zustimmung"
-cookie.message: "Wir verwenden Google Analytics, um zu verstehen, wie Besucher unsere Website nutzen, und um Ihre Erfahrung zu verbessern. Dies hilft uns zu messen, welche Bildungstools am nützlichsten sind. Wir anonymisieren IP-Adressen und sammeln keine persönlichen Informationen. Durch Klicken auf \"Akzeptieren\" stimmen Sie unserer Verwendung von Cookies zu Analyse-Zwecken zu."
-cookie.accept: "Akzeptieren"
-cookie.decline: "Ablehnen"
-footer.euDisclaimer: "Dieses Projekt wurde mit Unterstützung der Europäischen Kommission finanziert. Der Autor ist allein verantwortlich für diese Veröffentlichung (Kommunikation) und die Kommission übernimmt keine Verantwortung für jegliche Nutzung der darin enthaltenen Informationen. In Übereinstimmung mit dem neuen GDPR-Rahmen beachten Sie bitte, dass die Partnerschaft Ihre persönlichen Daten nur im alleinigen Interesse und Zweck des Projekts verarbeiten wird und ohne Ihre Rechte zu beeinträchtigen."
-footer.euLogoAlt: "Gefördert von der Europäischen Union"
-language.en: "English"
-language.es: "Español"
-language.de: "Deutsch"
-language.el: "Ελληνικά"
-notFound.message: "Seite nicht gefunden"
-notFound.description: "Die Seite, die Sie suchen, existiert nicht."
-notFound.backToHome: "Zurück zur Toolbox"
+badge.fallbackLanguage: Verfügbar auf Englisch
+badge.externalLink: Extern - nur auf Englisch
+disclaimer.translationTitle: Übersetzungen in Bearbeitung
+disclaimer.translationMessage: Wir übersetzen derzeit den Toolbox-Inhalt. Einige
+  Tools und Materialien sind möglicherweise noch nur auf Englisch verfügbar.
+cookie.title: Cookie-Zustimmung
+cookie.message: Wir verwenden Google Analytics, um zu verstehen, wie Besucher
+  unsere Website nutzen, und um Ihre Erfahrung zu verbessern. Dies hilft uns zu
+  messen, welche Bildungstools am nützlichsten sind. Wir anonymisieren
+  IP-Adressen und sammeln keine persönlichen Informationen. Durch Klicken auf
+  "Akzeptieren" stimmen Sie unserer Verwendung von Cookies zu Analyse-Zwecken
+  zu.
+cookie.accept: Akzeptieren
+cookie.decline: Ablehnen
+footer.euDisclaimer: Dieses Projekt wurde mit Unterstützung der Europäischen
+  Kommission finanziert. Der Autor ist allein verantwortlich für diese
+  Veröffentlichung (Kommunikation) und die Kommission übernimmt keine
+  Verantwortung für jegliche Nutzung der darin enthaltenen Informationen. In
+  Übereinstimmung mit dem neuen GDPR-Rahmen beachten Sie bitte, dass die
+  Partnerschaft Ihre persönlichen Daten nur im alleinigen Interesse und Zweck
+  des Projekts verarbeiten wird und ohne Ihre Rechte zu beeinträchtigen.
+footer.euLogoAlt: Gefördert von der Europäischen Union
+language.en: English
+language.es: Español
+language.de: Deutsch
+language.el: Ελληνικά
+notFound.message: Seite nicht gefunden
+notFound.description: Die Seite, die Sie suchen, existiert nicht.
+notFound.backToHome: Zurück zur Toolbox
