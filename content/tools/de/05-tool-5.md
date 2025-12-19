@@ -1,6 +1,7 @@
 ---
 number: 5
 name: Entrepreneurial Resource Mapping Journey
+image: /assets/images/5.jpg
 summary: Die Entrepreneurial Resource Mapping Journey ist ein 7-Schritte-Canvas mit Leitfragen, der Universitätsleitungen hilft, die institutionelle Unterstützung für Unternehmertum auf klare und umsetzbare Weise zu visualisieren, zu bewerten und zu stärken.
 description: Das Entrepreneurial Resource Mapping Tool ist eine interaktive Mural-Vorlage, die Universitäten dabei unterstützt, ihre unternehmerischen Ressourcen visuell zu organisieren und zu optimieren. Es bietet einen strukturierten Rahmen, der Fakultätsmitglieder und Mitarbeiter durch einen schrittweisen Prozess führt, um verfügbare Ressourcen wie Finanzierung, Einrichtungen und Unterstützungsprogramme zu identifizieren, zu kategorisieren und zu bewerten. Das Tool ermöglicht es Universitäten, Lücken aufzuzeigen, Verantwortlichkeiten zu klären und Aktionspläne für eine bessere Ressourcennutzung zu entwickeln.
 outcomes: Universitäten erhalten einen klaren Überblick über ihre unternehmerischen Ressourcen und treffen fundiertere, strategische Entscheidungen darüber, wie diese zugewiesen und verbessert werden können.

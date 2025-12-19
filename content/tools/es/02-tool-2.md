@@ -1,6 +1,7 @@
 ---
 number: 2
 name: Diccionario Emprendedor
+image: /assets/images/2.jpg
 summary: Un diccionario emprendedor divertido y accesible para estudiantes, personal e investigadores para entender términos clave de emprendimiento sin miedo ni confusión.
 description: El Diccionario Emprendedor está diseñado para ayudar a universidades e individuos a comprender mejor los conceptos emprendedores de una manera simple y divertida. Desglosa términos clave a menudo malinterpretados o intimidantes, ayudando a reducir el miedo y los conceptos erróneos en torno al emprendimiento. Está diseñado para estudiantes, miembros de la facultad o personal universitario curiosos sobre la mentalidad emprendedora. Esta herramienta ofrece definiciones claras, ejemplos y contexto del mundo real para hacer que el lenguaje emprendedor sea accesible para todos.
 outcomes: Estudiantes y profesores desarrollarán confianza y claridad en torno a términos emprendedores clave. Un lenguaje compartido fomenta una mejor colaboración entre departamentos. La herramienta apoya el aprendizaje en cursos, mentorías y centros de innovación, al tiempo que invita a la exploración autodidacta.

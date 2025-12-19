@@ -1,6 +1,7 @@
 ---
 number: 6
 name: Herramienta de Evaluación de Competencias Emprendedoras
+image: /assets/images/6.jpg
 summary: La Herramienta de Evaluación de Competencias Emprendedoras equipa a los líderes universitarios y tomadores de decisiones con un recurso práctico, basado en EntreComp, para identificar, evaluar y desarrollar competencias emprendedoras en procesos de reclutamiento y desarrollo profesional.
 description: La herramienta proporciona plantillas y escenarios de casos listos para usar que simplifican la evaluación de habilidades emprendedoras relevantes para contextos académicos, asegurando un proceso de evaluación consistente y perspicaz. La herramienta se basa en el Marco EntreComp, donde se seleccionaron 12 competencias básicas. Para cada una de estas competencias, la herramienta tiene una plantilla individual diseñada para evaluar la competencia emprendedora a través de escenarios realistas adaptados a la academia. Además, la herramienta incluye escenarios de casos generales que evalúan múltiples competencias simultáneamente.
 outcomes: Las universidades pueden establecer un marco estandarizado para evaluar competencias emprendedoras en el reclutamiento y desarrollo del personal. Obtener conocimientos más profundos sobre el potencial emprendedor del profesorado y el personal, permitiendo una mejor alineación con los objetivos institucionales. Mejor selección y desarrollo de educadores con competencias emprendedoras. El profesorado y el personal se vuelven más conscientes de sus fortalezas emprendedoras y áreas de desarrollo.

@@ -1,6 +1,7 @@
 ---
 number: 1
 name: Das Entrepreneurial Wall Pack
+image: /assets/images/1.jpg
 summary: Das Entrepreneurial Wall Pack bietet druckfertige Zitate und Vorlagen sowie einen KI-Leitfaden zur Erstellung maßgeschneiderter Inhalte. Ideal für Fakultäten und Universitäten, um unternehmerisches Denken in Cafés, Co-Working-Spaces und anderen Campusbereichen anzuregen.
 description: |
   Das Entrepreneurial Wall Pack wurde für Fakultäten und Universitätsmitarbeiter entwickelt, die durch inspirierende visuelle Elemente auf dem Campus eine Kultur des Unternehmertums fördern möchten. Es enthält druckfertige Designs mit motivierenden Zitaten, praktischen Tipps und handlungsorientierten Botschaften.

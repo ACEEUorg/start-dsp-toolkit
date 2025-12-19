@@ -1,6 +1,7 @@
 ---
 number: 4
 name: "EngageTree: Unlock Faculty Entrepreneurship"
+image: /assets/images/4.jpg
 summary: The EngageTree is a decision-making chart that helps university leaders quickly identify barriers to faculty engagement in entrepreneurship and find effective, ready-to-implement incentives to boost participation.
 description: The tool is designed to support universities in identifying and implementing strategies to motivate faculty and staff to engage in entrepreneurial education. It presents an interactive pathway that helps institutions assess their current support landscape and guides them toward actionable incentive strategies. These may include financial incentives, professional development opportunities, public recognition, or other non-monetary rewards to encourage faculty participation in entrepreneurial initiatives.
 outcomes: Increased faculty engagement in entrepreneurship education through targeted, barrier-specific incentives. More effective use of existing resources by applying low-cost, high-impact strategies. Greater faculty awareness of entrepreneurial opportunities and support. Strengthened institutional culture that values and rewards entrepreneurial activity.

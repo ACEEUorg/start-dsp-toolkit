@@ -1,6 +1,7 @@
 ---
 number: 3
 name: Entrepreneurial KPI Dashboard
+image: /assets/images/3.jpg
 summary: Ein Excel-Dashboard für unternehmerische KPIs, das Universitätsmitarbeitern hilft, die Leistung der Gründungsausbildung effizient zu bewerten, zu überwachen und zu verfolgen, unter Verwendung relevanter Leistungskennzahlen (KPIs).
 description: Das Entrepreneurial KPI Dashboard ist ein Excel-Tool, das Universitäten bei der Bewertung und Verbesserung ihrer Initiativen zur Gründungsausbildung unterstützen soll. Es bietet einen strukturierten und dennoch flexiblen Rahmen, der es Institutionen ermöglicht, relevante KPIs auszuwählen, individuelle Ziele festzulegen und den Fortschritt effektiv zu überwachen. Das Tool kann an spezifische institutionelle Bedürfnisse angepasst werden, indem neue Indikatoren hinzugefügt werden, was einen umfassenden und anpassungsfähigen Ansatz zur Leistungsverfolgung gewährleistet.
 outcomes: Universitäten beginnen, etabliertere und komplexere KPIs zu verschiedenen Aspekten der Gründungsausbildung zu verwenden. Ein strukturierter und datengesteuerter Ansatz zur Messung der Leistung in der Gründungsausbildung. Verbesserte Verantwortlichkeit über Abteilungen hinweg mit klarer Zuweisung von Zuständigkeiten. Gestärkte Entscheidungsfindung durch konsistente und transparente Berichterstattung.

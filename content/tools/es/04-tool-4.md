@@ -1,6 +1,7 @@
 ---
 number: 4
 name: "EngageTree: Desbloquea el Emprendimiento en la Facultad"
+image: /assets/images/4.jpg
 summary: El EngageTree es un diagrama de toma de decisiones que ayuda a los líderes universitarios a identificar rápidamente las barreras para el compromiso del profesorado en el emprendimiento y encontrar incentivos efectivos y listos para implementar para impulsar la participación.
 description: La herramienta está diseñada para apoyar a las universidades en la identificación e implementación de estrategias para motivar al profesorado y al personal a participar en la educación emprendedora. Presenta un camino interactivo que ayuda a las instituciones a evaluar su panorama de apoyo actual y las guía hacia estrategias de incentivos accionables. Estas pueden incluir incentivos financieros, oportunidades de desarrollo profesional, reconocimiento público u otras recompensas no monetarias para fomentar la participación del profesorado en iniciativas emprendedoras.
 outcomes: Aumento del compromiso del profesorado en la educación emprendedora a través de incentivos específicos y orientados a las barreras. Uso más efectivo de los recursos existentes mediante la aplicación de estrategias de bajo costo y alto impacto. Mayor conciencia del profesorado sobre las oportunidades y el apoyo emprendedor. Fortalecimiento de la cultura institucional que valora y recompensa la actividad emprendedora.

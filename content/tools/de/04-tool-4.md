@@ -1,6 +1,7 @@
 ---
 number: 4
 name: "EngageTree: Unternehmertum an der Fakultät freisetzen"
+image: /assets/images/4.jpg
 summary: Der EngageTree ist ein Entscheidungsdiagramm, das Universitätsleitungen hilft, Hindernisse für das Engagement von Fakultätsmitgliedern im Unternehmertum schnell zu identifizieren und effektive, sofort umsetzbare Anreize zu finden, um die Teilnahme zu steigern.
 description: Das Tool wurde entwickelt, um Universitäten bei der Identifizierung und Umsetzung von Strategien zu unterstützen, die Fakultätsmitglieder und Mitarbeiter motivieren, sich in der Gründungsausbildung zu engagieren. Es präsentiert einen interaktiven Pfad, der Institutionen hilft, ihre aktuelle Unterstützungslandschaft zu bewerten, und sie zu umsetzbaren Anreizstrategien führt. Diese können finanzielle Anreize, Möglichkeiten zur beruflichen Weiterentwicklung, öffentliche Anerkennung oder andere nicht-monetäre Belohnungen umfassen, um die Teilnahme der Fakultät an unternehmerischen Initiativen zu fördern.
 outcomes: Erhöhtes Engagement der Fakultät in der Gründungsausbildung durch gezielte, barrierefreie Anreize. Effektivere Nutzung vorhandener Ressourcen durch Anwendung kostengünstiger Strategien mit hoher Wirkung. Größeres Bewusstsein der Fakultät für unternehmerische Möglichkeiten und Unterstützung. Gestärkte institutionelle Kultur, die unternehmerische Aktivitäten wertschätzt und belohnt.

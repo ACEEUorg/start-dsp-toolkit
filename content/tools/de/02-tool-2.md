@@ -1,6 +1,7 @@
 ---
 number: 2
 name: Unternehmerisches Wörterbuch
+image: /assets/images/2.jpg
 summary: Ein unterhaltsames, zugängliches unternehmerisches Wörterbuch für Studierende, Mitarbeiter & Forscher, um wichtige Begriffe des Unternehmertums ohne Angst oder Verwirrung zu verstehen.
 description: Das Unternehmerische Wörterbuch wurde entwickelt, um Universitäten und Einzelpersonen dabei zu helfen, unternehmerische Konzepte auf einfache, lustige Weise besser zu verstehen. Es schlüsselt Schlüsselbegriffe auf, die oft missverstanden werden oder einschüchternd wirken, und hilft so, Ängste und Missverständnisse rund um das Thema Unternehmertum abzubauen. Es richtet sich an Studierende, Fakultätsmitglieder oder Universitätsmitarbeiter, die neugierig auf die unternehmerische Denkweise sind. Dieses Tool bietet klare Definitionen, Beispiele und realen Kontext, um die unternehmerische Sprache für jeden zugänglich zu machen.
 outcomes: Studierende und Lehrkräfte gewinnen Sicherheit und Klarheit im Umgang mit wichtigen unternehmerischen Begriffen. Eine gemeinsame Sprache fördert eine bessere Zusammenarbeit über Fachbereiche hinweg. Das Tool unterstützt das Lernen in Kursen, Mentoring und Innovationszentren und lädt gleichzeitig zur Erkundung im eigenen Tempo ein.

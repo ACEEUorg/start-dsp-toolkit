@@ -1,6 +1,7 @@
 ---
 number: 7
 name: EntreComp Integration Canvas
+image: /assets/images/7.jpg
 summary: A visual tool helping educators design courses with EntreComp, using a structured canvas and guiding cards to plan, assess, and monitor entrepreneurial competencies.
 description: The EntreComp Integration Canvas is a visualisation tool that provides a holistic overview of the components needed to create a course where entrepreneurial competencies are included. The Canvas includes a set of cards to guide educators on the filling out of the canvas by giving them trigger questions on each part of the canvas. By the end they will have all the necessary information an elements to implement and monitor a course.
 outcomes: Increased awareness and understanding of EntreComp competencies.Integration of EntreComp competencies into the courses of any field. Development of entrepreneurial competencies among the students. Assessment of the entrepreneurial competencies at the beginning and at the end of a course.

@@ -1,6 +1,7 @@
 ---
 number: 6
 name: Entrepreneurial Competency Assessment Tool
+image: /assets/images/6.jpg
 summary: Entrepreneurial Competency Assessment Tool equips university leaders and decision-makers with a practical, EntreComp-based resource to identify, evaluate, and develop entrepreneurial competencies in recruitment and professional development processes.
 description: The tool provides ready-to-use templates and case scenarios that simplify the evaluation of entrepreneurial skills relevant to academic contexts, ensuring a consistent and insightful assessment process. The tool is based on the EntreComp Framework where 12 core competencies were selected. For each of these competencies, the tool has an individual template designed to assess entrepreneurial proficiency through realistic scenarios tailored for academia. Additionally, the tool includes general case scenarios that assess multiple competencies simultaneously.
 outcomes: Universities can establish a standardized framework for evaluating entrepreneurial competencies in recruitment and staff development. Gain deeper insights into the entrepreneurial potential of faculty and staff, enabling better alignment with institutional goals. Improved selection and development of educators with entrepreneurial competencies. Faculty and staff become more aware of their entrepreneurial strengths and areas for development.

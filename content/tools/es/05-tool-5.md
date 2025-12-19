@@ -1,6 +1,7 @@
 ---
 number: 5
 name: Viaje de Mapeo de Recursos Emprendedores
+image: /assets/images/5.jpg
 summary: El Viaje de Mapeo de Recursos Emprendedores es un lienzo de 7 pasos con preguntas guiadas, diseñado para ayudar a los líderes universitarios a visualizar, evaluar y fortalecer el apoyo institucional para el emprendimiento de una manera clara y accionable.
 description: La Herramienta de Mapeo de Recursos Emprendedores es una plantilla interactiva de Mural diseñada para ayudar a las universidades a organizar visualmente y optimizar sus recursos emprendedores. Proporciona un marco estructurado que guía al profesorado y al personal a través de un proceso paso a paso para identificar, categorizar y evaluar los recursos disponibles, como financiación, instalaciones y programas de apoyo. La herramienta permite a las universidades detectar brechas, aclarar responsabilidades y desarrollar planes de acción para una mejor utilización de los recursos.
 outcomes: Las universidades obtienen una visión clara de sus recursos emprendedores y toman decisiones más informadas y estratégicas sobre cómo asignarlos y mejorarlos.

@@ -1,6 +1,7 @@
 ---
 number: 8
 name: EntreComp AI & VR Resource Guide
+image: /assets/images/8.jpg
 summary: The EntreComp AI & VR Resource Guide equips universities and educators with practical recommendations of free, open-source AI and VR digital tools aligned with the EntreComp Framework to modernize entrepreneurship education.
 description: This guide is designed to help universities and educators integrate digital tools into entrepreneurship education, aligning with current trends and educational demands. Based on the EntreComp Framework, this resource recommends free, open-source AI and VR tools that can support different stages of the entrepreneurial journey.
 outcomes: Students and educators begin to integrate AI and VR tools into entrepreneurship education, exploring their potential in real entrepreneurial projects. Universities cultivate a more technology-driven entrepreneurial culture, equipping students to meet the demands of today’s business world. As a result, learners enhance their ability to spot market trends, generate innovative business ideas, and develop digital prototypes for entrepreneurial ventures.

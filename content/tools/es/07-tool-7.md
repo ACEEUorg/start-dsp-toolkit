@@ -1,6 +1,7 @@
 ---
 number: 7
 name: Lienzo de Integración EntreComp
+image: /assets/images/7.jpg
 summary: Una herramienta visual que ayuda a los educadores a diseñar cursos con EntreComp, utilizando un lienzo estructurado y tarjetas guía para planificar, evaluar y monitorear competencias emprendedoras.
 description: El Lienzo de Integración EntreComp es una herramienta de visualización que proporciona una visión holística de los componentes necesarios para crear un curso donde se incluyan competencias emprendedoras. El Lienzo incluye un conjunto de tarjetas para guiar a los educadores en el llenado del lienzo dándoles preguntas detonantes sobre cada parte del mismo. Al final, tendrán toda la información y elementos necesarios para implementar y monitorear un curso.
 outcomes: Mayor conciencia y comprensión de las competencias EntreComp. Integración de las competencias EntreComp en los cursos de cualquier campo. Desarrollo de competencias emprendedoras entre los estudiantes. Evaluación de las competencias emprendedoras al inicio y al final de un curso.

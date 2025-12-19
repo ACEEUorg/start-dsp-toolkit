@@ -88,6 +88,7 @@ export default function ToolDetail() {
         <h2 className="text-3xl font-display font-bold mb-6">{tool.name}</h2>
         <ToolImage
           toolNumber={tool.number}
+          customImage={tool.image}
           alt={tool.name}
           className="w-full h-64 object-cover rounded-lg mb-6"
         />

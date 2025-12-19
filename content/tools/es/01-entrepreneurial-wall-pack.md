@@ -1,6 +1,7 @@
 ---
 number: 1
 name: El Pack de Muro Emprendedor
+image: /assets/images/1.jpg
 summary: El Pack de Muro Emprendedor ofrece citas y plantillas listas para imprimir y una guía de IA para crear contenido a medida. Ideal para que facultades y universidades despierten el pensamiento emprendedor en cafeterías, espacios de co-working y otras áreas del campus.
 description: |
   El Pack de Muro Emprendedor está diseñado para el profesorado y el personal universitario que aspira a fomentar una cultura de emprendimiento a través de visuales inspiradores en el campus. Incluye diseños listos para imprimir con citas motivadoras, consejos prácticos y mensajes orientados a la acción.

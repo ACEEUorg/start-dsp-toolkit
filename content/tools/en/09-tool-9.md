@@ -1,6 +1,7 @@
 ---
 number: 9
 name: Grant Application Roadmap
+image: /assets/images/9.jpg
 summary: The Grant Application Roadmap guide researchers or staff to navigate EU and regional funding opportunities, detailing eligibility criteria, providing step-by-step application instructions, and sharing practical tips to help craft competitive grant proposals.
 description: This Grant Application Guideline aims to help applicants for funding opportunities by providing a roadmap for identifying, applying for, and successfully securing funding for entrepreneurship initiatives. Its purpose is to equip universities and academics with practical knowledge and strategies for effectively accessing financial resources.
 outcomes: Improved awareness and understanding of EU and regional funding opportunities for entrepreneurship and research. Strengthened capacity to develop competitive, high-quality grant proposals aligned with institutional priorities. Enhanced ability to meet eligibility requirements and comply with EU funding regulations. Increased access to financial resources that support innovation, entrepreneurial initiatives, and academic advancement.

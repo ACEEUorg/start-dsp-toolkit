@@ -1,6 +1,7 @@
 ---
 number: 8
 name: Guía de Recursos de IA y RV EntreComp
+image: /assets/images/8.jpg
 summary: La Guía de Recursos de IA y RV EntreComp equipa a universidades y educadores con recomendaciones prácticas de herramientas digitales de IA y RV gratuitas y de código abierto alineadas con el Marco EntreComp para modernizar la educación emprendedora.
 description: Esta guía está diseñada para ayudar a universidades y educadores a integrar herramientas digitales en la educación emprendedora, alineándose con las tendencias actuales y las demandas educativas. Basado en el Marco EntreComp, este recurso recomienda herramientas gratuitas y de código abierto de IA y RV que pueden apoyar diferentes etapas del viaje emprendedor.
 outcomes: Estudiantes y educadores comienzan a integrar herramientas de IA y RV en la educación emprendedora, explorando su potencial en proyectos emprendedores reales. Las universidades cultivan una cultura emprendedora más impulsada por la tecnología, equipando a los estudiantes para satisfacer las demandas del mundo empresarial actual. Como resultado, los alumnos mejoran su capacidad para detectar tendencias de mercado, generar ideas de negocio innovadoras y desarrollar prototipos digitales para emprendimientos.
