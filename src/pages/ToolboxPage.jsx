@@ -138,7 +138,7 @@ export default function Toolbox() {
             key={tool.number}
             to={`/tool/${tool.number}`}
             state={{ from: "/toolbox", search: location.search }}
-            className="group relative overflow-hidden bg-gradient-to-br from-seafoam-50 to-white rounded-xl p-6 border border-seafoam-200 hover:border-seafoam-400 transition-all duration-200 flex flex-col h-full"
+            className="group relative overflow-hidden bg-linear-to-br from-seafoam-50 to-white rounded-xl p-6 border border-seafoam-200 hover:border-seafoam-400 transition-all duration-200 flex flex-col h-full"
           >
             <div className="flex-1">
               <ToolImage

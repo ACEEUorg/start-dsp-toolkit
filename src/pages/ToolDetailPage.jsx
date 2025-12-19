@@ -195,7 +195,7 @@ export default function ToolDetail() {
                   <a
                     key={index}
                     href={pdfInfo.url}
-                    className={`group relative overflow-hidden bg-gradient-to-br from-seafoam-50 to-white rounded-xl p-6 border border-seafoam-200 hover:border-seafoam-400 transition-all duration-200 ${tool.links.length === 1 ? "h-full" : "flex-1"} flex items-center`}
+                    className={`group relative overflow-hidden bg-linear-to-br from-seafoam-50 to-white rounded-xl p-6 border border-seafoam-200 hover:border-seafoam-400 transition-all duration-200 ${tool.links.length === 1 ? "h-full" : "flex-1"} flex items-center`}
                     target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => handleDownloadClick(link)}
