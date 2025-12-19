@@ -47,4 +47,9 @@ export default {
   "language.es": "Español",
   "language.de": "Deutsch",
   "language.el": "Ελληνικά",
+
+  // 404 Page
+  "notFound.message": "Página no encontrada",
+  "notFound.description": "La página que buscas no existe.",
+  "notFound.backToHome": "Volver a la caja de herramientas",
 };
