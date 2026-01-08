@@ -46,4 +46,20 @@ jobs:
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git commit -m "docs: Update compiled EDITOR_GUIDE.pdf [skip ci]"
-          git push
+          
+          # Pull any changes before pushing to handle race conditions
+          git pull --rebase origin main
+          
+          # Push with retry logic
+          max_attempts=3
+          attempt=1
+          until git push; do
+            if [ $attempt -ge $max_attempts ]; then
+              echo "Failed to push after $max_attempts attempts"
+              exit 1
+            fi
+            echo "Push failed, retrying in 5 seconds (attempt $attempt/$max_attempts)..."
+            sleep 5
+            git pull --rebase origin main
+            ((attempt++))
+          done
