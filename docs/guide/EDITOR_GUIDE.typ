@@ -103,6 +103,10 @@ GitHub is the platform that stores our website's content. You need a free accoun
 
 Open your web browser and go to: #link("https://github.com")[https://github.com]
 
+#figure(
+  image("screenshots/01-github-homepage.png", width: 100%),
+  caption: "GitHub homepage"
+)
 
 === Click "Sign Up"
 
@@ -133,15 +137,10 @@ GitHub will ask you to:
 
 Click the verification link in the email GitHub sends you.
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        02-email-verification.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/02-email-verification.png", width: 100%),
   caption: "GitHub verification email"
+)
 
 === Finish Setup
 
@@ -220,15 +219,10 @@ Go to the admin page in your web browser:
   ]
 ]
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        03-decap-cms-login.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/03-decap-cms-login.png", width: 100%),
   caption: "Decap CMS login page"
+)
 
 === Click "Login with GitHub"
 
@@ -240,20 +234,17 @@ GitHub will ask you to authorize "Decap CMS" to access the Start-DSP Toolbox rep
 
 Click *"Authorize"* or *"Continue"*.
 
-
-=== You're In!
+#figure(
+  image("screenshots/04-github-authorization.png", width: 100%),
+  caption: "GitHub authorization screen"
+)=== You're In!
 
 After authorization, you'll see the Decap CMS dashboard. This is your editing home base!
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        05-decap-cms-dashboard.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/05-decap-cms-dashboard.png", width: 100%),
   caption: "Decap CMS dashboard - your editing workspace"
+)
 
 #colorbox(
   title: "Bookmark This Page!",
@@ -284,15 +275,10 @@ On the Decap CMS dashboard, you'll see different collections on the left side:
 
 Click on the language you want to edit (e.g., "Tools (Spanish)" if you're editing Spanish translations).
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        06-language-collection.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/06-language-collection.png", width: 100%),
   caption: "Selecting a language collection"
+)
 
 === Choose a Tool
 
@@ -303,15 +289,10 @@ Each tool shows:
 - Tool name
 - A preview image
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        07-tools-list.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/07-tools-list.png", width: 100%),
   caption: "List of tools in your selected language"
+)
 
 #pagebreak()
 
@@ -359,15 +340,10 @@ To edit any text field:
 2. Make your changes
 3. The changes are saved automatically as you type
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        08-tool-editing-form.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/08-tool-editing-form.png", width: 100%),
   caption: "Editing a tool's description"
+)
 
 === Tips for Good Translations
 
@@ -387,15 +363,10 @@ Each tool has an image. To change it:
    - *Upload a new image:* Click "Upload" and select a file from your computer
    - *Choose an existing image:* Click "Choose existing" to select from uploaded images
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        09-image-upload-dialog.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/09-image-upload-dialog.png", width: 100%),
   caption: "Uploading or selecting a tool image"
+)
 
 #colorbox(
   title: "Image Guidelines",
@@ -427,15 +398,10 @@ To remove a download:
 1. Click the ❌ next to the download
 2. Confirm deletion
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        10-downloads-section.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/10-downloads-section.png", width: 100%),
   caption: "Managing tool downloads"
+)
 
 #pagebreak()
 
@@ -488,20 +454,19 @@ When you're happy with your changes, it's time to make them live!
 
 At the top-right of the editing page, click the *"Publish"* button.
 
+#figure(
+  image("screenshots/12-publish-button.png", width: 100%),
+  caption: "The Publish button"
+)
 
 === Choose "Publish Now"
 
 A dialog will appear asking when to publish. Select *"Publish now"*.
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        12-publish-dialog.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/12-publish-dialog.png", width: 100%),
   caption: "Publish confirmation dialog"
+)
 
 === Wait for Deployment
 
@@ -546,15 +511,10 @@ UI translations are the interface text that appears throughout the website (butt
 
 From the Decap CMS dashboard, click on *"UI Translations"* in the left sidebar.
 
-image("screenshots/#figure(
-  png", width: 100%)
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        13-ui-translations.png
-      ]
-    ]
-  ],
+#figure(
+  image("screenshots/13-ui-translations.png", width: 100%),
   caption: "UI Translations collection"
+)
 
 === Select Your Language
 
@@ -599,6 +559,10 @@ The UI translations include all text visible on the website interface:
 2. Type your translation
 3. Changes save automatically
 
+#figure(
+  image("screenshots/14-ui-translations-form.png", width: 100%),
+  caption: "Editing UI translations"
+)
 
 #colorbox(
   title: "Keep UI Text Concise!",

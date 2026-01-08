@@ -138,13 +138,7 @@ GitHub will ask you to:
 Click the verification link in the email GitHub sends you.
 
 #figure(
-  rect(width: 100%, height: 6cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        02-email-verification.png
-      ]
-    ]
-  ],
+  image("screenshots/02-email-verification.png", width: 100%),
   caption: "GitHub verification email"
 )
 
@@ -226,13 +220,7 @@ Go to the admin page in your web browser:
 ]
 
 #figure(
-  rect(width: 100%, height: 10cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        03-decap-cms-login.png
-      ]
-    ]
-  ],
+  image("screenshots/03-decap-cms-login.png", width: 100%),
   caption: "Decap CMS login page"
 )
 
@@ -247,8 +235,14 @@ GitHub will ask you to authorize "Decap CMS" to access the Start-DSP Toolbox rep
 Click *"Authorize"* or *"Continue"*.
 
 #figure(
-  image("screenshots/01-github-homepage.png", width: 100%),
-  caption: "GitHub homepage"
+  rect(width: 100%, height: 8cm, stroke: 1pt + gray)[
+    #align(center + horizon)[
+      #text(fill: gray, style: "italic")[
+        04-github-authorization.png
+      ]
+    ]
+  ],
+  caption: "GitHub authorization screen"
 )
 
 === You're In!
@@ -256,13 +250,7 @@ Click *"Authorize"* or *"Continue"*.
 After authorization, you'll see the Decap CMS dashboard. This is your editing home base!
 
 #figure(
-  rect(width: 100%, height: 10cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        05-decap-cms-dashboard.png
-      ]
-    ]
-  ],
+  image("screenshots/05-decap-cms-dashboard.png", width: 100%),
   caption: "Decap CMS dashboard - your editing workspace"
 )
 
@@ -296,13 +284,7 @@ On the Decap CMS dashboard, you'll see different collections on the left side:
 Click on the language you want to edit (e.g., "Tools (Spanish)" if you're editing Spanish translations).
 
 #figure(
-  rect(width: 100%, height: 10cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        06-language-collection.png
-      ]
-    ]
-  ],
+  image("screenshots/06-language-collection.png", width: 100%),
   caption: "Selecting a language collection"
 )
 
@@ -316,13 +298,7 @@ Each tool shows:
 - A preview image
 
 #figure(
-  rect(width: 100%, height: 10cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        07-tools-list.png
-      ]
-    ]
-  ],
+  image("screenshots/07-tools-list.png", width: 100%),
   caption: "List of tools in your selected language"
 )
 
@@ -373,13 +349,7 @@ To edit any text field:
 3. The changes are saved automatically as you type
 
 #figure(
-  rect(width: 100%, height: 10cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        08-tool-editing-form.png
-      ]
-    ]
-  ],
+  image("screenshots/08-tool-editing-form.png", width: 100%),
   caption: "Editing a tool's description"
 )
 
@@ -402,13 +372,7 @@ Each tool has an image. To change it:
    - *Choose an existing image:* Click "Choose existing" to select from uploaded images
 
 #figure(
-  rect(width: 100%, height: 8cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        09-image-upload-dialog.png
-      ]
-    ]
-  ],
+  image("screenshots/09-image-upload-dialog.png", width: 100%),
   caption: "Uploading or selecting a tool image"
 )
 
@@ -443,13 +407,7 @@ To remove a download:
 2. Confirm deletion
 
 #figure(
-  rect(width: 100%, height: 8cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        10-downloads-section.png
-      ]
-    ]
-  ],
+  image("screenshots/10-downloads-section.png", width: 100%),
   caption: "Managing tool downloads"
 )
 
@@ -514,13 +472,7 @@ At the top-right of the editing page, click the *"Publish"* button.
 A dialog will appear asking when to publish. Select *"Publish now"*.
 
 #figure(
-  rect(width: 100%, height: 6cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        12-publish-dialog.png
-      ]
-    ]
-  ],
+  image("screenshots/12-publish-dialog.png", width: 100%),
   caption: "Publish confirmation dialog"
 )
 
@@ -568,13 +520,7 @@ UI translations are the interface text that appears throughout the website (butt
 From the Decap CMS dashboard, click on *"UI Translations"* in the left sidebar.
 
 #figure(
-  rect(width: 100%, height: 10cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        13-ui-translations.png
-      ]
-    ]
-  ],
+  image("screenshots/13-ui-translations.png", width: 100%),
   caption: "UI Translations collection"
 )
 
