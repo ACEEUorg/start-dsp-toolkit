@@ -4,7 +4,8 @@ on:
   push:
     branches: ["main"]
     paths:
-      - "EDITOR_GUIDE.typ"
+      - "docs/guide/EDITOR_GUIDE.typ"
+      - "docs/guide/screenshots/**"
       - ".github/workflows/build-guide.yml"
   workflow_dispatch:
 
@@ -26,13 +27,13 @@ jobs:
           typst-version: 'latest'
 
       - name: Build PDF
-        run: typst compile EDITOR_GUIDE.typ EDITOR_GUIDE.pdf
+        run: typst compile docs/guide/EDITOR_GUIDE.typ docs/guide/EDITOR_GUIDE.pdf
 
       - name: Check if PDF exists or changed
         id: check_changes
         run: |
-          git add EDITOR_GUIDE.pdf
-          if git diff --cached --quiet EDITOR_GUIDE.pdf 2>/dev/null; then
+          git add docs/guide/EDITOR_GUIDE.pdf
+          if git diff --cached --quiet docs/guide/EDITOR_GUIDE.pdf 2>/dev/null; then
             echo "changed=false" >> $GITHUB_OUTPUT
             echo "PDF has not changed"
           else
