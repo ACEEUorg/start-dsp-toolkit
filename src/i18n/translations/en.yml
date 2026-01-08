@@ -1,30 +1,41 @@
-header.title: "Start-DSP Entrepreneurial University Toolbox"
-nav.toolbox: "Toolbox"
-nav.projectWebsite: "Back to Start-DSP Project Website"
-search.placeholder: "Search tools by name or description..."
-filter.allPurposes: "All Purposes"
-toolDetail.backToToolbox: "Back to Toolbox"
-toolDetail.purpose: "Purpose"
-toolDetail.benefits: "Benefits"
-toolDetail.prerequisiteTools: "Prerequisite Tools"
-toolDetail.description: "Description"
-toolDetail.instructions: "Instructions"
-toolDetail.outcomes: "Outcomes"
+header.title: Start-DSP Entrepreneurial University Toolbox
+nav.toolbox: Toolboxes
+nav.projectWebsite: Back to Start-DSP Project Website
+search.placeholder: Search tools by name or description...
+filter.allPurposes: All Purposes
+toolDetail.backToToolbox: Back to Toolbox
+toolDetail.purpose: Purpose
+toolDetail.benefits: Benefits
+toolDetail.prerequisiteTools: Prerequisite Tools
+toolDetail.description: Description
+toolDetail.instructions: Instructions
+toolDetail.outcomes: Outcomes
 toolDetail.responsiblePartner: "Responsible Partner:"
-badge.fallbackLanguage: "Available in English"
-badge.externalLink: "External - English only"
-disclaimer.translationTitle: "Translations in Progress"
-disclaimer.translationMessage: "We are currently translating the toolbox content. Some tools and materials may still be available in English only."
-cookie.title: "Cookie Consent"
-cookie.message: "We use Google Analytics to understand how visitors use our site and to improve your experience. This helps us measure which educational tools are most useful. We anonymize IP addresses and do not collect personal information. By clicking \"Accept\", you consent to our use of cookies for analytics purposes."
-cookie.accept: "Accept"
-cookie.decline: "Decline"
-footer.euDisclaimer: "This project has been funded with support from the European Commission. The author is solely responsible for this publication (communication) and the Commission accepts no responsibility for any use may be made of the information contained therein. In compliance of the new GDPR framework, please note that the Partnership will only process your personal data in the sole interest and purpose of the project and without any prejudice to your rights."
-footer.euLogoAlt: "Co-funded by the European Union"
-language.en: "English"
-language.es: "Español"
-language.de: "Deutsch"
-language.el: "Ελληνικά"
-notFound.message: "Page not found"
-notFound.description: "The page you're looking for doesn't exist."
-notFound.backToHome: "Back to Toolbox"
+badge.fallbackLanguage: Available in English
+badge.externalLink: External - English only
+disclaimer.translationTitle: Translations in Progress
+disclaimer.translationMessage: We are currently translating the toolbox content.
+  Some tools and materials may still be available in English only.
+cookie.title: Cookie Consent
+cookie.message: We use Google Analytics to understand how visitors use our site
+  and to improve your experience. This helps us measure which educational tools
+  are most useful. We anonymize IP addresses and do not collect personal
+  information. By clicking "Accept", you consent to our use of cookies for
+  analytics purposes.
+cookie.accept: Accept
+cookie.decline: Decline
+footer.euDisclaimer: This project has been funded with support from the European
+  Commission. The author is solely responsible for this publication
+  (communication) and the Commission accepts no responsibility for any use may
+  be made of the information contained therein. In compliance of the new GDPR
+  framework, please note that the Partnership will only process your personal
+  data in the sole interest and purpose of the project and without any prejudice
+  to your rights.
+footer.euLogoAlt: Co-funded by the European Union
+language.en: English
+language.es: Español
+language.de: Deutsch
+language.el: Ελληνικά
+notFound.message: Page not found
+notFound.description: The page you're looking for doesn't exist.
+notFound.backToHome: Back to Toolbox
