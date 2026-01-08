@@ -141,7 +141,7 @@ Click the verification link in the email GitHub sends you.
   rect(width: 100%, height: 6cm, stroke: 1pt + gray)[
     #align(center + horizon)[
       #text(fill: gray, style: "italic")[
-        [Screenshot: Email verification message]
+        02-email-verification.png
       ]
     ]
   ],
@@ -247,14 +247,8 @@ GitHub will ask you to authorize "Decap CMS" to access the Start-DSP Toolbox rep
 Click *"Authorize"* or *"Continue"*.
 
 #figure(
-  rect(width: 100%, height: 8cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        04-github-authorization.png
-      ]
-    ]
-  ],
-  caption: "GitHub authorization screen"
+  image("screenshots/01-github-homepage.png", width: 100%),
+  caption: "GitHub homepage"
 )
 
 === You're In!
@@ -1165,7 +1159,7 @@ This section explains all the UI translation fields and where they appear on the
   
   #v(2em)
   
-  #image("../assets/logos/eu-logo-en.png", width: 60%)
+  #image("assets/logos/eu-logo-en.png", width: 60%)
   
   #v(1em)
   
