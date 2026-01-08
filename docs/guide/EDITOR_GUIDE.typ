@@ -138,7 +138,7 @@ GitHub will ask you to:
 Click the verification link in the email GitHub sends you.
 
 #figure(
-  image("screenshots/02-email-verification.png", width: 100%),
+  image("screenshots/02-github-signup-form.png", width: 100%),
   caption: "GitHub verification email"
 )
 
@@ -235,7 +235,7 @@ GitHub will ask you to authorize "Decap CMS" to access the Start-DSP Toolbox rep
 Click *"Authorize"* or *"Continue"*.
 
 #figure(
-  image("screenshots/04-github-authorization.png", width: 100%),
+  image("screenshots/04-github-authorization-sign-in.png", width: 100%),
   caption: "GitHub authorization screen"
 )=== You're In!
 
@@ -455,7 +455,7 @@ When you're happy with your changes, it's time to make them live!
 At the top-right of the editing page, click the *"Publish"* button.
 
 #figure(
-  image("screenshots/12-publish-button.png", width: 100%),
+  image("screenshots/11-publish-button.png", width: 100%),
   caption: "The Publish button"
 )
 

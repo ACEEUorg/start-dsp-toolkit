@@ -138,7 +138,7 @@ GitHub will ask you to:
 Click the verification link in the email GitHub sends you.
 
 #figure(
-  image("screenshots/02-email-verification.png", width: 100%),
+  image("screenshots/02-github-signup-form.png", width: 100%),
   caption: "GitHub verification email"
 )
 
@@ -235,17 +235,9 @@ GitHub will ask you to authorize "Decap CMS" to access the Start-DSP Toolbox rep
 Click *"Authorize"* or *"Continue"*.
 
 #figure(
-  rect(width: 100%, height: 8cm, stroke: 1pt + gray)[
-    #align(center + horizon)[
-      #text(fill: gray, style: "italic")[
-        04-github-authorization.png
-      ]
-    ]
-  ],
+  image("screenshots/04-github-authorization-sign-in.png", width: 100%),
   caption: "GitHub authorization screen"
-)
-
-=== You're In!
+)=== You're In!
 
 After authorization, you'll see the Decap CMS dashboard. This is your editing home base!
 
