@@ -1165,7 +1165,7 @@ This section explains all the UI translation fields and where they appear on the
   
   #v(2em)
   
-  #image("../assets/logos/eu-logo-en.png", width: 60%)
+  #image("assets/logos/eu-logo-en.png", width: 60%)
   
   #v(1em)
   
