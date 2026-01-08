@@ -99,7 +99,7 @@ By following this guide, you will be able to:
 
 GitHub is the platform that stores our website's content. You need a free account to edit content.
 
-=== 1.1 Visit GitHub
+=== Visit GitHub
 
 Open your web browser and go to: #link("https://github.com")[https://github.com]
 
@@ -114,11 +114,11 @@ Open your web browser and go to: #link("https://github.com")[https://github.com]
   caption: "GitHub homepage"
 )
 
-=== 1.2 Click "Sign Up"
+=== Click "Sign Up"
 
 Click the "Sign up" button in the top-right corner of the page.
 
-=== 1.3 Enter Your Information
+=== Enter Your Information
 
 You'll be asked to provide:
 
@@ -135,7 +135,7 @@ You'll be asked to provide:
   Choose a professional username, preferably based on your name (e.g., "john.smith" or "jsmith"). This helps us identify you when granting access.
 ]
 
-=== 1.4 Complete the Verification
+=== Complete the Verification
 
 GitHub will ask you to:
 1. Verify you're human (solve a puzzle)
@@ -154,7 +154,7 @@ Click the verification link in the email GitHub sends you.
   caption: "GitHub verification email"
 )
 
-=== 1.5 Finish Setup
+=== Finish Setup
 
 After verification, GitHub may ask you a few questions about how you'll use GitHub. You can skip these questions or answer them briefly - they won't affect your ability to edit the toolbox.
 
@@ -164,7 +164,7 @@ After verification, GitHub may ask you a few questions about how you'll use GitH
 
 Now that you have a GitHub account, you need permission to edit the Start-DSP Toolbox content.
 
-=== 2.1 Send an Email Request
+=== Send an Email Request
 
 Send an email to:
 
@@ -200,7 +200,7 @@ Use this email template:
   [Your name]
 ]
 
-=== 2.2 Wait for Access Confirmation
+=== Wait for Access Confirmation
 
 Jeldo will grant you access to the toolbox and send you a confirmation email. This usually takes 1-2 business days.
 
@@ -221,7 +221,7 @@ Jeldo will grant you access to the toolbox and send you a confirmation email. Th
 
 The Start-DSP Toolbox uses a system called "Decap CMS" to make editing easy - no coding required!
 
-=== 3.1 Open the Editor
+=== Open the Editor
 
 Go to the admin page in your web browser:
 
@@ -242,11 +242,11 @@ Go to the admin page in your web browser:
   caption: "Decap CMS login page"
 )
 
-=== 3.2 Click "Login with GitHub"
+=== Click "Login with GitHub"
 
 You'll see a button that says "Login with GitHub" or "Authenticate with GitHub". Click it.
 
-=== 3.3 Authorize the Application
+=== Authorize the Application
 
 GitHub will ask you to authorize "Decap CMS" to access the Start-DSP Toolbox repository.
 
@@ -263,7 +263,7 @@ Click *"Authorize"* or *"Continue"*.
   caption: "GitHub authorization screen"
 )
 
-=== 3.4 You're In!
+=== You're In!
 
 After authorization, you'll see the Decap CMS dashboard. This is your editing home base!
 
@@ -295,7 +295,7 @@ After authorization, you'll see the Decap CMS dashboard. This is your editing ho
 
 The toolbox contains 24 tools, each available in multiple languages.
 
-=== 4.1 Navigate to Your Language
+=== Navigate to Your Language
 
 On the Decap CMS dashboard, you'll see different collections on the left side:
 
@@ -318,7 +318,7 @@ Click on the language you want to edit (e.g., "Tools (Spanish)" if you're editin
   caption: "Selecting a language collection"
 )
 
-=== 4.2 Choose a Tool
+=== Choose a Tool
 
 You'll see a list of all 24 tools. Click on the tool you want to edit.
 
@@ -344,7 +344,7 @@ Each tool shows:
 
 When you click on a tool, you'll see an editing form with all the tool's information.
 
-=== 5.1 Understanding the Fields
+=== Understanding the Fields
 
 Each tool has these fields:
 
@@ -376,7 +376,7 @@ Each tool has these fields:
   The "Tool Number" field is hidden and cannot be edited. This ensures tools remain properly linked across all languages.
 ]
 
-=== 5.2 Editing Text Fields
+=== Editing Text Fields
 
 To edit any text field:
 
@@ -395,7 +395,7 @@ To edit any text field:
   caption: "Editing a tool's description"
 )
 
-=== 5.3 Tips for Good Translations
+=== Tips for Good Translations
 
 - *Be consistent:* Use the same terminology throughout all tools
 - *Keep the length similar:* Try to match the length of the original text
@@ -404,7 +404,7 @@ To edit any text field:
 
 #pagebreak()
 
-=== 5.4 Editing Images
+=== Editing Images
 
 Each tool has an image. To change it:
 
@@ -436,7 +436,7 @@ Each tool has an image. To change it:
   - *Content:* Professional, relevant to the tool
 ]
 
-=== 5.5 Editing Downloads/Files
+=== Editing Downloads/Files
 
 Each tool can have downloadable files (PDFs, templates, etc.). To manage them:
 
@@ -471,11 +471,11 @@ To remove a download:
 
 Before publishing, always preview your changes!
 
-=== 6.1 Save as Draft
+=== Save as Draft
 
 Your changes are automatically saved as you work. You don't need to click a "Save" button.
 
-=== 6.2 Check the Status
+=== Check the Status
 
 Look at the top of the page. You'll see:
 
@@ -483,7 +483,7 @@ Look at the top of the page. You'll see:
 - *"Ready"* - Ready to publish
 - *"Published"* - Live on the website
 
-=== 6.3 Review Your Work
+=== Review Your Work
 
 Scroll through all the fields you edited and double-check:
 - Spelling and grammar
@@ -512,7 +512,7 @@ Scroll through all the fields you edited and double-check:
 
 When you're happy with your changes, it's time to make them live!
 
-=== 7.1 Click "Publish"
+=== Click "Publish"
 
 At the top-right of the editing page, click the *"Publish"* button.
 
@@ -527,7 +527,7 @@ At the top-right of the editing page, click the *"Publish"* button.
   caption: "The Publish button"
 )
 
-=== 7.2 Choose "Publish Now"
+=== Choose "Publish Now"
 
 A dialog will appear asking when to publish. Select *"Publish now"*.
 
@@ -542,7 +542,7 @@ A dialog will appear asking when to publish. Select *"Publish now"*.
   caption: "Publish confirmation dialog"
 )
 
-=== 7.3 Wait for Deployment
+=== Wait for Deployment
 
 After clicking "Publish now":
 
@@ -561,7 +561,7 @@ You'll see a success message: *"Entry published!"*
   Changes typically appear on the live website within *5 minutes* of publishing. If you don't see them after 10 minutes, try refreshing your browser (press Ctrl+F5 or Cmd+Shift+R).
 ]
 
-=== 7.4 Verify on the Live Site
+=== Verify on the Live Site
 
 After a few minutes, visit the live toolbox:
 
@@ -581,7 +581,7 @@ UI translations are the interface text that appears throughout the website (butt
 
 == Step 8: Access UI Translations
 
-=== 8.1 Open UI Translations Collection
+=== Open UI Translations Collection
 
 From the Decap CMS dashboard, click on *"UI Translations"* in the left sidebar.
 
@@ -596,7 +596,7 @@ From the Decap CMS dashboard, click on *"UI Translations"* in the left sidebar.
   caption: "UI Translations collection"
 )
 
-=== 8.2 Select Your Language
+=== Select Your Language
 
 You'll see four language options:
 - English Translations
@@ -608,7 +608,7 @@ Click on the language you want to edit.
 
 == Step 9: Edit UI Text
 
-=== 9.1 Understanding UI Fields
+=== Understanding UI Fields
 
 The UI translations include all text visible on the website interface:
 
@@ -633,7 +633,7 @@ The UI translations include all text visible on the website interface:
 
 #pagebreak()
 
-=== 9.2 Edit the Text
+=== Edit the Text
 
 1. Click on any field to edit it
 2. Type your translation
@@ -659,7 +659,7 @@ The UI translations include all text visible on the website interface:
   UI text appears in buttons, menus, and labels. Keep translations *short and clear* so they fit in the interface. Avoid long sentences.
 ]
 
-=== 9.3 Special Characters
+=== Special Characters
 
 Some fields may contain special formatting:
 
@@ -667,7 +667,7 @@ Some fields may contain special formatting:
 - *Placeholders:* Text like `{name}` should remain unchanged
 - *Line breaks:* Preserve paragraph structure
 
-=== 9.4 Publish UI Changes
+=== Publish UI Changes
 
 When finished:
 
