@@ -1191,4 +1191,3 @@ This section explains all the UI translation fields and where they appear on the
     This project has been funded with support from the European Commission.
   ]
 ]
-# Test comment
