@@ -19,12 +19,13 @@ outcomes: Universities start using more established and complex KPIs on
   responsibilities. Strengthened decision-making through consistent and
   transparent reporting.
 instructions: |
-  1. Download the PDF to read the detailed instructions and the Excel File.
-  2. Explore the Excel file.
-  3. Set Up the Tool.
-  4. Determine Relevant KPIs.
-  5. Customize KPI Details.
-  6. Monitor and Track Progress
+  1. Download the Instructions PDF and the Dashboard Excel File.
+  2. Read the detailed instructions.
+  3. Explore the Excel file.
+  4. Set Up the Tool.
+  5. Determine Relevant KPIs.
+  6. Customize KPI Details.
+  7. Monitor and Track Progress
 benefits: This tool enables universities to effectively define and monitor a
   comprehensive set of key performance indicators (KPIs) for entrepreneurship
   education, supporting data-driven insights and continuous enhancement of their
@@ -33,7 +34,7 @@ purpose: Entrepreneurial Vision & Institutional Commitment
 prerequisiteTools: 1. Excel with Macros activated
 partner: ACEEU
 links:
-  - title: Dashboard File
+  - title: " Entrepreneurial KPI Dashboard Excel File"
     url: /assets/tools/en/tool_3.2_KPIDashboard.xlsm
   - title: Instructions
     url: /assets/tools/en/tool_3.1_KPIDashboardInstructions.pdf
