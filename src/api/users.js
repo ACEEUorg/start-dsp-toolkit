@@ -50,12 +50,12 @@ router.post('/', async (req, res) => {
     // Send welcome email
     try {
       await resend.emails.send({
-        from: 'DSP Toolkit <hi@jel.do>',
+        from: 'Start-DSP Toolkit <hi@jel.do>',
         to: email,
-        subject: 'Your DSP Toolkit account has been created',
+        subject: 'Your Start-DSP Toolkit account has been created',
         html: `
           <p>Hi ${username},</p>
-          <p>Your account has been created for the DSP Toolkit admin panel.</p>
+          <p>Your account has been created for the Start-DSP Toolkit admin panel.</p>
           <p><strong>Username:</strong> ${username}</p>
           <p><strong>Temporary Password:</strong> ${password}</p>
           <p>Please log in at <a href="https://sdsp.jel.do/admin">sdsp.jel.do/admin</a> and change your password.</p>

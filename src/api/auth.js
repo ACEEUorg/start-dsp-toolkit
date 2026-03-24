@@ -130,9 +130,9 @@ router.post('/reset-request', async (req, res) => {
   
   try {
     await resend.emails.send({
-      from: 'DSP Toolkit <hi@jel.do>',
+      from: 'Start-DSP Toolkit <hi@jel.do>',
       to: email,
-      subject: 'Reset your DSP Toolkit password',
+      subject: 'Reset your Start-DSP Toolkit password',
       html: `
         <p>Hi ${user.username},</p>
         <p>Click the link below to reset your password:</p>
