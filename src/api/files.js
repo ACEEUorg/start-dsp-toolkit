@@ -34,7 +34,7 @@ const upload = multer({
 
 // List files in a directory
 router.get('/files', (req, res) => {
-  const folder = req.query.folder || '';
+  const folder = (req.query.folder || '').replace(/^\/assets\//, '').replace(/^\//, '');
   const dir = folder ? join(ASSETS_DIR, folder) : ASSETS_DIR;
   
   if (!fs.existsSync(dir)) {
@@ -55,7 +55,7 @@ router.get('/files', (req, res) => {
       const stats = fs.statSync(itemPath);
       files.push({
         name: item.name,
-        path: `/${relativePath}`,
+        path: `/assets/${relativePath}`,
         size: stats.size,
         modified: stats.mtime
       });
