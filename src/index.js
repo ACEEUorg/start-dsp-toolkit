@@ -108,6 +108,10 @@ app.get('/admin/reset-password', (req, res) => {
   res.sendFile(join(ADMIN_FORMS, 'reset-password.html'));
 });
 
+app.get('/admin/audit-log', requireAuthHtml, requireRoleHtml('admin'), (req, res) => {
+  res.sendFile(join(ADMIN_FORMS, 'audit-log.html'));
+});
+
 // Start server
 app.listen(PORT, '0.0.0.0', () => {
   console.log(`Simple Admin running at http://localhost:${PORT}/admin`);

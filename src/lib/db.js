@@ -43,6 +43,18 @@ export function initDb() {
     )
   `);
 
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS audit_logs (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      user_id INTEGER,
+      username TEXT,
+      action TEXT NOT NULL,
+      target TEXT,
+      details TEXT,
+      created_at DATETIME DEFAULT CURRENT_TIMESTAMP
+    )
+  `);
+
   return db;
 }
 
@@ -58,4 +70,12 @@ export function closeDb() {
     db.close();
     db = null;
   }
+}
+
+export function logAudit(userId, username, action, target, details) {
+  const db = getDb();
+  db.prepare(`
+    INSERT INTO audit_logs (user_id, username, action, target, details)
+    VALUES (?, ?, ?, ?, ?)
+  `).run(userId, username, action, target, details);
 }

@@ -3,6 +3,7 @@ import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { listTools, getTool, updateTool, createTool, deleteTool } from '../lib/files.js';
+import { logAudit } from '../lib/db.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SRC_DIR = join(__dirname, '..');
@@ -96,6 +97,7 @@ router.post('/:lang', async (req, res) => {
     const sanitized = sanitizeToolData(req.body);
     const tool = createTool(lang, sanitized);
     await regenerateToolsJson();
+    logAudit(req.session.userId, req.session.username, 'create', `tool/${lang}/${tool.filename}`, tool.name);
     res.status(201).json(tool);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -110,6 +112,7 @@ router.put('/:lang/:filename', async (req, res) => {
     const sanitized = sanitizeToolData(req.body);
     const tool = updateTool(lang, filename, sanitized);
     await regenerateToolsJson();
+    logAudit(req.session.userId, req.session.username, 'update', `tool/${lang}/${filename}`, tool.name);
     res.json(tool);
   } catch (err) {
     if (err.message.includes('not found')) {
@@ -126,6 +129,7 @@ router.delete('/:lang/:filename', async (req, res) => {
   try {
     const result = deleteTool(lang, filename);
     await regenerateToolsJson();
+    logAudit(req.session.userId, req.session.username, 'delete', `tool/${lang}/${filename}`, filename);
     res.json(result);
   } catch (err) {
     if (err.message.includes('not found')) {

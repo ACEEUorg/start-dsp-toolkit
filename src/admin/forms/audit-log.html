@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Activity Log - DSP Toolkit Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;600;700&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Avenir', sans-serif;
+      background: linear-gradient(135deg, #f5faeb 0%, #d3f4ea 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: linear-gradient(135deg, #1d524a 0%, #2d9f88 100%);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .header a:hover { background: rgba(255,255,255,0.3); }
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(45, 159, 136, 0.1);
+      overflow: hidden;
+    }
+    .log-table { width: 100%; border-collapse: collapse; }
+    .log-table th, .log-table td {
+      padding: 14px 16px;
+      text-align: left;
+      border-bottom: 1px solid #e7f4d3;
+    }
+    .log-table th {
+      background: #f5faeb;
+      font-weight: 600;
+      color: #1d524a;
+    }
+    .log-table tr:hover { background: #f2fbf8; }
+    .badge {
+      display: inline-block;
+      padding: 4px 10px;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .badge-create { background: #d1fae5; color: #065f46; }
+    .badge-update { background: #dbeafe; color: #1e40af; }
+    .badge-delete { background: #fee2e2; color: #991b1b; }
+    .badge-create_user { background: #d1fae5; color: #065f46; }
+    .badge-update_user { background: #dbeafe; color: #1e40af; }
+    .badge-delete_user { background: #fee2e2; color: #991b1b; }
+    .timestamp { color: #666; font-size: 13px; }
+    .details { color: #666; font-size: 13px; }
+    .empty {
+      text-align: center;
+      padding: 60px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="display:flex;align-items:center;gap:15px;">
+      <img src="/assets/logos/logo-color.png" alt="DSP" style="height:32px;">
+      <h1>Activity Log</h1>
+    </div>
+    <a href="/admin/users">← Back</a>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <table class="log-table" id="logTable">
+        <thead>
+          <tr>
+            <th>Time</th>
+            <th>User</th>
+            <th>Action</th>
+            <th>Target</th>
+            <th>Details</th>
+          </tr>
+        </thead>
+        <tbody id="logsBody"></tbody>
+      </table>
+      <div class="empty" id="empty" style="display:none">No activity recorded yet</div>
+    </div>
+  </div>
+
+  <script>
+    async function loadLogs() {
+      try {
+        const res = await fetch('/api/users/audit-logs');
+        const logs = await res.json();
+        
+        if (logs.length === 0) {
+          document.getElementById('logTable').style.display = 'none';
+          document.getElementById('empty').style.display = 'block';
+          return;
+        }
+        
+        const tbody = document.getElementById('logsBody');
+        tbody.innerHTML = logs.map(log => `
+          <tr>
+            <td class="timestamp">${new Date(log.created_at).toLocaleString()}</td>
+            <td>${escapeHtml(log.username || 'System')}</td>
+            <td><span class="badge badge-${log.action}">${log.action}</span></td>
+            <td>${escapeHtml(log.target || '-')}</td>
+            <td class="details">${escapeHtml(log.details || '-')}</td>
+          </tr>
+        `).join('');
+      } catch (err) {
+        console.error('Failed to load logs:', err);
+      }
+    }
+    
+    function escapeHtml(text) {
+      if (!text) return '-';
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+    
+    loadLogs();
+  </script>
+</body>
+</html>

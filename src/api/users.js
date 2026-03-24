@@ -1,7 +1,7 @@
 import { Router } from 'express';
 import bcrypt from 'bcryptjs';
 import { Resend } from 'resend';
-import { getDb } from '../lib/db.js';
+import { getDb, logAudit } from '../lib/db.js';
 
 const router = Router();
 const resend = new Resend(process.env.RESEND_API_KEY);
@@ -65,6 +65,8 @@ router.post('/', async (req, res) => {
       console.error('Failed to send welcome email:', err);
     }
     
+    logAudit(req.session.userId, req.session.username, 'create_user', username, `role: ${role}`);
+    
     res.status(201).json(user);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -115,6 +117,7 @@ router.put('/:id', (req, res) => {
   try {
     db.prepare(`UPDATE users SET ${updates.join(', ')} WHERE id = ?`).run(...values);
     const updated = db.prepare('SELECT id, username, email, role, created_at, last_login FROM users WHERE id = ?').get(id);
+    logAudit(req.session.userId, req.session.username, 'update_user', updated.username, updates.join(', '));
     res.json(updated);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -132,13 +135,23 @@ router.delete('/:id', (req, res) => {
   
   const db = getDb();
   
-  const user = db.prepare('SELECT id FROM users WHERE id = ?').get(id);
+  const user = db.prepare('SELECT id, username FROM users WHERE id = ?').get(id);
   if (!user) {
     return res.status(404).json({ error: 'User not found' });
   }
   
   db.prepare('DELETE FROM users WHERE id = ?').run(id);
+  logAudit(req.session.userId, req.session.username, 'delete_user', user.username, '');
   res.json({ deleted: true, id });
+});
+
+// Get audit logs (admin only)
+router.get('/audit-logs', (req, res) => {
+  const db = getDb();
+  const logs = db.prepare(`
+    SELECT * FROM audit_logs ORDER BY created_at DESC LIMIT 100
+  `).all();
+  res.json(logs);
 });
 
 export default router;
