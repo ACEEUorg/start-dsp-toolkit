@@ -12,9 +12,9 @@ const router = Router();
 
 function regenerateToolsJson() {
   return new Promise((resolve, reject) => {
-    const scriptPath = join(PROJECT_ROOT, 'scripts', 'generate-tools-json.js');
+    const scriptPath = join(SRC_DIR, 'scripts', 'generate-tools-json.js');
     const proc = spawn('node', [scriptPath], {
-      cwd: PROJECT_ROOT
+      cwd: SRC_DIR
     });
     let output = '';
     proc.stdout.on('data', (data) => output += data);
@@ -73,7 +73,7 @@ router.post('/:lang', async (req, res) => {
   
   try {
     const tool = createTool(lang, req.body);
-    // await regenerateToolsJson(); // TODO: fix JSON regeneration
+    await regenerateToolsJson();
     res.status(201).json(tool);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -86,7 +86,7 @@ router.put('/:lang/:filename', async (req, res) => {
   
   try {
     const tool = updateTool(lang, filename, req.body);
-    // await regenerateToolsJson(); // TODO: fix JSON regeneration
+    await regenerateToolsJson();
     res.json(tool);
   } catch (err) {
     if (err.message.includes('not found')) {
