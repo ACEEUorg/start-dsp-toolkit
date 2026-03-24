@@ -58,7 +58,7 @@ app.use('/assets', express.static(join(ROOT, 'public', 'assets')));
 app.use('/api/auth', authRoutes);
 app.use('/api/tools', requireAuth, toolsRoutes);
 app.use('/api/users', requireAuth, requireRole('admin'), usersRoutes);
-app.use('/api/sync', requireAuth, syncRoutes);
+app.use('/api/sync', requireAuth, requireRole('admin'), syncRoutes);
 
 // Admin routes (HTML pages)
 app.get('/admin', (req, res) => {
