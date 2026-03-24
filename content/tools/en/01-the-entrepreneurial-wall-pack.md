@@ -38,7 +38,7 @@ instructions: >
   1. Explore the Templates
 
   Browse the pre-designed templates in the PDF. Choose those that best align
-  with your university&#039;s mission and entrepreneurial goals.
+  with your university's mission and entrepreneurial goals.
 
   2. Print &amp; Display
 
