@@ -51,6 +51,9 @@ app.use(express.static(join(ROOT, 'dist')));
 // Serve public assets (images, PDFs, etc)
 app.use('/assets', express.static(join(ROOT, 'public', 'assets')));
 
+// Serve data files for live preview
+app.use('/data', express.static(join(ROOT, 'public', 'data')));
+
 // API routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tools', requireAuth, toolsRoutes);

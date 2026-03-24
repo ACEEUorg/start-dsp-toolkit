@@ -407,11 +407,10 @@
 
         if (!res.ok) throw new Error('Save failed');
         
-        document.getElementById('success').textContent = 'Saved! Reloading preview...';
+        document.getElementById('success').textContent = 'Saved! Go to sdsp.jel.do to preview changes.';
         document.getElementById('success').style.display = 'block';
-        setTimeout(() => {
-          window.location.href = `/?lang=${lang}`;
-        }, 1000);
+        btn.textContent = 'Saved';
+        btn.disabled = true;
 
       } catch (err) {
         document.getElementById('error').textContent = err.message;
