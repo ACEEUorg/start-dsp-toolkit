@@ -183,8 +183,6 @@
 
   <div class="container">
     <div class="loading" id="loading">Loading...</div>
-    <div class="error" id="error"></div>
-    <div class="success" id="success">Saved successfully!</div>
 
     <form id="toolForm" style="display:none">
       <div class="form-card">
@@ -274,6 +272,8 @@
         </div>
       </div>
     </form>
+    <div class="error" id="error"></div>
+    <div class="success" id="success">Saved successfully!</div>
   </div>
 
   <script>
@@ -415,12 +415,12 @@
         }
         
         const toolNumber = document.getElementById('number').value;
-        const previewUrl = `https://sdsp.jel.do/tool/${toolNumber}`;
+        const previewUrl = `https://sdsp.jel.do/#/tool/${toolNumber}`;
         document.getElementById('success').innerHTML = `Saved! <a href="${previewUrl}" target="_blank">View tool on sdsp.jel.do</a>`;
         document.getElementById('success').style.display = 'block';
         document.getElementById('error').style.display = 'none';
-        btn.textContent = 'Save';
-        btn.disabled = false;
+        btn.textContent = 'Saved';
+        btn.disabled = true;
 
       } catch (err) {
         document.getElementById('error').textContent = err.message;
