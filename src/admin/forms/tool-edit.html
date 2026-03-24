@@ -407,9 +407,10 @@
 
         if (!res.ok) throw new Error('Save failed');
         
+        document.getElementById('success').textContent = 'Saved! Reloading preview...';
         document.getElementById('success').style.display = 'block';
         setTimeout(() => {
-          window.location.href = `/admin/tools?lang=${lang}`;
+          window.location.href = `/?lang=${lang}`;
         }, 1000);
 
       } catch (err) {
