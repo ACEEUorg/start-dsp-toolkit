@@ -13,8 +13,7 @@ const router = Router();
 function regenerateToolsJson() {
   return new Promise((resolve, reject) => {
     const proc = spawn('node', ['scripts/generate-tools-json.js'], {
-      cwd: PROJECT_ROOT,
-      env: { ...process.env, NODE_PATH: join(SRC_DIR, 'node_modules') }
+      cwd: SRC_DIR
     });
     let output = '';
     proc.stdout.on('data', (data) => output += data);
