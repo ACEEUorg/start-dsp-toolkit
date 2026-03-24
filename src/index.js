@@ -69,15 +69,34 @@ app.get('/admin', (req, res) => {
   }
 });
 
-app.get('/admin/tools', requireAuth, (req, res) => {
+function requireAuthHtml(req, res, next) {
+  if (!req.session || !req.session.userId) {
+    return res.redirect('/admin');
+  }
+  next();
+}
+
+function requireRoleHtml(role) {
+  return (req, res, next) => {
+    if (!req.session || !req.session.userId) {
+      return res.redirect('/admin');
+    }
+    if (req.session.role !== role) {
+      return res.status(403).send('Forbidden');
+    }
+    next();
+  };
+}
+
+app.get('/admin/tools', requireAuthHtml, (req, res) => {
   res.sendFile(join(ADMIN_FORMS, 'tools-list.html'));
 });
 
-app.get('/admin/tools/:lang/:id', requireAuth, (req, res) => {
+app.get('/admin/tools/:lang/:id', requireAuthHtml, (req, res) => {
   res.sendFile(join(ADMIN_FORMS, 'tool-edit.html'));
 });
 
-app.get('/admin/users', requireAuth, requireRole('admin'), (req, res) => {
+app.get('/admin/users', requireAuthHtml, requireRoleHtml('admin'), (req, res) => {
   res.sendFile(join(ADMIN_FORMS, 'users.html'));
 });
 
