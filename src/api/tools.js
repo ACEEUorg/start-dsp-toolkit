@@ -5,14 +5,16 @@ import { dirname, join } from 'path';
 import { listTools, getTool, updateTool, createTool, deleteTool } from '../lib/files.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const ROOT_DIR = join(__dirname, '..', '..');
+const SRC_DIR = __dirname;
+const PROJECT_ROOT = join(__dirname, '..', '..');
 
 const router = Router();
 
 function regenerateToolsJson() {
   return new Promise((resolve, reject) => {
     const proc = spawn('node', ['scripts/generate-tools-json.js'], {
-      cwd: ROOT_DIR
+      cwd: PROJECT_ROOT,
+      env: { ...process.env, NODE_PATH: join(SRC_DIR, 'node_modules') }
     });
     let output = '';
     proc.stdout.on('data', (data) => output += data);
