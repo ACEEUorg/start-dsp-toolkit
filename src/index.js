@@ -44,6 +44,11 @@ app.use(session({
 
 // Static files (admin UI)
 app.use('/admin', express.static(ADMIN_FORMS));
+
+// Serve preview frontend from dist/
+app.use(express.static(join(ROOT, 'dist')));
+
+// Serve public assets (images, PDFs, etc)
 app.use('/assets', express.static(join(ROOT, 'public', 'assets')));
 
 // API routes
