@@ -232,6 +232,10 @@
 
       try {
         const res = await fetch(`/api/tools/${lang}`);
+        if (res.status === 401) {
+          window.location.href = '/admin';
+          return;
+        }
         const data = await res.json();
         
         loading.style.display = 'none';
@@ -269,6 +273,11 @@
         const res = await fetch(`/api/tools/${lang}/${encodeURIComponent(filename)}`, {
           method: 'DELETE'
         });
+        
+        if (res.status === 401) {
+          window.location.href = '/admin';
+          return;
+        }
         
         if (res.ok) {
           loadTools(lang);
@@ -310,6 +319,10 @@
       
       try {
         const res = await fetch('/api/sync', { method: 'POST' });
+        if (res.status === 401) {
+          window.location.href = '/admin';
+          return;
+        }
         const data = await res.json();
         
         if (data.success) {
