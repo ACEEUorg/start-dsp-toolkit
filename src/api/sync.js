@@ -34,8 +34,8 @@ router.post('/', (req, res) => {
       stdio: 'pipe'
     });
 
-    // Push to remote
-    execSync('git push', {
+    // Push to remote main branch
+    execSync('git push origin main', {
       cwd: process.cwd(),
       stdio: 'pipe',
       env: {
