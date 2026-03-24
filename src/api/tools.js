@@ -73,7 +73,7 @@ router.post('/:lang', async (req, res) => {
   
   try {
     const tool = createTool(lang, req.body);
-    await regenerateToolsJson();
+    // await regenerateToolsJson(); // TODO: fix JSON regeneration
     res.status(201).json(tool);
   } catch (err) {
     res.status(500).json({ error: err.message });
@@ -86,7 +86,7 @@ router.put('/:lang/:filename', async (req, res) => {
   
   try {
     const tool = updateTool(lang, filename, req.body);
-    await regenerateToolsJson();
+    // await regenerateToolsJson(); // TODO: fix JSON regeneration
     res.json(tool);
   } catch (err) {
     if (err.message.includes('not found')) {
