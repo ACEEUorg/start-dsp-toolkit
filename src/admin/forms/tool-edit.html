@@ -405,12 +405,16 @@
           });
         }
 
-        if (!res.ok) throw new Error('Save failed');
+        if (!res.ok) {
+          const err = await res.json().catch(() => ({}));
+          throw new Error(err.error || 'Save failed');
+        }
         
         document.getElementById('success').textContent = 'Saved! Go to sdsp.jel.do to preview changes.';
         document.getElementById('success').style.display = 'block';
-        btn.textContent = 'Saved';
-        btn.disabled = true;
+        document.getElementById('error').style.display = 'none';
+        btn.textContent = 'Save';
+        btn.disabled = false;
 
       } catch (err) {
         document.getElementById('error').textContent = err.message;
