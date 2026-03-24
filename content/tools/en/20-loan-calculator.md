@@ -1,0 +1,27 @@
+---
+number: 20
+name: Loan Calculator
+image: /assets/images/20.jpg
+summary: The Loan Calculator helps non-business students and university professors to get a general idea of what is involved in applying for an interest-bearing loan for entrepreneurship ideas.
+description: The Loan Calculator helps entrepreneurs and small business owners plan financing by estimating monthly payments, interest costs, and repayment timelines for business loans. It enables better cash flow management, loan comparison, and budgeting, ensuring informed decisions when securing capital for growth, equipment, or startup costs.
+outcomes: |
+  Informed Borrowing Decisions – Users can compare loan options (student loans, research funding, equipment financing) to understand repayment terms, interest rates, and total costs before committing.
+  Budgeting for Academic Projects – Helps professors and students estimate loan feasibility for research initiatives, conference travel, or lab equipment by projecting monthly payments within grant or personal budgets.
+  Debt Management Awareness – Students learn to evaluate long-term impacts of loans (e.g., for tuition or startup costs), fostering responsible financial habits early in their careers.
+  Simplified Financial Planning – Non-business users gain clarity on amortization schedules and interest effects without needing advanced finance knowledge, making loans less intimidating.
+  Resource Optimization – Researchers and creatives can assess whether leasing/borrowing for tools (e.g., lab devices, art supplies) is cost-effective compared to upfront purchases.
+instructions: |
+  1.	Open the tool and analyze the concepts and sections, do any or most of them seem familiar to you? ¿Did you know the interest rates?
+  2.	Enter the amount of money that, hypothetically, you would need for your business idea. It is always advisable to put a slightly higher amount than calculated in case there are cost overruns, but no more than 5 or 10%.
+  3.	Enter the interest rate and other fees charged by the bank. You can do a simulation and go to the interest page of a bank you know, in the business section, what rates do they offer for businesses, if you do not find the information, you can ask an AI what is the interest rate that banks usually give in the region where you live.
+  4.	With your teacher and colleagues, analyze the figure obtained and decide whether or not to purchase the loan based on the other financial projections. If after a few years the money is too high or you think you won't be able to cover the dues with sales, it may not be the best idea for you.
+links:
+  - title: "Loan Calculator"
+    url: "https://www.calculator.net/loan-calculator.html"
+  - title: "Recommendations for using the tool"
+    url: "/assets/tools/en/tool_20.1_Loancalculator.pdf"
+benefits: The main benefit of this tool is to provide a general idea to non-business students and university professors about the interest-bearing loans for entrepreneurship ideas
+purpose: Entrepreneurship Education Planning & Financing
+prerequisiteTools: Financial data of the business project
+partner: UNEAT
+---

@@ -1,0 +1,29 @@
+---
+number: 24
+name: "CSI: Failed Startups Division"
+image: /assets/images/24.jpg
+summary: "CSI: Failed Startups Division is a gamified investigation tool for entrepreneurship educators and university innovation centers. Participants act as forensic analysts, solving real-world startup failures using research, reasoning, and collaborative case reporting."
+description: "CSI: Failed Startups Division is an interactive, scenario-based activity where participants become startup detectives. Using real failure cases, learners analyze cause-of-death factors like market misfit, financial mismanagement, or ethical lapses. The toolbox builds strategic thinking, curiosity, and resilience through an immersive, research-led process guided by investigation templates and scoring rubrics."
+outcomes: |
+  Enhanced critical thinking and failure analysis
+  Entrepreneurial reflection on real-world challenges
+  Exposure to ethical and strategic decision-making
+  Strengthening of EntreComp, GreenComp, and DigiComp dimensions
+  Engaged, student-led research and reporting
+instructions: |
+  Each team receives a startup “Cold Case”.
+  Using the Agent Template, they investigate the case online.
+  They complete a report outlining the cause of failure, red flags, and potential alternative strategies.
+  Cases are presented in class with peer or teacher feedback using the scoring rubric.
+links:
+  - title: "CSI Failed Startups Division - Digital Guide for Facilitators"
+    url: "/assets/tools/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+  - title: "CSI:Failed Startups Division – Project Materials"
+    url: "/assets/tools/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+benefits: This tool transforms the analysis of startup failure into a Cluedo-style experience. Participants learn to investigate real failed ventures, identify red flags, and understand ethical and strategic breakdowns in entrepreneurship. Engages learners through storytelling and roleplay.
+purpose: Entrepreneurial Awareness & Sensitization
+prerequisiteTools: |
+  Printer or a digital whiteboard tool
+  Projector (optional for displaying questions)
+partner: MC
+---

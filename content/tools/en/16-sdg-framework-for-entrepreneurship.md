@@ -1,0 +1,29 @@
+---
+number: 16
+name: SDG Framework for Entrepreneurship
+image: /assets/images/16.jpg
+summary: The SDG Framework Tool helps universities align entrepreneurship and sustainability goals, offering a clear structure to integrate SDG-linked objectives into education, research, operations, and partnerships.
+description: The SDG Framework Tool is designed for universities to integrate the UN Sustainable Development Goals across teaching, research, operations, and outreach. It provides practical guidance, metrics, and resources to evaluate impact, prioritise actions, and drive sustainable entrepreneurship. Tools like the SDG Impact Assessment and SDG Compass support implementation, with real-world case studies showcasing successful integration.
+outcomes: |
+  Clear SDG-aligned strategy and goals.
+  Sustainable innovation in curricula and research.
+  Enhanced university-industry-community collaboration.
+  Improved ability to measure and communicate impact.
+instructions: |
+  Review the "Getting Started with SDGs in Universities" guide for foundational strategies.
+  Map institutional activities to relevant SDGs using the SDG Compass.
+  Use the SDG Impact Assessment Tool to evaluate current impact.
+  Align curricula, research, and partnerships with identified goals.
+  Apply findings to develop targeted actions, policies, and innovations.
+links:
+  - title: "STEP 1 - SDG Framework (Introduction)"
+    url: "/assets/tools/en/tool_16.1_SDGFramework(Introduction).pdf"
+  - title: "STEP 2 - SDG Framework (Examples of Application)"
+    url: "/assets/tools/en/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
+  - title: "STEP 3- SDG Framework (Resources and Supports)"
+    url: "/assets/tools/en/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
+benefits: The tool supports third-level institutions in mapping strategies to the SDGs, designing sustainability-driven programs, and measuring impact. It strengthens collaboration between academia, industry, and communities, promoting innovative solutions to real-world sustainability challenges.
+purpose: Sustainable & Impact-Driven Entrepreneurship
+prerequisiteTools: 1. An electronic device with WI-FI for App download and user capability
+partner: MMS
+---
