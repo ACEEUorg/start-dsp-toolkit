@@ -109,10 +109,27 @@ router.put('/:lang/:filename', async (req, res) => {
   const { lang, filename } = req.params;
   
   try {
+    const oldTool = getTool(lang, filename);
     const sanitized = sanitizeToolData(req.body);
     const tool = updateTool(lang, filename, sanitized);
     await regenerateToolsJson();
-    logAudit(req.session.userId, req.session.username, 'update', `tool/${lang}/${filename}`, tool.name);
+    
+    let diff = '';
+    if (oldTool) {
+      const fields = ['name', 'summary', 'description', 'outcomes', 'instructions', 'benefits', 'partner'];
+      const changes = [];
+      for (const field of fields) {
+        const oldVal = (oldTool[field] || '').trim();
+        const newVal = (sanitized[field] || '').trim();
+        if (oldVal !== newVal) {
+          const truncate = (s) => s.length > 40 ? s.substring(0, 40) + '...' : s;
+          changes.push(`${field}: "${truncate(oldVal)}" → "${truncate(newVal)}"`);
+        }
+      }
+      diff = changes.length > 0 ? changes.join('; ') : 'no content changes';
+    }
+    
+    logAudit(req.session.userId, req.session.username, 'update', `tool/${lang}/${filename}`, diff);
     res.json(tool);
   } catch (err) {
     if (err.message.includes('not found')) {
