@@ -1,6 +1,6 @@
 ---
 number: 1
-name: The Entrepreneurial Wall Packerz
+name: The Entrepreneurial Wall Packer
 image: /assets/images/1.jpg
 summary: >-
   The Entrepreneurial Wall Pack offers ready-to-print quotes and templates and
