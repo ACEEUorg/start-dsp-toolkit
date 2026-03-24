@@ -5,8 +5,10 @@ import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { initDb } from './lib/db.js';
-
-console.log('SESSION_SECRET:', process.env.SESSION_SECRET ? 'loaded' : 'MISSING');
+import authRoutes from './api/auth.js';
+import toolsRoutes from './api/tools.js';
+import usersRoutes from './api/users.js';
+import syncRoutes from './api/sync.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
