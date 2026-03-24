@@ -178,7 +178,7 @@
 
     <div class="toolbar">
       <button class="btn" id="createBtn">+ Create New Tool</button>
-      <button class="btn btn-sync" id="syncBtn">Push to GitHub</button>
+      <button class="btn btn-sync" id="syncBtn" style="display:none">Push to GitHub</button>
     </div>
 
     <div class="table-wrapper">
@@ -216,6 +216,9 @@
       document.getElementById('userInfo').textContent = data.user.username + ' (' + data.user.role + ')';
       if (data.user.role === 'admin') {
         document.getElementById('usersLink').style.display = 'block';
+        document.getElementById('syncBtn').style.display = 'inline-block';
+      } else {
+        document.getElementById('syncBtn').style.display = 'none';
       }
       return data.user;
     }
