@@ -4,7 +4,7 @@ name: Unternehmerisches Wörterbuch
 image: /assets/images/2.jpg
 summary: >-
   Ein unterhaltsames, zugängliches unternehmerisches Wörterbuch für Studierende,
-  Mitarbeiter &amp;amp;amp; Forscher, um wichtige Begriffe des Unternehmertums
+  Mitarbeiter & Forscher, um wichtige Begriffe des Unternehmertums
   ohne Angst oder Verwirrung zu verstehen.
 description: >-
   Das unternehmerische Wörterbuch wurde entwickelt, um Universitäten und

@@ -45,7 +45,7 @@ instructions: >
   die am besten zur Mission und den unternehmerischen Zielen Ihrer Universität
   passen.
 
-  2. Drucken &amp;amp;amp; Ausstellen
+  2. Drucken & Ausstellen
 
   Drucken Sie Ihre ausgewählten Vorlagen aus und platzieren Sie sie in gut
   sichtbaren Bereichen wie Bibliotheken, Cafeterien, Co-Working-Spaces oder
@@ -63,7 +63,7 @@ instructions: >
   leeren Vorlagen ein. Sie können auch neue Materialien mit Ihren bevorzugten
   Tools entwerfen.
 
-  5. Aktivieren &amp;amp;amp; Einbinden
+  5. Aktivieren & Einbinden
 
   Verwenden Sie die visuellen Elemente als Gesprächseinstieg bei Workshops,
   Veranstaltungen oder Entrepreneurship-Programmen. Platzieren Sie sie
