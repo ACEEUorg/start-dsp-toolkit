@@ -40,11 +40,15 @@ router.post('/login', loginLimiter, (req, res) => {
   const { username, password } = req.body;
 
   if (!username || !password) {
-    return res.status(400).json({ error: 'Username and password required' });
+    return res.status(400).json({ error: 'Username or email and password required' });
   }
 
   const db = getDb();
-  const user = db.prepare('SELECT * FROM users WHERE username = ?').get(username);
+  let user = db.prepare('SELECT * FROM users WHERE username = ?').get(username);
+  
+  if (!user) {
+    user = db.prepare('SELECT * FROM users WHERE email = ?').get(username);
+  }
 
   if (!user) {
     return res.status(401).json({ error: 'Invalid credentials' });
