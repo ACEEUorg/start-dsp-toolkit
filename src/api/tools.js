@@ -10,6 +10,27 @@ const PROJECT_ROOT = join(__dirname, '..', '..');
 
 const router = Router();
 
+function escapeHtml(str) {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#039;');
+}
+
+function sanitizeToolData(data) {
+  const fields = ['name', 'summary', 'description', 'outcomes', 'instructions', 'benefits', 'prerequisiteTools'];
+  const sanitized = { ...data };
+  for (const field of fields) {
+    if (sanitized[field]) {
+      sanitized[field] = escapeHtml(sanitized[field]);
+    }
+  }
+  return sanitized;
+}
+
 function regenerateToolsJson() {
   return new Promise((resolve, reject) => {
     const scriptPath = join(SRC_DIR, 'scripts', 'generate-tools-json.js');
@@ -72,7 +93,8 @@ router.post('/:lang', async (req, res) => {
   const { lang } = req.params;
   
   try {
-    const tool = createTool(lang, req.body);
+    const sanitized = sanitizeToolData(req.body);
+    const tool = createTool(lang, sanitized);
     await regenerateToolsJson();
     res.status(201).json(tool);
   } catch (err) {
@@ -85,7 +107,8 @@ router.put('/:lang/:filename', async (req, res) => {
   const { lang, filename } = req.params;
   
   try {
-    const tool = updateTool(lang, filename, req.body);
+    const sanitized = sanitizeToolData(req.body);
+    const tool = updateTool(lang, filename, sanitized);
     await regenerateToolsJson();
     res.json(tool);
   } catch (err) {
