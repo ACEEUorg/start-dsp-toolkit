@@ -224,8 +224,11 @@
         </div>
 
         <div class="form-group">
-          <label for="image">Image Path</label>
-          <input type="text" id="image" name="image" placeholder="/assets/images/1.jpg">
+          <label for="image">Image</label>
+          <div style="display:flex;gap:8px;align-items:center;">
+            <input type="text" id="image" name="image" placeholder="/assets/images/1.jpg" style="flex:1;">
+            <button type="button" class="btn btn-secondary" style="padding:8px 12px;" onclick="openFilePicker('image')">Browse</button>
+          </div>
         </div>
 
         <div class="form-group">
@@ -396,7 +399,10 @@
       container.innerHTML = links.map((link, i) => `
         <div class="link-row" data-index="${i}">
           <input type="text" placeholder="Title" value="${escapeAttr(link.title || '')}" onchange="updateLink(${i}, 'title', this.value)">
-          <input type="text" placeholder="/assets/tools/en/file.pdf" value="${escapeAttr(link.url || '')}" onchange="updateLink(${i}, 'url', this.value)">
+          <div style="display:flex;gap:4px;flex:1;">
+            <input type="text" placeholder="/assets/tools/${lang}/file.pdf" value="${escapeAttr(link.url || '')}" onchange="updateLink(${i}, 'url', this.value)" style="flex:1;">
+            <button type="button" class="btn btn-secondary" style="padding:8px;" onclick="openFilePickerForLink(${i})">📁</button>
+          </div>
           <button type="button" class="btn btn-danger btn-small" onclick="removeLink(${i})">×</button>
         </div>
       `).join('');
@@ -504,6 +510,204 @@
     checkAuth().then(ok => {
       if (ok) loadTool();
     });
+
+    // File picker
+    let targetField = null;
+    let targetLinkIndex = null;
+
+    function openFilePicker(field) {
+      targetField = field;
+      targetLinkIndex = null;
+      document.getElementById('filePickerModal').classList.add('show');
+      document.getElementById('filePickerPath').value = '';
+      loadFiles('/assets/');
+    }
+
+    function openFilePickerForLink(index) {
+      targetField = 'url';
+      targetLinkIndex = index;
+      document.getElementById('filePickerModal').classList.add('show');
+      document.getElementById('filePickerPath').value = '';
+      loadFiles(`/assets/tools/${lang}/`);
+    }
+
+    function closeFilePicker() {
+      document.getElementById('filePickerModal').classList.remove('show');
+    }
+
+    async function loadFiles(folder) {
+      const container = document.getElementById('fileList');
+      container.innerHTML = '<p style="padding:20px;color:#666;">Loading...</p>';
+      
+      try {
+        const res = await fetch(`/api/files/files?folder=${encodeURIComponent(folder.replace('/assets/', ''))}`);
+        const data = await res.json();
+        
+        let html = '';
+        
+        // Breadcrumb
+        const parts = folder.replace('/assets/', '').split('/').filter(Boolean);
+        let breadcrumb = '/assets/';
+        html += `<div style="padding:10px;border-bottom:1px solid #e7f4d3;">
+          <a href="#" onclick="loadFiles('/assets/');return false;" style="color:#2d9f88;">/assets</a>`;
+        for (let i = 0; i < parts.length; i++) {
+          breadcrumb += parts[i] + '/';
+          html += ` / <a href="#" onclick="loadFiles('${breadcrumb}');return false;" style="color:#2d9f88;">${parts[i]}</a>`;
+        }
+        html += '</div>';
+        
+        // Folders
+        for (const f of data.folders || []) {
+          const fullPath = folder + f.name + '/';
+          html += `<div class="file-item folder" onclick="loadFiles('${fullPath}')">
+            <span>📁</span> ${f.name}/
+          </div>`;
+        }
+        
+        // Files
+        for (const f of data.files || []) {
+          const isImage = /\.(jpg|jpeg|png|gif|svg|webp)$/i.test(f.name);
+          const icon = isImage ? '🖼️' : '📄';
+          html += `<div class="file-item" onclick="selectFile('${f.path}')">
+            <span>${icon}</span> ${f.name}
+          </div>`;
+        }
+        
+        if (html === '') {
+          html = '<p style="padding:20px;color:#999;">Empty folder</p>';
+        }
+        
+        container.innerHTML = html;
+      } catch (err) {
+        container.innerHTML = '<p style="padding:20px;color:#c00;">Failed to load files</p>';
+      }
+    }
+
+    function selectFile(path) {
+      if (targetLinkIndex !== null) {
+        updateLink(targetLinkIndex, 'url', path);
+        renderLinks();
+      } else if (targetField) {
+        document.getElementById(targetField).value = path;
+      }
+      closeFilePicker();
+    }
+
+    async function uploadFile() {
+      const input = document.getElementById('fileInput');
+      if (!input.files[0]) return;
+      
+      const file = input.files[0];
+      const folder = document.getElementById('filePickerPath').value || '';
+      const formData = new FormData();
+      formData.append('file', file);
+      
+      const btn = document.getElementById('uploadBtn');
+      btn.disabled = true;
+      btn.textContent = 'Uploading...';
+      
+      try {
+        const res = await fetch(`/api/files/upload?folder=${encodeURIComponent(folder)}`, {
+          method: 'POST',
+          credentials: 'include',
+          body: formData
+        });
+        
+        if (!res.ok) throw new Error('Upload failed');
+        
+        const data = await res.json();
+        selectFile(data.path);
+        input.value = '';
+      } catch (err) {
+        alert(err.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Upload';
+      }
+    }
   </script>
+
+  <!-- File Picker Modal -->
+  <style>
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      z-index: 1000;
+      align-items: center;
+      justify-content: center;
+    }
+    .modal.show {
+      display: flex;
+    }
+    .modal-content {
+      background: white;
+      border-radius: 16px;
+      width: 90%;
+      max-width: 600px;
+      max-height: 80vh;
+      overflow: hidden;
+      box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    }
+    .modal-header {
+      padding: 20px;
+      border-bottom: 2px solid #e7f4d3;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .modal-header h3 { margin: 0; color: #1d524a; }
+    .modal-body {
+      max-height: 400px;
+      overflow-y: auto;
+    }
+    .file-item {
+      padding: 12px 20px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      border-bottom: 1px solid #f5faeb;
+    }
+    .file-item:hover { background: #f5faeb; }
+    .file-item.folder { color: #5c8c24; }
+    .modal-footer {
+      padding: 20px;
+      border-top: 2px solid #e7f4d3;
+    }
+    .upload-row {
+      display: flex;
+      gap: 10px;
+      align-items: center;
+    }
+    .close-btn {
+      background: none;
+      border: none;
+      font-size: 24px;
+      cursor: pointer;
+      color: #999;
+    }
+    .close-btn:hover { color: #333; }
+  </style>
+  <div class="modal" id="filePickerModal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h3>Select File</h3>
+        <button class="close-btn" onclick="closeFilePicker()">×</button>
+      </div>
+      <div class="modal-body" id="fileList"></div>
+      <div class="modal-footer">
+        <div class="upload-row">
+          <input type="file" id="fileInput" style="flex:1;">
+          <input type="text" id="filePickerPath" placeholder="Folder (e.g. tools/en)" style="width:150px;">
+          <button id="uploadBtn" class="btn btn-primary" style="padding:10px 16px;" onclick="uploadFile()">Upload</button>
+        </div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>

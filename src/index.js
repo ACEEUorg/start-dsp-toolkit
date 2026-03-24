@@ -10,6 +10,7 @@ import authRoutes from './api/auth.js';
 import toolsRoutes from './api/tools.js';
 import usersRoutes from './api/users.js';
 import syncRoutes from './api/sync.js';
+import filesRoutes from './api/files.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -59,6 +60,7 @@ app.use('/api/auth', authRoutes);
 app.use('/api/tools', requireAuth, toolsRoutes);
 app.use('/api/users', requireAuth, requireRole('admin'), usersRoutes);
 app.use('/api/sync', requireAuth, requireRole('admin'), syncRoutes);
+app.use('/api/files', requireAuth, filesRoutes);
 
 // Admin routes (HTML pages)
 app.get('/admin', (req, res) => {
