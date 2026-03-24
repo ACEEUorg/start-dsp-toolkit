@@ -1,5 +1,6 @@
 import express from 'express';
 import session from 'express-session';
+import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { initDb } from './lib/db.js';
@@ -22,6 +23,10 @@ initDb();
 // Middleware
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+app.use(cors({
+  origin: true,
+  credentials: true
+}));
 
 // Session configuration
 app.use(session({
