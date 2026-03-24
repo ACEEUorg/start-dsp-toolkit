@@ -11,13 +11,14 @@
     "build": "echo 'No build needed - plain HTML/JS'"
   },
   "dependencies": {
-    "express": "^5.0.0",
-    "express-session": "^1.18.0",
-    "better-sqlite3": "^11.0.0",
     "bcryptjs": "^2.4.0",
-    "gray-matter": "^4.0.0",
-    "js-yaml": "^4.1.0",
+    "better-sqlite3": "^11.0.0",
     "cors": "^2.8.0",
-    "dotenv": "^16.0.0"
+    "dotenv": "^16.0.0",
+    "express": "^5.0.0",
+    "express-rate-limit": "^8.3.1",
+    "express-session": "^1.18.0",
+    "gray-matter": "^4.0.0",
+    "js-yaml": "^4.1.0"
   }
 }
