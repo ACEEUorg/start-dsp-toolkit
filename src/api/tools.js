@@ -5,7 +5,7 @@ import { dirname, join } from 'path';
 import { listTools, getTool, updateTool, createTool, deleteTool } from '../lib/files.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
-const SRC_DIR = __dirname;
+const SRC_DIR = join(__dirname, '..');
 const PROJECT_ROOT = join(__dirname, '..', '..');
 
 const router = Router();
