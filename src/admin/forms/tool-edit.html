@@ -231,15 +231,7 @@
         <div class="form-group">
           <label for="purpose">Purpose</label>
           <input type="text" id="purpose" name="purpose" list="purpose-suggestions" placeholder="Enter or select purpose">
-          <datalist id="purpose-suggestions">
-            <option value="Entrepreneurial Awareness & Sensitization">
-            <option value="Entrepreneurial Vision & Institutional Commitment">
-            <option value="Staff & Faculty Motivation, Incentives & Recognition">
-            <option value="Fostering an Entrepreneurial Mindset & Culture">
-            <option value="Entrepreneurship Education Planning & Financing">
-            <option value="Sustainable & Impact-Driven Entrepreneurship">
-            <option value="Continuous Innovation in Entrepreneurship Education">
-          </datalist>
+          <datalist id="purpose-suggestions"></datalist>
         </div>
 
         <div class="form-group">
@@ -297,6 +289,51 @@
     const isNew = filename === 'new';
     let links = [];
 
+    const purposes = {
+      en: [
+        'Entrepreneurial Awareness & Sensitization',
+        'Entrepreneurial Vision & Institutional Commitment',
+        'Staff & Faculty Motivation, Incentives & Recognition',
+        'Fostering an Entrepreneurial Mindset & Culture',
+        'Entrepreneurship Education Planning & Financing',
+        'Sustainable & Impact-Driven Entrepreneurship',
+        'Continuous Innovation in Entrepreneurship Education'
+      ],
+      es: [
+        'Conciencia & Sensibilización Emprendedora',
+        'Visión Emprendedora & Compromiso Institucional',
+        'Motivación, Incentivos & Reconocimiento para Personal & Profesores',
+        'Fomento de una Mentalidad & Cultura Emprendedora',
+        'Planificación & Financiación de la Educación Emprendedora',
+        'Emprendimiento Sostenible & Orientado al Impacto',
+        'Innovación Continua en la Educación Emprendedora'
+      ],
+      de: [
+        'Unternehmerisches Bewusstsein & Sensibilisierung',
+        'Unternehmerische Vision & institutionelles Engagement',
+        'Motivation, Anreize & Anerkennung für Personal & Lehrkräfte',
+        'Förderung einer unternehmerischen Denkweise & Kultur',
+        'Planung & Finanzierung der Gründungsausbildung',
+        'Nachhaltiges & wirkungsorientiertes Unternehmertum',
+        'Kontinuierliche Innovation in der Gründungsausbildung'
+      ],
+      el: [
+        'Επιχειρηματική Ευαισθητοποίηση & Ευαισθητοποίηση',
+        'Επιχειρηματικό Όραμα & Θεσμική Δέσμευση',
+        'Παρακίνηση, Κίνητρα & Αναγνώριση Προσωπικού & Καθηγητών',
+        'Καλλιέργεια Επιχειρηματικής Νοοτροπίας & Πολιτισμού',
+        'Σχεδιασμός & Χρηματοδότηση Επιχειρηματικής Εκπαίδευσης',
+        'Βιώσιμη & Οδηγούμενη από τον Αντίκτυπο Επιχειρηματικότητα',
+        'Συνεχής Καινοτομία στην Επιχειρηματική Εκπαίδευση'
+      ]
+    };
+
+    function populatePurposeSuggestions() {
+      const datalist = document.getElementById('purpose-suggestions');
+      const langPurposes = purposes[lang] || purposes.en;
+      datalist.innerHTML = langPurposes.map(p => `<option value="${escapeAttr(p)}">`).join('');
+    }
+
     // Check auth
     async function checkAuth() {
       const res = await fetch('/api/auth/me');
@@ -309,6 +346,8 @@
 
     // Load tool data
     async function loadTool() {
+      populatePurposeSuggestions();
+      
       if (isNew) {
         document.getElementById('loading').style.display = 'none';
         document.getElementById('toolForm').style.display = 'block';
