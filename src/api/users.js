@@ -1,8 +1,10 @@
 import { Router } from 'express';
 import bcrypt from 'bcryptjs';
+import { Resend } from 'resend';
 import { getDb } from '../lib/db.js';
 
 const router = Router();
+const resend = new Resend(process.env.RESEND_API_KEY);
 
 // List all users
 router.get('/', (req, res) => {
@@ -12,11 +14,15 @@ router.get('/', (req, res) => {
 });
 
 // Create user
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
   const { username, password, email, role = 'editor' } = req.body;
   
   if (!username || !password) {
     return res.status(400).json({ error: 'Username and password required' });
+  }
+  
+  if (!email) {
+    return res.status(400).json({ error: 'Email is required' });
   }
   
   if (!['admin', 'editor'].includes(role)) {
@@ -37,9 +43,28 @@ router.post('/', (req, res) => {
     const result = db.prepare(`
       INSERT INTO users (username, password_hash, email, role)
       VALUES (?, ?, ?, ?)
-    `).run(username, hash, email || null, role);
+    `).run(username, hash, email, role);
     
     const user = db.prepare('SELECT id, username, email, role, created_at FROM users WHERE id = ?').get(result.lastInsertRowid);
+    
+    // Send welcome email
+    try {
+      await resend.emails.send({
+        from: 'DSP Toolkit <hi@jel.do>',
+        to: email,
+        subject: 'Your DSP Toolkit account has been created',
+        html: `
+          <p>Hi ${username},</p>
+          <p>Your account has been created for the DSP Toolkit admin panel.</p>
+          <p><strong>Username:</strong> ${username}</p>
+          <p><strong>Temporary Password:</strong> ${password}</p>
+          <p>Please log in at <a href="https://sdsp.jel.do/admin">sdsp.jel.do/admin</a> and change your password.</p>
+        `
+      });
+    } catch (err) {
+      console.error('Failed to send welcome email:', err);
+    }
+    
     res.status(201).json(user);
   } catch (err) {
     res.status(500).json({ error: err.message });
