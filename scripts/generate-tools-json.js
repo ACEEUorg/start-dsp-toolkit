@@ -25,6 +25,16 @@ const LANGUAGES = ["en", "es", "de", "el"];
 /**
  * Parse YAML frontmatter from markdown content
  */
+function decodeHtmlEntities(str) {
+  if (typeof str !== 'string') return str;
+  return str
+    .replace(/&amp;/g, '&')
+    .replace(/&lt;/g, '<')
+    .replace(/&gt;/g, '>')
+    .replace(/&quot;/g, '"')
+    .replace(/&#039;/g, "'");
+}
+
 function parseFrontmatter(content) {
   const frontmatterRegex = /^---\n([\s\S]*?)\n---/;
   const match = content.match(frontmatterRegex);
@@ -35,6 +45,13 @@ function parseFrontmatter(content) {
 
   const yamlContent = match[1];
   const data = load(yamlContent) || {};
+
+  // Decode HTML entities (js-yaml encodes them)
+  for (const key in data) {
+    if (typeof data[key] === 'string') {
+      data[key] = decodeHtmlEntities(data[key]);
+    }
+  }
 
   // Ensure summary ends with punctuation
   if (data.summary && typeof data.summary === "string") {
