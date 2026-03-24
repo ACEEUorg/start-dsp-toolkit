@@ -40,7 +40,7 @@ instructions: >
   Browse the pre-designed templates in the PDF. Choose those that best align
   with your university's mission and entrepreneurial goals.
 
-  2. Print &amp; Display
+  2. Print & Display
 
   Print your selected templates and place them in high-visibility areas such as
   libraries, cafeterias, co-working spaces, or classrooms.
@@ -55,7 +55,7 @@ instructions: >
   Add your AI-generated or original content to the blank templates provided. You
   can also design new materials using your preferred tools.
 
-  5. Activate &amp; Engage
+  5. Activate & Engage
 
   Use the visuals as conversation starters during workshops, events, or
   entrepreneurship programs. Strategically place them around campus to inspire
