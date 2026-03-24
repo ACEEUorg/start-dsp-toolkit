@@ -5,6 +5,7 @@ import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { initDb } from './lib/db.js';
+import { requireAuth, requireRole } from './lib/auth.js';
 import authRoutes from './api/auth.js';
 import toolsRoutes from './api/tools.js';
 import usersRoutes from './api/users.js';
