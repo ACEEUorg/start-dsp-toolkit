@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Tool - Admin</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      background: #555;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .header a:hover {
+      background: #666;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .form-card {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    }
+    .form-group {
+      margin-bottom: 20px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+      color: #333;
+    }
+    input[type="text"],
+    input[type="number"],
+    select,
+    textarea {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+      font-family: inherit;
+    }
+    textarea {
+      min-height: 100px;
+      resize: vertical;
+    }
+    input:focus,
+    select:focus,
+    textarea:focus {
+      outline: none;
+      border-color: #0066cc;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+    }
+    .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 30px;
+      padding-top: 20px;
+      border-top: 1px solid #eee;
+    }
+    .btn {
+      padding: 12px 24px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .btn-primary {
+      background: #0066cc;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #0055aa;
+    }
+    .btn-secondary {
+      background: #eee;
+      color: #333;
+    }
+    .btn-secondary:hover {
+      background: #ddd;
+    }
+    .btn-danger {
+      background: #c00;
+      color: white;
+    }
+    .btn-danger:hover {
+      background: #a00;
+    }
+    .error {
+      background: #fee;
+      border: 1px solid #fcc;
+      color: #c00;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .success {
+      background: #efe;
+      border: 1px solid #cfc;
+      color: #060;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .loading {
+      text-align: center;
+      padding: 40px;
+      color: #666;
+    }
+    .back-link {
+      display: inline-block;
+      margin-bottom: 20px;
+      color: #0066cc;
+      text-decoration: none;
+    }
+    .back-link:hover {
+      text-decoration: underline;
+    }
+    .links-container {
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      padding: 15px;
+      background: #fafafa;
+    }
+    .link-row {
+      display: grid;
+      grid-template-columns: 1fr 2fr auto;
+      gap: 10px;
+      margin-bottom: 10px;
+      align-items: center;
+    }
+    .link-row:last-child {
+      margin-bottom: 0;
+    }
+    .add-link {
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1 id="pageTitle">Edit Tool</h1>
+    <a href="/admin/tools">← Back to Tools</a>
+  </div>
+
+  <div class="container">
+    <div class="loading" id="loading">Loading...</div>
+    <div class="error" id="error"></div>
+    <div class="success" id="success">Saved successfully!</div>
+
+    <form id="toolForm" style="display:none">
+      <div class="form-card">
+        <div class="row">
+          <div class="form-group">
+            <label for="number">Tool Number</label>
+            <input type="number" id="number" name="number" min="1">
+          </div>
+          <div class="form-group">
+            <label for="partner">Partner</label>
+            <select id="partner" name="partner">
+              <option value="ACEEU">ACEEU</option>
+              <option value="EUEI">EUEI</option>
+              <option value="TVW">TVW</option>
+              <option value="MMS">MMS</option>
+              <option value="UNEAT">UNEAT</option>
+              <option value="MC">MC</option>
+            </select>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+
+        <div class="form-group">
+          <label for="image">Image Path</label>
+          <input type="text" id="image" name="image" placeholder="/assets/images/1.jpg">
+        </div>
+
+        <div class="form-group">
+          <label for="purpose">Purpose</label>
+          <select id="purpose" name="purpose">
+            <option value="Entrepreneurial Awareness & Sensitization">Entrepreneurial Awareness & Sensitization</option>
+            <option value="Entrepreneurial Vision & Institutional Commitment">Entrepreneurial Vision & Institutional Commitment</option>
+            <option value="Staff & Faculty Motivation, Incentives & Recognition">Staff & Faculty Motivation, Incentives & Recognition</option>
+            <option value="Fostering an Entrepreneurial Mindset & Culture">Fostering an Entrepreneurial Mindset & Culture</option>
+            <option value="Entrepreneurship Education Planning & Financing">Entrepreneurship Education Planning & Financing</option>
+            <option value="Sustainable & Impact-Driven Entrepreneurship">Sustainable & Impact-Driven Entrepreneurship</option>
+            <option value="Continuous Innovation in Entrepreneurship Education">Continuous Innovation in Entrepreneurship Education</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="summary">Summary</label>
+          <textarea id="summary" name="summary" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="description">Description</label>
+          <textarea id="description" name="description" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="outcomes">Outcomes</label>
+          <textarea id="outcomes" name="outcomes" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="instructions">Instructions</label>
+          <textarea id="instructions" name="instructions" rows="4"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="benefits">Benefits</label>
+          <textarea id="benefits" name="benefits" rows="2"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label for="prerequisiteTools">Prerequisite Tools</label>
+          <textarea id="prerequisiteTools" name="prerequisiteTools" rows="3" placeholder="1. Tool Name"></textarea>
+        </div>
+
+        <div class="form-group">
+          <label>Downloads</label>
+          <div class="links-container" id="linksContainer">
+            <!-- Links will be added here -->
+          </div>
+          <button type="button" class="btn btn-secondary add-link" onclick="addLink()">+ Add Download</button>
+        </div>
+
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary" id="saveBtn">Save</button>
+          <button type="button" class="btn btn-secondary" onclick="window.location.href='/admin/tools'">Cancel</button>
+          <button type="button" class="btn btn-danger" id="deleteBtn" style="margin-left:auto;display:none">Delete</button>
+        </div>
+      </div>
+    </form>
+  </div>
+
+  <script>
+    const lang = window.location.pathname.split('/')[3];
+    const filename = window.location.pathname.split('/')[4];
+    const isNew = filename === 'new';
+    let links = [];
+
+    // Check auth
+    async function checkAuth() {
+      const res = await fetch('/api/auth/me');
+      if (!res.ok) {
+        window.location.href = '/admin';
+        return false;
+      }
+      return true;
+    }
+
+    // Load tool data
+    async function loadTool() {
+      if (isNew) {
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('toolForm').style.display = 'block';
+        document.getElementById('pageTitle').textContent = 'Create New Tool';
+        document.getElementById('deleteBtn').style.display = 'none';
+        addLink(); // Start with one empty link
+        return;
+      }
+
+      try {
+        const res = await fetch(`/api/tools/${lang}/${encodeURIComponent(filename)}`);
+        if (!res.ok) throw new Error('Tool not found');
+        
+        const tool = await res.json();
+        
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('toolForm').style.display = 'block';
+        document.getElementById('pageTitle').textContent = `Edit: ${tool.name}`;
+        document.getElementById('deleteBtn').style.display = 'block';
+
+        // Fill form
+        document.getElementById('number').value = tool.number || '';
+        document.getElementById('name').value = tool.name || '';
+        document.getElementById('image').value = tool.image || '';
+        document.getElementById('purpose').value = tool.purpose || '';
+        document.getElementById('summary').value = tool.summary || '';
+        document.getElementById('description').value = tool.description || '';
+        document.getElementById('outcomes').value = tool.outcomes || '';
+        document.getElementById('instructions').value = tool.instructions || '';
+        document.getElementById('benefits').value = tool.benefits || '';
+        document.getElementById('prerequisiteTools').value = tool.prerequisiteTools || '';
+        document.getElementById('partner').value = tool.partner || 'ACEEU';
+
+        // Links
+        links = tool.links || [];
+        renderLinks();
+
+      } catch (err) {
+        document.getElementById('loading').textContent = err.message;
+      }
+    }
+
+    // Render links
+    function renderLinks() {
+      const container = document.getElementById('linksContainer');
+      container.innerHTML = links.map((link, i) => `
+        <div class="link-row" data-index="${i}">
+          <input type="text" placeholder="Title" value="${escapeAttr(link.title || '')}" onchange="updateLink(${i}, 'title', this.value)">
+          <input type="text" placeholder="/assets/tools/en/file.pdf" value="${escapeAttr(link.url || '')}" onchange="updateLink(${i}, 'url', this.value)">
+          <button type="button" class="btn btn-danger btn-small" onclick="removeLink(${i})">×</button>
+        </div>
+      `).join('');
+      
+      if (links.length === 0) {
+        container.innerHTML = '<em style="color:#999">No downloads</em>';
+      }
+    }
+
+    function addLink() {
+      links.push({ title: '', url: '' });
+      renderLinks();
+    }
+
+    function updateLink(index, field, value) {
+      links[index][field] = value;
+    }
+
+    function removeLink(index) {
+      links.splice(index, 1);
+      renderLinks();
+    }
+
+    function escapeAttr(text) {
+      return text.replace(/"/g, '&quot;');
+    }
+
+    // Save form
+    document.getElementById('toolForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const btn = document.getElementById('saveBtn');
+      btn.disabled = true;
+      btn.textContent = 'Saving...';
+      
+      const data = {
+        number: parseInt(document.getElementById('number').value) || 1,
+        name: document.getElementById('name').value,
+        image: document.getElementById('image').value,
+        purpose: document.getElementById('purpose').value,
+        summary: document.getElementById('summary').value,
+        description: document.getElementById('description').value,
+        outcomes: document.getElementById('outcomes').value,
+        instructions: document.getElementById('instructions').value,
+        benefits: document.getElementById('benefits').value,
+        prerequisiteTools: document.getElementById('prerequisiteTools').value,
+        partner: document.getElementById('partner').value,
+        links: links.filter(l => l.title && l.url)
+      };
+
+      try {
+        let res;
+        if (isNew) {
+          res = await fetch(`/api/tools/${lang}`, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          });
+        } else {
+          res = await fetch(`/api/tools/${lang}/${encodeURIComponent(filename)}`, {
+            method: 'PUT',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(data)
+          });
+        }
+
+        if (!res.ok) throw new Error('Save failed');
+        
+        document.getElementById('success').style.display = 'block';
+        setTimeout(() => {
+          window.location.href = `/admin/tools?lang=${lang}`;
+        }, 1000);
+
+      } catch (err) {
+        document.getElementById('error').textContent = err.message;
+        document.getElementById('error').style.display = 'block';
+        btn.disabled = false;
+        btn.textContent = 'Save';
+      }
+    });
+
+    // Delete
+    document.getElementById('deleteBtn').addEventListener('click', async () => {
+      if (!confirm('Are you sure you want to delete this tool?')) return;
+      
+      try {
+        const res = await fetch(`/api/tools/${lang}/${encodeURIComponent(filename)}`, {
+          method: 'DELETE'
+        });
+        
+        if (!res.ok) throw new Error('Delete failed');
+        window.location.href = `/admin/tools?lang=${lang}`;
+      } catch (err) {
+        alert(err.message);
+      }
+    });
+
+    // Init
+    checkAuth().then(ok => {
+      if (ok) loadTool();
+    });
+  </script>
+</body>
+</html>

@@ -4,12 +4,12 @@ This directory contains both source YAML files and generated JavaScript files fo
 
 ## Architecture
 
-- **Source Files**: `*.yml` - Edited via Decap CMS or directly
+- **Source Files**: `*.yml` - Edited via admin panel or directly
 - **Generated Files**: `*.js` - Auto-generated from YAML, imported by the application
 
 ## Workflow
 
-1. **Edit translations** in Decap CMS (or edit YAML files directly)
+1. **Edit translations** in admin panel (or edit YAML files directly)
 2. **YAML files are saved** to this directory (`en.yml`, `es.yml`, etc.)
 3. **Run build script** to generate JavaScript files:
    ```bash

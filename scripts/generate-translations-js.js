@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 /**
  * Pre-build script to generate JavaScript translation files from YAML.
- * This allows Decap CMS to edit YAML files while the app uses JS modules.
+ * The admin panel edits YAML files while the app uses JS modules.
  */
 
 import { load } from "js-yaml";

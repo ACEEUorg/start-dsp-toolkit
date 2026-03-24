@@ -69,7 +69,7 @@ jobs:
           to: meppen@aceeu.org
           subject: "📝 CMS Update: ${{ needs.detect-cms-change.outputs.tool-name }} (${{ needs.detect-cms-change.outputs.language }})"
           text: |
-            🎯 Decap CMS Content Update Detected
+            🎯 Admin Panel Content Update Detected
             
             Tool: ${{ needs.detect-cms-change.outputs.tool-name }}
             Language: ${{ needs.detect-cms-change.outputs.language }}
@@ -85,4 +85,4 @@ jobs:
             View Changes: https://github.com/${{ github.repository }}/commit/${{ github.sha }}
             
             ---
-            This notification was sent automatically because a Decap CMS content update was detected.
+            This notification was sent automatically because an admin panel content update was detected.

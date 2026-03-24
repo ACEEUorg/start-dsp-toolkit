@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users - Admin</title>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    body {
+      font-family: system-ui, -apple-system, sans-serif;
+      background: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: #333;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 {
+      margin: 0;
+      font-size: 20px;
+    }
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      background: #555;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .header a:hover {
+      background: #666;
+    }
+    .container {
+      max-width: 900px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+    .card {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      margin-bottom: 20px;
+    }
+    .card h2 {
+      margin: 0 0 20px;
+      font-size: 18px;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    label {
+      display: block;
+      margin-bottom: 5px;
+      font-weight: 500;
+    }
+    input, select {
+      width: 100%;
+      padding: 10px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      font-size: 14px;
+    }
+    .row {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr;
+      gap: 15px;
+    }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      font-size: 14px;
+    }
+    .btn-primary {
+      background: #0066cc;
+      color: white;
+    }
+    .btn-primary:hover {
+      background: #0055aa;
+    }
+    .btn-danger {
+      background: #c00;
+      color: white;
+    }
+    .btn-danger:hover {
+      background: #a00;
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    th, td {
+      text-align: left;
+      padding: 12px;
+      border-bottom: 1px solid #eee;
+    }
+    th {
+      background: #f8f8f8;
+      font-weight: 600;
+      font-size: 14px;
+      color: #555;
+    }
+    .badge {
+      display: inline-block;
+      padding: 3px 8px;
+      border-radius: 3px;
+      font-size: 12px;
+      font-weight: 500;
+    }
+    .badge-admin {
+      background: #0066cc;
+      color: white;
+    }
+    .badge-editor {
+      background: #999;
+      color: white;
+    }
+    .actions {
+      display: flex;
+      gap: 10px;
+    }
+    .btn-small {
+      padding: 5px 10px;
+      font-size: 12px;
+    }
+    .modal {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(0,0,0,0.5);
+      align-items: center;
+      justify-content: center;
+    }
+    .modal.show {
+      display: flex;
+    }
+    .modal-content {
+      background: white;
+      padding: 30px;
+      border-radius: 8px;
+      width: 100%;
+      max-width: 400px;
+    }
+    .modal h3 {
+      margin: 0 0 20px;
+    }
+    .modal .btn-group {
+      display: flex;
+      gap: 10px;
+      margin-top: 20px;
+    }
+    .error {
+      background: #fee;
+      border: 1px solid #fcc;
+      color: #c00;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      display: none;
+    }
+    .success {
+      background: #efe;
+      border: 1px solid #cfc;
+      color: #060;
+      padding: 10px;
+      border-radius: 4px;
+      margin-bottom: 15px;
+      display: none;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <h1>User Management</h1>
+    <a href="/admin/tools">← Back to Tools</a>
+  </div>
+
+  <div class="container">
+    <div class="error" id="error"></div>
+    <div class="success" id="success"></div>
+
+    <div class="card">
+      <h2>Create New User</h2>
+      <form id="createForm">
+        <div class="row">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" required>
+          </div>
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" required>
+          </div>
+          <div class="form-group">
+            <label for="role">Role</label>
+            <select id="role">
+              <option value="editor">Editor</option>
+              <option value="admin">Admin</option>
+            </select>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="email">Email (optional)</label>
+          <input type="email" id="email">
+        </div>
+        <button type="submit" class="btn btn-primary">Create User</button>
+      </form>
+    </div>
+
+    <div class="card">
+      <h2>Existing Users</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Last Login</th>
+            <th>Actions</th>
+          </tr>
+        </thead>
+        <tbody id="usersBody"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- Edit Modal -->
+  <div class="modal" id="editModal">
+    <div class="modal-content">
+      <h3>Edit User</h3>
+      <form id="editForm">
+        <input type="hidden" id="editId">
+        <div class="form-group">
+          <label for="editPassword">New Password (leave blank to keep)</label>
+          <input type="password" id="editPassword">
+        </div>
+        <div class="form-group">
+          <label for="editEmail">Email</label>
+          <input type="email" id="editEmail">
+        </div>
+        <div class="form-group">
+          <label for="editRole">Role</label>
+          <select id="editRole">
+            <option value="editor">Editor</option>
+            <option value="admin">Admin</option>
+          </select>
+        </div>
+        <div class="btn-group">
+          <button type="submit" class="btn btn-primary">Save</button>
+          <button type="button" class="btn" onclick="closeModal()">Cancel</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script>
+    let users = [];
+
+    // Check admin auth
+    async function checkAuth() {
+      const res = await fetch('/api/auth/me');
+      if (!res.ok) {
+        window.location.href = '/admin';
+        return null;
+      }
+      const data = await res.json();
+      if (data.user.role !== 'admin') {
+        window.location.href = '/admin/tools';
+        return null;
+      }
+      return data.user;
+    }
+
+    // Load users
+    async function loadUsers() {
+      const res = await fetch('/api/users');
+      users = await res.json();
+      renderUsers();
+    }
+
+    // Render users table
+    function renderUsers() {
+      const tbody = document.getElementById('usersBody');
+      tbody.innerHTML = users.map(user => `
+        <tr>
+          <td>${escapeHtml(user.username)}</td>
+          <td>${escapeHtml(user.email || '-')}</td>
+          <td><span class="badge badge-${user.role}">${user.role}</span></td>
+          <td>${user.last_login ? new Date(user.last_login).toLocaleDateString() : 'Never'}</td>
+          <td class="actions">
+            <button class="btn btn-primary btn-small" onclick="editUser(${user.id})">Edit</button>
+            <button class="btn btn-danger btn-small" onclick="deleteUser(${user.id})">Delete</button>
+          </td>
+        </tr>
+      `).join('');
+    }
+
+    function escapeHtml(text) {
+      const div = document.createElement('div');
+      div.textContent = text;
+      return div.innerHTML;
+    }
+
+    // Create user
+    document.getElementById('createForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const data = {
+        username: document.getElementById('username').value,
+        password: document.getElementById('password').value,
+        role: document.getElementById('role').value,
+        email: document.getElementById('email').value || undefined
+      };
+
+      try {
+        const res = await fetch('/api/users', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.error);
+        }
+
+        showSuccess('User created');
+        e.target.reset();
+        loadUsers();
+      } catch (err) {
+        showError(err.message);
+      }
+    });
+
+    // Edit user
+    function editUser(id) {
+      const user = users.find(u => u.id === id);
+      if (!user) return;
+
+      document.getElementById('editId').value = user.id;
+      document.getElementById('editEmail').value = user.email || '';
+      document.getElementById('editRole').value = user.role;
+      document.getElementById('editPassword').value = '';
+      document.getElementById('editModal').classList.add('show');
+    }
+
+    function closeModal() {
+      document.getElementById('editModal').classList.remove('show');
+    }
+
+    document.getElementById('editForm').addEventListener('submit', async (e) => {
+      e.preventDefault();
+      
+      const id = document.getElementById('editId').value;
+      const data = {
+        email: document.getElementById('editEmail').value || null,
+        role: document.getElementById('editRole').value
+      };
+      
+      const password = document.getElementById('editPassword').value;
+      if (password) {
+        data.password = password;
+      }
+
+      try {
+        const res = await fetch(`/api/users/${id}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(data)
+        });
+
+        if (!res.ok) throw new Error('Update failed');
+
+        closeModal();
+        showSuccess('User updated');
+        loadUsers();
+      } catch (err) {
+        showError(err.message);
+      }
+    });
+
+    // Delete user
+    async function deleteUser(id) {
+      if (!confirm('Delete this user?')) return;
+
+      try {
+        const res = await fetch(`/api/users/${id}`, { method: 'DELETE' });
+        if (!res.ok) throw new Error('Delete failed');
+        showSuccess('User deleted');
+        loadUsers();
+      } catch (err) {
+        showError(err.message);
+      }
+    }
+
+    function showError(msg) {
+      const el = document.getElementById('error');
+      el.textContent = msg;
+      el.style.display = 'block';
+      setTimeout(() => el.style.display = 'none', 3000);
+    }
+
+    function showSuccess(msg) {
+      const el = document.getElementById('success');
+      el.textContent = msg;
+      el.style.display = 'block';
+      setTimeout(() => el.style.display = 'none', 2000);
+    }
+
+    // Init
+    checkAuth().then(user => {
+      if (user) loadUsers();
+    });
+  </script>
+</body>
+</html>
