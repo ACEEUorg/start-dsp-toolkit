@@ -5,11 +5,8 @@ import cors from 'cors';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { initDb } from './lib/db.js';
-import { requireAuth, requireRole } from './lib/auth.js';
-import authRoutes from './api/auth.js';
-import toolsRoutes from './api/tools.js';
-import usersRoutes from './api/users.js';
-import syncRoutes from './api/sync.js';
+
+console.log('SESSION_SECRET:', process.env.SESSION_SECRET ? 'loaded' : 'MISSING');
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -34,8 +31,9 @@ app.use(session({
   secret: process.env.SESSION_SECRET || 'dev-secret-change-in-production',
   resave: false,
   saveUninitialized: false,
+  proxy: true, // Trust the reverse proxy (Caddy)
   cookie: {
-    secure: true, // Always secure (Caddy handles HTTPS)
+    secure: true,
     httpOnly: true,
     maxAge: 7 * 24 * 60 * 60 * 1000 // 7 days
   }
