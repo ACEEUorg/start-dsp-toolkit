@@ -1,9 +1,18 @@
 import { Router } from 'express';
 import bcrypt from 'bcryptjs';
+import rateLimit from 'express-rate-limit';
 import { getDb, initDb } from '../lib/db.js';
 import { getCurrentUser } from '../lib/auth.js';
 
 const router = Router();
+
+const loginLimiter = rateLimit({
+  windowMs: 15 * 60 * 1000, // 15 minutes
+  max: 5, // 5 attempts per window
+  message: { error: 'Too many login attempts. Please try again in 15 minutes.' },
+  standardHeaders: true,
+  legacyHeaders: false,
+});
 
 // Initialize DB on first request
 initDb();
@@ -22,8 +31,8 @@ router.get('/check', (req, res) => {
   res.json({ authenticated: false });
 });
 
-// Login
-router.post('/login', (req, res) => {
+// Login (rate limited)
+router.post('/login', loginLimiter, (req, res) => {
   const { username, password } = req.body;
 
   if (!username || !password) {
