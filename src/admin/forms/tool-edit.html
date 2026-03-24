@@ -136,6 +136,10 @@
       margin-bottom: 20px;
       display: none;
     }
+    .success a {
+      color: #0066cc;
+      font-weight: 500;
+    }
     .loading {
       text-align: center;
       padding: 40px;
@@ -410,7 +414,9 @@
           throw new Error(err.error || 'Save failed');
         }
         
-        document.getElementById('success').textContent = 'Saved! Go to sdsp.jel.do to preview changes.';
+        const toolNumber = document.getElementById('number').value;
+        const previewUrl = `https://sdsp.jel.do/tool/${toolNumber}`;
+        document.getElementById('success').innerHTML = `Saved! <a href="${previewUrl}" target="_blank">View tool on sdsp.jel.do</a>`;
         document.getElementById('success').style.display = 'block';
         document.getElementById('error').style.display = 'none';
         btn.textContent = 'Save';
