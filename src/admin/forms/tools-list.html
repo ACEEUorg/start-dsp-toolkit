@@ -5,17 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Tools - Admin</title>
   <style>
+    @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;600;700&display=swap');
     * {
       box-sizing: border-box;
     }
     body {
-      font-family: system-ui, -apple-system, sans-serif;
-      background: #f5f5f5;
+      font-family: 'Avenir', sans-serif;
+      background: linear-gradient(135deg, #f5faeb 0%, #d3f4ea 100%);
+      min-height: 100vh;
       margin: 0;
       padding: 0;
     }
     .header {
-      background: #333;
+      background: linear-gradient(135deg, #1d524a 0%, #2d9f88 100%);
       color: white;
       padding: 15px 30px;
       display: flex;
@@ -25,6 +27,7 @@
     .header h1 {
       margin: 0;
       font-size: 20px;
+      font-weight: 600;
     }
     .header-right {
       display: flex;
@@ -35,18 +38,19 @@
       color: white;
       text-decoration: none;
       padding: 8px 15px;
-      background: #555;
-      border-radius: 4px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 6px;
       font-size: 14px;
+      font-weight: 500;
     }
     .header a:hover {
-      background: #666;
+      background: rgba(255,255,255,0.3);
     }
     .logout {
-      background: #c00 !important;
+      background: rgba(220, 38, 38, 0.8) !important;
     }
     .logout:hover {
-      background: #a00 !important;
+      background: rgba(220, 38, 38, 1) !important;
     }
     .container {
       max-width: 1200px;
@@ -57,45 +61,52 @@
       display: flex;
       gap: 5px;
       margin-bottom: 20px;
-      border-bottom: 1px solid #ddd;
+      border-bottom: 2px solid #e7f4d3;
       padding-bottom: 0;
     }
     .tab {
-      padding: 10px 20px;
-      background: #e0e0e0;
-      border: none;
-      border-radius: 4px 4px 0 0;
+      padding: 12px 24px;
+      background: white;
+      border: 2px solid #e7f4d3;
+      border-bottom: none;
+      border-radius: 8px 8px 0 0;
       cursor: pointer;
       font-size: 14px;
+      font-weight: 500;
+      color: #5c8c24;
+      font-family: inherit;
     }
     .tab.active {
-      background: white;
-      color: #0066cc;
-      border: 1px solid #ddd;
-      border-bottom: 1px solid white;
-      margin-bottom: -1px;
+      background: #2d9f88;
+      color: white;
+      border-color: #2d9f88;
     }
     .toolbar {
       margin-bottom: 20px;
     }
     .btn {
-      padding: 10px 20px;
-      background: #0066cc;
+      padding: 12px 24px;
+      background: linear-gradient(135deg, #78b032 0%, #5c8c24 100%);
       color: white;
       border: none;
-      border-radius: 4px;
+      border-radius: 8px;
       cursor: pointer;
       font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
     }
     .btn:hover {
-      background: #0055aa;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(120, 176, 50, 0.4);
     }
     .btn-sync {
-      background: #28a745;
+      background: linear-gradient(135deg, #2d9f88 0%, #227f6f 100%);
       margin-left: 10px;
     }
     .btn-sync:hover {
-      background: #218838;
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(45, 159, 136, 0.4);
     }
     .btn-sync:disabled {
       background: #ccc;
@@ -103,8 +114,8 @@
     }
     .table-wrapper {
       background: white;
-      border-radius: 8px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(45, 159, 136, 0.1);
       overflow: hidden;
     }
     table {
@@ -113,43 +124,43 @@
     }
     th, td {
       text-align: left;
-      padding: 12px 15px;
-      border-bottom: 1px solid #eee;
+      padding: 14px 16px;
+      border-bottom: 1px solid #e7f4d3;
     }
     th {
-      background: #f8f8f8;
+      background: #f5faeb;
       font-weight: 600;
-      color: #555;
+      color: #1d524a;
       font-size: 14px;
     }
     tr:hover {
-      background: #fafafa;
+      background: #f2fbf8;
     }
     .actions {
       display: flex;
       gap: 10px;
     }
     .btn-small {
-      padding: 5px 10px;
+      padding: 6px 12px;
       font-size: 12px;
     }
     .btn-edit {
-      background: #0066cc;
+      background: linear-gradient(135deg, #2d9f88 0%, #227f6f 100%);
     }
     .btn-delete {
-      background: #c00;
+      background: rgba(220, 38, 38, 0.8);
     }
     .btn-delete:hover {
-      background: #a00;
+      background: rgba(220, 38, 38, 1);
     }
     .user-info {
-      color: #aaa;
+      color: rgba(255,255,255,0.8);
       font-size: 14px;
     }
     .loading {
       text-align: center;
       padding: 40px;
-      color: #666;
+      color: #5c8c24;
     }
     .empty {
       text-align: center;
@@ -160,7 +171,10 @@
 </head>
 <body>
   <div class="header">
-    <h1>Admin - Tools</h1>
+    <div style="display:flex;align-items:center;gap:15px;">
+      <img src="/assets/logos/logo-color.png" alt="DSP" style="height:32px;">
+      <h1>Admin - Tools</h1>
+    </div>
     <div class="header-right">
       <span class="user-info" id="userInfo"></span>
       <a href="/admin/users" id="usersLink" style="display:none">Manage Users</a>
