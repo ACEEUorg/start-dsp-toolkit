@@ -366,7 +366,7 @@
           throw new Error(err.error);
         }
 
-        document.getElementById('success').innerHTML = `User created!<br><strong>Temporary password:</strong> <code style="background:#e7f4d3;padding:4px 8px;border-radius:4px;">${password}</code><br><small>Share this with the user securely.</small>`;
+        document.getElementById('success').innerHTML = `User created! They'll receive an email with their login details.`;
         document.getElementById('success').style.display = 'block';
         e.target.reset();
         loadUsers();
