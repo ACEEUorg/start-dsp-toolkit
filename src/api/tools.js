@@ -11,27 +11,6 @@ const PROJECT_ROOT = join(__dirname, '..', '..');
 
 const router = Router();
 
-function escapeHtml(str) {
-  if (typeof str !== 'string') return str;
-  return str
-    .replace(/&/g, '&amp;')
-    .replace(/</g, '&lt;')
-    .replace(/>/g, '&gt;')
-    .replace(/"/g, '&quot;')
-    .replace(/'/g, '&#039;');
-}
-
-function sanitizeToolData(data) {
-  const fields = ['name', 'summary', 'description', 'outcomes', 'instructions', 'benefits', 'prerequisiteTools'];
-  const sanitized = { ...data };
-  for (const field of fields) {
-    if (sanitized[field]) {
-      sanitized[field] = escapeHtml(sanitized[field]);
-    }
-  }
-  return sanitized;
-}
-
 function regenerateToolsJson() {
   return new Promise((resolve, reject) => {
     const scriptPath = join(SRC_DIR, 'scripts', 'generate-tools-json.js');
@@ -94,8 +73,7 @@ router.post('/:lang', async (req, res) => {
   const { lang } = req.params;
   
   try {
-    const sanitized = sanitizeToolData(req.body);
-    const tool = createTool(lang, sanitized);
+    const tool = createTool(lang, req.body);
     await regenerateToolsJson();
     logAudit(req.session.userId, req.session.username, 'create', `tool/${lang}/${tool.filename}`, tool.name);
     res.status(201).json(tool);
@@ -110,8 +88,7 @@ router.put('/:lang/:filename', async (req, res) => {
   
   try {
     const oldTool = getTool(lang, filename);
-    const sanitized = sanitizeToolData(req.body);
-    const tool = updateTool(lang, filename, sanitized);
+    const tool = updateTool(lang, filename, req.body);
     await regenerateToolsJson();
     
     let diff = '';
@@ -120,7 +97,7 @@ router.put('/:lang/:filename', async (req, res) => {
       const changes = [];
       for (const field of fields) {
         const oldVal = (oldTool[field] || '').trim();
-        const newVal = (sanitized[field] || '').trim();
+        const newVal = (req.body[field] || '').trim();
         if (oldVal !== newVal) {
           const truncate = (s) => s.length > 40 ? s.substring(0, 40) + '...' : s;
           changes.push(`${field}: "${truncate(oldVal)}" → "${truncate(newVal)}"`);
