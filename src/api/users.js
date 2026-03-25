@@ -2,7 +2,7 @@ import { Router } from 'express';
 import bcrypt from 'bcryptjs';
 import { Resend } from 'resend';
 import { getDb, logAudit } from '../lib/db.js';
-import { requireAuth } from '../lib/auth.js';
+import { requireAuth, requireRole } from '../lib/auth.js';
 
 const router = Router();
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
@@ -21,7 +21,7 @@ router.get('/me', requireAuth, (req, res) => {
 });
 
 // List all users (admin only)
-router.get('/', (req, res) => {
+router.get('/', requireRole('admin'), (req, res) => {
   const db = getDb();
   const users = db.prepare('SELECT id, username, email, role, permissions, created_at, last_login FROM users ORDER BY created_at DESC').all();
   
@@ -35,7 +35,7 @@ router.get('/', (req, res) => {
 });
 
 // Create user
-router.post('/', async (req, res) => {
+router.post('/', requireRole('admin'), async (req, res) => {
   const { username, password, email, role = 'editor', permissions = {} } = req.body;
   
   if (!username || !password) {
@@ -101,7 +101,7 @@ router.post('/', async (req, res) => {
 });
 
 // Update user
-router.put('/:id', (req, res) => {
+router.put('/:id', requireRole('admin'), (req, res) => {
   const { id } = req.params;
   const { email, role, password, permissions } = req.body;
   
@@ -158,7 +158,7 @@ router.put('/:id', (req, res) => {
 });
 
 // Delete user
-router.delete('/:id', (req, res) => {
+router.delete('/:id', requireRole('admin'), (req, res) => {
   const { id } = req.params;
   
   // Can't delete yourself
@@ -179,7 +179,7 @@ router.delete('/:id', (req, res) => {
 });
 
 // Get audit logs (admin only)
-router.get('/audit-logs', (req, res) => {
+router.get('/audit-logs', requireRole('admin'), (req, res) => {
   const db = getDb();
   const logs = db.prepare(`
     SELECT * FROM audit_logs ORDER BY created_at DESC LIMIT 100

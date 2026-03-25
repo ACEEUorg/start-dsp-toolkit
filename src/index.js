@@ -59,7 +59,7 @@ app.use('/assets', express.static(join(ROOT, 'public', 'assets')));
 // API routes
 app.use('/api/auth', authRoutes);
 app.use('/api/tools', requireAuth, toolsRoutes);
-app.use('/api/users', requireAuth, requireRole('admin'), usersRoutes);
+app.use('/api/users', requireAuth, usersRoutes);
 app.use('/api/sync', requireAuth, requireRole('admin'), syncRoutes);
 app.use('/api/files', requireAuth, filesRoutes);
 app.use('/api/translations', requireAuth, translationsRoutes);
