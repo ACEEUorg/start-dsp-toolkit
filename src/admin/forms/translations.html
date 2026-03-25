@@ -198,6 +198,7 @@
     let currentLang = 'en';
     let translations = {};
     let keys = [];
+    let allowedLanguages = [];
 
     async function checkAuth() {
       const res = await fetch('/api/auth/me');
@@ -205,6 +206,20 @@
         window.location.href = '/admin';
         return false;
       }
+      
+      // Get user permissions
+      const meRes = await fetch('/api/users/me');
+      if (meRes.ok) {
+        const me = await meRes.json();
+        if (me.role === 'admin') {
+          allowedLanguages = ['en', 'es', 'de', 'el'];
+        } else {
+          allowedLanguages = me.permissions?.languages || [];
+        }
+      } else {
+        allowedLanguages = ['en', 'es', 'de', 'el'];
+      }
+      
       return true;
     }
 
@@ -214,9 +229,14 @@
         if (!res.ok) throw new Error('Failed to load translations');
         
         const data = await res.json();
-        translations = data.translations;
         
-        // Get all keys from English (source language)
+        // Filter translations to only allowed languages
+        translations = {};
+        for (const lang of allowedLanguages) {
+          translations[lang] = data.translations[lang] || {};
+        }
+        
+        // Get all keys from first allowed language
         keys = Object.keys(translations.en || {}).sort();
         
         renderTabs();
@@ -228,11 +248,17 @@
 
     function renderTabs() {
       const tabs = document.getElementById('tabs');
-      tabs.innerHTML = Object.entries(LANGUAGES).map(([code, name]) => `
+      tabs.innerHTML = allowedLanguages.map(code => `
         <button class="tab ${code === currentLang ? 'active' : ''}" onclick="switchLang('${code}')">
-          ${name}
+          ${LANGUAGES[code]}
         </button>
       `).join('');
+      
+      // Set current lang to first allowed if current not allowed
+      if (!allowedLanguages.includes(currentLang)) {
+        currentLang = allowedLanguages[0];
+        renderContent();
+      }
     }
 
     function switchLang(lang) {
