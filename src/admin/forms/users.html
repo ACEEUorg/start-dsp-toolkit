@@ -199,9 +199,13 @@
     }
     .permissions-section {
       margin-top: 15px;
+      margin-bottom: 15px;
       padding: 15px;
       background: #f9f9f9;
       border-radius: 8px;
+    }
+    .permissions-section.hidden {
+      display: none;
     }
     .permissions-section h4 {
       margin: 0 0 10px;
@@ -430,6 +434,18 @@
       return password;
     }
 
+    // Toggle permissions visibility based on role
+    document.getElementById('role').addEventListener('change', function() {
+      document.getElementById('createPermissions').classList.toggle('hidden', this.value !== 'editor');
+    });
+    
+    document.getElementById('editRole').addEventListener('change', function() {
+      document.getElementById('editPermissions').classList.toggle('hidden', this.value !== 'editor');
+    });
+    
+    // Also hide create permissions initially if admin is selected
+    document.getElementById('createPermissions').classList.toggle('hidden', document.getElementById('role').value !== 'editor');
+
     // Create user
     document.getElementById('createForm').addEventListener('submit', async (e) => {
       e.preventDefault();
@@ -491,6 +507,9 @@
         cb.checked = langs.includes(cb.value);
       });
       document.getElementById('editCanEditTranslations').checked = perms.canEditTranslations || false;
+      
+      // Show/hide permissions based on role
+      document.getElementById('editPermissions').classList.toggle('hidden', user.role !== 'editor');
       
       document.getElementById('editModal').classList.add('show');
     }
