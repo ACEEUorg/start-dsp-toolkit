@@ -291,17 +291,6 @@
         html = '<div class="empty">No translation keys found</div>';
       }
       
-      html += `
-        <div style="margin-top:20px;padding-top:20px;border-top:2px solid #e7f4d3;">
-          <h3 style="margin:0 0 15px 0;color:#1d524a;">Add New Key</h3>
-          <div class="key-value" style="background:#e7f4d3;">
-            <input type="text" id="newKey" placeholder="key.name" style="font-family:monospace;">
-            <input type="text" id="newValue" placeholder="Translation value">
-            <button class="delete" onclick="addKey()">+</button>
-          </div>
-        </div>
-      `;
-      
       container.innerHTML = html;
     }
 
