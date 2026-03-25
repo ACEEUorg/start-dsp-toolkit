@@ -456,7 +456,14 @@
       // Only set permissions for editors (admins have full access)
       if (role === 'editor') {
         const langCheckboxes = document.querySelectorAll('input[name="langPerm"]:checked');
-        permissions.languages = Array.from(langCheckboxes).map(cb => cb.value);
+        const selectedLangs = Array.from(langCheckboxes).map(cb => cb.value);
+        
+        if (selectedLangs.length === 0) {
+          showError('Editors must have at least one language selected');
+          return;
+        }
+        
+        permissions.languages = selectedLangs;
         permissions.canEditTranslations = document.getElementById('canEditTranslations').checked;
       }
       
@@ -538,6 +545,12 @@
       if (role === 'editor') {
         const langCheckboxes = document.querySelectorAll('input[name="editLangPerm"]:checked');
         const languages = Array.from(langCheckboxes).map(cb => cb.value);
+        
+        if (languages.length === 0) {
+          showError('Editors must have at least one language selected');
+          return;
+        }
+        
         const canEditTranslations = document.getElementById('editCanEditTranslations').checked;
         data.permissions = { languages, canEditTranslations };
       }
