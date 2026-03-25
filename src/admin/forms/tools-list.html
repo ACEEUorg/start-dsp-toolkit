@@ -218,6 +218,7 @@
     const LANG_NAMES = { en: 'English', es: 'Spanish', de: 'German', el: 'Greek' };
     let currentLang = 'en';
     let currentUser = null;
+    let userPermissions = null;
 
     // Check auth
     async function checkAuth() {
@@ -228,8 +229,31 @@
       }
       const data = await res.json();
       currentUser = data.user;
+      
+      // Fetch user permissions
+      const usersRes = await fetch('/api/users');
+      const users = await usersRes.json();
+      const me = users.find(u => u.id === data.user.id);
+      userPermissions = me ? me.permissions : null;
+      
       document.getElementById('userInfo').textContent = data.user.username + ' (' + data.user.role + ')';
-      document.getElementById('translationsLink').style.display = 'block';
+      
+      // Filter language tabs based on permissions
+      const allowedLangs = data.user.role === 'admin' ? ['en', 'es', 'de', 'el'] : (userPermissions?.languages || []);
+      document.querySelectorAll('.tab').forEach(tab => {
+        const lang = tab.dataset.lang;
+        tab.style.display = allowedLangs.includes(lang) ? '' : 'none';
+      });
+      
+      // Hide create button if no languages allowed
+      if (allowedLangs.length === 0) {
+        document.getElementById('createBtn').style.display = 'none';
+      }
+      
+      // Show/hide translations link based on permissions
+      const canEditTranslations = data.user.role === 'admin' || userPermissions?.canEditTranslations;
+      document.getElementById('translationsLink').style.display = canEditTranslations ? 'block' : 'none';
+      
       if (data.user.role === 'admin') {
         document.getElementById('usersLink').style.display = 'block';
         document.getElementById('syncBtn').style.display = 'inline-block';
@@ -239,6 +263,12 @@
       return data.user;
     }
 
+    // Get allowed languages for current user
+    function getAllowedLanguages() {
+      if (currentUser?.role === 'admin') return ['en', 'es', 'de', 'el'];
+      return userPermissions?.languages || [];
+    }
+    
     // Load tools for language
     async function loadTools(lang) {
       const loading = document.getElementById('loading');
@@ -368,7 +398,11 @@
 
     // Init
     checkAuth().then(user => {
-      if (user) loadTools('en');
+      if (user) {
+        const allowed = getAllowedLanguages();
+        const firstLang = allowed.length > 0 ? allowed[0] : 'en';
+        loadTools(firstLang);
+      }
     });
   </script>
 </body>
