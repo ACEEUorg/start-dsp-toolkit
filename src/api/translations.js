@@ -5,33 +5,37 @@ import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import yaml from 'js-yaml';
 import { spawn } from 'child_process';
-import { requireAuth, requireRole } from '../lib/auth.js';
+import { requireAuth, requireRole, getUserPermissions } from '../lib/auth.js';
+import { getDb } from '../lib/db.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..', '..');
 const TRANSLATIONS_DIR = join(PROJECT_ROOT, 'src', 'i18n', 'translations');
 
-function triggerBuild() {
-  console.log('Triggering site rebuild...');
-  
-  const buildProcess = spawn('npm', ['run', 'build'], {
-    cwd: PROJECT_ROOT,
-    stdio: 'inherit',
-    shell: true
-  });
-  
-  buildProcess.on('close', (code) => {
-    if (code === 0) {
-      console.log('Build completed successfully');
-    } else {
-      console.error('Build failed with code:', code);
-    }
-  });
-}
-
 const router = Router();
 
 const SUPPORTED_LANGUAGES = ['en', 'es', 'de', 'el'];
+
+// Middleware to check translation permission
+function requireTranslationPermission(req, res, next) {
+  const userId = req.session.userId;
+  if (!userId) {
+    return res.status(401).json({ error: 'Not authenticated' });
+  }
+  
+  const perms = getUserPermissions(userId);
+  
+  if (!perms) {
+    return res.status(401).json({ error: 'User not found' });
+  }
+  
+  // Admins have full access (canEditAllLanguages is true)
+  if (perms.canEditTranslations || perms.canEditAllLanguages) {
+    return next();
+  }
+  
+  return res.status(403).json({ error: 'You do not have permission to edit UI translations' });
+}
 
 // Get all translations
 router.get('/', requireAuth, (req, res) => {
@@ -70,7 +74,7 @@ router.get('/:lang', requireAuth, (req, res) => {
 });
 
 // Update single language translations
-router.put('/:lang', requireAuth, (req, res) => {
+router.put('/:lang', requireTranslationPermission, (req, res) => {
   const { lang } = req.params;
   const { translations } = req.body;
   

@@ -9,13 +9,20 @@ const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KE
 // List all users
 router.get('/', (req, res) => {
   const db = getDb();
-  const users = db.prepare('SELECT id, username, email, role, created_at, last_login FROM users ORDER BY created_at DESC').all();
-  res.json(users);
+  const users = db.prepare('SELECT id, username, email, role, permissions, created_at, last_login FROM users ORDER BY created_at DESC').all();
+  
+  // Parse permissions JSON for each user
+  const result = users.map(u => ({
+    ...u,
+    permissions: u.permissions ? JSON.parse(u.permissions) : {}
+  }));
+  
+  res.json(result);
 });
 
 // Create user
 router.post('/', async (req, res) => {
-  const { username, password, email, role = 'editor' } = req.body;
+  const { username, password, email, role = 'editor', permissions = {} } = req.body;
   
   if (!username || !password) {
     return res.status(400).json({ error: 'Username and password required' });
@@ -38,14 +45,16 @@ router.post('/', async (req, res) => {
   }
   
   const hash = bcrypt.hashSync(password, 12);
+  const permissionsJson = JSON.stringify(permissions);
   
   try {
     const result = db.prepare(`
-      INSERT INTO users (username, password_hash, email, role)
-      VALUES (?, ?, ?, ?)
-    `).run(username, hash, email, role);
+      INSERT INTO users (username, password_hash, email, role, permissions)
+      VALUES (?, ?, ?, ?, ?)
+    `).run(username, hash, email, role, permissionsJson);
     
-    const user = db.prepare('SELECT id, username, email, role, created_at FROM users WHERE id = ?').get(result.lastInsertRowid);
+    const user = db.prepare('SELECT id, username, email, role, permissions, created_at FROM users WHERE id = ?').get(result.lastInsertRowid);
+    user.permissions = permissions;
     
     // Send welcome email
     if (!resend) {
@@ -80,7 +89,7 @@ router.post('/', async (req, res) => {
 // Update user
 router.put('/:id', (req, res) => {
   const { id } = req.params;
-  const { email, role, password } = req.body;
+  const { email, role, password, permissions } = req.body;
   
   const db = getDb();
   
@@ -112,6 +121,11 @@ router.put('/:id', (req, res) => {
     values.push(bcrypt.hashSync(password, 12));
   }
   
+  if (permissions !== undefined) {
+    updates.push('permissions = ?');
+    values.push(JSON.stringify(permissions));
+  }
+  
   if (updates.length === 0) {
     return res.status(400).json({ error: 'No fields to update' });
   }
@@ -120,7 +134,8 @@ router.put('/:id', (req, res) => {
   
   try {
     db.prepare(`UPDATE users SET ${updates.join(', ')} WHERE id = ?`).run(...values);
-    const updated = db.prepare('SELECT id, username, email, role, created_at, last_login FROM users WHERE id = ?').get(id);
+    const updated = db.prepare('SELECT id, username, email, role, permissions, created_at, last_login FROM users WHERE id = ?').get(id);
+    updated.permissions = updated.permissions ? JSON.parse(updated.permissions) : {};
     logAudit(req.session.userId, req.session.username, 'update_user', updated.username, updates.join(', '));
     res.json(updated);
   } catch (err) {

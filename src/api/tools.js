@@ -3,13 +3,58 @@ import { spawn } from 'child_process';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import { listTools, getTool, updateTool, createTool, deleteTool } from '../lib/files.js';
-import { logAudit } from '../lib/db.js';
+import { logAudit, getDb } from '../lib/db.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const SRC_DIR = join(__dirname, '..');
 const PROJECT_ROOT = join(__dirname, '..', '..');
 
 const router = Router();
+
+const SUPPORTED_LANGUAGES = ['en', 'es', 'de', 'el'];
+
+// Middleware to check language permission
+function requireLanguagePermission(req, res, next) {
+  const userId = req.session.userId;
+  if (!userId) {
+    return res.status(401).json({ error: 'Not authenticated' });
+  }
+  
+  const db = getDb();
+  const user = db.prepare('SELECT role, permissions FROM users WHERE id = ?').get(userId);
+  
+  if (!user) {
+    return res.status(401).json({ error: 'User not found' });
+  }
+  
+  // Admins can edit all languages
+  if (user.role === 'admin') {
+    return next();
+  }
+  
+  // Check if user has permissions to edit this language
+  let perms = {};
+  try {
+    perms = user.permissions ? JSON.parse(user.permissions) : {};
+  } catch (e) {
+    perms = {};
+  }
+  
+  const allowedLanguages = perms.languages || [];
+  
+  // For GET requests, allow read access if user can edit any language
+  if (req.method === 'GET') {
+    return next();
+  }
+  
+  // For other methods, check language permission
+  const lang = req.params.lang;
+  if (!lang || !allowedLanguages.includes(lang)) {
+    return res.status(403).json({ error: `You don't have permission to edit ${lang || 'this language'}` });
+  }
+  
+  next();
+}
 
 function regenerateToolsJson() {
   return new Promise((resolve, reject) => {
@@ -69,7 +114,7 @@ router.get('/:lang/:filename', (req, res) => {
 });
 
 // Create new tool
-router.post('/:lang', async (req, res) => {
+router.post('/:lang', requireLanguagePermission, async (req, res) => {
   const { lang } = req.params;
   
   try {
@@ -83,7 +128,7 @@ router.post('/:lang', async (req, res) => {
 });
 
 // Update tool
-router.put('/:lang/:filename', async (req, res) => {
+router.put('/:lang/:filename', requireLanguagePermission, async (req, res) => {
   const { lang, filename } = req.params;
   
   try {
@@ -117,7 +162,7 @@ router.put('/:lang/:filename', async (req, res) => {
 });
 
 // Delete tool
-router.delete('/:lang/:filename', async (req, res) => {
+router.delete('/:lang/:filename', requireLanguagePermission, async (req, res) => {
   const { lang, filename } = req.params;
   
   try {

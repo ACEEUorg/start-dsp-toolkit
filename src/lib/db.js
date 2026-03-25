@@ -27,10 +27,18 @@ export function initDb() {
       password_hash TEXT NOT NULL,
       email TEXT,
       role TEXT DEFAULT 'editor',
+      permissions TEXT DEFAULT '{}',
       created_at DATETIME DEFAULT CURRENT_TIMESTAMP,
       last_login DATETIME
     )
   `);
+  
+  // Add permissions column if it doesn't exist (for existing databases)
+  try {
+    db.exec(`ALTER TABLE users ADD COLUMN permissions TEXT DEFAULT '{}'`);
+  } catch (e) {
+    // Column already exists
+  }
 
   db.exec(`
     CREATE TABLE IF NOT EXISTS password_reset_tokens (

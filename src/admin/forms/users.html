@@ -197,6 +197,33 @@
       margin-bottom: 15px;
       display: none;
     }
+    .permissions-section {
+      margin-top: 15px;
+      padding: 15px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+    .permissions-section h4 {
+      margin: 0 0 10px;
+      font-size: 14px;
+      color: #1d524a;
+    }
+    .checkbox-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 15px;
+    }
+    .checkbox-label {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: normal;
+      font-size: 13px;
+      cursor: pointer;
+    }
+    .checkbox-label input {
+      width: auto;
+    }
   </style>
 </head>
 <body>
@@ -235,6 +262,30 @@
             <input type="email" id="email" required>
           </div>
         </div>
+        
+        <div class="permissions-section" id="createPermissions">
+          <h4>Permissions (for Editors)</h4>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="langPerm" value="en"> English
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="langPerm" value="es"> Spanish
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="langPerm" value="de"> German
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="langPerm" value="el"> Greek
+            </label>
+          </div>
+          <div class="checkbox-group" style="margin-top:10px;">
+            <label class="checkbox-label">
+              <input type="checkbox" id="canEditTranslations"> Can edit UI strings
+            </label>
+          </div>
+        </div>
+        
         <button type="submit" class="btn btn-primary">Create User</button>
       </form>
     </div>
@@ -247,6 +298,7 @@
             <th>Username</th>
             <th>Email</th>
             <th>Role</th>
+            <th>Permissions</th>
             <th>Last Login</th>
             <th>Actions</th>
           </tr>
@@ -277,6 +329,30 @@
             <option value="admin">Admin</option>
           </select>
         </div>
+        
+        <div class="permissions-section" id="editPermissions">
+          <h4>Permissions (for Editors)</h4>
+          <div class="checkbox-group">
+            <label class="checkbox-label">
+              <input type="checkbox" name="editLangPerm" value="en"> English
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="editLangPerm" value="es"> Spanish
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="editLangPerm" value="de"> German
+            </label>
+            <label class="checkbox-label">
+              <input type="checkbox" name="editLangPerm" value="el"> Greek
+            </label>
+          </div>
+          <div class="checkbox-group" style="margin-top:10px;">
+            <label class="checkbox-label">
+              <input type="checkbox" id="editCanEditTranslations"> Can edit UI strings
+            </label>
+          </div>
+        </div>
+        
         <div class="btn-group">
           <button type="submit" class="btn btn-primary">Save</button>
           <button type="button" class="btn" onclick="closeModal()">Cancel</button>
@@ -313,18 +389,30 @@
     // Render users table
     function renderUsers() {
       const tbody = document.getElementById('usersBody');
-      tbody.innerHTML = users.map(user => `
+      tbody.innerHTML = users.map(user => {
+        const perms = user.permissions || {};
+        let permStr = '';
+        if (user.role === 'admin') {
+          permStr = 'Full access';
+        } else {
+          const langs = perms.languages || [];
+          if (langs.length === 0) permStr = 'No language access';
+          else permStr = langs.join(', ');
+          if (perms.canEditTranslations) permStr += ' + UI strings';
+        }
+        return `
         <tr>
           <td>${escapeHtml(user.username)}</td>
           <td>${escapeHtml(user.email || '-')}</td>
           <td><span class="badge badge-${user.role}">${user.role}</span></td>
+          <td style="font-size:12px;color:#666;">${permStr}</td>
           <td>${user.last_login ? new Date(user.last_login).toLocaleDateString() : 'Never'}</td>
           <td class="actions">
             <button class="btn btn-primary btn-small" onclick="editUser(${user.id})">Edit</button>
             <button class="btn btn-danger btn-small" onclick="deleteUser(${user.id})">Delete</button>
           </td>
         </tr>
-      `).join('');
+      `}).join('');
     }
 
     function escapeHtml(text) {
@@ -346,12 +434,23 @@
     document.getElementById('createForm').addEventListener('submit', async (e) => {
       e.preventDefault();
       
+      const role = document.getElementById('role').value;
+      const permissions = {};
+      
+      // Only set permissions for editors (admins have full access)
+      if (role === 'editor') {
+        const langCheckboxes = document.querySelectorAll('input[name="langPerm"]:checked');
+        permissions.languages = Array.from(langCheckboxes).map(cb => cb.value);
+        permissions.canEditTranslations = document.getElementById('canEditTranslations').checked;
+      }
+      
       const password = generatePassword();
       const data = {
         username: document.getElementById('username').value,
         password: password,
-        role: document.getElementById('role').value,
-        email: document.getElementById('email').value
+        role: role,
+        email: document.getElementById('email').value,
+        permissions: permissions
       };
 
       try {
@@ -384,6 +483,15 @@
       document.getElementById('editEmail').value = user.email || '';
       document.getElementById('editRole').value = user.role;
       document.getElementById('editPassword').value = '';
+      
+      // Set permissions
+      const perms = user.permissions || {};
+      const langs = perms.languages || [];
+      document.querySelectorAll('input[name="editLangPerm"]').forEach(cb => {
+        cb.checked = langs.includes(cb.value);
+      });
+      document.getElementById('editCanEditTranslations').checked = perms.canEditTranslations || false;
+      
       document.getElementById('editModal').classList.add('show');
     }
 
@@ -395,14 +503,24 @@
       e.preventDefault();
       
       const id = document.getElementById('editId').value;
+      const role = document.getElementById('editRole').value;
+      
       const data = {
         email: document.getElementById('editEmail').value || null,
-        role: document.getElementById('editRole').value
+        role: role
       };
       
       const password = document.getElementById('editPassword').value;
       if (password) {
         data.password = password;
+      }
+      
+      // Only set permissions for editors
+      if (role === 'editor') {
+        const langCheckboxes = document.querySelectorAll('input[name="editLangPerm"]:checked');
+        const languages = Array.from(langCheckboxes).map(cb => cb.value);
+        const canEditTranslations = document.getElementById('editCanEditTranslations').checked;
+        data.permissions = { languages, canEditTranslations };
       }
 
       try {
