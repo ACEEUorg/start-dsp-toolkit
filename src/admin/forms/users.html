@@ -160,6 +160,7 @@
       background: rgba(0,0,0,0.5);
       align-items: center;
       justify-content: center;
+      z-index: 100;
     }
     .modal.show {
       display: flex;
@@ -187,6 +188,13 @@
       border-radius: 4px;
       margin-bottom: 15px;
       display: none;
+      z-index: 200;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     .success {
       background: #efe;
@@ -196,6 +204,13 @@
       border-radius: 4px;
       margin-bottom: 15px;
       display: none;
+      z-index: 200;
+      position: fixed;
+      top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      min-width: 300px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
     }
     .permissions-section {
       margin-top: 15px;
