@@ -237,7 +237,7 @@
         }
         
         // Get all keys from first allowed language
-        keys = Object.keys(translations.en || {}).sort();
+        keys = Object.keys(translations[allowedLanguages[0]] || {}).sort();
         
         renderTabs();
         renderContent();
