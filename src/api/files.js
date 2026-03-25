@@ -110,4 +110,26 @@ router.post('/upload', requireAuth, upload.single('file'), (req, res) => {
   });
 });
 
+// Delete file
+router.delete('/files', requireAuth, (req, res) => {
+  const filePath = req.query.path;
+  
+  if (!filePath) {
+    return res.status(400).json({ error: 'File path required' });
+  }
+  
+  const fullPath = join(ASSETS_DIR, filePath.replace(/^\/assets\//, ''));
+  
+  if (!fs.existsSync(fullPath)) {
+    return res.status(404).json({ error: 'File not found' });
+  }
+  
+  try {
+    fs.unlinkSync(fullPath);
+    res.json({ success: true, path: filePath });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to delete file' });
+  }
+});
+
 export default router;

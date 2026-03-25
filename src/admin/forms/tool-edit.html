@@ -514,12 +514,12 @@
     // File picker
     let targetField = null;
     let targetLinkIndex = null;
+    let currentFolder = '/assets/';
 
     function openFilePicker(field) {
       targetField = field;
       targetLinkIndex = null;
       document.getElementById('filePickerModal').classList.add('show');
-      document.getElementById('filePickerPath').value = '';
       loadFiles('/assets/');
     }
 
@@ -527,7 +527,6 @@
       targetField = 'url';
       targetLinkIndex = index;
       document.getElementById('filePickerModal').classList.add('show');
-      document.getElementById('filePickerPath').value = '';
       loadFiles(`/assets/tools/${lang}/`);
     }
 
@@ -536,6 +535,7 @@
     }
 
     async function loadFiles(folder) {
+      currentFolder = folder;
       const container = document.getElementById('fileList');
       container.innerHTML = '<p style="padding:20px;color:#666;">Loading...</p>';
       
@@ -567,10 +567,24 @@
         // Files
         for (const f of data.files || []) {
           const isImage = /\.(jpg|jpeg|png|gif|svg|webp)$/i.test(f.name);
-          const icon = isImage ? '🖼️' : '📄';
-          html += `<div class="file-item" onclick="selectFile('${f.path}')">
-            <span>${icon}</span> ${f.name}
-          </div>`;
+          const ext = f.name.split('.').pop().toLowerCase();
+          const docIcon = ['pdf'].includes(ext) ? '📕' : 
+                         ['xls','xlsx','xlsm'].includes(ext) ? '📗' : 
+                         ['doc','docx'].includes(ext) ? '📘' : '📄';
+          
+          if (isImage) {
+            html += `<div class="file-item file-with-thumb">
+              <img src="${f.path}" class="file-thumb" onerror="this.style.display='none'">
+              <span class="file-name" onclick="selectFile('${f.path}')">${f.name}</span>
+              <button class="file-delete" onclick="deleteFile('${f.path}', '${f.name}');event.stopPropagation();" title="Delete">🗑️</button>
+            </div>`;
+          } else {
+            html += `<div class="file-item">
+              <span>${docIcon}</span>
+              <span class="file-name" onclick="selectFile('${f.path}')">${f.name}</span>
+              <button class="file-delete" onclick="deleteFile('${f.path}', '${f.name}');event.stopPropagation();" title="Delete">🗑️</button>
+            </div>`;
+          }
         }
         
         if (html === '') {
@@ -598,7 +612,7 @@
       if (!input.files[0]) return;
       
       const file = input.files[0];
-      const folder = document.getElementById('filePickerPath').value || '';
+      const folder = currentFolder.replace('/assets/', '').replace(/\/$/, '');
       const formData = new FormData();
       formData.append('file', file);
       
@@ -618,11 +632,29 @@
         const data = await res.json();
         selectFile(data.path);
         input.value = '';
+        loadFiles(currentFolder);
       } catch (err) {
         alert(err.message);
       } finally {
         btn.disabled = false;
         btn.textContent = 'Upload';
+      }
+    }
+
+    async function deleteFile(path, name) {
+      if (!confirm(`Delete "${name}"?`)) return;
+      
+      try {
+        const res = await fetch(`/api/files/files?path=${encodeURIComponent(path)}`, {
+          method: 'DELETE',
+          credentials: 'include'
+        });
+        
+        if (!res.ok) throw new Error('Delete failed');
+        
+        loadFiles(currentFolder);
+      } catch (err) {
+        alert(err.message);
       }
     }
   </script>
@@ -675,6 +707,11 @@
     }
     .file-item:hover { background: #f5faeb; }
     .file-item.folder { color: #5c8c24; }
+    .file-item.file-with-thumb { gap: 8px; }
+    .file-thumb { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
+    .file-name { flex: 1; cursor: pointer; }
+    .file-delete { background: none; border: none; cursor: pointer; padding: 4px; font-size: 14px; opacity: 0.6; }
+    .file-delete:hover { opacity: 1; }
     .modal-footer {
       padding: 20px;
       border-top: 2px solid #e7f4d3;
@@ -703,8 +740,7 @@
       <div class="modal-footer">
         <div class="upload-row">
           <input type="file" id="fileInput" style="flex:1;">
-          <input type="text" id="filePickerPath" placeholder="Folder (e.g. tools/en)" style="width:150px;">
-          <button id="uploadBtn" class="btn btn-primary" style="padding:10px 16px;" onclick="uploadFile()">Upload</button>
+          <button id="uploadBtn" class="btn btn-primary" style="padding:10px 16px;" onclick="uploadFile()">Upload to current folder</button>
         </div>
       </div>
     </div>
