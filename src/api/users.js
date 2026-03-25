@@ -2,6 +2,7 @@ import { Router } from 'express';
 import bcrypt from 'bcryptjs';
 import { Resend } from 'resend';
 import { getDb, logAudit } from '../lib/db.js';
+import { requireAuth } from '../lib/auth.js';
 
 const router = Router();
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
