@@ -345,7 +345,7 @@
     async function saveTranslations() {
       const btn = document.getElementById('saveBtn');
       btn.disabled = true;
-      btn.textContent = 'Saving...';
+      btn.textContent = 'Saving & rebuilding...';
       
       try {
         const res = await fetch(`/api/translations/${currentLang}`, {
@@ -357,7 +357,8 @@
         
         if (!res.ok) throw new Error('Failed to save');
         
-        showSuccess('Translations saved successfully!');
+        const data = await res.json();
+        showSuccess('Translations saved! Site is rebuilding (refresh in ~5 seconds)...');
       } catch (err) {
         showError(err.message);
       } finally {

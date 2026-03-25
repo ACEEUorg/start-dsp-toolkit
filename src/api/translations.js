@@ -4,11 +4,30 @@ import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import yaml from 'js-yaml';
+import { spawn } from 'child_process';
 import { requireAuth, requireRole } from '../lib/auth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..', '..');
 const TRANSLATIONS_DIR = join(PROJECT_ROOT, 'src', 'i18n', 'translations');
+
+function triggerBuild() {
+  console.log('Triggering site rebuild...');
+  
+  const buildProcess = spawn('npm', ['run', 'build'], {
+    cwd: PROJECT_ROOT,
+    stdio: 'inherit',
+    shell: true
+  });
+  
+  buildProcess.on('close', (code) => {
+    if (code === 0) {
+      console.log('Build completed successfully');
+    } else {
+      console.error('Build failed with code:', code);
+    }
+  });
+}
 
 const router = Router();
 
@@ -73,7 +92,9 @@ router.put('/:lang', requireAuth, (req, res) => {
     });
     fs.writeFileSync(filePath, yamlContent, 'utf8');
     
-    res.json({ success: true, lang, message: 'Translations saved' });
+    triggerBuild();
+    
+    res.json({ success: true, lang, message: 'Translations saved - rebuilding site...' });
   } catch (err) {
     res.status(500).json({ error: 'Failed to save translations: ' + err.message });
   }
