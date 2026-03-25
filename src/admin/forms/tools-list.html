@@ -234,9 +234,12 @@
       const meRes = await fetch('/api/users/me');
       if (meRes.ok) {
         const me = await meRes.json();
+        console.log('User data:', me);
         userPermissions = me.permissions || null;
+        console.log('User permissions:', userPermissions);
       } else {
         userPermissions = null;
+        console.log('Failed to fetch user permissions');
       }
       
       document.getElementById('userInfo').textContent = data.user.username + ' (' + data.user.role + ')';
