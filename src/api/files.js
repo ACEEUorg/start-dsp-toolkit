@@ -132,4 +132,33 @@ router.delete('/files', requireAuth, (req, res) => {
   }
 });
 
+// Rename file
+router.put('/files/rename', requireAuth, (req, res) => {
+  const { oldPath, newName } = req.body;
+  
+  if (!oldPath || !newName) {
+    return res.status(400).json({ error: 'Old path and new name required' });
+  }
+  
+  const oldFullPath = join(ASSETS_DIR, oldPath.replace(/^\/assets\//, ''));
+  const dir = path.dirname(oldFullPath);
+  const newFullPath = join(dir, newName);
+  
+  if (!fs.existsSync(oldFullPath)) {
+    return res.status(404).json({ error: 'File not found' });
+  }
+  
+  if (fs.existsSync(newFullPath)) {
+    return res.status(400).json({ error: 'A file with that name already exists' });
+  }
+  
+  try {
+    fs.renameSync(oldFullPath, newFullPath);
+    const newPath = oldPath.replace(/[^/]+$/, newName);
+    res.json({ success: true, oldPath, newPath });
+  } catch (err) {
+    res.status(500).json({ error: 'Failed to rename file' });
+  }
+});
+
 export default router;

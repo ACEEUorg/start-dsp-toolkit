@@ -576,12 +576,14 @@
             html += `<div class="file-item file-with-thumb">
               <img src="${f.path}" class="file-thumb" onerror="this.style.display='none'">
               <span class="file-name" onclick="selectFile('${f.path}')">${f.name}</span>
+              <button class="file-rename" onclick="renameFile('${f.path}', '${f.name}');event.stopPropagation();" title="Rename">✏️</button>
               <button class="file-delete" onclick="deleteFile('${f.path}', '${f.name}');event.stopPropagation();" title="Delete">🗑️</button>
             </div>`;
           } else {
             html += `<div class="file-item">
               <span>${docIcon}</span>
               <span class="file-name" onclick="selectFile('${f.path}')">${f.name}</span>
+              <button class="file-rename" onclick="renameFile('${f.path}', '${f.name}');event.stopPropagation();" title="Rename">✏️</button>
               <button class="file-delete" onclick="deleteFile('${f.path}', '${f.name}');event.stopPropagation();" title="Delete">🗑️</button>
             </div>`;
           }
@@ -657,6 +659,34 @@
         alert(err.message);
       }
     }
+
+    async function renameFile(oldPath, oldName) {
+      const ext = oldName.includes('.') ? oldName.split('.').pop() : '';
+      const baseName = ext ? oldName.slice(0, -(ext.length + 1)) : oldName;
+      const newName = prompt('Enter new filename:', baseName);
+      
+      if (!newName || newName === baseName) return;
+      
+      const finalName = ext ? `${newName}.${ext}` : newName;
+      
+      try {
+        const res = await fetch(`/api/files/files/rename`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({ oldPath, newName: finalName })
+        });
+        
+        if (!res.ok) {
+          const err = await res.json();
+          throw new Error(err.error || 'Rename failed');
+        }
+        
+        loadFiles(currentFolder);
+      } catch (err) {
+        alert(err.message);
+      }
+    }
   </script>
 
   <!-- File Picker Modal -->
@@ -710,8 +740,8 @@
     .file-item.file-with-thumb { gap: 8px; }
     .file-thumb { width: 40px; height: 40px; object-fit: cover; border-radius: 4px; border: 1px solid #ddd; }
     .file-name { flex: 1; cursor: pointer; }
-    .file-delete { background: none; border: none; cursor: pointer; padding: 4px; font-size: 14px; opacity: 0.6; }
-    .file-delete:hover { opacity: 1; }
+    .file-rename, .file-delete { background: none; border: none; cursor: pointer; padding: 4px; font-size: 14px; opacity: 0.6; }
+    .file-rename:hover, .file-delete:hover { opacity: 1; }
     .modal-footer {
       padding: 20px;
       border-top: 2px solid #e7f4d3;
