@@ -6,7 +6,20 @@ import { getDb, logAudit } from '../lib/db.js';
 const router = Router();
 const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
-// List all users
+// Get current user info (including permissions)
+router.get('/me', requireAuth, (req, res) => {
+  const db = getDb();
+  const user = db.prepare('SELECT id, username, email, role, permissions, created_at, last_login FROM users WHERE id = ?').get(req.session.userId);
+  
+  if (!user) {
+    return res.status(404).json({ error: 'User not found' });
+  }
+  
+  user.permissions = user.permissions ? JSON.parse(user.permissions) : {};
+  res.json(user);
+});
+
+// List all users (admin only)
 router.get('/', (req, res) => {
   const db = getDb();
   const users = db.prepare('SELECT id, username, email, role, permissions, created_at, last_login FROM users ORDER BY created_at DESC').all();

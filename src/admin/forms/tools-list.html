@@ -231,10 +231,13 @@
       currentUser = data.user;
       
       // Fetch user permissions
-      const usersRes = await fetch('/api/users');
-      const users = await usersRes.json();
-      const me = users.find(u => u.id === data.user.id);
-      userPermissions = me ? me.permissions : null;
+      const meRes = await fetch('/api/users/me');
+      if (meRes.ok) {
+        const me = await meRes.json();
+        userPermissions = me.permissions || null;
+      } else {
+        userPermissions = null;
+      }
       
       document.getElementById('userInfo').textContent = data.user.username + ' (' + data.user.role + ')';
       
