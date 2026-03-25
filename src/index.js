@@ -116,7 +116,7 @@ app.get('/admin/audit-log', requireAuthHtml, requireRoleHtml('admin'), (req, res
   res.sendFile(join(ADMIN_FORMS, 'audit-log.html'));
 });
 
-app.get('/admin/translations', requireAuthHtml, requireRoleHtml('admin'), (req, res) => {
+app.get('/admin/translations', requireAuthHtml, (req, res) => {
   res.sendFile(join(ADMIN_FORMS, 'translations.html'));
 });
 

@@ -229,9 +229,9 @@
       const data = await res.json();
       currentUser = data.user;
       document.getElementById('userInfo').textContent = data.user.username + ' (' + data.user.role + ')';
+      document.getElementById('translationsLink').style.display = 'block';
       if (data.user.role === 'admin') {
         document.getElementById('usersLink').style.display = 'block';
-        document.getElementById('translationsLink').style.display = 'block';
         document.getElementById('syncBtn').style.display = 'inline-block';
       } else {
         document.getElementById('syncBtn').style.display = 'none';

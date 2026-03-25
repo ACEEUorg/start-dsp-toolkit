@@ -51,7 +51,7 @@ router.get('/:lang', requireAuth, (req, res) => {
 });
 
 // Update single language translations
-router.put('/:lang', requireAuth, requireRole('admin'), (req, res) => {
+router.put('/:lang', requireAuth, (req, res) => {
   const { lang } = req.params;
   const { translations } = req.body;
   

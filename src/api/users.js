@@ -4,7 +4,7 @@ import { Resend } from 'resend';
 import { getDb, logAudit } from '../lib/db.js';
 
 const router = Router();
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 // List all users
 router.get('/', (req, res) => {
@@ -48,21 +48,25 @@ router.post('/', async (req, res) => {
     const user = db.prepare('SELECT id, username, email, role, created_at FROM users WHERE id = ?').get(result.lastInsertRowid);
     
     // Send welcome email
-    try {
-      await resend.emails.send({
-        from: 'Start-DSP Toolkit <hi@jel.do>',
-        to: email,
-        subject: 'Your Start-DSP Toolkit account has been created',
-        html: `
-          <p>Hi ${username},</p>
-          <p>Your account has been created for the Start-DSP Toolkit admin panel.</p>
-          <p><strong>Username:</strong> ${username}</p>
-          <p><strong>Temporary Password:</strong> ${password}</p>
-          <p>Please log in at <a href="https://sdsp.jel.do/admin">sdsp.jel.do/admin</a> and change your password.</p>
-        `
-      });
-    } catch (err) {
-      console.error('Failed to send welcome email:', err);
+    if (!resend) {
+      console.log('Welcome email (not sent - no API key):', { username, password });
+    } else {
+      try {
+        await resend.emails.send({
+          from: 'Start-DSP Toolkit <hi@jel.do>',
+          to: email,
+          subject: 'Your Start-DSP Toolkit account has been created',
+          html: `
+            <p>Hi ${username},</p>
+            <p>Your account has been created for the Start-DSP Toolkit admin panel.</p>
+            <p><strong>Username:</strong> ${username}</p>
+            <p><strong>Temporary Password:</strong> ${password}</p>
+            <p>Please log in at <a href="https://sdsp.jel.do/admin">sdsp.jel.do/admin</a> and change your password.</p>
+          `
+        });
+      } catch (err) {
+        console.error('Failed to send welcome email:', err);
+      }
     }
     
     logAudit(req.session.userId, req.session.username, 'create_user', username, `role: ${role}`);

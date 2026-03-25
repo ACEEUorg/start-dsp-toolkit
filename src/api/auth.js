@@ -6,7 +6,7 @@ import { Resend } from 'resend';
 import { getDb, initDb } from '../lib/db.js';
 import { getCurrentUser } from '../lib/auth.js';
 
-const resend = new Resend(process.env.RESEND_API_KEY);
+const resend = process.env.RESEND_API_KEY ? new Resend(process.env.RESEND_API_KEY) : null;
 
 const router = Router();
 
@@ -127,6 +127,11 @@ router.post('/reset-request', async (req, res) => {
 
   // Send email
   const resetUrl = `https://sdsp.jel.do/admin/reset-password?token=${token}`;
+  
+  if (!resend) {
+    console.log('Password reset email (not sent - no API key):', { to: email, resetUrl });
+    return res.json({ message: 'Password reset email sent (check server logs for URL)' });
+  }
   
   try {
     await resend.emails.send({
