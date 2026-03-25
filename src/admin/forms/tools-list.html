@@ -177,6 +177,7 @@
     </div>
     <div class="header-right">
       <span class="user-info" id="userInfo"></span>
+      <a href="/admin/translations" id="translationsLink" style="display:none">UI Translations</a>
       <a href="/admin/users" id="usersLink" style="display:none">Manage Users</a>
       <a href="#" class="logout" id="logoutBtn">Logout</a>
     </div>
@@ -230,6 +231,7 @@
       document.getElementById('userInfo').textContent = data.user.username + ' (' + data.user.role + ')';
       if (data.user.role === 'admin') {
         document.getElementById('usersLink').style.display = 'block';
+        document.getElementById('translationsLink').style.display = 'block';
         document.getElementById('syncBtn').style.display = 'inline-block';
       } else {
         document.getElementById('syncBtn').style.display = 'none';

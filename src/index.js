@@ -11,6 +11,7 @@ import toolsRoutes from './api/tools.js';
 import usersRoutes from './api/users.js';
 import syncRoutes from './api/sync.js';
 import filesRoutes from './api/files.js';
+import translationsRoutes from './api/translations.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const ROOT = join(__dirname, '..');
@@ -37,7 +38,7 @@ app.use(session({
   saveUninitialized: false,
   proxy: true, // Trust the reverse proxy (Caddy)
   cookie: {
-    secure: true,
+    secure: process.env.NODE_ENV === 'production',
     httpOnly: true,
     maxAge: 8 * 60 * 60 * 1000 // 8 hours
   }
@@ -61,6 +62,7 @@ app.use('/api/tools', requireAuth, toolsRoutes);
 app.use('/api/users', requireAuth, requireRole('admin'), usersRoutes);
 app.use('/api/sync', requireAuth, requireRole('admin'), syncRoutes);
 app.use('/api/files', requireAuth, filesRoutes);
+app.use('/api/translations', requireAuth, translationsRoutes);
 
 // Admin routes (HTML pages)
 app.get('/admin', (req, res) => {
@@ -112,6 +114,10 @@ app.get('/admin/reset-password', (req, res) => {
 
 app.get('/admin/audit-log', requireAuthHtml, requireRoleHtml('admin'), (req, res) => {
   res.sendFile(join(ADMIN_FORMS, 'audit-log.html'));
+});
+
+app.get('/admin/translations', requireAuthHtml, requireRoleHtml('admin'), (req, res) => {
+  res.sendFile(join(ADMIN_FORMS, 'translations.html'));
 });
 
 // Start server

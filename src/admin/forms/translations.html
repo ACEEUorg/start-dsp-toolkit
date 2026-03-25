@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Translations - Admin</title>
+  <link href="https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Avenir:wght@400;500;600;700&display=swap');
+    * { box-sizing: border-box; }
+    body {
+      font-family: 'Avenir', sans-serif;
+      background: linear-gradient(135deg, #f5faeb 0%, #d3f4ea 100%);
+      min-height: 100vh;
+      margin: 0;
+      padding: 0;
+    }
+    .header {
+      background: linear-gradient(135deg, #1d524a 0%, #2d9f88 100%);
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .header h1 { margin: 0; font-size: 20px; font-weight: 600; }
+    .header a {
+      color: white;
+      text-decoration: none;
+      padding: 8px 15px;
+      background: rgba(255,255,255,0.2);
+      border-radius: 6px;
+      font-size: 14px;
+      font-weight: 500;
+    }
+    .header a:hover { background: rgba(255,255,255,0.3); }
+    .container { max-width: 1400px; margin: 30px auto; padding: 0 20px; }
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      box-shadow: 0 10px 40px rgba(45, 159, 136, 0.1);
+      margin-bottom: 20px;
+    }
+    .tabs {
+      display: flex;
+      gap: 4px;
+      margin-bottom: 20px;
+      border-bottom: 2px solid #e7f4d3;
+      padding-bottom: 0;
+    }
+    .tab {
+      padding: 12px 24px;
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      color: #666;
+      border-radius: 8px 8px 0 0;
+      transition: all 0.2s;
+    }
+    .tab:hover { background: #f5faeb; }
+    .tab.active {
+      background: #e7f4d3;
+      color: #1d524a;
+    }
+    .form-group { margin-bottom: 15px; }
+    label {
+      display: block;
+      margin-bottom: 4px;
+      font-weight: 500;
+      color: #1d524a;
+      font-size: 13px;
+    }
+    input[type="text"],
+    input[type="textarea"],
+    textarea {
+      width: 100%;
+      padding: 10px 12px;
+      border: 2px solid #e7f4d3;
+      border-radius: 8px;
+      font-size: 14px;
+      font-family: inherit;
+      transition: border-color 0.2s;
+    }
+    textarea { min-height: 60px; resize: vertical; }
+    input:focus, textarea:focus {
+      outline: none;
+      border-color: #2d9f88;
+    }
+    .key-value {
+      display: grid;
+      grid-template-columns: 300px 1fr 40px;
+      gap: 10px;
+      align-items: start;
+      margin-bottom: 10px;
+      padding: 10px;
+      background: #f9f9f9;
+      border-radius: 8px;
+    }
+    .key-value .key {
+      font-family: monospace;
+      font-size: 12px;
+      color: #666;
+      padding: 10px 0;
+    }
+    .key-value .delete {
+      background: none;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      padding: 8px;
+      opacity: 0.6;
+    }
+    .key-value .delete:hover { opacity: 1; }
+    .btn {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 14px;
+      font-weight: 600;
+      font-family: inherit;
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .btn-primary {
+      background: linear-gradient(135deg, #78b032 0%, #5c8c24 100%);
+      color: white;
+    }
+    .btn-primary:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 12px rgba(120, 176, 50, 0.4);
+    }
+    .btn-secondary {
+      background: #e7f4d3;
+      color: #5c8c24;
+    }
+    .btn-secondary:hover { background: #d2ebab; }
+    .loading { text-align: center; padding: 40px; color: #666; }
+    .success {
+      background: #f0fdf4;
+      border: 1px solid #bbf7d0;
+      color: #166534;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .error {
+      background: #fef2f2;
+      border: 1px solid #fecaca;
+      color: #dc2626;
+      padding: 12px;
+      border-radius: 8px;
+      margin-bottom: 20px;
+      display: none;
+    }
+    .empty {
+      text-align: center;
+      padding: 40px;
+      color: #999;
+    }
+  </style>
+</head>
+<body>
+  <div class="header">
+    <div style="display:flex;align-items:center;gap:15px;">
+      <img src="/assets/logos/logo-color.png" alt="DSP" style="height:32px;">
+      <h1>UI Translations</h1>
+    </div>
+    <a href="/admin/tools">← Back to Tools</a>
+  </div>
+
+  <div class="container">
+    <div class="success" id="success"></div>
+    <div class="error" id="error"></div>
+
+    <div class="card">
+      <div class="tabs" id="tabs">
+        <!-- Language tabs will be added here -->
+      </div>
+      
+      <div id="content">
+        <div class="loading">Loading translations...</div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const LANGUAGES = {
+      en: 'English',
+      es: 'Español',
+      de: 'Deutsch',
+      el: 'Ελληνικά'
+    };
+
+    let currentLang = 'en';
+    let translations = {};
+    let keys = [];
+
+    async function checkAuth() {
+      const res = await fetch('/api/auth/me');
+      if (!res.ok) {
+        window.location.href = '/admin';
+        return false;
+      }
+      return true;
+    }
+
+    async function loadTranslations() {
+      try {
+        const res = await fetch('/api/translations');
+        if (!res.ok) throw new Error('Failed to load translations');
+        
+        const data = await res.json();
+        translations = data.translations;
+        
+        // Get all keys from English (source language)
+        keys = Object.keys(translations.en || {}).sort();
+        
+        renderTabs();
+        renderContent();
+      } catch (err) {
+        document.getElementById('content').innerHTML = `<div class="error">${err.message}</div>`;
+      }
+    }
+
+    function renderTabs() {
+      const tabs = document.getElementById('tabs');
+      tabs.innerHTML = Object.entries(LANGUAGES).map(([code, name]) => `
+        <button class="tab ${code === currentLang ? 'active' : ''}" onclick="switchLang('${code}')">
+          ${name}
+        </button>
+      `).join('');
+    }
+
+    function switchLang(lang) {
+      currentLang = lang;
+      renderTabs();
+      renderContent();
+    }
+
+    function renderContent() {
+      const container = document.getElementById('content');
+      const langTrans = translations[currentLang] || {};
+      
+      let html = '';
+      
+      for (const key of keys) {
+        const value = langTrans[key] || '';
+        html += `
+          <div class="key-value">
+            <div class="key">${escapeHtml(key)}</div>
+            <input type="text" 
+                   value="${escapeHtml(value)}" 
+                   onchange="updateValue('${escapeAttr(key)}', this.value)"
+                   placeholder="Not translated">
+            <button class="delete" onclick="deleteKey('${escapeAttr(key)}')" title="Delete">×</button>
+          </div>
+        `;
+      }
+      
+      if (keys.length === 0) {
+        html = '<div class="empty">No translation keys found</div>';
+      }
+      
+      html += `
+        <div style="margin-top:20px;padding-top:20px;border-top:2px solid #e7f4d3;">
+          <h3 style="margin:0 0 15px 0;color:#1d524a;">Add New Key</h3>
+          <div class="key-value" style="background:#e7f4d3;">
+            <input type="text" id="newKey" placeholder="key.name" style="font-family:monospace;">
+            <input type="text" id="newValue" placeholder="Translation value">
+            <button class="delete" onclick="addKey()">+</button>
+          </div>
+        </div>
+      `;
+      
+      container.innerHTML = html;
+    }
+
+    function escapeHtml(text) {
+      if (!text) return '';
+      return text.replace(/&/g, '&amp;')
+                 .replace(/</g, '&lt;')
+                 .replace(/>/g, '&gt;')
+                 .replace(/"/g, '&quot;');
+    }
+
+    function escapeAttr(text) {
+      return text.replace(/'/g, "\\'");
+    }
+
+    function updateValue(key, value) {
+      if (!translations[currentLang]) {
+        translations[currentLang] = {};
+      }
+      translations[currentLang][key] = value;
+    }
+
+    function addKey() {
+      const keyInput = document.getElementById('newKey');
+      const valueInput = document.getElementById('newValue');
+      const key = keyInput.value.trim();
+      const value = valueInput.value.trim();
+      
+      if (!key) {
+        alert('Please enter a key');
+        return;
+      }
+      
+      if (keys.includes(key)) {
+        alert('Key already exists');
+        return;
+      }
+      
+      keys.push(key);
+      keys.sort();
+      
+      if (!translations[currentLang]) {
+        translations[currentLang] = {};
+      }
+      translations[currentLang][key] = value;
+      
+      keyInput.value = '';
+      valueInput.value = '';
+      
+      renderContent();
+    }
+
+    function deleteKey(key) {
+      if (!confirm(`Delete key "${key}"?`)) return;
+      
+      keys = keys.filter(k => k !== key);
+      
+      for (const lang of Object.keys(translations)) {
+        if (translations[lang] && translations[lang][key]) {
+          delete translations[lang][key];
+        }
+      }
+      
+      renderContent();
+    }
+
+    async function saveTranslations() {
+      const btn = document.getElementById('saveBtn');
+      btn.disabled = true;
+      btn.textContent = 'Saving...';
+      
+      try {
+        const res = await fetch(`/api/translations/${currentLang}`, {
+          method: 'PUT',
+          headers: { 'Content-Type': 'application/json' },
+          credentials: 'include',
+          body: JSON.stringify({ translations: translations[currentLang] })
+        });
+        
+        if (!res.ok) throw new Error('Failed to save');
+        
+        showSuccess('Translations saved successfully!');
+      } catch (err) {
+        showError(err.message);
+      } finally {
+        btn.disabled = false;
+        btn.textContent = 'Save Changes';
+      }
+    }
+
+    function showSuccess(msg) {
+      const el = document.getElementById('success');
+      el.textContent = msg;
+      el.style.display = 'block';
+      document.getElementById('error').style.display = 'none';
+      setTimeout(() => el.style.display = 'none', 3000);
+    }
+
+    function showError(msg) {
+      const el = document.getElementById('error');
+      el.textContent = msg;
+      el.style.display = 'block';
+      document.getElementById('success').style.display = 'none';
+    }
+
+    // Add save button to header
+    document.querySelector('.header').innerHTML += `
+      <button class="btn btn-primary" id="saveBtn" onclick="saveTranslations()">Save Changes</button>
+    `;
+
+    // Init
+    checkAuth().then(ok => {
+      if (ok) loadTranslations();
+    });
+  </script>
+</body>
+</html>
