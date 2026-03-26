@@ -50,6 +50,10 @@ router.post('/', requireRole('admin'), async (req, res) => {
     return res.status(400).json({ error: 'Invalid role' });
   }
 
+  if (!/^[a-zA-Z0-9_-]+$/.test(username)) {
+    return res.status(400).json({ error: 'Username can only contain letters, numbers, underscores, and hyphens' });
+  }
+
   const db = getDb();
   
   // Check if username exists
