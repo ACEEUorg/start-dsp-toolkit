@@ -28,3 +28,18 @@ language.el: "Ελληνικά"
 notFound.message: "Η σελίδα δεν βρέθηκε"
 notFound.description: "Η σελίδα που αναζητάτε δεν υπάρχει."
 notFound.backToHome: "Επιστροφή στην Εργαλειοθήκη"
+toolbox.description: >
+  The toolbox is a practical resource designed for entrepreneurship educators and
+  lecturers, staff from university entrepreneurship or innovation centers,
+  researchers, students, and others interested in entrepreneurship or innovation.
+  It offers relevant background information, step-by-step guidelines, templates,
+  and ready-to-use tools. The toolbox covers key topic areas such as entrepreneurial
+  self-assessment for HEIs, institutional vision and commitment, the development
+  of an entrepreneurial culture, sensitisation for entrepreneurship (both
+  organisational and learner-focused), incentive schemes, planning and financing
+  of entrepreneurship education, and continuous improvement.
+
+  You can easily explore the tools by entering keywords in the search bar or by
+  filtering them based on their purpose, helping you quickly find the most
+  relevant resources to support universities build a stronger entrepreneurial
+  mindset and ecosystem.

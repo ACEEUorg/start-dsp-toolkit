@@ -98,6 +98,12 @@ export default function Toolbox() {
 
   return (
     <div>
+      <div className="bg-gradient-to-r from-seafoam-50 to-white rounded-xl p-6 mb-8 border border-seafoam-200">
+        <p className="text-gray-700 leading-relaxed text-lg">
+          {t("toolbox.description")}
+        </p>
+      </div>
+
       {/* Search Input and Purpose Filter */}
       <div className="flex flex-col sm:flex-row gap-4 mb-6">
         <div className="relative w-full">
