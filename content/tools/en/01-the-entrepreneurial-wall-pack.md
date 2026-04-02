@@ -1,7 +1,7 @@
 ---
 number: 1
-name: The Entrepreneurial Wall Pack
-image: /assets/tools/en/tool_1.1_TheEntrepreneurialWallPack.pdf
+name: 'The Entrepreneurial Wall Pack '
+image: /assets/images/1.jpg
 summary: >-
   The Entrepreneurial Wall Pack offers ready-to-print quotes and templates and
   an AI guide to create tailored content. Ideal for faculty and university to
