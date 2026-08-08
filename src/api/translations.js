@@ -1,12 +1,9 @@
 import { Router } from 'express';
 import fs from 'fs';
-import path from 'path';
 import { fileURLToPath } from 'url';
 import { dirname, join } from 'path';
 import yaml from 'js-yaml';
-import { spawn } from 'child_process';
-import { requireAuth, requireRole, getUserPermissions } from '../lib/auth.js';
-import { getDb } from '../lib/db.js';
+import { requireAuth, getUserPermissions } from '../lib/auth.js';
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 const PROJECT_ROOT = join(__dirname, '..', '..');
@@ -95,10 +92,8 @@ router.put('/:lang', requireTranslationPermission, (req, res) => {
       forceQuotes: true
     });
     fs.writeFileSync(filePath, yamlContent, 'utf8');
-    
-    triggerBuild();
-    
-    res.json({ success: true, lang, message: 'Translations saved - rebuilding site...' });
+
+    res.json({ success: true, lang, message: 'Translations saved. Changes go live with the next "Push to GitHub".' });
   } catch (err) {
     res.status(500).json({ error: 'Failed to save translations: ' + err.message });
   }

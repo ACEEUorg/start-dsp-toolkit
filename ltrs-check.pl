@@ -8,7 +8,7 @@ use Encode qw(encode_utf8);
 
 my $json_file = $ARGV[0] || 'src/data/tools.json';
 my $username = 'meppen@aceeu.org';
-my $api_key = 'pit-sm3DRVfhzEWl';
+my $api_key = $ENV{LT_API_KEY} // die "LT_API_KEY not set (the old committed key was revoked). Create a new key in the LanguageTool account and export LT_API_KEY.\n";
 my $quiet = grep { $_ eq '--quiet' || $_ eq '-q' } @ARGV;
 
 die "Usage: $0 <json_file> [--quiet|-q]\n" unless -f $json_file;

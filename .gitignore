@@ -38,3 +38,8 @@ yarn-error.log*
 *.sln
 *.sw?
 /data/
+
+# Local junk — the admin's "Push to GitHub" sync runs `git add -A` on the
+# server, so anything untracked would otherwise get committed and published
+cookies.txt
+*~

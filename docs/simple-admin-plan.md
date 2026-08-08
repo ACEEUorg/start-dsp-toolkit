@@ -4,6 +4,12 @@
 **Platform:** Uberspace U8 (and local dev)  
 **Date:** 2026-03-24
 
+> **Status (2026-08): decommissioned — local use only.** The hosted Uberspace instance
+> was shut down and its GitHub deploy key revoked. If content needs editing again, run
+> the admin locally: `cd src && npm start` (first time: `npm install` and `npm run seed`),
+> edit at `http://localhost:3000/admin`, then commit and push normally. The Uberspace
+> deployment sections below are kept for historical reference.
+
 ---
 
 ## Concept
