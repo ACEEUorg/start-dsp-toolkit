@@ -7,7 +7,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 Two separate applications that share one content directory:
 
 1. **Public site** (repo root) — React 19 + Vite 7 static site, deployed to GitHub Pages at `toolbox.start-dsp.eu`. Root `package.json`.
-2. **Admin panel** (`src/index.js` + `src/api/`, `src/lib/`, `src/admin/`) — a self-hosted Express 5 server with its own `src/package.json` and its own `node_modules`. Not part of the Vite build; deployed separately (systemd service on Uberspace, see `docs/simple-admin-plan.md`).
+2. **Admin panel** (`src/index.js` + `src/api/`, `src/lib/`, `src/admin/`) — a self-hosted Express 5 server with its own `src/package.json` and its own `node_modules`. Not part of the Vite build; run it locally when content needs editing — see `docs/simple-admin-plan.md` (the formerly hosted instance was decommissioned).
 
 They are linked by `content/tools/{lang}/*.md`: the admin writes those files, the build reads them.
 
@@ -77,4 +77,4 @@ Frontmatter fields: `number`, `name`, `image`, `summary`, `description`, `outcom
 ## Misc
 
 - `src/data/input.csv` is the retired CSV source from before the markdown migration; nothing in the build reads it.
-- `ltrs-check.pl` is an ad-hoc LanguageTool grammar checker for a JSON file, and `cmp.sh` bulk-compresses oversized images with ImageMagick. Neither is wired into the build.
+- `ltrs-check.pl` is an ad-hoc LanguageTool grammar checker for a JSON file (needs `LT_API_KEY` in the environment), and `cmp.sh` bulk-compresses oversized images with ImageMagick. Neither is wired into the build.

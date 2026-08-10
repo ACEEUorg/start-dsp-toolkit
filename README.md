@@ -1,139 +1,69 @@
-## Project Overview
+# Start-DSP Entrepreneurial University Toolbox
 
-This is a React application for the Start-DSP Entrepreneurial University Toolbox - a digital entrepreneurship resource platform that provides educational tools for universities and educators. The application serves as a multilingual web interface for browsing and accessing 24 entrepreneurship education resources across 4 languages (English, Spanish, German, Greek).
+React web app for the Start-DSP Entrepreneurial University Toolbox — a catalog of 24 entrepreneurship-education tools for universities and educators, available in English, Spanish, German and Greek. Live at <https://toolbox.start-dsp.eu>.
 
 ## Getting Started
 
-1. **Install dependencies**: `npm install`
-2. **Start development**: `npm run dev` (automatically generates data files)
-3. **Open browser**: Navigate to `http://localhost:5173`
+```bash
+npm install
+npm run dev        # generates data files, then starts Vite on http://localhost:5173
+```
 
-The first `npm run dev` will generate all necessary data files from the source CSV and YAML translation files.
+Node ≥ 20.19 is required (Vite 7); Node 22 LTS recommended. There is no test suite.
 
-## Development Commands
+## Commands
 
-- `npm run dev` - Start development server with hot reload (includes data generation)
-- `npm run build` - Build for production (includes data generation)
-- `npm run generate` - Generate all data files (translations + tools)
-- `npm run generate-translations` - Generate JavaScript files from YAML translations
-- `npm run generate-tools` - Generate JSON files from CSV data
-- `npm run lint` - Run ESLint for code quality checks
-- `npm run preview` - Preview production build locally
+| Command | Purpose |
+|---|---|
+| `npm run dev` | Generate data + start dev server with HMR |
+| `npm run build` | Generate data + production build to `dist/` |
+| `npm run generate` | Regenerate all data files (translations + tools) |
+| `npm run generate-translations` | YAML → JS translation modules |
+| `npm run generate-tools` | Markdown frontmatter → JSON tool data |
+| `npm run lint` | ESLint |
+| `npm run preview` | Preview the production build |
 
-## Architecture & Technology Stack
+## Content Pipeline
 
-**Frontend Framework**: React 19 with Vite 7 build tool
-**Routing**: React Router v7 with HashRouter for client-side compatibility
-**Styling**: Tailwind CSS v4 with @tailwindcss/vite plugin
-**UI Components**: Headless UI, Heroicons, Lucide React, React Select
-**Internationalization**: Custom i18n system with YAML translations
-**Data Processing**: Node.js scripts for CSV→JSON and YAML→JS conversion
-**Build System**: Vite 7.3.1 with modern ESLint flat config
-**Security**: 0 vulnerabilities, all dependencies up-to-date
+The source of truth is markdown + YAML. Generated files are gitignored and rebuilt on every dev/build/CI run — **edit the sources, never the generated files**:
 
-## Key Components Structure
+- `content/tools/{en,es,de,el}/NN-slug.md` — one file per tool; all data lives in the YAML frontmatter (fields: `number`, `name`, `image`, `summary`, `description`, `outcomes`, `instructions`, `benefits`, `purpose`, `prerequisiteTools`, `partner`, `links`). Built by `scripts/generate-tools-json.js` into `public/data/tools-{lang}.json`, which the app fetches at runtime (with English fallback).
+- `src/i18n/translations/{lang}.yml` — UI strings. Built by `scripts/generate-translations-js.js` into `{lang}.js` modules that are bundled into the app.
 
-**Main Application Flow**:
-- `App.jsx` - Main app component with routing setup and analytics
-- Navigation components in `src/components/navigation/`
-- Page components in `src/pages/` (ToolboxPage, ToolDetailPage, NotFoundPage)
-- UI components in `src/components/ui/` and `src/components/`
+`purpose` is the filter facet on the catalog page; its dropdown options are derived from the tool files, so the string must match exactly across tools within a language.
 
-**Data Management**:
-- Source data: `src/data/input.csv` - contains 24 tools with metadata
-- Generated data: `public/data/tools-{lang}.json` - processed JSON files (4 languages)
-- Translation files: `src/i18n/translations/{lang}.yml` - YAML translation files
-- Static assets (PDFs, images) served from `public/assets/`
+## Editing Content (Admin Panel)
 
-**Core Features**:
-- Multilingual support (English, Spanish, German, Greek)
-- Tool catalog with filtering and search capabilities
-- Individual tool detail pages with downloadable resources
-- Responsive design with mobile navigation support
-- Real-time data generation from source files
+A small Express 5 + SQLite admin app lives in `src/` (own `package.json`, own `node_modules`). It edits the markdown/YAML sources through a browser UI with users, roles and per-language permissions:
 
-## Important Data Structure
+```bash
+cd src
+npm install
+npm run seed       # first time only: create the initial admin user
+npm start          # http://localhost:3000/admin
+```
 
-**Source Data** (`src/data/input.csv`):
-- Contains 24 entrepreneurship tools with comprehensive metadata
-- Columns: partner, number, name, purpose, summary, benefits, prerequisiteTools, link_1_title, link_1_url, description, instructions, outcomes
+Publishing means committing and pushing the changed source files. The formerly hosted admin instance is decommissioned — the admin is for local use only. Details in `docs/simple-admin-plan.md`.
 
-**Generated Data** (`public/data/tools-{lang}.json`):
-- Array of tool objects with properties: `number`, `name`, `summary`, `description`, `outcomes`, `instructions`, `benefits`, `purpose`, `prerequisiteTools`, `partner`, `links`, `image`
-- `purpose` for filtering (6 main categories for entrepreneurship education)
-- `links` array pointing to PDF resources in `public/assets/tools/{lang}/`
-- Navigation uses tool numbers in URLs: `/toolbox/:number`
-- Image references use `/assets/images/{number}.jpg` pattern
+## Tech Stack
 
-**Categories**: 6 main purposes for entrepreneurship education tools
+- **React 19** + **Vite 7** (MPA mode with HashRouter for GitHub Pages)
+- **Tailwind CSS v4** — design tokens in the `@theme` block of `src/index.css` (color ramps `grass`, `aqua`, `mandarine`, and `seafoam` as primary brand color; fonts Avenir/Nexa)
+- **React Router 7**, Headless UI, Heroicons, Lucide
+- Custom i18n context: browser-language detection, localStorage persistence, English fallback
+- GA4 analytics behind a cookie-consent banner
 
-## Static Asset Management
+## Routes
 
-PDF files and images are stored in `public/assets/` with language-specific organization:
+- `/` and `/toolbox` — catalog with text search and purpose filter (state persisted in URL params)
+- `/tool/:number` — tool detail page with downloadable resources
+- URLs are hash-based (`/#/tool/5`) for GitHub Pages compatibility
 
-**PDFs**: Educational resources stored in `public/assets/tools/{lang}/` with systematic naming:
-- `tool_X.Y_Z.pdf` where X=tool number, Y=resource index, Z=description
-- Examples: `tool_1.0_TheEntrepreneurialWallPack.pdf`, `tool_1.1_Guide.pdf`
+## Static Assets
 
-**Images**: Tool images stored in `public/assets/images/`:
-- Numbered files: `1.jpg`, `2.jpg`, ... `24.jpg`
-- Progressive loading with fallback: `.jpg` → `.jpeg` → `.png`
-- Picsum placeholders for missing images
+- **PDFs**: `public/assets/tools/{lang}/tool_X.Y_Name.pdf`. If a translated PDF is missing, the app falls back to the English file at runtime — a missing translation is a normal, handled state.
+- **Images**: `public/assets/images/{number}.jpg`, tried as `.jpg` → `.jpeg` → `.png`, then a generated placeholder.
 
-When adding new tools, ensure corresponding PDF files are placed in language-specific directories and images follow the numbered convention.
+## Deployment
 
-## Tailwind Configuration
-
-The project uses Tailwind CSS v4 with custom design tokens defined in `src/index.css`. Custom color palettes include:
-- Grass colors (--color-grass-50 through --color-grass-950)
-- Aqua colors (--color-aqua-50 through --color-aqua-950)
-- Mandarine colors (--color-mandarine-50 through --color-mandarine-950)
-- Seafoam colors (--color-seafoam-50 through --color-seafoam-950) - primary brand color
-- Custom fonts: Avenir (sans) and Nexa (display)
-
-
-
-## Key Application Features
-
-**Search & Filter System** (`ToolboxPage.jsx`):
-- Real-time text search with result highlighting
-- Purpose-based dropdown filtering (6 categories)
-- URL state persistence for search/filter parameters
-- Responsive grid layout (1-3 columns)
-
-**Smart Image Loading** (`ToolImage.jsx`):
-- Progressive image format fallback (.jpg → .jpeg → .png)
-- Picsum placeholder system for missing images
-- Graceful error handling
-
-**Navigation Architecture**:
-- Main routes: `/` (Toolbox), `/toolbox/:number` (Tool Detail), 404 page
-- State-aware navigation (back button remembers search context)
-- Responsive mobile menu with hamburger toggle
-
-**Internationalization**:
-- 4 language support: English (en), Spanish (es), German (de), Greek (el)
-- Language detection from browser/storage with fallback
-- URL-based language switching and persistence
-
-**Analytics & Tracking**:
-- Google Analytics integration with page view tracking
-- Dynamic page titles based on current route
-- Cookie consent management for compliance
-
-## Data Generation Process
-
-The application uses automated scripts to process data:
-
-**Translation Generation** (`scripts/generate-translations-js.js`):
-- Reads YAML files from `src/i18n/translations/{lang}.yml`
-- Converts to JavaScript modules in `src/i18n/translations/{lang}.js`
-- Supports all 4 languages
-
-**Tools Data Generation** (`scripts/generate-tools-json.js`):
-- Processes CSV data from `src/data/input.csv`
-- Generates JSON files for each language in `public/data/tools-{lang}.json`
-- Creates structured data with proper image paths and PDF links
-- Automatically includes language-specific content
-
-Both scripts run automatically during `npm run dev` and `npm run build`.
+Every push to `main` triggers `.github/workflows/deploy.yml`: `npm ci` + `npm run build`, then `dist/` is published to GitHub Pages under the custom domain `toolbox.start-dsp.eu` (`CNAME`). Forks build with `/start-dsp-toolkit/` as base path automatically (`VITE_BASE_PATH`). The GA4 measurement id comes from the `VITE_GA4_MEASUREMENT_ID` repository secret.
