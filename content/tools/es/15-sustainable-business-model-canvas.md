@@ -32,7 +32,7 @@ links:
   - title: "Instrucciones para Facilitadores"
     url: "https://start-green.net/documents/8789/Tiemann-Fichter-Workshopkonzept-EN-RZ2_2018.pdf"
   - title: "Descripción General de la Herramienta"
-    url: "assets/pdfs/en/tool_15.1_SustainableBusinessModelCanvas.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/905"
 benefits: El Lienzo de Modelo de Negocio Sostenible apoya a los educadores en la enseñanza del emprendimiento sostenible. Ayuda a los estudiantes a entender cómo integrar aspectos sociales y ambientales en la planificación empresarial, fomentando la innovación responsable y la creación de valor a largo plazo a través del aprendizaje estructurado y basado en la práctica.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: |

@@ -21,7 +21,7 @@ links:
   - title: "Proyecciones Financieras"
     url: "https://www.score.org/resource/template/financial-projections-template"
   - title: "Recomendaciones para usar la herramienta"
-    url: "assets/pdfs/en/tool_21.1_FinancialProjectionsTemplate.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/919"
 benefits: El principal beneficio de esta herramienta es proporcionar una idea general a estudiantes no empresariales y profesores universitarios sobre conceptos financieros para el desarrollo de una idea de emprendimiento.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: Excel con Macros activadas

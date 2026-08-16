@@ -14,7 +14,7 @@ links:
   - title: "Simulador de Gastos de Startup"
     url: "https://www.score.org/resource/template/startup-expenses"
   - title: "Recomendaciones para usar la herramienta"
-    url: "assets/pdfs/en/tool_19.1_Startupexpenses.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/916"
 benefits: El principal beneficio de esta herramienta es proporcionar una idea general a estudiantes no empresariales y profesores universitarios sobre los gastos iniciales necesarios para llevar a cabo una idea de negocio.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: Excel con Macros activadas

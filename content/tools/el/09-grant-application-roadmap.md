@@ -42,7 +42,7 @@ instructions: >
   6. Χρησιμοποιήστε την ενότητα συμβουλών για να βελτιώσετε τις αιτήσεις σας.
 links:
   - title: Οδικός Χάρτης Αιτήσεων Επιχορήγησης
-    url: assets/pdfs/en/tool_9.1_Grant_application_guideline.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/970
 benefits: >-
   Αυτό το εργαλείο ενδυναμώνει τους αιτούντες να εντοπίζουν και να εξασφαλίζουν
   με αυτοπεποίθηση χρηματοδότηση για προγράμματα επιχειρηματικότητας,

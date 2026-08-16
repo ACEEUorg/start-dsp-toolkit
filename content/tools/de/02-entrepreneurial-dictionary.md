@@ -51,6 +51,6 @@ prerequisiteTools: '1. Ein elektronisches Gerät mit WLAN, um das Wörterbuch an
 partner: ACEEU
 links:
   - title: Unternehmerisches Wörterbuch
-    url: /assets/tools/de/tool_2.1_EntrepreneurialDictionary.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/985
 ---
 

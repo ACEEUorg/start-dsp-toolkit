@@ -73,6 +73,6 @@ prerequisiteTools: |
 partner: ACEEU
 links:
   - title: 'The Entrepreneurial Wall Pack: Templates, Quotes & AI Guide'
-    url: /assets/tools/en/tool_1.1_TheEntrepreneurialWallPack.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1005
 ---
 

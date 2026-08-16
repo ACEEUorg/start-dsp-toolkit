@@ -41,7 +41,7 @@ links:
   - title: Υπολογισμός Δανείου
     url: 'https://www.calculator.net/loan-calculator.html'
   - title: Συστάσεις για τη χρήση του εργαλείου
-    url: assets/pdfs/en/tool_20.1_Loancalculator.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/952
 benefits: >-
   Το κύριο όφελος αυτού του εργαλείου είναι να παρέχει μια γενική ιδέα σε
   φοιτητές εκτός επιχειρήσεων και καθηγητές πανεπιστημίου σχετικά με τα έντοκα

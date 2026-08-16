@@ -17,9 +17,9 @@ instructions: |
   Οι περιπτώσεις παρουσιάζονται στην τάξη με ανατροφοδότηση από ομοτίμους ή δασκάλους χρησιμοποιώντας τη ρουμπρίκα βαθμολόγησης.
 links:
   - title: "CSI Τμήμα Αποτυχημένων Startups - Ψηφιακός Οδηγός για Διευκολυντές"
-    url: "assets/pdfs/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/960"
   - title: "CSI: Τμήμα Αποτυχημένων Startups – Υλικά Έργου"
-    url: "assets/pdfs/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/961"
 benefits: Αυτό το εργαλείο μετατρέπει την ανάλυση της αποτυχίας startup σε μια εμπειρία στυλ Cluedo. Οι συμμετέχοντες μαθαίνουν να ερευνούν πραγματικά αποτυχημένα εγχειρήματα, να εντοπίζουν προειδοποιητικά σημάδια και να κατανοούν τις ηθικές και στρατηγικές καταρρεύσεις στην επιχειρηματικότητα. Εμπλέκει τους μαθητές μέσω της αφήγησης και του παιχνιδιού ρόλων.
 purpose: Επιχειρηματική Ενημέρωση & Ευαισθητοποίηση
 prerequisiteTools: |

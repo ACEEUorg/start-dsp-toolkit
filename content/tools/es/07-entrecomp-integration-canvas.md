@@ -12,11 +12,11 @@ instructions: |
   4. Diseñe el curso de acuerdo con el Lienzo completado.
 links:
   - title: "Lienzo de Diseño de Curso"
-    url: "assets/pdfs/en/tool_7.1_CourseDesign_canvas.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/932"
   - title: "Tarjetas de Diseño de Curso 1"
-    url: "assets/pdfs/en/tool_7.2_Course_designcards_1.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/933"
   - title: "Tarjetas de Diseño de Curso 2"
-    url: "assets/pdfs/en/tool_7.3_Course_design_cards_2.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/934"
 benefits: Esta herramienta ayuda a los educadores a identificar y evaluar las fortalezas, debilidades, tipos y conjuntos de habilidades emprendedoras individuales de los estudiantes.
 purpose: Innovación Continua en la Educación Emprendedora
 prerequisiteTools: |

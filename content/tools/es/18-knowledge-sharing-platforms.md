@@ -16,9 +16,9 @@ instructions: |
   Programe sesiones de intercambio de conocimiento o actualizaciones periódicas.
 links:
   - title: "PASO 1 - Introducción a la Plataforma de Intercambio de Conocimiento"
-    url: "assets/pdfs/en/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/914"
   - title: "PASO 2 - Comparar Plataformas de Intercambio de Conocimiento"
-    url: "assets/pdfs/en/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/915"
 benefits: Estas plataformas permiten la colaboración entre departamentos, apoyan la co-creación de materiales didácticos, permiten la retroalimentación entre pares y mejoran el acceso a la experiencia compartida. Son vitales para mejorar la innovación, la alineación y la memoria institucional en iniciativas interuniversitarias.
 purpose: Fomento de una Mentalidad & Cultura Emprendedora
 prerequisiteTools: 1. Un dispositivo electrónico con WI-FI para descarga de App y capacidad de usuario

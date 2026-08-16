@@ -15,7 +15,7 @@ instructions: |
   6. Si es necesario, imprima el mapa para usarlo con su equipo.
 links:
   - title: "EngageTree: Desbloquea el Emprendimiento en la Facultad"
-    url: "assets/pdfs/en/tool_4.1_EngageTreeUnlockFacultyEntrepreneurship.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/929"
 benefits: Esta herramienta ayuda a los líderes universitarios a identificar barreras clave para el compromiso del profesorado en el emprendimiento y descubrir estrategias de incentivos a medida y de bajo costo, impulsando la motivación, la conciencia y la participación a través de un formato de árbol de decisiones fácil de usar.
 purpose: Motivación, Incentivos & Reconocimiento para Personal & Profesores
 prerequisiteTools: |

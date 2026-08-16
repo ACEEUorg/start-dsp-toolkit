@@ -18,9 +18,9 @@ instructions: |
   5. Los educadores apoyan el proceso a través de la Guía de Proyecto Digital.
 links:
   - title: "Emprender Éticamente - Guía de Proyecto Digital para Maestros"
-    url: "assets/pdfs/en/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/924"
   - title: "Emprender Éticamente - Material de Proyecto Digital"
-    url: "assets/pdfs/en/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/925"
 benefits: Esta herramienta aborda el desafío de enseñar ética empresarial en acción haciendo que los estudiantes localicen y adapten emprendimientos liderados por jóvenes con planes claros de retribución. Promueve la empatía emprendedora, la responsabilidad social y la sostenibilidad desde la idea hasta el pitch.
 purpose: Emprendimiento Sostenible & Orientado al Impacto
 prerequisiteTools: |

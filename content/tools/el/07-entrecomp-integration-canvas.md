@@ -12,11 +12,11 @@ instructions: |
   4. Σχεδιάστε το μάθημα σύμφωνα με τον συμπληρωμένο Καμβά.
 links:
   - title: "Καμβάς Σχεδιασμού Μαθήματος"
-    url: "assets/pdfs/en/tool_7.1_CourseDesign_canvas.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/966"
   - title: "Κάρτες Σχεδιασμού Μαθήματος 1"
-    url: "assets/pdfs/en/tool_7.2_Course_designcards_1.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/967"
   - title: "Κάρτες Σχεδιασμού Μαθήματος 2"
-    url: "assets/pdfs/en/tool_7.3_Course_design_cards_2.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/968"
 benefits: Αυτό το εργαλείο βοηθά τους εκπαιδευτικούς να εντοπίσουν και να αξιολογήσουν τα ατομικά επιχειρηματικά δυνατά σημεία, τις αδυναμίες, τους τύπους και τα σύνολα δεξιοτήτων των φοιτητών.
 purpose: Συνεχής Καινοτομία στην Επιχειρηματική Εκπαίδευση
 prerequisiteTools: |

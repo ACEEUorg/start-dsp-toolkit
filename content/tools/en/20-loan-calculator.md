@@ -37,7 +37,7 @@ links:
   - title: Loan Calculator
     url: 'https://www.calculator.net/loan-calculator.html'
   - title: Recommendations for using the tool
-    url: /assets/tools/en/tool_20.1_Loancalculator.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1020
 benefits: >-
   The main benefit of this tool is to provide a general idea to non-business
   students and university professors about the interest-bearing loans for

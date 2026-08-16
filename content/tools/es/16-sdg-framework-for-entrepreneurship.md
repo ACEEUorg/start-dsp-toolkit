@@ -17,11 +17,11 @@ instructions: |
   Aplique los hallazgos para desarrollar acciones, políticas e innovaciones específicas.
 links:
   - title: "PASO 1 - Marco de ODS (Introducción)"
-    url: "assets/pdfs/en/tool_16.1_SDGFramework(Introduction).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/906"
   - title: "PASO 2 - Marco de ODS (Ejemplos de Aplicación)"
-    url: "assets/pdfs/en/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/907"
   - title: "PASO 3- Marco de ODS (Recursos y Apoyos)"
-    url: "assets/pdfs/en/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/908"
 benefits: La herramienta apoya a las instituciones de tercer nivel en el mapeo de estrategias hacia los ODS, diseñando programas impulsados por la sostenibilidad y midiendo el impacto. Fortalece la colaboración entre la academia, la industria y las comunidades, promoviendo soluciones innovadoras a los desafíos de sostenibilidad del mundo real.
 purpose: Emprendimiento Sostenible & Orientado al Impacto
 prerequisiteTools: 1. Un dispositivo electrónico con WI-FI para descarga de App y capacidad de usuario

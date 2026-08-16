@@ -16,9 +16,9 @@ instructions: |
   Planen Sie Wissensaustausch-Sitzungen oder regelmäßige Updates.
 links:
   - title: "SCHRITT 1 - Einführung Wissensaustausch-Plattform"
-    url: "/assets/tools/de/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/982"
   - title: "SCHRITT 2 - Vergleich von Wissensaustausch-Plattformen"
-    url: "/assets/tools/de/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/983"
 benefits: Diese Plattformen ermöglichen die Zusammenarbeit über Abteilungen hinweg, unterstützen die gemeinsame Erstellung von Lehrmaterialien, ermöglichen Peer-Feedback und verbessern den Zugang zu geteiltem Fachwissen. Sie sind entscheidend für die Verbesserung von Innovation, Abstimmung und institutionellem Gedächtnis in universitätsübergreifenden Initiativen.
 purpose: Förderung einer unternehmerischen Denkweise & Kultur
 prerequisiteTools: 1. Ein elektronisches Gerät mit WLAN für App-Download und Benutzerfähigkeit

@@ -39,6 +39,6 @@ links:
   - title: Dashboard File
     url: /assets/tools/en/tool_3.2_KPIDashboard.xlsm
   - title: Instructions
-    url: /assets/tools/en/tool_3.1_KPIDashboardInstructions.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1030
 ---
 

@@ -12,11 +12,11 @@ instructions: |
   4. Gestalten Sie den Kurs entsprechend dem ausgefüllten Canvas.
 links:
   - title: "Kursdesign-Canvas"
-    url: "/assets/tools/de/tool_7.1_CourseDesign_canvas.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1000"
   - title: "Kursdesign-Karten 1"
-    url: "/assets/tools/de/tool_7.2_Course_designcards_1.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1001"
   - title: "Kursdesign-Karten 2"
-    url: "/assets/tools/de/tool_7.3_Course_design_cards_2.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1002"
 benefits: Dieses Tool hilft Pädagogen, die individuellen unternehmerischen Stärken, Schwächen, Typen und Fähigkeiten von Studierenden zu identifizieren und zu bewerten.
 purpose: Kontinuierliche Innovation in der Gründungsausbildung
 prerequisiteTools: |

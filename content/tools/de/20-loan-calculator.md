@@ -19,7 +19,7 @@ links:
   - title: "Kreditrechner"
     url: "https://www.calculator.net/loan-calculator.html"
   - title: "Empfehlungen zur Nutzung des Tools"
-    url: "/assets/tools/de/tool_20.1_Loancalculator.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/986"
 benefits: Der Hauptvorteil dieses Tools besteht darin, nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren eine allgemeine Vorstellung von verzinslichen Krediten für unternehmerische Ideen zu vermitteln.
 purpose: Planung & Finanzierung der Gründungsausbildung
 prerequisiteTools: Finanzdaten des Geschäftsprojekts

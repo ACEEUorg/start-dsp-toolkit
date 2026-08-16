@@ -36,5 +36,5 @@ prerequisiteTools: 1. An electronic device with WI-FI to visualise the dictionar
 partner: ACEEU
 links:
   - title: Entrepreneurial Dictionary
-    url: /assets/tools/en/tool_2.1_EntrepreneurialDictionary.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1019
 ---

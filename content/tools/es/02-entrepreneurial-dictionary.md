@@ -40,7 +40,7 @@ instructions: >
   proyectos emprendedores.
 links:
   - title: Diccionario Emprendedor
-    url: assets/pdfs/en/tool_2.1_EntrepreneurialDictionary.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/917
 benefits: >-
   Esta herramienta hace que el emprendimiento sea accesible y atractivo para
   audiencias académicas simplificando conceptos clave con claridad y humor.

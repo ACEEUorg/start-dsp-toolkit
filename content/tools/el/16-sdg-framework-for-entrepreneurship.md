@@ -17,11 +17,11 @@ instructions: |
   Εφαρμόστε τα ευρήματα για την ανάπτυξη στοχευμένων δράσεων, πολιτικών και καινοτομιών.
 links:
   - title: "ΒΗΜΑ 1 - Πλαίσιο SDG (Εισαγωγή)"
-    url: "assets/pdfs/en/tool_16.1_SDGFramework(Introduction).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/940"
   - title: "ΒΗΜΑ 2 - Πλαίσιο SDG (Παραδείγματα Εφαρμογής)"
-    url: "assets/pdfs/en/tool_16.2_SDGFramework(ExamplesofApplication).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/941"
   - title: "ΒΗΜΑ 3 - Πλαίσιο SDG (Πόροι και Υποστηρίξεις)"
-    url: "assets/pdfs/en/tool_16.3_SDGFramework(ResourcesandSupports).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/942"
 benefits: Το εργαλείο υποστηρίζει τα ιδρύματα τριτοβάθμιας εκπαίδευσης στη χαρτογράφηση στρατηγικών προς τους SDG, σχεδιάζοντας προγράμματα με γνώμονα τη βιωσιμότητα και μετρώντας τον αντίκτυπο. Ενισχύει τη συνεργασία μεταξύ της ακαδημαϊκής κοινότητας, της βιομηχανίας και των κοινοτήτων, προωθώντας καινοτόμες λύσεις σε πραγματικές προκλήσεις βιωσιμότητας.
 purpose: Βιώσιμη & Προσανατολισμένη στον Αντίκτυπο Επιχειρηματικότητα
 prerequisiteTools: 1. Μια ηλεκτρονική συσκευή με WI-FI για λήψη εφαρμογών και δυνατότητα χρήσης

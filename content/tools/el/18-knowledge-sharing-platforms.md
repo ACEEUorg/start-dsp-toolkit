@@ -16,9 +16,9 @@ instructions: |
   Προγραμματίστε συνεδρίες διαμοιρασμού γνώσης ή τακτικές ενημερώσεις.
 links:
   - title: "ΒΗΜΑ 1 - Εισαγωγή στην Πλατφόρμα Διαμοιρασμού Γνώσης"
-    url: "assets/pdfs/en/tool_18.1_IntroductionKnowledgeSharingPlatform.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/948"
   - title: "ΒΗΜΑ 2 - Σύγκριση Πλατφορμών Διαμοιρασμού Γνώσης"
-    url: "assets/pdfs/en/tool_18.2_CompareKnowledgeSharingPlatforms.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/949"
 benefits: Αυτές οι πλατφόρμες επιτρέπουν τη συνεργασία μεταξύ των τμημάτων, υποστηρίζουν τη συν-δημιουργία εκπαιδευτικού υλικού, επιτρέπουν την ανατροφοδότηση από ομοτίμους και βελτιώνουν την πρόσβαση σε κοινή εμπειρογνωμοσύνη. Είναι ζωτικής σημασίας για την ενίσχυση της καινοτομίας, της ευθυγράμμισης και της θεσμικής μνήμης σε διαπανεπιστημιακές πρωτοβουλίες.
 purpose: Καλλιέργεια Επιχειρηματικής Νοοτροπίας & Κουλτούρας
 prerequisiteTools: 1. Μια ηλεκτρονική συσκευή με WI-FI για λήψη εφαρμογών και δυνατότητα χρήσης

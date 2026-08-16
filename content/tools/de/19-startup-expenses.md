@@ -14,7 +14,7 @@ links:
   - title: "Simulator für Startup-Ausgaben"
     url: "https://www.score.org/resource/template/startup-expenses"
   - title: "Empfehlungen zur Nutzung des Tools"
-    url: "/assets/tools/de/tool_19.1_Startupexpenses.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/984"
 benefits: Der Hauptvorteil dieses Tools besteht darin, nicht-wirtschaftswissenschaftlichen Studierenden und Universitätsprofessoren eine allgemeine Vorstellung von den notwendigen Anfangsausgaben zur Umsetzung einer Geschäftsidee zu vermitteln.
 purpose: Planung & Finanzierung der Gründungsausbildung
 prerequisiteTools: Excel mit aktivierten Makros

@@ -16,7 +16,7 @@ instructions: |
   7. Aplique los resultados para tomar decisiones de reclutamiento informadas o crear planes de desarrollo.
 links:
   - title: "Herramienta de Evaluación de Competencias Emprendedoras"
-    url: "assets/pdfs/en/tool_6.1_EntrepreneurialCompetencyAssesmentTool.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/931"
 benefits: Esta herramienta apoya a los líderes universitarios en la integración del emprendimiento en las trayectorias profesionales académicas al proporcionar un método estructurado y estandarizado para evaluar competencias emprendedoras. Ayuda a las instituciones a tomar decisiones informadas de contratación y desarrollo profesional, asegurando que las competencias emprendedoras sean valoradas y cultivadas en los entornos académicos.
 purpose: Innovación Continua en la Educación Emprendedora
 prerequisiteTools: |

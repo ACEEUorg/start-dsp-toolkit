@@ -21,7 +21,7 @@ links:
   - title: "Οικονομικές Προβλέψεις"
     url: "https://www.score.org/resource/template/financial-projections-template"
   - title: "Συστάσεις για τη χρήση του εργαλείου"
-    url: "assets/pdfs/en/tool_21.1_FinancialProjectionsTemplate.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/953"
 benefits: Το κύριο όφελος αυτού του εργαλείου είναι να παρέχει μια γενική ιδέα σε φοιτητές εκτός επιχειρήσεων και καθηγητές πανεπιστημίου σχετικά με τις οικονομικές έννοιες για την ανάπτυξη μιας ιδέας εγχειρήματος.
 purpose: Σχεδιασμός & Χρηματοδότηση Επιχειρηματικής Εκπαίδευσης
 prerequisiteTools: Excel με ενεργοποιημένες Μακροεντολές (Macros)

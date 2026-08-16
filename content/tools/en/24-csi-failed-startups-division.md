@@ -17,9 +17,9 @@ instructions: |
   Cases are presented in class with peer or teacher feedback using the scoring rubric.
 links:
   - title: "CSI Failed Startups Division - Digital Guide for Facilitators"
-    url: "/assets/tools/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1028"
   - title: "CSI:Failed Startups Division – Project Materials"
-    url: "/assets/tools/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1029"
 benefits: This tool transforms the analysis of startup failure into a Cluedo-style experience. Participants learn to investigate real failed ventures, identify red flags, and understand ethical and strategic breakdowns in entrepreneurship. Engages learners through storytelling and roleplay.
 purpose: Entrepreneurial Awareness & Sensitization
 prerequisiteTools: |

@@ -27,13 +27,13 @@ instructions: |
   Hinweis: Ausführliche Anweisungen finden Sie im Moderationsleitfaden
 links:
   - title: "Moderationsleitfaden"
-    url: "/assets/tools/de/tool_22.1_TOOLMC1_facilitationguide.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/988"
   - title: "Spielbrett"
-    url: "/assets/tools/de/tool_22.2_TOOLMC1_board.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/989"
   - title: "Karten"
-    url: "/assets/tools/de/tool_22.3_TOOLMC1_cards.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/990"
   - title: "Reflexionsbogen"
-    url: "/assets/tools/de/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/991"
 benefits: Der meiste Entrepreneurship-Unterricht ist theorielastig und es fehlt an emotionaler Bindung. Mission Map führt spielerisches Lernen ein, um reale Unsicherheiten zu simulieren, und ermöglicht es Lernenden, Zusammenarbeit, kritisches Denken und Resilienz in komplexen Startup-Umgebungen zu üben.
 purpose: Förderung einer unternehmerischen Denkweise & Kultur
 prerequisiteTools: |

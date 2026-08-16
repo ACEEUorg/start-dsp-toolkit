@@ -18,9 +18,9 @@ instructions: |
   5. Pädagogen unterstützen den Prozess über den Digitalen Projektleitfaden.
 links:
   - title: "Ethisch Gründen - Digitaler Projektleitfaden für Lehrer"
-    url: "/assets/tools/de/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/992"
   - title: "Ethisch Gründen - Digitales Projektmaterial"
-    url: "/assets/tools/de/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/993"
 benefits: Dieses Tool adressiert die Herausforderung, Wirtschaftsethik in Aktion zu lehren, indem Studierende jugendgeführte Unternehmungen mit klaren Rückgabeplänen lokalisieren und anpassen. Es fördert unternehmerische Empathie, soziale Verantwortung und Nachhaltigkeit von der Idee bis zum Pitch.
 purpose: Nachhaltiges & wirkungsorientiertes Unternehmertum
 prerequisiteTools: |

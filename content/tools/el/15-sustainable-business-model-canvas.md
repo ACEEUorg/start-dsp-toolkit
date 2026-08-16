@@ -32,7 +32,7 @@ links:
   - title: "Οδηγίες Διευκολυντή"
     url: "https://start-green.net/documents/8789/Tiemann-Fichter-Workshopkonzept-EN-RZ2_2018.pdf"
   - title: "Επισκόπηση Εργαλείου"
-    url: "assets/pdfs/en/tool_15.1_SustainableBusinessModelCanvas.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/939"
 benefits: Ο Καμβάς Βιώσιμου Επιχειρηματικού Μοντέλου υποστηρίζει τους εκπαιδευτικούς στη διδασκαλία βιώσιμης επιχειρηματικότητας. Βοηθά τους φοιτητές να κατανοήσουν πώς να ενσωματώσουν κοινωνικές και περιβαλλοντικές πτυχές στον επιχειρηματικό σχεδιασμό, προωθώντας την υπεύθυνη καινοτομία και τη μακροπρόθεσμη δημιουργία αξίας μέσω δομημένης, πρακτικής μάθησης.
 purpose: Σχεδιασμός & Χρηματοδότηση Επιχειρηματικής Εκπαίδευσης
 prerequisiteTools: |

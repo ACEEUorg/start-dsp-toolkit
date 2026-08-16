@@ -13,7 +13,7 @@ instructions: |
   5. Una vez completado, analice los resultados y tome las medidas necesarias para optimizar y mejorar su estrategia de recursos emprendedores.
 links:
   - title: "Viaje de Mapeo de Recursos Emprendedores"
-    url: "assets/pdfs/en/tool_5.1_EntrepreneurialResourceMappingJourney.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/930"
 benefits: Esta herramienta permite a los líderes universitarios mapear, evaluar y optimizar el apoyo a las actividades emprendedoras identificando recursos, abordando brechas, aclarando responsabilidades y creando planes accionables para el uso adecuado y la maximización del impacto de los recursos.
 purpose: Motivación, Incentivos & Reconocimiento para Personal & Profesores
 prerequisiteTools: |

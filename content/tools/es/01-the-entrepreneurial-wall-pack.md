@@ -32,5 +32,5 @@ prerequisiteTools: |
 partner: ACEEU
 links:
   - title: "El Pack de Muro Emprendedor: Plantillas, Citas y Guía de IA"
-    url: assets/pdfs/en/tool_1.1_TheEntrepreneurialWallPack.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/903
 ---

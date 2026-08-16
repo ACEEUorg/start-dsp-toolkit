@@ -12,11 +12,11 @@ instructions: |
   4. Design the course according to the filled Canvas.
 links:
   - title: "Course Design Canvas"
-    url: "/assets/tools/en/tool_7.1_CourseDesign_canvas.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1034"
   - title: "Course Design Cards 1"
-    url: "/assets/tools/en/tool_7.2_Course_designcards_1.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1035"
   - title: "Course Design Cards 2"
-    url: "/assets/tools/en/tool_7.3_Course_design_cards_2.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1036"
 benefits: This tool helps educators to indentify and assess students' individual entrepreneurial strenghts, weaknesses, types and skill sets.
 purpose: Continuous Innovation in Entrepreneurship Education
 prerequisiteTools: |

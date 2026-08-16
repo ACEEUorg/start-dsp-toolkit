@@ -44,7 +44,6 @@ prerequisiteTools: Internet connection
 partner: ACEEU
 links:
   - title: Grant Application Roadmap
-    url: >-
-      /assets/1781510748191-304576772-tool_9.0_Grant_Application_Guideline.pdf.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1038
 ---
 

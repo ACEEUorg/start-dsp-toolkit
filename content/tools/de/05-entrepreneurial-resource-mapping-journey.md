@@ -43,5 +43,5 @@ prerequisiteTools: >
 partner: ACEEU
 links:
   - title: Entrepreneurial Resource Mapping Journey
-    url: /assets/tools/de/tool_5.1_EntrepreneurialResourceMappingJourney.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/998
 ---

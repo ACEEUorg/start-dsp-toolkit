@@ -27,13 +27,13 @@ instructions: |
   Σημείωση: Βρείτε εκτενείς οδηγίες στον Οδηγό Διευκόλυνσης
 links:
   - title: "Οδηγός Διευκόλυνσης"
-    url: "assets/pdfs/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/954"
   - title: "Ταμπλό"
-    url: "assets/pdfs/en/tool_22.2_TOOLMC1_board.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/955"
   - title: "Κάρτες"
-    url: "assets/pdfs/en/tool_22.3_TOOLMC1_cards.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/956"
   - title: "Φύλλο Στοχασμού"
-    url: "assets/pdfs/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/957"
 benefits: Η περισσότερη διδασκαλία επιχειρηματικότητας είναι βαριά στη θεωρία και στερείται συναισθηματικής δέσμευσης. Το Mission Map εισάγει την παιχνιδοποιημένη μάθηση για την προσομοίωση αβεβαιοτήτων του πραγματικού κόσμου, επιτρέποντας στους εκπαιδευόμενους να εξασκήσουν τη συνεργασία, την κριτική σκέψη και την ανθεκτικότητα σε περίπλοκα περιβάλλοντα startup.
 purpose: Καλλιέργεια Επιχειρηματικής Νοοτροπίας & Κουλτούρας
 prerequisiteTools: |

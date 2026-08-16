@@ -14,7 +14,7 @@ instructions: |
   6. Utilice la sección de consejos para refinar sus solicitudes.
 links:
   - title: "Hoja de Ruta para Solicitud de Subvenciones"
-    url: "assets/pdfs/en/tool_9.1_Grant_application_guideline.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/936"
 benefits: Esta herramienta empodera a los solicitantes para identificar y asegurar con confianza financiación para programas de emprendimiento, abordando brechas de recursos y permitiendo el crecimiento sostenible de las iniciativas de educación emprendedora.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: Conexión a Internet

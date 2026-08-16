@@ -16,13 +16,13 @@ instructions: |
   Ajuste las estrategias de comunicación o compromiso basadas en conocimientos predictivos.
 links:
   - title: "PASO 1 Herramienta Radar de Partes Interesadas con IA (Introducción)"
-    url: "assets/pdfs/en/tool_17.1_StakeholdersRadarAITool(Introduction).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/910"
   - title: "PASO 2 Herramienta Radar de Partes Interesadas con IA (Nuestras 3 Mejores Herramientas)"
-    url: "assets/pdfs/en/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/911"
   - title: "PASO 3 Herramienta Radar de Partes Interesadas con IA (Cómo Usar)"
-    url: "assets/pdfs/en/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/912"
   - title: "PASO 4 Herramienta Radar de Partes Interesadas con IA (Recursos y Apoyos)"
-    url: "assets/pdfs/en/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/913"
 benefits: La herramienta mejora la visibilidad y el compromiso de las partes interesadas a través del análisis de sentimientos impulsado por IA, el mapeo y los conocimientos predictivos. Ayuda a las universidades a fomentar la confianza, asignar recursos de manera efectiva y anticipar riesgos u oportunidades en asociaciones y estrategia institucional.
 purpose: Motivación, Incentivos & Reconocimiento para Personal & Profesores
 prerequisiteTools: 1. Un dispositivo electrónico con WI-FI para descarga de App y capacidad de usuario

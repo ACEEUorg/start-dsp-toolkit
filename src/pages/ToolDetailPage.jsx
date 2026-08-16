@@ -6,6 +6,11 @@ import ToolImage from "../components/ui/ToolImage";
 import LanguageFallbackBadge from "../components/ui/LanguageFallbackBadge";
 import { trackDownload } from "../utils/analytics";
 import { getPdfUrlWithFallback } from "../utils/pdfFallback";
+import {
+  getLinkFileType,
+  isExternalUrl,
+  isLocalizedExternalUrl,
+} from "../utils/toolLinks";
 
 export default function ToolDetail() {
   const { number } = useParams();
@@ -205,7 +210,7 @@ export default function ToolDetail() {
                       <span className="text-lg font-medium text-seafoam-800 group-hover:text-seafoam-900">
                         {link.title}{" "}
                         {(() => {
-                          const ext = link.url.split(".").pop()?.toLowerCase();
+                          const ext = getLinkFileType(link.url);
                           if (ext === "pdf") {
                             return (
                               <span className="px-1.5 py-0.5 text-[10px] font-bold bg-red-100 text-red-700 rounded relative -top-1">
@@ -229,8 +234,7 @@ export default function ToolDetail() {
                         })()}
                       </span>
                       <div className="flex items-center gap-2 mt-4">
-                        {link.url.startsWith("http://") ||
-                        link.url.startsWith("https://") ? (
+                        {isExternalUrl(link.url) ? (
                           <svg
                             className="w-6 h-6 text-seafoam-600"
                             fill="none"
@@ -260,8 +264,8 @@ export default function ToolDetail() {
                           </svg>
                         )}
                         <div className="flex flex-wrap gap-2">
-                          {((link.url.startsWith("http://") ||
-                            link.url.startsWith("https://")) &&
+                          {(isExternalUrl(link.url) &&
+                            !isLocalizedExternalUrl(link.url) &&
                             language !== "en") ||
                           pdfInfo.isFallback ? (
                             <LanguageFallbackBadge />

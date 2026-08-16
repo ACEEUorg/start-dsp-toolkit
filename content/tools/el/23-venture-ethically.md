@@ -18,9 +18,9 @@ instructions: |
   5. Οι εκπαιδευτικοί υποστηρίζουν τη διαδικασία μέσω του Ψηφιακού Οδηγού Έργου.
 links:
   - title: "Venture Ethically - Ψηφιακός Οδηγός Έργου για Εκπαιδευτικούς"
-    url: "assets/pdfs/en/tool_23.1_VentureEthicallyDigitalProjectGuideforTeachers.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/958"
   - title: "Venture Ethically - Ψηφιακό Υλικό Έργου"
-    url: "assets/pdfs/en/tool_23.2_VentureEthicallyDigitalProjectMaterial.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/959"
 benefits: Αυτό το εργαλείο αντιμετωπίζει την πρόκληση της διδασκαλίας της επιχειρηματικής ηθικής στην πράξη, ζητώντας από τους φοιτητές να εντοπίσουν και να προσαρμόσουν εγχειρήματα που διευθύνονται από νέους με σαφή σχέδια ανταπόδοσης. Προωθεί την επιχειρηματική ενσυναίσθηση, την κοινωνική ευθύνη και τη βιωσιμότητα από την ιδέα έως την παρουσίαση.
 purpose: Βιώσιμη & Προσανατολισμένη στον Αντίκτυπο Επιχειρηματικότητα
 prerequisiteTools: |

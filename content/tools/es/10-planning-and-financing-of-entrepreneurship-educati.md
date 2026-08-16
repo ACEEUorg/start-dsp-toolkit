@@ -21,7 +21,7 @@ instructions: |
   Presente sus hallazgos al liderazgo. Utilice los conocimientos para sugerir mejoras en la distribución de recursos o para integrar el seguimiento financiero regular en los procesos de planificación universitaria.
 links:
   - title: "Plantilla de Formulario de Google para Planificación Financiera"
-    url: "assets/pdfs/en/tool_10.1_PlanningandFinancingEntrepreneurshipEducationDataCollectionTemplate.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/904"
 benefits: Esta herramienta ayuda a las universidades a obtener una visión clara de las inversiones financieras en educación emprendedora. Apoya una mejor planificación, asignación de recursos y alineación con los objetivos institucionales al recopilar aportes de todos los departamentos y permitir decisiones basadas en datos.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: Acceso a Internet

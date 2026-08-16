@@ -8,7 +8,7 @@ outcomes: Estudiantes y educadores comienzan a integrar herramientas de IA y RV 
 instructions: 1. Identifique en qué etapa del viaje emprendedor se encuentran sus estudiantes. 2. Explore las herramientas sugeridas para cada etapa. 3. Utilice las herramientas en lecciones, proyectos y actividades. 4. Revise qué tan bien funcionan las herramientas y ajústelas según sea necesario.
 links:
   - title: "Guía de Recursos de IA y RV EntreComp"
-    url: "assets/pdfs/en/tool_8.1_EntreCompAI&VRResourceGuide.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/935"
 benefits: Esta herramienta apoya a las instituciones en la integración perfecta de tecnologías digitales innovadoras en sus programas de emprendimiento, asegurando que la educación se mantenga actualizada con las tendencias tecnológicas y satisfaga las demandas educativas en evolución.
 purpose: Innovación Continua en la Educación Emprendedora
 prerequisiteTools: Conexión a Internet y acceso a las herramientas de IA deseadas

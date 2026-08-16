@@ -19,7 +19,7 @@ links:
   - title: "Calculadora de Préstamos"
     url: "https://www.calculator.net/loan-calculator.html"
   - title: "Recomendaciones para usar la herramienta"
-    url: "assets/pdfs/en/tool_20.1_Loancalculator.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/918"
 benefits: El principal beneficio de esta herramienta es proporcionar una idea general a estudiantes no empresariales y profesores universitarios sobre los préstamos con intereses para ideas de emprendimiento.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: Datos financieros del proyecto empresarial

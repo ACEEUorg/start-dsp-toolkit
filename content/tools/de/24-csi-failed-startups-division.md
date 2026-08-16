@@ -17,9 +17,9 @@ instructions: |
   Die Fälle werden in der Klasse mit Peer- oder Lehrer-Feedback unter Verwendung der Bewertungsrubrik präsentiert.
 links:
   - title: "CSI Abteilung für gescheiterte Startups - Digitaler Leitfaden für Moderatoren"
-    url: "/assets/tools/de/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/994"
   - title: "CSI: Abteilung für gescheiterte Startups – Projektmaterialien"
-    url: "/assets/tools/de/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/995"
 benefits: Dieses Tool verwandelt die Analyse von Startup-Fehlschlägen in ein Cluedo-artiges Erlebnis. Teilnehmer lernen, echte gescheiterte Unternehmungen zu untersuchen, Warnsignale zu identifizieren und ethische und strategische Zusammenbrüche im Unternehmertum zu verstehen. Bindet Lernende durch Storytelling und Rollenspiel ein.
 purpose: Unternehmerisches Bewusstsein & Sensibilisierung
 prerequisiteTools: |

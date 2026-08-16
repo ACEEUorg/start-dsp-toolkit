@@ -27,13 +27,13 @@ instructions: |
   Note: Please find extensive instructions at the Facilitation Guide
 links:
   - title: "Facilitation Guide"
-    url: "/assets/tools/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1022"
   - title: "Board"
-    url: "/assets/tools/en/tool_22.2_TOOLMC1_board.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1023"
   - title: "Cards"
-    url: "/assets/tools/en/tool_22.3_TOOLMC1_cards.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1024"
   - title: "Reflection Sheet"
-    url: "/assets/tools/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1025"
 benefits: Most entrepreneurship teaching is theory-heavy and lacks emotional engagement. Mission Map introduces gamified learning to simulate real-world uncertainties, enabling learners to practice collaboration, critical thinking, and resilience in complex startup environments.
 purpose: Fostering an Entrepreneurial Mindset & Culture
 prerequisiteTools: |

@@ -17,9 +17,9 @@ instructions: |
   Los casos se presentan en clase con retroalimentación de pares o maestros utilizando la rúbrica de puntuación.
 links:
   - title: "CSI División de Startups Fallidas - Guía Digital para Facilitadores"
-    url: "assets/pdfs/en/tool_24.1_CSIFailedStartupsDivisionDigitalGuideforFacilitators.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/926"
   - title: "CSI: División de Startups Fallidas – Materiales del Proyecto"
-    url: "assets/pdfs/en/tool_24.2_CSIFailedStartupsDivisionProjectMaterials.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/927"
 benefits: Esta herramienta transforma el análisis del fracaso de startups en una experiencia estilo Cluedo. Los participantes aprenden a investigar emprendimientos fallidos reales, identificar señales de alerta y comprender desgloses éticos y estratégicos en el emprendimiento. Involucra a los alumnos a través de la narración y el juego de roles.
 purpose: Conciencia & Sensibilización Emprendedora
 prerequisiteTools: |

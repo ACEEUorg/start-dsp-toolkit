@@ -46,7 +46,7 @@ prerequisiteTools: 1. Excel mit aktivierten Makros
 partner: ACEEU
 links:
   - title: Entrepreneurial KPI Dashboard
-    url: /assets/tools/de/tool_3.1_KPIDashboardInstructions.pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/996
   - title: Dashboard-Anleitung
     url: /assets/tools/de/tool_3.2_KPIDashboard.xlsm
 ---

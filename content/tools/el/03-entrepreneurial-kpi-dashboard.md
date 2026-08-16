@@ -14,7 +14,7 @@ instructions: |
   6. Παρακολουθήστε και Καταγράψτε την Πρόοδο.
 links:
   - title: "Πίνακας Ελέγχου Επιχειρηματικών KPI"
-    url: "assets/pdfs/en/tool_3.1_KPIDashboardInstructions.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/962"
   - title: "Οδηγίες Πίνακα Ελέγχου"
     url: "assets/pdfs/en/tool_3.2_KPIDashboard.xlsm"
 benefits: Αυτό το εργαλείο επιτρέπει στα πανεπιστήμια να καθορίζουν και να παρακολουθούν αποτελεσματικά ένα ολοκληρωμένο σύνολο βασικών δεικτών απόδοσης (KPIs) για την επιχειρηματική εκπαίδευση, υποστηρίζοντας πληροφορίες βασισμένες σε δεδομένα και συνεχή βελτίωση της Επιχειρηματικής τους Εκπαίδευσης.

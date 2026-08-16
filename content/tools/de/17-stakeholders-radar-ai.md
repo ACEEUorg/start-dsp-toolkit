@@ -38,11 +38,11 @@ prerequisiteTools: 1. Ein elektronisches Gerät mit WLAN für App-Download und B
 partner: MMS
 links:
   - title: SCHRITT 1 Stakeholder-Radar KI-Tool (Einführung)
-    url: /assets/tools/de/tool_17.1_StakeholdersRadarAITool(Introduction).pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/978
   - title: SCHRITT 2 Stakeholder-Radar KI-Tool (Unsere Top 3 Tools)
-    url: /assets/tools/de/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/979
   - title: SCHRITT 3 Stakeholder-Radar KI-Tool (Anwendung)
-    url: /assets/tools/de/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/980
   - title: SCHRITT 4 Stakeholder-Radar KI-Tool (Ressourcen und Unterstützung)
-    url: /assets/tools/de/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/981
 ---

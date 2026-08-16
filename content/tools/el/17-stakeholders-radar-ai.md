@@ -16,13 +16,13 @@ instructions: |
   Προσαρμόστε στρατηγικές επικοινωνίας ή δέσμευσης με βάση τις προγνωστικές πληροφορίες.
 links:
   - title: "ΒΗΜΑ 1 Εργαλείο Ραντάρ Ενδιαφερόμενων Μερών με χρήση AI (Εισαγωγή)"
-    url: "assets/pdfs/en/tool_17.1_StakeholdersRadarAITool(Introduction).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/944"
   - title: "ΒΗΜΑ 2 Εργαλείο Ραντάρ Ενδιαφερόμενων Μερών με χρήση AI (Τα 3 Κορυφαία Εργαλεία μας)"
-    url: "assets/pdfs/en/tool_17.2_StakeholdersRadarAITool(OurTop3Tools).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/945"
   - title: "ΒΗΜΑ 3 Εργαλείο Ραντάρ Ενδιαφερόμενων Μερών με χρήση AI (Τρόπος Χρήσης)"
-    url: "assets/pdfs/en/tool_17.3_StakeholdersRadarAITool(HowtoUse).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/946"
   - title: "ΒΗΜΑ 4 Εργαλείο Ραντάρ Ενδιαφερόμενων Μερών με χρήση AI (Πόροι και Υποστηρίξεις)"
-    url: "assets/pdfs/en/tool_17.4_StakeholdersRadarAITool(ResourcesandSupports).pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/947"
 benefits: Το εργαλείο ενισχύει την προβολή και τη δέσμευση των ενδιαφερόμενων μερών μέσω ανάλυσης συναισθήματος με γνώμονα την AI, χαρτογράφησης και προγνωστικών πληροφοριών. Βοηθά τα πανεπιστήμια να καλλιεργήσουν εμπιστοσύνη, να κατανείμουν πόρους αποτελεσματικά και να προβλέψουν κινδύνους ή ευκαιρίες σε συνεργασίες και θεσμική στρατηγική.
 purpose: Παρακίνηση, Κίνητρα & Αναγνώριση Προσωπικού & Διδασκόντων
 prerequisiteTools: 1. Μια ηλεκτρονική συσκευή με WI-FI για λήψη εφαρμογών και δυνατότητα χρήσης

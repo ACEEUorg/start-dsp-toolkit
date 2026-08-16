@@ -27,13 +27,13 @@ instructions: |
   Nota: Encuentre instrucciones extensas en la Guía de Facilitación
 links:
   - title: "Guía de Facilitación"
-    url: "assets/pdfs/en/tool_22.1_TOOLMC1_facilitationguide.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/920"
   - title: "Tablero"
-    url: "assets/pdfs/en/tool_22.2_TOOLMC1_board.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/921"
   - title: "Tarjetas"
-    url: "assets/pdfs/en/tool_22.3_TOOLMC1_cards.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/922"
   - title: "Hoja de Reflexión"
-    url: "assets/pdfs/en/tool_22.4_TOOLMC1_reflectionsheet.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/923"
 benefits: La mayoría de la enseñanza del emprendimiento es pesada en teoría y carece de compromiso emocional. Mission Map introduce el aprendizaje gamificado para simular incertidumbres del mundo real, permitiendo a los alumnos practicar la colaboración, el pensamiento crítico y la resiliencia en entornos de inicio complejos.
 purpose: Fomento de una Mentalidad & Cultura Emprendedora
 prerequisiteTools: |

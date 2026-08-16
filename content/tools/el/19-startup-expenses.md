@@ -14,7 +14,7 @@ links:
   - title: "Προσομοιωτής Εξόδων Startup"
     url: "https://www.score.org/resource/template/startup-expenses"
   - title: "Συστάσεις για τη χρήση του εργαλείου"
-    url: "assets/pdfs/en/tool_19.1_Startupexpenses.pdf"
+    url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/950"
 benefits: Το κύριο όφελος αυτού του εργαλείου είναι να παρέχει μια γενική ιδέα σε φοιτητές εκτός επιχειρήσεων και καθηγητές πανεπιστημίου σχετικά με τα αρχικά έξοδα που απαιτούνται για την υλοποίηση μιας επιχειρηματικής ιδέας.
 purpose: Σχεδιασμός & Χρηματοδότηση Επιχειρηματικής Εκπαίδευσης
 prerequisiteTools: Excel με ενεργοποιημένες Μακροεντολές (Macros)
