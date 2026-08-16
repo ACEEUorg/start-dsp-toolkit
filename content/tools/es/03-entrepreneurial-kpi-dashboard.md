@@ -16,7 +16,7 @@ links:
   - title: "Panel de Control de KPI Emprendedores"
     url: "https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/928"
   - title: "Instrucciones del Panel"
-    url: "assets/pdfs/en/tool_3.2_KPIDashboard.xlsm"
+    url: "/assets/tools/es/tool_3.2_KPIDashboard.xlsm"
 benefits: Esta herramienta permite a las universidades definir y monitorear de manera efectiva un conjunto integral de indicadores clave de desempeño (KPIs) para la educación emprendedora, apoyando conocimientos basados en datos y la mejora continua de su Educación Emprendedora.
 purpose: Visión Emprendedora & Compromiso Institucional
 prerequisiteTools: 1. Excel con Macros activadas

@@ -21,7 +21,7 @@ instructions: |
   Χρησιμοποιήστε τα αποτελέσματα για να εντοπίσετε τομείς ανάπτυξης, να συζητήσετε με συναδέλφους ή να ενημερώσετε τις προσπάθειες θεσμικής κατάρτισης.
 links:
   - title: "Πρόσβαση στην Αξιολόγηση"
-    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Teaching%20Innovation%20Assessment"
+    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP_Teaching_Innovation_Assessment"
 benefits: Αυτό το εργαλείο βοηθά τους εκπαιδευτικούς να αξιολογήσουν την εξοικείωσή τους και το άνοιγμά τους στις μορφές επιχειρηματικής εκπαίδευσης. Εντοπίζει εμπόδια, προσφέρει πρακτική καθοδήγηση και ενθαρρύνει την υιοθέτηση μεθόδων όπως η βιωματική μάθηση και η μάθηση βάσει προβλημάτων για την υποστήριξη της επιχειρηματικής σκέψης.
 purpose: Επιχειρηματική Ενημέρωση & Ευαισθητοποίηση
 prerequisiteTools: |

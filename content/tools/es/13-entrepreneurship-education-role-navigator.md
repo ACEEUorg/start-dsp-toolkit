@@ -19,7 +19,7 @@ instructions: |
   Opcionalmente, organice sesiones de seguimiento para conectar a académicos y discutir oportunidades de colaboración.
 links:
   - title: "Acceso a la Evaluación"
-    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Entrepreneurship%20Educator%20Roles"
+    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP_Entrepreneurship_Educator_Roles"
 benefits: Esta herramienta ayuda al profesorado no empresarial a explorar cómo su experiencia disciplinaria, enfoque de enseñanza e intereses se alinean con la educación emprendedora. Aclara roles como la mentoría o la co-enseñanza y fomenta una participación interdisciplinaria más amplia en iniciativas emprendedoras.
 purpose: Planificación & Financiación de la Educación Emprendedora
 prerequisiteTools: |

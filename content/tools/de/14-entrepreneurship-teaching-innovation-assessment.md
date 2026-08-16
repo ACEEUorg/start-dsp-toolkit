@@ -21,7 +21,7 @@ instructions: |
   Nutzen Sie die Ergebnisse, um Wachstumsbereiche zu identifizieren, mit Kollegen zu diskutieren oder institutionelle Schulungsmaßnahmen zu informieren.
 links:
   - title: "Zugang zur Bewertung"
-    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP%20Teaching%20Innovation%20Assessment"
+    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP_Teaching_Innovation_Assessment"
 benefits: Dieses Tool hilft Pädagogen, ihre Vertrautheit mit und Offenheit für Formate der Gründungsausbildung zu bewerten. Es identifiziert Barrieren, bietet umsetzbare Anleitungen und fördert die Einführung von Methoden wie erfahrungsbasiertem und problembasiertem Lernen, um unternehmerisches Denken zu unterstützen.
 purpose: Unternehmerisches Bewusstsein & Sensibilisierung
 prerequisiteTools: |
