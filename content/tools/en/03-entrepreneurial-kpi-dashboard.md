@@ -37,7 +37,7 @@ prerequisiteTools: 1. Excel with Macros activated
 partner: ACEEU
 links:
   - title: Dashboard File
-    url: /assets/tools/en/tool_3.2_KPIDashboard.xlsm
+    url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1040
   - title: Instructions
     url: https://www.skills-lab.eu/index/downloadmaterialfile/projectId/49/materialFileId/1030
 ---
