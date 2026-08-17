@@ -40,7 +40,7 @@ instructions: >
 links:
   - title: Access to the Assessment
     url: >-
-      https://thevisionworks.brilliantassessments.com?external=Start-DSP_Entrepreneurship_Educator_Roles
+      https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1041
 benefits: >-
   This tool helps non-business faculty explore how their disciplinary expertise,
   teaching approach, and interests align with entrepreneurship education. It
