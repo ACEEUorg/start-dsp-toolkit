@@ -42,7 +42,7 @@ instructions: >
 links:
   - title: Access to the Assessment
     url: >-
-      https://thevisionworks.brilliantassessments.com?external=Start-DSP_Teaching_Innovation_Assessment
+      https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1042
 benefits: >-
   This tool helps educators assess their familiarity with and openness to
   entrepreneurship education formats. It identifies barriers, offers actionable
