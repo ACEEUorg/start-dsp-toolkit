@@ -19,7 +19,7 @@ instructions: |
   Veranstalten Sie optional Folgesitzungen, um Akademiker zu vernetzen und Möglichkeiten der Zusammenarbeit zu besprechen.
 links:
   - title: "Zugang zur Bewertung"
-    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP_Entrepreneurship_Educator_Roles"
+    url: "https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1043"
 benefits: Dieses Tool hilft Fakultätsmitgliedern außerhalb der Wirtschaftswissenschaften zu erkunden, wie ihre fachliche Expertise, ihr Lehransatz und ihre Interessen mit der Gründungsausbildung übereinstimmen. Es klärt Rollen wie Mentoring oder Co-Teaching und fördert eine breitere interdisziplinäre Einbindung in unternehmerische Initiativen.
 purpose: Planung & Finanzierung der Gründungsausbildung
 prerequisiteTools: |
