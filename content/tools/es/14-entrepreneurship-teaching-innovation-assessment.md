@@ -21,7 +21,7 @@ instructions: |
   Utilice los resultados para identificar áreas de crecimiento, discutir con colegas o informar los esfuerzos de capacitación institucional.
 links:
   - title: "Acceso a la Evaluación"
-    url: "https://thevisionworks.brilliantassessments.com/?external=Start-DSP_Teaching_Innovation_Assessment"
+    url: "https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1048"
 benefits: Esta herramienta ayuda a los educadores a evaluar su familiaridad y apertura a los formatos de educación emprendedora. Identifica barreras, ofrece orientación práctica y fomenta la adopción de métodos como el aprendizaje experiencial y basado en problemas para apoyar el pensamiento emprendedor.
 purpose: Conciencia & Sensibilización Emprendedora
 prerequisiteTools: |
