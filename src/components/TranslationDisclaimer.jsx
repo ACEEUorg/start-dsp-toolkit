@@ -1,6 +1,9 @@
 import { useState, useEffect } from "react";
 import { useLanguage, useTranslation } from "../i18n/hooks";
 
+// Set to true to re-enable the banner once translations are complete.
+const SHOW_TRANSLATION_BANNER = false;
+
 /**
  * TranslationDisclaimer Component
  *
@@ -36,7 +39,7 @@ export default function TranslationDisclaimer() {
     localStorage.setItem(hasSeenKey, "true");
   };
 
-  if (!isVisible) {
+  if (!SHOW_TRANSLATION_BANNER || !isVisible) {
     return null;
   }
 
