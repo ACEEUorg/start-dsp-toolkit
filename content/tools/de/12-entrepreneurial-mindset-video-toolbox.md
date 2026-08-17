@@ -19,7 +19,7 @@ instructions: |
   Verbinden Sie die Inhalte mit Start-DSP oder anderen Lernressourcen, um das Verständnis zu vertiefen und den Kompetenzaufbau zu unterstützen.
 links:
   - title: "Video-Toolbox für unternehmerische Denkweise – Playlist-Link"
-    url: "https://www.youtube.com/playlist?list=PLuGfWmFV-HaKJW1ShwspfNkXbcHicwB4A"
+    url: "https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1049"
 benefits: Traditionelle Gründungsausbildung übersieht oft Denkweise, Ethik und Inklusion. Diese Toolbox hilft Nutzern, diese wesentlichen Bereiche durch kuratierte Videoinhalte zu erkunden. Sie schafft Bewusstsein für emotionale Intelligenz, ethische Führung und Vielfalt in der modernen unternehmerischen Praxis.
 purpose: Förderung einer unternehmerischen Denkweise & Kultur
 prerequisiteTools: Internetzugang
