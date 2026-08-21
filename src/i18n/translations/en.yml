@@ -11,6 +11,7 @@ toolDetail.description: "Description"
 toolDetail.instructions: "Instructions"
 toolDetail.outcomes: "Outcomes"
 toolDetail.responsiblePartner: "Responsible Partner:"
+toolDetail.downloadCount: "Number of downloads"
 badge.fallbackLanguage: Available in English
 badge.externalLink: External - English only
 disclaimer.translationTitle: Translations in Progress

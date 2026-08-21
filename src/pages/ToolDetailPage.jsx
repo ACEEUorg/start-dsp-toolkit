@@ -7,6 +7,7 @@ import LanguageFallbackBadge from "../components/ui/LanguageFallbackBadge";
 import { trackDownload } from "../utils/analytics";
 import { getPdfUrlWithFallback } from "../utils/pdfFallback";
 import {
+  getDownloadBadgeUrl,
   getLinkFileType,
   isExternalUrl,
   isLocalizedExternalUrl,
@@ -196,6 +197,7 @@ export default function ToolDetail() {
                   url: link.url,
                   isFallback: false,
                 };
+                const badgeUrl = getDownloadBadgeUrl(link.url);
                 return (
                   <a
                     key={index}
@@ -233,44 +235,60 @@ export default function ToolDetail() {
                           return null;
                         })()}
                       </span>
-                      <div className="flex items-center gap-2 mt-4">
-                        {isExternalUrl(link.url) ? (
-                          <svg
-                            className="w-6 h-6 text-seafoam-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
-                            />
-                          </svg>
-                        ) : (
-                          <svg
-                            className="w-6 h-6 text-seafoam-600"
-                            fill="none"
-                            stroke="currentColor"
-                            viewBox="0 0 24 24"
-                          >
-                            <path
-                              strokeLinecap="round"
-                              strokeLinejoin="round"
-                              strokeWidth={2}
-                              d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
-                            />
-                          </svg>
-                        )}
-                        <div className="flex flex-wrap gap-2">
-                          {(isExternalUrl(link.url) &&
-                            !isLocalizedExternalUrl(link.url) &&
-                            language !== "en") ||
-                          pdfInfo.isFallback ? (
-                            <LanguageFallbackBadge />
-                          ) : null}
+                      <div className="mt-4 flex flex-col gap-2">
+                        <div className="flex items-center gap-2">
+                          {isExternalUrl(link.url) ? (
+                            <svg
+                              className="w-6 h-6 text-seafoam-600"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14"
+                              />
+                            </svg>
+                          ) : (
+                            <svg
+                              className="w-6 h-6 text-seafoam-600"
+                              fill="none"
+                              stroke="currentColor"
+                              viewBox="0 0 24 24"
+                            >
+                              <path
+                                strokeLinecap="round"
+                                strokeLinejoin="round"
+                                strokeWidth={2}
+                                d="M4 16v1a3 3 0 003 3h10a3 3 0 003-3v-1m-4-4l-4 4m0 0l-4-4m4 4V4"
+                              />
+                            </svg>
+                          )}
+                          <div className="flex flex-wrap gap-2">
+                            {(isExternalUrl(link.url) &&
+                              !isLocalizedExternalUrl(link.url) &&
+                              language !== "en") ||
+                            pdfInfo.isFallback ? (
+                              <LanguageFallbackBadge />
+                            ) : null}
+                          </div>
                         </div>
+                        {badgeUrl && (
+                          <img
+                            src={badgeUrl}
+                            alt={t("toolDetail.downloadCount")}
+                            width={146}
+                            height={20}
+                            loading="lazy"
+                            decoding="async"
+                            className="h-5 w-auto self-start"
+                            onError={(event) => {
+                              event.currentTarget.style.display = "none";
+                            }}
+                          />
+                        )}
                       </div>
                     </div>
                   </a>

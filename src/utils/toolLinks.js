@@ -46,3 +46,21 @@ export const getLinkFileType = (url) => {
     ? fileName.split(".").pop().toLowerCase()
     : null;
 };
+
+/**
+ * Skills-Lab material links, in both flavours: `downloadmaterialfile` hands the
+ * file over directly, `materialfilevisit` opens it in the browser. Skills-Lab
+ * counts either one as a download, so both get a counter badge.
+ */
+const SKILLS_LAB_MATERIAL =
+  /^https?:\/\/(www\.)?skills-lab\.eu\/index\/(downloadmaterialfile|materialfilevisit)\/.*materialFileId\/(\d+)/i;
+
+/**
+ * Get the Skills-Lab download-counter badge for a link
+ * @param {string} url - Link URL from the tools JSON
+ * @returns {string|null} - Badge image URL, or null for non-Skills-Lab links
+ */
+export const getDownloadBadgeUrl = (url) => {
+  const match = SKILLS_LAB_MATERIAL.exec(url);
+  return match ? `https://www.skills-lab.eu/badge/file/${match[3]}.png` : null;
+};
