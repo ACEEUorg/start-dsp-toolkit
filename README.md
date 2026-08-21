@@ -61,7 +61,7 @@ Publishing means committing and pushing the changed source files. The formerly h
 
 ## Static Assets
 
-- **PDFs**: `public/assets/tools/{lang}/tool_X.Y_Name.pdf`. If a translated PDF is missing, the app falls back to the English file at runtime — a missing translation is a normal, handled state.
+- **Tool materials**: hosted on Skills-Lab, not in this repo. Each tool's frontmatter links to `https://www.skills-lab.eu/index/{downloadmaterialfile|materialfilevisit}/projectId/49/materialFileId/NN`, with a separate file id per language, and the detail page shows the Skills-Lab download counter underneath each such link.
 - **Images**: `public/assets/images/{number}.jpg`, tried as `.jpg` → `.jpeg` → `.png`, then a generated placeholder.
 
 ## Deployment
