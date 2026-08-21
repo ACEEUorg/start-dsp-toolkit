@@ -57,10 +57,14 @@ const SKILLS_LAB_MATERIAL =
 
 /**
  * Get the Skills-Lab download-counter badge for a link
+ *
+ * The SVG variant is used rather than the PNG so the badge stays sharp on
+ * high-DPI screens. Its width grows with the digit count, so callers should
+ * size it by height and leave the width intrinsic.
  * @param {string} url - Link URL from the tools JSON
  * @returns {string|null} - Badge image URL, or null for non-Skills-Lab links
  */
 export const getDownloadBadgeUrl = (url) => {
   const match = SKILLS_LAB_MATERIAL.exec(url);
-  return match ? `https://www.skills-lab.eu/badge/file/${match[3]}.png` : null;
+  return match ? `https://www.skills-lab.eu/badge/file/${match[3]}.svg` : null;
 };

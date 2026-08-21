@@ -279,7 +279,6 @@ export default function ToolDetail() {
                           <img
                             src={badgeUrl}
                             alt={t("toolDetail.downloadCount")}
-                            width={146}
                             height={20}
                             loading="lazy"
                             decoding="async"
