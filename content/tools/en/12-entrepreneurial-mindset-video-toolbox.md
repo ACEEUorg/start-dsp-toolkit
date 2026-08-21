@@ -20,6 +20,7 @@ instructions: |
 links:
   - title: "Entrepreneurial Mindset Video Toolbox – Playlist Link"
     url: "https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1049"
+    englishOnly: true
 benefits: Traditional entrepreneurship education often overlooks mindset, ethics, and inclusion. This toolbox helps users explore these essential areas through curated video content. It builds awareness of emotional intelligence, ethical leadership, and diversity in modern entrepreneurial practice.
 purpose: Fostering an Entrepreneurial Mindset & Culture
 prerequisiteTools: Internet access

@@ -20,6 +20,7 @@ instructions: |
 links:
   - title: "Video-Toolbox für unternehmerische Denkweise – Playlist-Link"
     url: "https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1049"
+    englishOnly: true
 benefits: Traditionelle Gründungsausbildung übersieht oft Denkweise, Ethik und Inklusion. Diese Toolbox hilft Nutzern, diese wesentlichen Bereiche durch kuratierte Videoinhalte zu erkunden. Sie schafft Bewusstsein für emotionale Intelligenz, ethische Führung und Vielfalt in der modernen unternehmerischen Praxis.
 purpose: Förderung einer unternehmerischen Denkweise & Kultur
 prerequisiteTools: Internetzugang

@@ -12,7 +12,7 @@ toolDetail.instructions: "Anweisungen"
 toolDetail.outcomes: "Ergebnisse"
 toolDetail.responsiblePartner: "Verantwortlicher Partner:"
 toolDetail.downloadCount: "Anzahl der Downloads"
-badge.fallbackLanguage: Verfügbar auf Englisch
+badge.englishOnly: Nur auf Englisch verfügbar
 badge.externalLink: Extern - nur auf Englisch
 disclaimer.translationTitle: Übersetzungen in Bearbeitung
 disclaimer.translationMessage: Wir übersetzen derzeit den Toolbox-Inhalt. Einige

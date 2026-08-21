@@ -24,10 +24,13 @@ export const isExternalUrl = (url) =>
 
 /**
  * Check whether an external URL already serves the current site language
+ *
+ * Only used to infer the file type below; use isSkillsLabMaterialUrl to reason
+ * about localization.
  * @param {string} url - Link URL from the tools JSON
  * @returns {boolean} - True for Skills-Lab download links
  */
-export const isLocalizedExternalUrl = (url) => SKILLS_LAB_DOWNLOAD.test(url);
+const isLocalizedExternalUrl = (url) => SKILLS_LAB_DOWNLOAD.test(url);
 
 /**
  * Get the file type a link points to, for the format badge
@@ -54,6 +57,16 @@ export const getLinkFileType = (url) => {
  */
 const SKILLS_LAB_MATERIAL =
   /^https?:\/\/(www\.)?skills-lab\.eu\/index\/(downloadmaterialfile|materialfilevisit)\/.*materialFileId\/(\d+)/i;
+
+/**
+ * Check whether a URL points at a Skills-Lab project material
+ *
+ * Skills-Lab keeps one file per site language, so these links are already
+ * localized and must never be labelled English-only.
+ * @param {string} url - Link URL from the tools JSON
+ * @returns {boolean} - True for either Skills-Lab material route
+ */
+export const isSkillsLabMaterialUrl = (url) => SKILLS_LAB_MATERIAL.test(url);
 
 /**
  * Get the Skills-Lab download-counter badge for a link

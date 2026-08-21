@@ -3,14 +3,13 @@ import { useParams, useNavigate, useLocation } from "react-router";
 import { loadTools } from "../data/tools";
 import { useLanguage, useTranslation } from "../i18n/hooks";
 import ToolImage from "../components/ui/ToolImage";
-import LanguageFallbackBadge from "../components/ui/LanguageFallbackBadge";
+import EnglishOnlyBadge from "../components/ui/EnglishOnlyBadge";
 import { trackDownload } from "../utils/analytics";
-import { getPdfUrlWithFallback } from "../utils/pdfFallback";
 import {
   getDownloadBadgeUrl,
   getLinkFileType,
   isExternalUrl,
-  isLocalizedExternalUrl,
+  isSkillsLabMaterialUrl,
 } from "../utils/toolLinks";
 
 export default function ToolDetail() {
@@ -20,7 +19,6 @@ export default function ToolDetail() {
   const { language } = useLanguage();
   const { t } = useTranslation();
   const [tool, setTool] = useState(null);
-  const [pdfUrls, setPdfUrls] = useState({});
 
   // Load tools data when language changes
   useEffect(() => {
@@ -29,22 +27,6 @@ export default function ToolDetail() {
       setTool(foundTool);
     });
   }, [language, number]);
-
-  // Check PDF availability and set up fallbacks
-  useEffect(() => {
-    if (!tool || !tool.links) return;
-
-    const checkPdfs = async () => {
-      const urlMap = {};
-      for (const link of tool.links) {
-        const result = await getPdfUrlWithFallback(link.url, language);
-        urlMap[link.url] = result;
-      }
-      setPdfUrls(urlMap);
-    };
-
-    checkPdfs();
-  }, [tool, language]);
 
   if (!tool) {
     return <div>Tool not found</div>;
@@ -193,15 +175,19 @@ export default function ToolDetail() {
               className={`flex flex-col lg:w-64 gap-4 ${tool.links.length === 1 ? "" : "justify-between"}`}
             >
               {tool.links.map((link, index) => {
-                const pdfInfo = pdfUrls[link.url] || {
-                  url: link.url,
-                  isFallback: false,
-                };
                 const badgeUrl = getDownloadBadgeUrl(link.url);
+                // Every tool is translated, so an English-only note can only be
+                // about the link target: a third-party site, or a single
+                // Skills-Lab material that exists in English alone.
+                const englishOnlyKey = link.englishOnly
+                  ? "badge.englishOnly"
+                  : isExternalUrl(link.url) && !isSkillsLabMaterialUrl(link.url)
+                    ? "badge.externalLink"
+                    : null;
                 return (
                   <a
                     key={index}
-                    href={pdfInfo.url}
+                    href={link.url}
                     className={`group relative overflow-hidden bg-linear-to-br from-seafoam-50 to-white rounded-xl p-6 border border-seafoam-200 hover:border-seafoam-400 transition-all duration-200 ${tool.links.length === 1 ? "h-full" : "flex-1"} flex items-center`}
                     target="_blank"
                     rel="noopener noreferrer"
@@ -267,12 +253,9 @@ export default function ToolDetail() {
                             </svg>
                           )}
                           <div className="flex flex-wrap gap-2">
-                            {(isExternalUrl(link.url) &&
-                              !isLocalizedExternalUrl(link.url) &&
-                              language !== "en") ||
-                            pdfInfo.isFallback ? (
-                              <LanguageFallbackBadge />
-                            ) : null}
+                            {englishOnlyKey && (
+                              <EnglishOnlyBadge labelKey={englishOnlyKey} />
+                            )}
                           </div>
                         </div>
                         {badgeUrl && (

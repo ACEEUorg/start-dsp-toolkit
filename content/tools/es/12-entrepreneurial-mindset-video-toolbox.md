@@ -20,6 +20,7 @@ instructions: |
 links:
   - title: "Caja de Herramientas de Video sobre Mentalidad Emprendedora – Enlace a Playlist"
     url: "https://www.skills-lab.eu/index/materialfilevisit/projectId/49/materialFileId/1049"
+    englishOnly: true
 benefits: La educación emprendedora tradicional a menudo pasa por alto la mentalidad, la ética y la inclusión. Esta caja de herramientas ayuda a los usuarios a explorar estas áreas esenciales a través de contenido de video curado. Construye conciencia sobre inteligencia emocional, liderazgo ético y diversidad en la práctica emprendedora moderna.
 purpose: Fomento de una Mentalidad & Cultura Emprendedora
 prerequisiteTools: Acceso a Internet
