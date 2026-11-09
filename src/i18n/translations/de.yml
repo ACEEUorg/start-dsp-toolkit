@@ -56,3 +56,7 @@ toolbox.description: >
   filtering them based on their purpose, helping you quickly find the most
   relevant resources to support universities build a stronger entrepreneurial
   mindset and ecosystem.
+video.title: "Video zur Start-DSP Toolbox"
+video.play: "Video abspielen (lädt YouTube)"
+video.consentNotice: "Beim Klick auf das Video wird es von YouTube geladen. Dabei erhält Google Daten wie Ihre IP-Adresse und kann Cookies setzen."
+video.privacyPolicy: "Datenschutzerklärung von Google"

@@ -4,6 +4,8 @@ import { Search, ChevronDown } from "lucide-react";
 import { loadTools } from "../data/tools";
 import { useLanguage, useTranslation } from "../i18n/hooks";
 import ToolImage from "../components/ui/ToolImage";
+import YouTubeEmbed from "../components/ui/YouTubeEmbed";
+import EnglishOnlyBadge from "../components/ui/EnglishOnlyBadge";
 
 export default function Toolbox() {
   const location = useLocation();
@@ -98,10 +100,18 @@ export default function Toolbox() {
 
   return (
     <div>
-      <div className="bg-gradient-to-r from-seafoam-50 to-white rounded-xl p-6 mb-8 border border-seafoam-200">
-        <p className="text-gray-700 leading-relaxed text-lg">
+      <div className="bg-gradient-to-r from-seafoam-50 to-white rounded-xl p-6 mb-8 border border-seafoam-200 flex flex-col md:flex-row md:items-center gap-6">
+        <p className="text-gray-700 leading-relaxed text-lg md:flex-1 md:min-w-0">
           {t("toolbox.description")}
         </p>
+        <div className="w-full md:w-[30%] md:shrink-0">
+          <YouTubeEmbed
+            videoId="FPFReC77p00"
+            posterSrc={`${import.meta.env.BASE_URL}assets/images/toolbox-video-poster.jpg`}
+            title={t("video.title")}
+          />
+          <EnglishOnlyBadge labelKey="badge.englishOnly" />
+        </div>
       </div>
 
       {/* Search Input and Purpose Filter */}
