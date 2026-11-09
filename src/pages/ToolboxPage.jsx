@@ -104,7 +104,7 @@ export default function Toolbox() {
         <p className="text-gray-700 leading-relaxed text-lg md:flex-1 md:min-w-0">
           {t("toolbox.description")}
         </p>
-        <div className="w-full md:w-[30%] md:shrink-0">
+        <div className="w-full md:w-[45%] md:shrink-0">
           <YouTubeEmbed
             videoId="FPFReC77p00"
             posterSrc={`${import.meta.env.BASE_URL}assets/images/toolbox-video-poster.jpg`}
